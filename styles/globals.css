@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-6xl font-bold p-3 border rounded-xl bg-white font-mono justify-evenly;
+  }
+  h2 {
+    @apply text-4xl font-bold p-3 border rounded-xl bg-white;
+  }
+  button {
+    @apply p-3 mt-4 text-center border w-48 rounded-xl text-white bg-green-700 shadow-2xl hover:bg-green-500;
+  }
+  input {
+    @apply p-3 mt-4 text-center border w-48 rounded-xl focus:bg-gray-50 text-gray-400 focus:text-black focus:placeholder-transparent ;
+  }
+  label {
+    @apply p-6 mt-10 text-center border w-96 bg-green-500;
+  }
+}
