@@ -12,8 +12,12 @@ export default function Layout({ children, title }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      
-<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" /></head>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+        />
+      </head>
       <main className="flex flex-col items-center flex-1 px-20 text-center">
         <div className="bg-gray-300 rounded-xl p-5">{children}</div>
       </main>
