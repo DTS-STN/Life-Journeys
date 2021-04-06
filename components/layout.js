@@ -20,7 +20,7 @@ export default function Layout({ children, title }) {
 
       <br />
 
-      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl">
+      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl text-black">
         DTS-STN
       </footer>
     </div>
