@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-FROM node:alpine
-RUN mkdir -p /usr/src
-WORKDIR /usr/src
-COPY . /usr/src
-RUN npm i
-RUN npm run build
-EXPOSE 3000
-CMD npm run start
-
-=======
 FROM node:current-alpine AS base
 WORKDIR /base
 COPY package*.json ./
@@ -30,4 +19,3 @@ COPY --from=build /build/public ./public
 RUN npm install next
 
 CMD npm run start
->>>>>>> updating dockerfile
