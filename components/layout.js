@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export const siteTitle = "Dumb Scrumb Test";
+export const siteTitle = "Dumb Scrumb";
 export default function Layout({ children, title }) {
   return (
     <div className="flex flex-col items-center min-h-screen py-2">
