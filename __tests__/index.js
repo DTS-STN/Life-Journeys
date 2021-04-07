@@ -5,7 +5,7 @@ import Index from '../pages/index'
 test('renders deploy link', () => {
   const { getByText } = render(<Index />)
   const linkElement = getByText(
-    /Dumb Scrum/
+    /DTS-STN/
   )
   expect(linkElement).toBeInTheDocument()
 })
