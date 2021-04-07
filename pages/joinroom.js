@@ -26,7 +26,7 @@ export default function Joinroom() {
           autoFocus
           placeholder="Enter room number..."
           id="roomid"
-          name="roomid"
+                   name="roomid"
           type="text"
           autoComplete="roomid"
           required
