@@ -10,15 +10,17 @@ export default function Layout({ children, title }) {
         <meta property="og:image" content={`/images/ace.jpg`} />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" />
       </Head>
 
-      
-<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" /></head>
+
       <main className="flex flex-col items-center flex-1 px-20 text-center">
         <div className="bg-gray-300 rounded-xl p-5">{children}</div>
       </main>
+
       <br />
-      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl">
+
+      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl text-black">
         DTS-STN
       </footer>
     </div>
