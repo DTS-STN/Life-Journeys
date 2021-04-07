@@ -12,12 +12,21 @@
     "lint_check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint_write": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint '*/**/*.{js,jsx}' --fix"
+    ]
+  },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.0.4",
     "next": "latest",
     "postcss": "^8.1.10",
-    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^2.0.2"
@@ -26,8 +35,22 @@
     "@testing-library/jest-dom": "^5.1.0",
     "@testing-library/react": "^9.4.0",
     "babel-jest": "^25.1.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sonarjs": "^0.6.0",
+    "eslint-plugin-unicorn": "^29.0.0",
+    "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "react-test-renderer": "^17.0.1"
   }
 }
