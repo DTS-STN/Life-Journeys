@@ -10,9 +10,11 @@ export default function Layout({ children, title }) {
         <meta property="og:image" content={`/images/ace.jpg`} />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
+        />
       </Head>
-
 
       <main className="flex flex-col items-center flex-1 px-20 text-center">
         <div className="bg-gray-300 rounded-xl p-5">{children}</div>
