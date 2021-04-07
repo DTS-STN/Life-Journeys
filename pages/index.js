@@ -3,5 +3,5 @@ import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 
 export default function Home() {
-          return <Layout home></Layout>;
+  return <Layout home></Layout>;
 }
