@@ -8,7 +8,9 @@
     "start": "next start",
     "test": "jest",
     "test-dev": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "lint_check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint_write": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",
