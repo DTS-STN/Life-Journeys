@@ -1,5 +1,5 @@
 image:
-  repository: mtscontainers.azurecr.io/life-journeys
+  repository: mtscontainers.azurecr.io/lifejourneys
   tag: "{{ requiredEnv "DOCKER_TAG" }}" 
   pullPolicy: Always
 
@@ -11,11 +11,11 @@ ingress:
       enabled: true
       hosts:
       {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
-          - life-journeys.{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN" }}
-          - life-journeys.{{ requiredEnv "BASE_DOMAIN" }}
+          - lifejourneys.{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN" }}
+          - lifejourneys.{{ requiredEnv "BASE_DOMAIN" }}
       {{ else }}
-          - life-journeys-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
-          - life-journeys.{{ requiredEnv "BASE_DOMAIN_DEV" }}
+          - lifejourneys-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
+          - lifejourneys.{{ requiredEnv "BASE_DOMAIN_DEV" }}
       {{ end }} 
       annotations: {}
       # kubernetes.io/ingress.class: traefik

@@ -2,7 +2,7 @@ repositories:
     - name: dts
       url: https://helm.dts-stn.com
     # helm-git powered repository: You can treat any Git repository as a charts repository
-    - name: life-journeys
+    - name: lifejourneys
       url: git+https://{{ requiredEnv "GITHUB_USER" }}:{{ requiredEnv "GITHUB_TOKEN" }}@github.com/DTS-STN/Life-Journeys@helm/charts?ref=main
 {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}    
 context: EsDCDTSRG-K8S
@@ -25,17 +25,17 @@ environments:
     prod-green: 
 
 releases:
-# life-journeys
-  - name: life-journeys-{{ .Environment.Name }}
-    chart: ../helm/charts/life-journeys
+# lifejourneys
+  - name: lifejourneys-{{ .Environment.Name }}
+    chart: ../helm/charts/lifejourneys
     version: 0.0.1
     values:
-      - overrides/life-journeys.yaml.gotmpl
+      - overrides/lifejourneys.yaml.gotmpl
     labels:
         category: dts
-        app: life-journeys
+        app: lifejourneys
         tier: server
-    namespace: life-journeys-{{ .Environment.Name }}
+    namespace: lifejourneys-{{ .Environment.Name }}
     installed: true
     wait: false
     force: false
