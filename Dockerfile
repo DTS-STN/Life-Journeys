@@ -3,7 +3,6 @@ ENV NODE_ENV=production
 WORKDIR /base
 COPY package*.json ./
 RUN npm ci
-COPY . .
 
 FROM base AS build
 ENV NODE_ENV=production
