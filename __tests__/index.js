@@ -5,7 +5,7 @@ import Index from '../pages/index'
 test('renders deploy link', () => {
   const { getByText } = render(<Index />)
   const linkElement = getByText(
-    /DTS-STN/
+    /Life Journeys/
   )
   expect(linkElement).toBeInTheDocument()
 })
