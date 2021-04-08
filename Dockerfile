@@ -1,7 +1,8 @@
-FROM node:current-alpine AS base
+FROM mhart/alpine-node:latest AS base
+ENV NODE_ENV=production
 WORKDIR /base
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 COPY . .
 
 FROM base AS build
@@ -10,7 +11,7 @@ WORKDIR /build
 COPY --from=base /base ./
 RUN npm run build
 
-FROM node:current-alpine AS production
+FROM mhart/alpine-node:latest AS production
 ENV NODE_ENV=production
 WORKDIR /app
 COPY --from=build /build/package*.json ./
