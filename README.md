@@ -1,4 +1,4 @@
-# Life-Journeys 
+# Life-Journeys
 
 ## Getting Started
 
