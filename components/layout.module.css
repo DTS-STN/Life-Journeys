@@ -1,0 +1,91 @@
+.landscape {
+  background-image: url(/images/landscape.png);
+}
+.sm\:landscape {
+  background-image: url(/images/landscape.png);
+}
+.md\:landscape {
+  background-image: url(/images/landscape.png);
+}
+.lg\:landscape {
+  background-image: url(/images/landscape.png);
+}
+.xl\:landscape {
+  background-image: url(/images/landscape.png);
+}
+
+.bgFooterBlue {
+  --bg-opacity: 1;
+  background-color: #26374a;
+  background-color: rgba(38, 55, 74, var(--bg-opacity));
+}
+
+.bgFooterWhite {
+  --bg-opacity: 1;
+  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, var(--bg-opacity));
+}
+
+.textCanadaLinkColour {
+  --text-opacity: 1;
+  color: #284162;
+  color: rgba(40, 65, 98, var(--text-opacity));
+}
+
+
+/* 
+.divide-footer-blue > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #26374a;
+  border-color: rgba(38, 55, 74, var(--divide-opacity));
+}
+
+.divide-footer-white > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #f8f8f8;
+  border-color: rgba(248, 248, 248, var(--divide-opacity));
+}
+
+.hover\:bg-footer-blue:hover {
+  --bg-opacity: 1;
+  background-color: #26374a;
+  background-color: rgba(38, 55, 74, var(--bg-opacity));
+}
+
+.hover\:bg-footer-white:hover {
+  --bg-opacity: 1;
+  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, var(--bg-opacity));
+}
+
+.focus\:bg-footer-blue:focus {
+  --bg-opacity: 1;
+  background-color: #26374a;
+  background-color: rgba(38, 55, 74, var(--bg-opacity));
+}
+
+.focus\:bg-footer-white:focus {
+  --bg-opacity: 1;
+  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, var(--bg-opacity));
+}
+
+.from-footer-blue {
+  --gradient-from-color: #26374a;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(38, 55, 74, 0));
+}
+
+.from-footer-white {
+  --gradient-from-color: #f8f8f8;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(248, 248, 248, 0));
+}
+
+.via-footer-blue {
+  --gradient-via-color: #26374a;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(38, 55, 74, 0));
+}
+
+.via-footer-white {
+  --gradient-via-color: #f8f8f8;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(248, 248, 248, 0));
+} */
