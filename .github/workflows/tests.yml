@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: linting test
       run: |
-        npm ci --passWithNoTests
+        npm ci 
         npm run lint
 
   build_and_unit_test:
@@ -35,7 +35,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm run test:ci --passWithNoTests
+    - run: npm run test:ci 
 
   build_and_e2e_test:
     #Cypress Tests
