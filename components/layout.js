@@ -1,30 +1,107 @@
-import Head from "next/head";
+import { useRouter } from "next/router";
+// import { Meta } from "./atoms/Meta";
+// import { Header } from "./organisms/Header";
+import { Footer } from "./organisms/Footer";
 
-export const siteTitle = "Dumb Scrumb";
-export default function Layout({ children, title }) {
+import { useContext } from "react";
+import { LanguageContext } from "../context/languageProvider";
+
+import en from "../locales/en";
+import fr from "../locales/fr";
+
+export default function Layout({ children }) {
+  //   TODO
+  //
+  //   const router = useRouter();
+  //   const routerPathname = router.asPath;
+
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+
+  //   TODO
+  //
+  //  const changeLanguage = items.changeLanguage;
+
+  const t = language === "en" ? en : fr;
+
+  //   TODO
+  //
+  //   function onChangeLanguage(e) {
+  //     const language = e.target.value;
+  //     changeLanguage(language);
+  //     router.replace(routerPathname, routerPathname, { locale: language });
+  //   }
+
   return (
-    <div className="flex flex-col items-center min-h-screen py-2">
-      <Head>
-        <link rel="icon" href="/images/ace.jpg" />
-        <meta name="description" content="Create your own scrum poker room" />
-        <meta property="og:image" content={`/images/ace.jpg`} />
-        <meta name="og:title" content={title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Crimson+Pro"
-        />
-      </Head>
+    <div className="w-screen h-screen flex flex-col bg-blue-500">
+      {/* 
+        //   TODO  
+        //
 
-      <main className="flex flex-col items-center flex-1 px-20 text-center">
-        <div className="bg-gray-300 rounded-xl p-5">{children}</div>
+      <Meta title={t.siteTitle} />
+
+      <Header
+        onLanguageClick={onChangeLanguage}
+        headerCanadaCaAltText={t.headerCanadaCaAltText}
+        language={language === "fr" ? "English" : "Français"}
+        siteTitle={t.siteTitle}
+      /> */}
+
+      <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0 bg-pink-800">
+        {children}
       </main>
 
-      <br />
-
-      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl text-black">
-        DTS-STN
-      </footer>
+      <Footer
+        socialmediaLink={t.socialmediaLink}
+        socialmediaText={t.socialmediaText}
+        mobileLink={t.mobileapplicationsLink}
+        mobileText={t.mobileapplicationsText}
+        aboutLink={t.aboutLink}
+        aboutText={t.aboutText}
+        termsAndConditionsLink={t.termsAndConditionsLink}
+        termsAndConditionsText={t.termsAndConditionsText}
+        privacyLink={t.privacyLink}
+        privacyText={t.privacyText}
+        footerCanadaCaAltText={t.footerCanadaCaAltText}
+        links={[
+          {
+            link: t.contactLink,
+            linkText: t.contactText,
+          },
+          {
+            link: t.departmentAndAgenciesLink,
+            linkText: t.departmentAndAgenciesText,
+          },
+          {
+            link: t.publicServiceAndMilitaryLink,
+            linkText: t.publicServiceAndMilitaryText,
+          },
+          {
+            link: t.newsLink,
+            linkText: t.newsText,
+          },
+          {
+            link: t.treatiesLawsAndRegulationLink,
+            linkText: t.treatiesLawsAndRegulationText,
+          },
+          {
+            link: t.governmentWideReportingLink,
+            linkText: t.governmentWideReportingText,
+          },
+          {
+            link: t.primeministerLink,
+            linkText: t.primeministerText,
+          },
+          {
+            link: t.aboutgovernmentLink,
+            linkText: t.aboutgovernmentText,
+          },
+          {
+            link: t.opengovernmentLink,
+            linkText: t.opengovernmentText,
+          },
+        ]}
+      />
     </div>
   );
 }
