@@ -18,6 +18,8 @@ ENV NEXT_PUBLIC_BUILD_DATE=$BUILD_DATE
 ENV NEXT_PUBLIC_TC_BUILD=$TC_BUILD
 # END OF ENVIRONMENT VARIABLES
 ENV NODE_ENV=production
+RUN echo $BUILD_DATE 
+RUN echo $TC_BUILD
 WORKDIR /build
 COPY --from=base /base ./
 RUN npm run build
@@ -29,7 +31,4 @@ COPY --from=build /build/package*.json ./
 COPY --from=build /build/.next ./.next
 COPY --from=build /build/public ./public
 RUN npm install next
-RUN echo $BUILD_DATE 
-RUN echo $TC_BUILD
-
 CMD npm run start
