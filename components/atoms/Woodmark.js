@@ -8,7 +8,7 @@ import fr from "../../locales/fr";
 
 const gocWoodmark = "/images/wmms-blk.svg";
 
-export function WoodMark(props) {
+export function WoodMark() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;

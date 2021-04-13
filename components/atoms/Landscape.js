@@ -7,7 +7,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Landscape(props) {
+export function Landscape() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;

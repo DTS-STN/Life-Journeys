@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-// import { Meta } from "./atoms/Meta";
-// import { Header } from "./organisms/Header";
+// import { Meta } from "./atoms/Meta";           TODO  in next PR
+// import { Header } from "./organisms/Header";   TODO  in next PR
 import { Footer } from "./organisms/Footer";
 
 import { useContext } from "react";
@@ -18,13 +18,13 @@ export default function Layout({ children }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
 
-  //   TODO
+  //   TODO  in next PR
   //
   //  const changeLanguage = items.changeLanguage;
 
   const t = language === "en" ? en : fr;
 
-  //   TODO
+  //   TODO  in next PR
   //
   //   function onChangeLanguage(e) {
   //     const language = e.target.value;
@@ -33,9 +33,9 @@ export default function Layout({ children }) {
   //   }
 
   return (
-    <div className="w-screen h-screen flex flex-col bg-blue-500">
+    <div className="w-screen h-screen flex flex-col">
       {/* 
-        //   TODO  
+        //   TODO  in next PR 
         //
 
       <Meta title={t.siteTitle} />
@@ -51,57 +51,7 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <Footer
-        socialmediaLink={t.socialmediaLink}
-        socialmediaText={t.socialmediaText}
-        mobileLink={t.mobileapplicationsLink}
-        mobileText={t.mobileapplicationsText}
-        aboutLink={t.aboutLink}
-        aboutText={t.aboutText}
-        termsAndConditionsLink={t.termsAndConditionsLink}
-        termsAndConditionsText={t.termsAndConditionsText}
-        privacyLink={t.privacyLink}
-        privacyText={t.privacyText}
-        footerCanadaCaAltText={t.footerCanadaCaAltText}
-        links={[
-          {
-            link: t.contactLink,
-            linkText: t.contactText,
-          },
-          {
-            link: t.departmentAndAgenciesLink,
-            linkText: t.departmentAndAgenciesText,
-          },
-          {
-            link: t.publicServiceAndMilitaryLink,
-            linkText: t.publicServiceAndMilitaryText,
-          },
-          {
-            link: t.newsLink,
-            linkText: t.newsText,
-          },
-          {
-            link: t.treatiesLawsAndRegulationLink,
-            linkText: t.treatiesLawsAndRegulationText,
-          },
-          {
-            link: t.governmentWideReportingLink,
-            linkText: t.governmentWideReportingText,
-          },
-          {
-            link: t.primeministerLink,
-            linkText: t.primeministerText,
-          },
-          {
-            link: t.aboutgovernmentLink,
-            linkText: t.aboutgovernmentText,
-          },
-          {
-            link: t.opengovernmentLink,
-            linkText: t.opengovernmentText,
-          },
-        ]}
-      />
+      <Footer />
     </div>
   );
 }
