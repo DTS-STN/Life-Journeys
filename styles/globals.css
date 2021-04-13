@@ -536,9 +536,6 @@ ul, ol {
     float: none;
     margin-bottom: .2em;
   }
-  #wb-info .landscape ul {
-    column-count: 1;
-  }
   #wb-info .brand object, #wb-info .brand img {
     height: 25px;
     margin-top: 15px;
