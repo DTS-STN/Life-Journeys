@@ -1,22 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 @layer base {
+  /* Font families */
+  h1, h2, h3, h4, h5 {
+    @apply font-display font-semibold;
+  }
+  h6 {
+    @apply font-display;
+  }
+  p {
+    @apply font-body
+  }
+  /* Font sizes */
   h1 {
-    @apply text-6xl font-bold p-3 border rounded-xl bg-white font-mono justify-evenly;
+    @apply text-h1;
   }
   h2 {
-    @apply text-4xl font-bold p-3 border rounded-xl bg-white;
+    @apply text-h2;
   }
-  button {
-    @apply p-3 mt-4 text-center border w-48 rounded-xl text-white bg-green-700 shadow-2xl hover:bg-green-500;
+  h3 {
+    @apply text-h3;
   }
-  input {
-    @apply p-3 mt-4 text-center border w-48 rounded-xl focus:bg-gray-50 text-gray-400 focus:text-black focus:placeholder-transparent ;
+  h4 {
+    @apply text-h4;
   }
-  label {
-    @apply p-6 mt-10 text-center border w-96 bg-green-500;
+  h5, p {
+    @apply text-p;
+  }
+  h6 {
+    @apply text-base;
   }
 
   
@@ -585,4 +600,29 @@ ul, ol {
 
 
 
+}
+
+@layer utilities {
+  /*Default page layout*/
+  .layout-container {
+    @apply mx-6;
+  }
+
+  @screen xxs {
+    .layout-container {
+      @apply mx-6;
+    }
+  }
+  
+  @screen xs {
+    .layout-container {
+      @apply px-0;
+    }
+  }
+
+  @screen lg {
+    .layout-container {
+      @apply container mx-auto px-6;
+    }
+  }
 }
