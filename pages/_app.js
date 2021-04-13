@@ -1,3 +1,4 @@
+import "../icomoon/style.css";
 import "../styles/globals.css";
 import LanguageProvider from "../context/languageProvider";
 
