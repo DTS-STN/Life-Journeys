@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FooterBox } from "../atoms/FooterBox";
-import { FooterLinks } from "../atoms/FooterLinks";
+import { Landscape } from "../atoms/Landscape";
+import { WoodMark } from "../atoms/Woodmark";
+// import { FooterBox } from "../atoms/FooterBox";//
+// import { FooterLinks } from "../atoms/FooterLinks";
 
 /**
  * footer element for all pages
@@ -9,18 +11,14 @@ import { FooterLinks } from "../atoms/FooterLinks";
 
 export function Footer(props) {
   return (
-
     <div className="par iparys_inherited">
       <div className="global-footer">
         <footer id="wb-info">
-
           <Landscape />
           <WoodMark />
-
         </footer>
       </div>
     </div>
-
 
     // <div className="w-full flex flex-col flex-grow justify-end">
     //   <FooterBox

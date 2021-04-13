@@ -66,6 +66,9 @@ export default {
   privacyLink: "https://www.canada.ca/en/transparency/privacy.html",
   privacyText: "Privacy",
 
+  aboutThisSite: "About this Site",
+  topOfPage: "Top of Page",
+
   //footer logo alt text
 
   footerCanadaCaAltText: "Symbol of the Government of Canada",
