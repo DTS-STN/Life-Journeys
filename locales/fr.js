@@ -40,7 +40,7 @@ export default {
     "https://www.canada.ca/fr/gouvernement/systeme/comment-gouvernement-fonctionne.html",
   howGovernmentWorksText: "Comment le gouvernement fonctionne",
 
-  primeministerLink: "pm.gc.ca/fr",
+  primeministerLink: "https://www.pm.gc.ca/fr",
   primeministerText: "Premier ministre",
 
   aboutgovernmentLink: "https://www.canada.ca/fr/gouvernement/systeme.html",
