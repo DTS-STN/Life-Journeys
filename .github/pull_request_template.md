@@ -1,6 +1,6 @@
 # Description
 
-[Task name](link to task on Taiga goes here)
+[Task name](Reference the Jira issue number ie. LJ-40 in your PR to link it )
 
 1-3 sentence description of the feature you added.
 
@@ -8,9 +8,9 @@
 
 1. Steps on...
 1. how to test...
-1. or inspect this...
-1. feature manually.
 
 ## Meets Definition of Done
 
-- [ ] TODO: Add Criteria
+- [ ] Meets design spec
+- [ ] unit tests are included
+
