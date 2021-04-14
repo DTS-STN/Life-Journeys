@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { HeaderLang } from "../atoms/HeaderLang"
+import { HeaderLang } from "../atoms/HeaderLang";
 import { HeaderLogo } from "../atoms/HeaderLogo";
 // import {HeaderNav}  from '../atoms/HeaderNav'
 // import {Breadcrump} from '../atoms/Breadcrump';
