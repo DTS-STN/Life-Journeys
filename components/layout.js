@@ -20,7 +20,7 @@ export default function Layout({ children }) {
 
       <Header />
 
-      <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0 bg-pink-800">
+      <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0">
         {children}
       </main>
 

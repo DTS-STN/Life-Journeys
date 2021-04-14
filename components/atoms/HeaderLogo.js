@@ -53,7 +53,7 @@ export function HeaderLogo() {
 
       <section
         id="wb-srch"
-        className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4 py-2.5"
+        className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4 py-2.5 pl-0"
       >
         <h2>{t.search}</h2>
 

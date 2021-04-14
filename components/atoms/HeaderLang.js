@@ -19,10 +19,11 @@ export function HeaderLang() {
 
   const t = language === "en" ? en : fr;
 
-  function onChangeLanguage(e) {
-    const language = e;
+  function onChangeLanguage(language) {
     changeLanguage(language);
-    // router.replace(routerPathname, routerPathname, { locale: language });
+    router.replace(routerPathname, routerPathname, {
+      locale: language === "en" ? "fr" : "en",
+    });
   }
 
   //
@@ -31,14 +32,14 @@ export function HeaderLang() {
   return (
     <section id="wb-lng" className="text-right">
       <h2 className="wb-inv">{t.languageSelection}</h2>
-      <div className="row bg-blue-500">
+      <div className="row">
         <div className="col-md-12">
           <ul className="list-inline margin-bottom-none">
             <li>
               {language === "fr" ? (
-                <Link href="/#english">
+                <Link href="/">
                   <a
-                    href="/#english"
+                    href="/"
                     lang="en"
                     className="underline"
                     onClick={() => onChangeLanguage(language)}
@@ -47,9 +48,9 @@ export function HeaderLang() {
                   </a>
                 </Link>
               ) : (
-                <Link href="/#français">
+                <Link href="/">
                   <a
-                    href="/#français"
+                    href="/"
                     lang="fr"
                     className="underline"
                     onClick={() => onChangeLanguage(language)}
