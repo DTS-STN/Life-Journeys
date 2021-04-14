@@ -6,8 +6,11 @@ export default {
   // Header
   //
 
-  //header logo alt text
+  //Government of Canada alt text
   headerCanadaCaAltText: "Symbole du gouvernement du Canada",
+
+  // Language section
+  languageSelection: "Sélection de la langue",
 
   //nav
   skipToMainContent: "Passer au contenu principal",

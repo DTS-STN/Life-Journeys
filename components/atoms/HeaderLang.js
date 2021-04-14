@@ -1,87 +1,64 @@
-import React from "react";
-import { Trans } from "@lingui/macro";
-import { connect } from "react-redux";
-import { setNewLanguage } from "../actions/languageActions";
-import PropTypes from "prop-types";
+import Link from "next/link";
 
-class HeaderLang extends React.Component {
-  static propTypes = {
-    setNewLanguage: PropTypes.func.isRequired,
-  };
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
 
-  constructor(props) {
-    super(props);
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
-    this.state = {
-      language: "",
-    };
+export function HeaderLang() {
+  //
+  const router = useRouter();
+  const routerPathname = router.asPath;
 
-    this.handleClick = this.handleClick.bind(this);
-    this.getNewLanguage = this.getNewLanguage.bind(this);
+  //
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const changeLanguage = items.changeLanguage;
+
+  const t = language === "en" ? en : fr;
+
+  function onChangeLanguage(e) {
+    const language = e.target.value;
+    changeLanguage(language);
+    router.replace(routerPathname, routerPathname, { locale: locale });
   }
 
-  getNewLanguage() {
-    return this.state.language === "fr" ? "en" : "fr";
-  }
+  //
+  //
 
-  componentDidMount() {
-    this.setState({ language: this.props.language });
-    console.log("HeaderLang initial language : ");
-    console.log(this.props.language);
-    console.log(this.state.language);
-  }
-
-  handleClick() {
-    const lang = this.getNewLanguage();
-    this.setState({ language: lang }, () =>
-      this.props.setNewLanguage(this.state.language)
-    );
-  }
-
-  render() {
-    const { lang } = this.props.language;
-    console.log("HeaderLang render language : ");
-    console.log(this.props.language);
-    console.log(this.state.language);
-    return (
-      <React.Fragment>
-        <section id="wb-lng" className="text-right">
-          <h2 className="wb-inv">
-            <Trans>Language selection</Trans>
-          </h2>
-          <div className="row">
-            <div className="col-md-12">
-              <ul className="list-inline margin-bottom-none">
-                <li>
-                  {this.getNewLanguage() === "fr" ? (
-                    <a
-                      href="/#english"
-                      lang="en"
-                      onClick={() => this.handleClick(lang)}
-                    >
-                      Français
-                    </a>
-                  ) : (
-                    <a
-                      href="/#français"
-                      lang="fr"
-                      onClick={() => this.handleClick(lang)}
-                    >
-                      English
-                    </a>
-                  )}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </React.Fragment>
-    );
-  }
+  return (
+    <section id="wb-lng" className="text-right">
+      <h2 className="wb-inv">{t.languageSelection}</h2>
+      <div className="row">
+        <div className="col-md-12">
+          <ul className="list-inline margin-bottom-none">
+            <li>
+              {language === "fr" ? (
+                <Link href="/#english">
+                  <a
+                    href="/#english"
+                    lang="en"
+                    onClick={onChangeLanguage(lang)}
+                  >
+                    {t.français}
+                  </a>
+                </Link>
+              ) : (
+                <Link href="/#français">
+                  <a
+                    href="/#français"
+                    lang="fr"
+                    onClick={onChangeLanguage(lang)}
+                  >
+                    {t.english}
+                  </a>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-const mapStateToProps = (state) => ({
-  language: state.language,
-});
-
-export default connect(mapStateToProps, { setNewLanguage })(HeaderLang);
