@@ -9,6 +9,10 @@ export default {
   //header logo alt text
   headerCanadaCaAltText: "Symbol of the Government of Canada",
 
+  //nav
+  skipToMainContent: "Skip to main content",
+  aboutGovernment: "Skip to 'About government'",
+
   //
   // Footer
   //
