@@ -13,5 +13,4 @@
 
 - [ ] Meets design spec
 - [ ] unit tests are included
-- [ ] linting, unit and e2e are passing
-- [ ] accessibility is passing
+
