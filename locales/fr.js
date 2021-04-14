@@ -1,6 +1,6 @@
 export default {
   //site title
-  siteTitle: "voyages de vie",
+  siteTitle: "Voyages de vie",
 
   //
   // Header
@@ -9,14 +9,18 @@ export default {
   //header logo alt text
   headerCanadaCaAltText: "Symbole du gouvernement du Canada",
 
+  //nav
+  skipToMainContent: "Passer au contenu principal",
+  aboutGovernment: "Passer à « Au sujet du gouvernement »",
+
   //
   // Footer
   //
 
   // Landscape Links
 
-  contactLink: "https://www.canada.ca/en/contact.html",
-  contactText: "Contact information",
+  contactLink: "https://www.canada.ca/fr/contact.html",
+  contactText: "Contactez-nous",
 
   departmentAndAgenciesLink: "https://www.canada.ca/fr/gouvernement/min.html",
   departmentAndAgenciesText: "Ministères et organismes",
@@ -40,13 +44,13 @@ export default {
     "https://www.canada.ca/fr/gouvernement/systeme/comment-gouvernement-fonctionne.html",
   howGovernmentWorksText: "Comment le gouvernement fonctionne",
 
-  primeministerLink: "pm.gc.ca/en",
+  primeministerLink: "https://www.pm.gc.ca/fr",
   primeministerText: "Premier ministre",
 
-  aboutgovernmentLink: "https://www.canada.ca/en/government/system.html",
+  aboutgovernmentLink: "https://www.canada.ca/fr/gouvernement/systeme.html",
   aboutgovernmentText: "À propos du gouvernement",
 
-  opengovernmentLink: "http://open.canada.ca/en",
+  opengovernmentLink: "http://ouvert.canada.ca/",
   opengovernmentText: "Gouvernement ouvert",
 
   // Footnote Links
@@ -66,13 +70,9 @@ export default {
   privacyLink: "https://www.canada.ca/en/transparency/privacy.html",
   privacyText: "Confidentialité",
 
+  aboutThisSite: "À propos de ce site",
+  topOfPage: "Haut de la page",
+
   //footer logo alt text
   footerCanadaCaAltText: "Symbole du gouvernement du Canada",
-
-  //error page
-  somethingWentWrong: "Un problème est survenu :(",
-
-  //404
-  notFound: "(404) Page non trouvée.",
-  pageDoesntExist: "La page suivante n'existe pas",
 };

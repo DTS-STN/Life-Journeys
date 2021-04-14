@@ -9,6 +9,10 @@ export default {
   //header logo alt text
   headerCanadaCaAltText: "Symbol of the Government of Canada",
 
+  //nav
+  skipToMainContent: "Skip to main content",
+  aboutGovernment: "Skip to 'About government'",
+
   //
   // Footer
   //
@@ -40,7 +44,7 @@ export default {
     "https://www.canada.ca/en/government/system/how-government-works.html",
   howGovernmentWorksText: "How government works",
 
-  primeministerLink: "pm.gc.ca/en",
+  primeministerLink: "https://www.pm.gc.ca/en",
   primeministerText: "Prime Minister",
 
   aboutgovernmentLink: "https://www.canada.ca/en/government/system.html",
@@ -65,6 +69,9 @@ export default {
 
   privacyLink: "https://www.canada.ca/en/transparency/privacy.html",
   privacyText: "Privacy",
+
+  aboutThisSite: "About this Site",
+  topOfPage: "Top of Page",
 
   //footer logo alt text
 
