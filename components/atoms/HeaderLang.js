@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
@@ -19,9 +20,9 @@ export function HeaderLang() {
   const t = language === "en" ? en : fr;
 
   function onChangeLanguage(e) {
-    const language = e.target.value;
+    const language = e;
     changeLanguage(language);
-    router.replace(routerPathname, routerPathname, { locale: locale });
+    // router.replace(routerPathname, routerPathname, { locale: language });
   }
 
   //
@@ -30,7 +31,7 @@ export function HeaderLang() {
   return (
     <section id="wb-lng" className="text-right">
       <h2 className="wb-inv">{t.languageSelection}</h2>
-      <div className="row">
+      <div className="row bg-blue-500">
         <div className="col-md-12">
           <ul className="list-inline margin-bottom-none">
             <li>
@@ -39,9 +40,10 @@ export function HeaderLang() {
                   <a
                     href="/#english"
                     lang="en"
-                    onClick={onChangeLanguage(lang)}
+                    className="underline"
+                    onClick={() => onChangeLanguage(language)}
                   >
-                    {t.français}
+                    {t.english}
                   </a>
                 </Link>
               ) : (
@@ -49,9 +51,10 @@ export function HeaderLang() {
                   <a
                     href="/#français"
                     lang="fr"
-                    onClick={onChangeLanguage(lang)}
+                    className="underline"
+                    onClick={() => onChangeLanguage(language)}
                   >
-                    {t.english}
+                    {t.francais}
                   </a>
                 </Link>
               )}
