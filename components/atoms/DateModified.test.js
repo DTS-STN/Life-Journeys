@@ -6,7 +6,7 @@ import DateModified from "./DateModified";
 expect.extend(toHaveNoViolations);
 
 describe("dateModified", () => {
-  it("renders primary", () => {
+  it("renders dateModified", () => {
     const primary = render(<DateModified {...DateModified.args} />);
     expect(primary).toBeTruthy();
   });
