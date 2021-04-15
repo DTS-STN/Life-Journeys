@@ -1,7 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
+import PageDetails from "../components/organisms/PageDetails";
+import Layout from "../components/layout";
 
 export default function Home() {
-  return <Layout home></Layout>;
+  return (
+    <Layout home>
+      <PageDetails />
+    </Layout>
+  );
 }
