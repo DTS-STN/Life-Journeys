@@ -44,6 +44,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Building and Cypress Test Against Node 15 to identify issues with various node versions
+      uses: actions/setup-node@v1
+      with:
+        node-version: 15.x
+    - run: npm ci
     - name: Cypress E2E Tests
       uses: cypress-io/github-action@v2
       with:
