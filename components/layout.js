@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 // import { Meta } from "./atoms/Meta";           TODO  in next PR
 // import { Header } from "./organisms/Header";   TODO  in next PR
 import { Footer } from "./organisms/Footer";
+import { PageDetails } from "./organisms/PageDetails";
 
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
@@ -50,7 +51,7 @@ export default function Layout({ children }) {
       <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0">
         {children}
       </main>
-
+      <PageDetails />
       <Footer />
     </div>
   );
