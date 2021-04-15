@@ -1,52 +1,64 @@
-import React from "react";
-import gocEn from "../assets/sig-blk-en.svg";
-import gocFr from "../assets/sig-blk-fr.svg";
-import { Trans } from "@lingui/macro";
-import { connect } from "react-redux";
+import Link from "next/link";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
+import { SearchBar } from "../atoms/SearchBar";
 
-class HeaderLogo extends React.Component {
-  render() {
-    const { language } = this.props.language;
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
-    return (
-      <React.Fragment>
-        <div className="row">
-          <div
-            className="brand col-xs-5 col-md-4"
-            property="publisher"
-            typeof="GovernmentOrganization"
-          >
-            {language === "fr" ? (
-              <div>
-                <a href="https://www.canada.ca/fr.html" property="url">
-                  <img src={gocFr} alt="" property="logo" />
-                  <span className="wb-inv" property="name">
-                    <Trans>Governement du Canada</Trans>
-                  </span>
-                </a>
-              </div>
-            ) : (
-              <div>
-                <a href="https://www.canada.ca/en.html" property="url">
-                  <img src={gocEn} alt="" property="logo" />
-                  <span className="wb-inv" property="name">
-                    <Trans>Government of Canada</Trans>
-                  </span>
-                </a>
-              </div>
-            )}
-            <meta property="areaServed" typeof="Country" content="Canada" />
-            <link property="logo" href="../assets/wmms-blk.svg" />
+const gocEn = "/images/sig-blk-en.svg";
+const gocFr = "/images/sig-blk-fr.svg";
+const goc = "/images/wmms-blk.svg";
+
+//
+export function HeaderLogo() {
+  //
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+
+  return (
+    <div className="row">
+      <div
+        className="brand col-xs-5 col-md-4"
+        property="publisher"
+        typeof="GovernmentOrganization"
+      >
+        {language === "fr" ? (
+          <div>
+            <Link href={t.gocLink}>
+              <a href={t.gocLink} property="url">
+                <img src={gocFr} alt="" property="logo" />
+                <span className="wb-inv" property="name">
+                  {t.goc}
+                </span>
+              </a>
+            </Link>
           </div>
-          <div></div>
-        </div>
-      </React.Fragment>
-    );
-  }
+        ) : (
+          <div>
+            <Link href={t.gocLink}>
+              <a href={t.gocLink} property="url">
+                <img src={gocEn} alt="" property="logo" />
+                <span className="wb-inv" property="name">
+                  {t.goc}
+                </span>
+              </a>
+            </Link>
+          </div>
+        )}
+        <meta property="areaServed" typeof="Country" content="Canada" />
+        <link property="logo" href={goc} />
+      </div>
+
+      <section
+        id="wb-srch"
+        className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4 py-2.5 pl-0"
+      >
+        <h2>{t.search}</h2>
+
+        <SearchBar placeholder={t.searchPlaceholder} />
+      </section>
+    </div>
+  );
 }
-
-const mapStateToProps = (state) => ({
-  language: state.language,
-});
-
-export default connect(mapStateToProps)(HeaderLogo);
