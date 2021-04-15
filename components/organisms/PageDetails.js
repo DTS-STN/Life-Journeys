@@ -4,7 +4,7 @@ import DateModified from "../atoms/DateModified";
  */
 export function PageDetails(props) {
   return (
-    <div className="container">
+    <div className="container pb-8 pt-8">
       <DateModified />
     </div>
   );
