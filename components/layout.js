@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 // import { Header } from "./organisms/Header";   TODO  in next PR
 import { Footer } from "./organisms/Footer";
 import { PageDetails } from "./organisms/PageDetails";
-
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 
