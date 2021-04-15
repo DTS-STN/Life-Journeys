@@ -1,7 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
+import TopicBox from "../components/organisms/TopicBox";
+import Layout from "../components/layout";
 
 export default function Home() {
-  return <Layout home></Layout>;
+  return (
+    <Layout home>
+      <div className="flex flex-wrap gap-2 pb-1">
+        <TopicBox />
+        <TopicBox />
+        <TopicBox />
+        <TopicBox />
+        <TopicBox />
+      </div>
+    </Layout>
+  );
 }
