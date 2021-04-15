@@ -45,7 +45,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Cypress E2E Tests
-      uses: cypress-io/github-action@v2.9.7
+      uses: cypress-io/github-action@v3
       with:
         build: npm run build
         start: npm start
