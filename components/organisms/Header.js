@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-import HeaderLang from "../components/HeaderLang";
-import HeaderLogo from "../components/HeaderLogo";
-// import HeaderNav  from '../components/HeaderNav'
-// import Breadcrump from '../components/Breadcrump';
+import { HeaderLang } from "../atoms/HeaderLang";
+import { HeaderLogo } from "../atoms/HeaderLogo";
+// import {HeaderNav}  from '../atoms/HeaderNav'
+// import {Breadcrump} from '../atoms/Breadcrump';
 
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
