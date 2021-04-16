@@ -235,7 +235,17 @@
 header {
   position: relative;
 }
-
+.pull-right {
+  float: right !important; 
+}
+abbr[data-original-title], abbr[title] {
+  cursor: help;
+}
+.h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 0px;
+}
 
 .container {
   padding-right: 15px;
@@ -248,19 +258,15 @@ header {
   content: " ";
 }
 @media (min-width: 768px) {
-  .container {
-    width: 750px; } 
-  .colcount-sm-2 {
-    -webkit-column-count: 2;
-    column-count: 2; }
-  }
+  .container {width: 750px !important; } 
+  .colcount-sm-2 { -webkit-column-count: 2; column-count: 2; }
+}
 @media (min-width: 992px) {
-  .container {
-    width: 970px; } }
+  .container { width: 970px !important; } 
+}
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-
+  .container { width: 1170px !important; } 
+}
 ::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -272,6 +278,9 @@ header {
   overflow: hidden;
   position: absolute;
   width: 1px;
+}
+#wb-srch, .srchbox {
+  padding-top: 1em;
 }
 h2, .h2 {
   font-size: 1.8em;
@@ -311,7 +320,7 @@ ul, ol {
   margin-right: -15px;
   margin-left: -15px;
 }
-.row::befXore, .row::after {
+.row::before, .row::after {
   display: table;
   content: " ";
 }
@@ -412,13 +421,23 @@ header .brand img {
 }
 @media screen and (max-width: 479px) {
   header .brand, #wb-glb-mn {
-    float: none !important;
-    width: auto !important; 
-    min-width: 80%;
+    /* float: none !important; */
+    /* width: auto !important;  */
+    /* min-width: 80%; */
   }
   header .brand object, header .brand img {
     max-height: 25px; 
   }
+}
+
+@media screen and (max-width: 320px) {
+  .iphone5fix { max-width: 290px; }
+}
+@media screen and (max-width: 375px) {
+  .iphone8fix { width: 308px !important; }
+}
+@media screen and (max-width: 414px) {
+  .iphone8fix { width: 338px !important; }
 }
 
 /**************************/
@@ -598,6 +617,8 @@ ul, ol {
 @media (max-width: 767px) {
   .visible-xs {
     display: block !important; }
+  .hidden-xs {
+    display: none !important; } 
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {

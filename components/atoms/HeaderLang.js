@@ -30,7 +30,7 @@ export function HeaderLang() {
   //
 
   return (
-    <section id="wb-lng" className="text-right">
+    <section id="wb-lng" className="col-xs-3 col-sm-12 pull-right text-right">
       <h2 className="wb-inv">{t.languageSelection}</h2>
       <div className="row">
         <div className="col-md-12">
@@ -44,7 +44,13 @@ export function HeaderLang() {
                     className="underline"
                     onClick={() => onChangeLanguage(language)}
                   >
-                    {t.english}
+                    <span className="hidden-xs">{t.english}</span>
+                    <abbr
+                      title="English"
+                      className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0"
+                    >
+                      EN
+                    </abbr>
                   </a>
                 </Link>
               ) : (
@@ -55,7 +61,13 @@ export function HeaderLang() {
                     className="underline"
                     onClick={() => onChangeLanguage(language)}
                   >
-                    {t.francais}
+                    <span className="hidden-xs">{t.francais}</span>
+                    <abbr
+                      title="English"
+                      className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0"
+                    >
+                      FR
+                    </abbr>
                   </a>
                 </Link>
               )}
