@@ -21,8 +21,13 @@
     "cypress:run": "cypress run"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.0.4",
+    "font-awesome": "^4.7.0",
     "next": "latest",
     "postcss": "^8.1.10",
     "prettier": "^2.2.1",

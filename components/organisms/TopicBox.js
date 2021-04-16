@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import PropTypes from "prop-types";
+import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 /**
  *  Topic Box Component
  */
@@ -30,7 +32,11 @@ export default function TopicBox(props) {
       <br />
       <br />
       <Link href={props.url}>
-        <a className="font-bold"> Explore this journey </a>
+        <a className="font-bold">
+          {" "}
+          Explore this journey{" "}
+          <FontAwesomeIcon icon={faArrowAltCircleRight} color="#2B4380" />
+        </a>
       </Link>
     </div>
   );
