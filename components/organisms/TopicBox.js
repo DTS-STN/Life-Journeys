@@ -23,13 +23,15 @@ export default function TopicBox(props) {
       <br />
       <p>{props.title}</p>
       <br />
-      <p className="font-semibold">Find information about</p>
+      <p className="font-bold">Find information about</p>
       <p>thing 1</p>
       <p>thing 2</p>
       <p>thing 3</p>
       <br />
       <br />
-      <Link href={props.url}>Explore this journey </Link>
+      <Link href={props.url}>
+        <a className="font-bold"> Explore this journey </a>
+      </Link>
     </div>
   );
 }

@@ -3,8 +3,15 @@
  */
 export default function DateModified(props) {
   return (
-    <div property="dateModified">
-      Date modified: {process.env.NEXT_PUBLIC_BUILD_DATE}
+    <div>
+      <dl id="wb-dtmd" className="inline-flex">
+        <dt>Date modified:&nbsp;</dt>
+        <dd>
+          <time property="dateModified">
+            {process.env.NEXT_PUBLIC_BUILD_DATE}
+          </time>
+        </dd>
+      </dl>
     </div>
   );
 }
