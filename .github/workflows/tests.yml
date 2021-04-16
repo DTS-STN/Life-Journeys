@@ -44,15 +44,15 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Building and Cypress Test Against Node 15 to identify issues with various node versions
+    - name: Building and Cypress Test Against Node 15
       uses: actions/setup-node@v1
-      with:
-        node-version: 15.x
-    - run: CYPRESS_CACHE_FOLDER=/home/runner/.cache/Cypress npm ci
+#       with:
+#         node-version: 15.x
+#     - run: CYPRESS_CACHE_FOLDER=/home/runner/.cache/Cypress npm ci
     - name: Cypress E2E Tests
       uses: cypress-io/github-action@v2
       with:
-        build: npm run build
+        build: npm install node && npm run build
         start: npm start
         wait-on: http://localhost:3000
 #         record: # optional
