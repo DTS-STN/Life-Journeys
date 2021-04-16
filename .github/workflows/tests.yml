@@ -48,7 +48,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 15.x
-    - run: CYPRESS_CACHE_FOLDER=./tmp/Cypress npm ci
+    - run: CYPRESS_CACHE_FOLDER=/home/runner/.cache/Cypress npm ci
     - name: Cypress E2E Tests
       uses: cypress-io/github-action@v2
       with:
