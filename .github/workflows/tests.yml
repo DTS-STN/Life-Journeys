@@ -52,7 +52,8 @@ jobs:
     - name: Cypress E2E Tests
       uses: cypress-io/github-action@v2
       with:
-        build: npm install node 15 && npm run build
+        build: npm run build
+        run: npm install node 15
         start: npm start
         wait-on: http://localhost:3000
 #         record: # optional
