@@ -8,7 +8,7 @@ export default function TopicBox(props) {
     <div className="shadow-lg h-96 w-96 rounded-md border-2 pl-2">
       <div className="grid grid-cols-3 grid-flow-row">
         <div className="col-span-2">
-          <p className="pt-2 pb-2 font-extrabold">Topic Title</p>
+          <h3 className="pt-2 pb-2 font-extrabold">Topic Title</h3>
         </div>
         <div className="col-span-1 pt-2">
           <Image
