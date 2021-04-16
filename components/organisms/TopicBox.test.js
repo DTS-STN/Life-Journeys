@@ -5,6 +5,7 @@ import TopicBox from "./TopicBox";
 
 expect.extend(toHaveNoViolations);
 
+const key = "topic1";
 const title = "Test";
 const body = "test";
 const imgalt = "test";
@@ -17,6 +18,7 @@ describe("topicBox", () => {
     const primary = act(() => {
       render(
         <TopicBox
+          key={key}
           title={title}
           body={body}
           imgalt={imgalt}
@@ -32,6 +34,7 @@ describe("topicBox", () => {
   it("has no a11y violations", async () => {
     const { container } = render(
       <TopicBox
+        key={key}
         title={title}
         body={body}
         imgalt={imgalt}
