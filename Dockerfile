@@ -21,6 +21,7 @@ FROM node:current-alpine AS production
 ENV NODE_ENV=production
 WORKDIR /app
 COPY --from=build /build/package*.json ./
+COPY --from=build /build/next.config.js ./
 COPY --from=build /build/public ./public
 COPY --from=build /build/.next ./.next
 RUN npm install next
