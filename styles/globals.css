@@ -420,11 +420,6 @@ header .brand img {
   }
 }
 @media screen and (max-width: 479px) {
-  header .brand, #wb-glb-mn {
-    /* float: none !important; */
-    /* width: auto !important;  */
-    /* min-width: 80%; */
-  }
   header .brand object, header .brand img {
     max-height: 25px; 
   }
@@ -435,9 +430,6 @@ header .brand img {
 .searchButton { width: 46px !important; }
 .searchInput { max-width: inherit; width: 310px; }
 
-@media screen and (max-width: 360px) {
-  .seaxxrchInput { width: 100%; }
-}
 @media screen and (max-width: 375px) {
   .searchInput { width: 304px !important;}
 }
