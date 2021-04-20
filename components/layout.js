@@ -1,8 +1,7 @@
-import { useRouter } from "next/router";
-// import { Meta } from "./atoms/Meta";           TODO  in next PR
-// import { Header } from "./organisms/Header";   TODO  in next PR
+import { Meta } from "./atoms/Meta";
+import { Header } from "./organisms/Header";
 import { Footer } from "./organisms/Footer";
-
+import { PageDetails } from "./organisms/PageDetails";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 
@@ -11,48 +10,24 @@ import fr from "../locales/fr";
 import ReportProblem from "./organisms/ReportProblem";
 
 export default function Layout({ children }) {
-  //   TODO
-  //
-  //   const router = useRouter();
-  //   const routerPathname = router.asPath;
-
   const { items } = useContext(LanguageContext);
   const language = items.language;
 
-  //   TODO  in next PR
-  //
-  //  const changeLanguage = items.changeLanguage;
-
   const t = language === "en" ? en : fr;
-
-  //   TODO  in next PR
-  //
-  //   function onChangeLanguage(e) {
-  //     const language = e.target.value;
-  //     changeLanguage(language);
-  //     router.replace(routerPathname, routerPathname, { locale: language });
-  //   }
 
   return (
     <div className="w-screen h-screen flex flex-col">
-      {/* 
-        //   TODO  in next PR 
-        //
-
       <Meta title={t.siteTitle} />
 
-      <Header
-        onLanguageClick={onChangeLanguage}
-        headerCanadaCaAltText={t.headerCanadaCaAltText}
-        language={language === "fr" ? "English" : "Français"}
-        siteTitle={t.siteTitle}
-      /> */}
+      <Header />
 
-      <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0 bg-pink-800">
+      <main className="w-full md:w-2/3 m-0 md:mr-auto md:ml-auto p-4 md:p-0">
         {children}
       </main>
 
-      <ReportProblem />
+    
+      <ReportProblem /> //Temporary placement for testing, this will go in PageDetails eventually
+      <PageDetails />
       <Footer />
     </div>
   );

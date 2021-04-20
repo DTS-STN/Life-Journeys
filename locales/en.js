@@ -2,16 +2,27 @@ export default {
   //site title
   siteTitle: "Life Journeys",
 
+  // Nav
+  skipToMainContent: "Skip to main content",
+  aboutGovernment: "Skip to 'About government'",
+
   //
   // Header
   //
 
-  //header logo alt text
+  // Government of Canada symbols
+  goc: "Government of Canada",
+  gocLink: "https://www.canada.ca/en.html",
   headerCanadaCaAltText: "Symbol of the Government of Canada",
 
-  //nav
-  skipToMainContent: "Skip to main content",
-  aboutGovernment: "Skip to 'About government'",
+  // Language section
+  languageSelection: "Language selection",
+  english: "English",
+  francais: "Français",
+
+  // Search bar
+  search: "Search",
+  searchPlaceholder: "Search Canada.ca",
 
   //
   // Footer

@@ -2,16 +2,27 @@ export default {
   //site title
   siteTitle: "Voyages de vie",
 
+  // Nav
+  skipToMainContent: "Passer au contenu principal",
+  aboutGovernment: "Passer à « Au sujet du gouvernement »",
+
   //
   // Header
   //
 
-  //header logo alt text
+  // Government of Canada symbols
+  goc: "Governement du Canada",
+  gocLink: "https://www.canada.ca/en.html",
   headerCanadaCaAltText: "Symbole du gouvernement du Canada",
 
-  //nav
-  skipToMainContent: "Passer au contenu principal",
-  aboutGovernment: "Passer à « Au sujet du gouvernement »",
+  // Language section
+  languageSelection: "Sélection de la langue",
+  english: "English",
+  francais: "français",
+
+  // Search bar
+  search: "Recherche",
+  searchPlaceholder: "Rechercher dans Canada.ca",
 
   //
   // Footer

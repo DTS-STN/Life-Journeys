@@ -1,87 +1,68 @@
-import React from "react";
-import { Trans } from "@lingui/macro";
-import { connect } from "react-redux";
-import { setNewLanguage } from "../actions/languageActions";
-import PropTypes from "prop-types";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-class HeaderLang extends React.Component {
-  static propTypes = {
-    setNewLanguage: PropTypes.func.isRequired,
-  };
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
 
-  constructor(props) {
-    super(props);
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
-    this.state = {
-      language: "",
-    };
+export function HeaderLang() {
+  //
+  const router = useRouter();
+  const routerPathname = router.asPath;
 
-    this.handleClick = this.handleClick.bind(this);
-    this.getNewLanguage = this.getNewLanguage.bind(this);
+  //
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const changeLanguage = items.changeLanguage;
+
+  const t = language === "en" ? en : fr;
+
+  function onChangeLanguage(language) {
+    changeLanguage(language);
+    router.replace(routerPathname, routerPathname, {
+      locale: language === "en" ? "fr" : "en",
+    });
   }
 
-  getNewLanguage() {
-    return this.state.language === "fr" ? "en" : "fr";
-  }
+  //
+  //
 
-  componentDidMount() {
-    this.setState({ language: this.props.language });
-    console.log("HeaderLang initial language : ");
-    console.log(this.props.language);
-    console.log(this.state.language);
-  }
-
-  handleClick() {
-    const lang = this.getNewLanguage();
-    this.setState({ language: lang }, () =>
-      this.props.setNewLanguage(this.state.language)
-    );
-  }
-
-  render() {
-    const { lang } = this.props.language;
-    console.log("HeaderLang render language : ");
-    console.log(this.props.language);
-    console.log(this.state.language);
-    return (
-      <React.Fragment>
-        <section id="wb-lng" className="text-right">
-          <h2 className="wb-inv">
-            <Trans>Language selection</Trans>
-          </h2>
-          <div className="row">
-            <div className="col-md-12">
-              <ul className="list-inline margin-bottom-none">
-                <li>
-                  {this.getNewLanguage() === "fr" ? (
-                    <a
-                      href="/#english"
-                      lang="en"
-                      onClick={() => this.handleClick(lang)}
-                    >
-                      Français
-                    </a>
-                  ) : (
-                    <a
-                      href="/#français"
-                      lang="fr"
-                      onClick={() => this.handleClick(lang)}
-                    >
-                      English
-                    </a>
-                  )}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </React.Fragment>
-    );
-  }
+  return (
+    <section id="wb-lng" className="text-right">
+      <h2 className="wb-inv">{t.languageSelection}</h2>
+      <div className="row">
+        <div className="col-md-12">
+          <ul className="list-inline margin-bottom-none">
+            <li>
+              {language === "fr" ? (
+                <Link href="/">
+                  <a
+                    href="/"
+                    lang="en"
+                    className="underline"
+                    onClick={() => onChangeLanguage(language)}
+                  >
+                    {t.english}
+                  </a>
+                </Link>
+              ) : (
+                <Link href="/">
+                  <a
+                    href="/"
+                    lang="fr"
+                    className="underline"
+                    onClick={() => onChangeLanguage(language)}
+                  >
+                    {t.francais}
+                  </a>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-const mapStateToProps = (state) => ({
-  language: state.language,
-});
-
-export default connect(mapStateToProps, { setNewLanguage })(HeaderLang);
