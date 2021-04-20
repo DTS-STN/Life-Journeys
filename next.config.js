@@ -1,5 +1,10 @@
 //formatting TC Date
-var builddate = (process.env.NEXT_PUBLIC_BUILD_DATE ??= "DATEISNA");
+var builddate = "DATEISNA";
+var buildid = "BUILD-IS-NA";
+if (process.env.NEXT_PUBLIC_BUILD_DATE != null)
+  builddate = process.env.NEXT_PUBLIC_BUILD_DATE;
+if (process.env.NEXT_PUBLIC_TC_BUILD != null)
+  buildid = process.env.NEXT_PUBLIC_TC_BUILD;
 
 module.exports = {
   env: {
@@ -9,7 +14,7 @@ module.exports = {
       builddate.substr(4, 2) +
       "-" +
       builddate.substr(6, 2),
-    NEXT_PUBLIC_TC_BUILD: (process.env.NEXT_PUBLIC_TC_BUILD ??= "BUILD-IS-NA"),
+    NEXT_PUBLIC_TC_BUILD: buildid,
   },
   i18n: {
     locales: ["en", "fr"],
