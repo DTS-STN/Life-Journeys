@@ -7,7 +7,6 @@ import { LanguageContext } from "../context/languageProvider";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
-import ReportProblem from "./organisms/ReportProblem";
 
 export default function Layout({ children }) {
   const { items } = useContext(LanguageContext);
@@ -25,8 +24,6 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-    
-      <ReportProblem /> //Temporary placement for testing, this will go in PageDetails eventually
       <PageDetails />
       <Footer />
     </div>

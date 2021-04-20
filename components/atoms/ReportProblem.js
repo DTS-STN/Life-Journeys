@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { CheckBox } from "../atoms/CheckBox";
-import { ActionButton } from "../atoms/ActionButton";
-import { DropDown } from "../atoms/DropDown";
+import { CheckBox } from "./CheckBox";
+import { ActionButton } from "./ActionButton";
+import { DropDown } from "./DropDown";
 
 export default function ReportProblem(props) {
   return (
-    <div className="px-6 pb-6 pt-6">
+    <div className="pb-6 pt-6">
       <DropDown text="Report a problem or mistake on this page">
         <div>
           <div className="pt-2">
