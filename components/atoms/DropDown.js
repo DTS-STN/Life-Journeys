@@ -4,11 +4,15 @@ import PropTypes from "prop-types";
  * Dropdown component
  */
 
-export function DropDown(props) {
+export default function DropDown(props) {
   return (
-    <button className="focus:outline-none" id={props.id}>
+    <button className={"focus:outline-none"} id={props.id}>
       <details>
-        <summary className="pt-3 pb-3 pr-8 pl-8 border border-gray-md rounded bg-gray-light-report text-custom-blue-dark list-item focus:outline-none">
+        <summary
+          className={
+            "hover:bg-gray-md text-sm pt-2.5 pb-2.5 pr-5 pl-5 border border-gray-md rounded bg-gray-light-report text-custom-blue-reportButton list-item focus:outline-none"
+          }
+        >
           {props.text}
         </summary>
         {props.children}

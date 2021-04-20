@@ -34,6 +34,7 @@ module.exports = {
           dark: "#26374a",
           link: "#0535d2",
           canadaLight: "#1c578a",
+          reportButton: "#335075",
         },
         "gray-light-200": "#f5f5f5",
         "gray-light-100": "#e0e0e0",

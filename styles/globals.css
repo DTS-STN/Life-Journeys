@@ -8,7 +8,7 @@
   h1, h2, h3, h4, h5 {
     @apply font-display font-semibold;
   }
-  h6 {
+  h6, summary {
     @apply font-display;
   }
   p {
