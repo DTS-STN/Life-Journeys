@@ -22,14 +22,12 @@ export default function TopicBox(props) {
           ></Image>
         </div>
       </div>
-      <br />
       <p>{props.title}</p>
       <br />
       <p className="font-bold">Find information about</p>
       <p>thing 1</p>
       <p>thing 2</p>
       <p>thing 3</p>
-      <br />
       <br />
       <Link href={props.url}>
         <a className="font-bold">
