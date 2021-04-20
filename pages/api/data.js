@@ -1,0 +1,42 @@
+export const topics = [
+  {
+    title: "Title 1",
+    body: "body 1",
+    image: "/images/family.png",
+    imgalt: "alt1",
+    url: "/",
+    dataCy: "topic1",
+  },
+  {
+    title: "Title 2",
+    body: "body 2",
+    image: "/images/family.png",
+    imgalt: "alt2",
+    url: "/",
+    dataCy: "topic2",
+  },
+  {
+    title: "Title 3",
+    body: "body 3",
+    image: "/images/family.png",
+    imgalt: "alt3",
+    url: "/",
+    dataCy: "topic3",
+  },
+  {
+    title: "Title 4",
+    body: "body 4",
+    image: "/images/family.png",
+    imgalt: "alt4",
+    url: "/",
+    dataCy: "topic4",
+  },
+  {
+    title: "Title 5",
+    body: "body 5",
+    image: "/images/family.png",
+    imgalt: "alt5",
+    url: "/",
+    dataCy: "topic5",
+  },
+];
