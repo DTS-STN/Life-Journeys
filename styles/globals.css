@@ -149,7 +149,7 @@
   .col-sm-12 {
     width: 100%; }
   .col-sm-offset-2 {
-    margin-left: 10.6666666667%; }
+    margin-left: 16.6666666667%; }
 }
 
 @media (min-width: 992px) {
@@ -430,15 +430,24 @@ header .brand img {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .iphone5fix { max-width: 290px; }
+
+.searchBox { width: 100%; }
+.searchButton { width: 46px !important; }
+.searchInput { max-width: inherit; width: 310px; }
+
+@media screen and (max-width: 360px) {
+  .seaxxrchInput { width: 100%; }
 }
 @media screen and (max-width: 375px) {
-  .iphone8fix { width: 308px !important; }
+  .searchInput { width: 304px !important;}
 }
 @media screen and (max-width: 414px) {
-  .iphone8fix { width: 338px !important; }
+  .searchInput { width: 340px !important; }
 }
+@media screen and (min-width: 766px) and (max-width: 801px) {
+  .searchInput { width: 340px !important; }
+}
+
 
 /**************************/
 /*   Footer  &  Footer Media rules   */
