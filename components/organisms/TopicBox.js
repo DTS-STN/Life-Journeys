@@ -24,10 +24,16 @@ export default function TopicBox(props) {
       </div>
       <p>{props.title}</p>
       <br />
+      <p>{props.body}</p>
+      <br />
       <p className="font-bold">Find information about</p>
-      <p>thing 1</p>
-      <p>thing 2</p>
-      <p>thing 3</p>
+      <div className="flex flex-wrap gap-2 pb-1">
+        {props.subtopics.map((d) => (
+          <div className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
+            <p>{d}</p>
+          </div>
+        ))}
+      </div>
       <br />
       <Link href={props.url}>
         <a className="font-bold">
@@ -65,4 +71,8 @@ TopicBox.propTypes = {
    * Test id for cypress test
    */
   dataCy: PropTypes.string,
+  /**
+   * array of subtopics to be listed
+   */
+  subtopics: PropTypes.array.string,
 };
