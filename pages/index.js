@@ -19,7 +19,7 @@ export default function Home() {
         {data.map(function (d, idx) {
           return (
             <TopicBox
-              key={"topic" + idx}
+              key={idx}
               title={d.title}
               body={d.body}
               image={d.image}
