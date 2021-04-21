@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /**
  *  component
