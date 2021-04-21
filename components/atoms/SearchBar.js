@@ -28,7 +28,8 @@ export function SearchBar(props) {
               "bg-custom-blue-dark text-white searchButton text-center text-base rounded-none pt-0.5 h-full  hover:bg-gray-dark active:bg-gray-dark focus:bg-gray-dark"
             }
           >
-            <span className={"icon-magnifying"} />
+            <FontAwesomeIcon icon={faSearch} color="white" />
+            {/* <span className={"icon-magnifying"} />    where is this class ??? */}
           </button>
         </div>
       </form>
