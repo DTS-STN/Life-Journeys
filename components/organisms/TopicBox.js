@@ -22,11 +22,11 @@ export default function TopicBox(props) {
           ></Image>
         </div>
       </div>
-      <p>{props.title}</p>
+      <h4>{props.title}</h4>
       <br />
       <p>{props.body}</p>
       <br />
-      <p className="font-bold">Find information about</p>
+      <h4 className="font-bold">Find information about</h4>
       <div className="flex flex-wrap gap-2 pb-1">
         {props.subtopics.map((d) => (
           <div className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
