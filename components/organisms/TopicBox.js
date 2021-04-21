@@ -26,14 +26,12 @@ export default function TopicBox(props) {
       <br />
       <p>{props.body}</p>
       <br />
-      <h4 className="font-bold">Find information about</h4>
-      <div className="flex flex-wrap gap-2 pb-1">
+      <h4 className="font-bold pb-4">Find information about</h4>
+      <ul className="flex flex-wrap gap-2 pb-1">
         {props.subtopics.map((d) => (
-          <div className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
-            <p>{d}</p>
-          </div>
+          <li className="h-auto w-auto rounded-md border-2 pl-2 pr-2">{d}</li>
         ))}
-      </div>
+      </ul>
       <br />
       <Link href={props.url}>
         <a className="font-bold">
@@ -74,5 +72,5 @@ TopicBox.propTypes = {
   /**
    * array of subtopics to be listed
    */
-  subtopics: PropTypes.array.string,
+  subtopics: PropTypes.array,
 };
