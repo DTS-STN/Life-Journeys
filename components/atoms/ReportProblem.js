@@ -1,9 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import DropDown from "./DropDown";
 import Button from "./Button";
 
-export default function ReportProblem(props) {
+export default function ReportProblem() {
   return (
     <div className="pb-6 pt-6">
       <DropDown text="Report a problem or mistake on this page">
@@ -13,10 +12,7 @@ export default function ReportProblem(props) {
               <fieldset className="text-left pl-2">
                 <legend className="text-center pb-3">
                   <span>
-                    <h3>
-                      <hr className="border-1 pb-3 border-gray-300" />
-                      Please select all that apply:
-                    </h3>
+                    <h3>Please select all that apply:</h3>
                   </span>
                 </legend>
                 <div className="checkbox-input cursor-pointer appearance-none w-44px h-44px absolute -top-2px -left-2px m-0 z-1">
@@ -33,7 +29,9 @@ export default function ReportProblem(props) {
                 </div>
               </fieldset>
               <div className="text-left pt-8 text-sm font-display">
-                <Button text="Submit" />
+                <button className="bg-custom-blue-dark pb-1.5 pt-1.5 px-3 ml-2 rounded text-white hover:bg-custom-blue-canadaLight border border-custom-blue-dark">
+                  Submit
+                </button>
               </div>
             </div>
           </form>

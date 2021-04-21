@@ -6,18 +6,16 @@ import PropTypes from "prop-types";
 
 export default function DropDown(props) {
   return (
-    <button className={"focus:outline-none"} id={props.id}>
-      <details>
-        <summary
-          className={
-            "hover:bg-gray-md text-sm pt-2.5 pb-2.5 pr-5 pl-5 border border-gray-md rounded bg-gray-light-report text-custom-blue-reportButton list-item focus:outline-none"
-          }
-        >
-          {props.text}
-        </summary>
-        {props.children}
-      </details>
-    </button>
+    <details className="inline-flex pb-4">
+      <summary
+        className={
+          "hover:bg-gray-md text-sm pt-2.5 pb-2.5 pr-5 pl-5 border border-gray-md rounded bg-gray-light-report text-custom-blue-reportButton list-item focus:outline-none cursor-pointer"
+        }
+      >
+        {props.text}
+      </summary>
+      {props.children}
+    </details>
   );
 }
 
