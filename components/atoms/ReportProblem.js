@@ -1,6 +1,5 @@
 import React from "react";
 import DropDown from "./DropDown";
-import Button from "./Button";
 
 export default function ReportProblem() {
   return (
