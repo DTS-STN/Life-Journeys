@@ -21,6 +21,7 @@ export default function Home() {
               imgalt={d.imgalt}
               url={d.url}
               dataCy={d.dataCy}
+              subtopics={d.subtopics}
             />
           );
         })}

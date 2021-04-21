@@ -12,6 +12,7 @@ const imgalt = "test";
 const image = "/images/family.png";
 const url = "/";
 const dataCy = "topic1";
+const subtopics = ["test1", "test2", "test3"];
 
 describe("topicBox", () => {
   it("renders topicbox", () => {
@@ -25,6 +26,7 @@ describe("topicBox", () => {
           image={image}
           url={url}
           dataCy={dataCy}
+          subtopics={subtopics}
         />
       );
     });
@@ -41,6 +43,7 @@ describe("topicBox", () => {
         image={image}
         url={url}
         dataCy={dataCy}
+        subtopics={subtopics}
       />
     );
     const results = await axe(container);
