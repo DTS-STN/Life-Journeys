@@ -1,7 +1,7 @@
 import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
-import TitleSection from "../components/organisms/TitleSection";
+import TitleSection from "../components/molecules/TitleSection";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 

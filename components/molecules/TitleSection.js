@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { HorizontalRule } from "../atoms/HorizontalRule";
 /**
  *  page title section
  */
@@ -6,7 +7,7 @@ export default function TitleSection(props) {
   return (
     <div>
       <h2 className="pb-2 font-bold">{props.title}</h2>
-      <hr className="border-red-800 border-2"></hr>
+      <HorizontalRule />
       <p className="pt-4 pb-6">{props.description}</p>
     </div>
   );
