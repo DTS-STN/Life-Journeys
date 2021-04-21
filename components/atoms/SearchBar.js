@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /**
  *  component
@@ -24,7 +26,7 @@ export function SearchBar(props) {
             "bg-custom-blue-dark text-white text-center text-base rounded-none pt-0.5 h-full w-10 hover:bg-gray-dark active:bg-gray-dark focus:bg-gray-dark"
           }
         >
-          <span className={"icon-magnifying"} />
+          <FontAwesomeIcon icon={faSearch} color="white" />
         </button>
       </form>
     </div>
