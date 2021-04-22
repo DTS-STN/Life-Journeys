@@ -18,9 +18,9 @@ export function HeaderLogo() {
   const t = language === "en" ? en : fr;
 
   return (
-    <div className="row">
+    <>
       <div
-        className="brand col-xs-5 col-md-4"
+        className="brand col-xs-9 col-sm-5 col-md-4"
         property="publisher"
         typeof="GovernmentOrganization"
       >
@@ -53,12 +53,12 @@ export function HeaderLogo() {
 
       <section
         id="wb-srch"
-        className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4 py-2.5 pl-0"
+        className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4 "
       >
         <h2>{t.search}</h2>
 
         <SearchBar placeholder={t.searchPlaceholder} />
       </section>
-    </div>
+    </>
   );
 }

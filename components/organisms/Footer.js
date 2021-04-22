@@ -1,5 +1,5 @@
 import { Landscape } from "../atoms/Landscape";
-import { WoodMark } from "../atoms/Woodmark";
+import { WordMark } from "../atoms/Wordmark";
 
 /**
  * footer element for all pages
@@ -11,7 +11,7 @@ export function Footer(props) {
       <div className="global-footer">
         <footer id="wb-info">
           <Landscape />
-          <WoodMark />
+          <WordMark />
         </footer>
       </div>
     </div>

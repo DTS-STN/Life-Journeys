@@ -40,8 +40,10 @@ export function Header() {
 
         <header>
           <div id="wb-bnr" className="container">
-            <HeaderLang />
-            <HeaderLogo />
+            <div className="row">
+              <HeaderLang />
+              <HeaderLogo />
+            </div>
           </div>
 
           {/* <HeaderNav /> */}
