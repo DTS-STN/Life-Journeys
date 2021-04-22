@@ -18,7 +18,7 @@ export default {
   // Language section
   languageSelection: "Sélection de la langue",
   english: "English",
-  francais: "français",
+  francais: "Français",
 
   // Search bar
   search: "Recherche",

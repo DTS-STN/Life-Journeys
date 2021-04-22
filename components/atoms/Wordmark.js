@@ -6,9 +6,9 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-const gocWoodmark = "/images/wmms-blk.svg";
+const gocWordmark = "/images/wmms-blk.svg";
 
-export function WoodMark() {
+export function WordMark() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
@@ -59,7 +59,11 @@ export function WoodMark() {
           </div>
 
           <div className="col-xs-6 col-md-2 text-right">
-            <img src={gocWoodmark} alt={t.footerCanadaCaAltText} />
+            <img
+              className="float-right"
+              src={gocWordmark}
+              alt={t.footerCanadaCaAltText}
+            />
           </div>
         </div>
       </div>
