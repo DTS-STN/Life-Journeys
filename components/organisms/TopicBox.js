@@ -7,8 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  *  Topic Box Component
  */
 export default function TopicBox(props) {
-  return (
-    <div className="md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-3 pr-3">
+    <div className="md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-2">
       <div className="grid grid-cols-3 grid-flow-row">
         <div className="col-span-2 mt-8">
           <h2 className="text-h3">{props.title}</h2>
@@ -32,7 +31,7 @@ export default function TopicBox(props) {
           </li>
         ))}
       </ul>
-      <div className="pb-5 pt-1">
+      <div className="pb-2">
         <Link href={props.url}>
           <a className="font-bold">
             {" "}

@@ -8,7 +8,8 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
   const { data, error } = userSwr("/api/topics", fetcher);
-  if (error) return <div>Failed to load topics...</div>;
+  if (error)
+    return <div>Failed to load topics information from the API...</div>;
   if (!data) return <div>Loading...</div>;
   return (
     <Layout home>
@@ -16,6 +17,11 @@ export default function Home() {
         title="Life Journeys"
         description="Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor."
       />
+      <div>
+        <Link href="/pondtest">
+          <a>Pond Test</a>
+        </Link>
+      </div>
       <div className="flex flex-wrap">
         <div className="sm:grid grid-cols-3 gap-10">
           {data.map(function (d, idx) {
