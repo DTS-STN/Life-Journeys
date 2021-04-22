@@ -1,6 +1,7 @@
 import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
+import TitleSection from "../components/molecules/TitleSection";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -10,11 +11,15 @@ export default function Home() {
   if (!data) return <div>Loading...</div>;
   return (
     <Layout home>
+      <TitleSection
+        title="Life Journeys"
+        description="Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor."
+      />
       <div className="flex flex-wrap gap-2 pb-1">
         {data.map(function (d, idx) {
           return (
             <TopicBox
-              key={"topic" + idx}
+              key={idx}
               title={d.title}
               body={d.body}
               image={d.image}
