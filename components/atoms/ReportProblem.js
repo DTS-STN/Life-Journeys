@@ -37,7 +37,7 @@ export default function ReportProblem() {
                     </span>
                   </legend>
                   <div className="pl-5">
-                    <div className="cursor-pointer absolute">
+                    <div className="absolute">
                       <label for="problem1" className="cursor-pointer">
                         <input
                           name="problem1"
