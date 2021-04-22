@@ -18,13 +18,6 @@ module.exports = {
       "h1-xl": ["40px", "46px"],
     },
     screens: {
-      // xxs: "280px",
-      // xs: "325px",
-      // sm: "450px",
-      // md: "550px",
-      // lg: "768px",
-      // xl: "992px",
-      // xxl: "1200px",
       xxs: "768px",
       xs: "768px",
       sm: "768px",
