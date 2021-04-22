@@ -16,9 +16,6 @@ export default function Home() {
         title="Life Journeys"
         description="Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor."
       />
-      <Link href="/PondTest">
-        <a>Pond Test</a>
-      </Link>
       <div className="flex flex-wrap">
         <div className="sm:grid grid-cols-3 gap-10">
           {data.map(function (d, idx) {
