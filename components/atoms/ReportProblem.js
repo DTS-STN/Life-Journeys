@@ -37,8 +37,8 @@ export default function ReportProblem() {
                     </span>
                   </legend>
                   <div className="pl-5">
-                    <div className="checkbox-input w-15 cursor-pointer appearance-none w-44px h-44px absolute -top-2px -left-2px m-0 z-1">
-                      <label for="problem1">
+                    <div className="cursor-pointer absolute">
+                      <label for="problem1" className="cursor-pointer">
                         <input
                           name="problem1"
                           id="problem1"
