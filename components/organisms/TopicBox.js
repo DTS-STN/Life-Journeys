@@ -11,9 +11,9 @@ export default function TopicBox(props) {
     <div className="md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-3 pr-3">
       <div className="grid grid-cols-3 grid-flow-row">
         <div className="col-span-2 mt-8">
-          <h3>{props.title}</h3>
+          <h2>{props.title}</h2>
         </div>
-        <div className="col-span-1 xxl:ml-8">
+        <div className="pt-1 col-span-1 xxl:ml-8">
           <Image
             src={props.image}
             alt={props.imgalt}
@@ -24,7 +24,7 @@ export default function TopicBox(props) {
         </div>
       </div>
       <p className="pb-4">{props.body}</p>
-      <h4 className="font-bold pb-4 pt-2">Find information about</h4>{" "}
+      <h3 className="font-bold pb-4 pt-2">Find information about</h3>{" "}
       <ul className="flex flex-wrap gap-2 pb-2">
         {props.subtopics.map((d, idx) => (
           <li key="idx" className="h-auto w-auto rounded-md border-2 pl-2 pr-2">

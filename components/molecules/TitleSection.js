@@ -6,7 +6,7 @@ import { HorizontalRule } from "../atoms/HorizontalRule";
 export default function TitleSection(props) {
   return (
     <div>
-      <h2 className="pb-2 pt-6">{props.title}</h2>
+      <h1 className="pb-2 pt-6">{props.title}</h1>
       <HorizontalRule />
       <p className="pt-4 pb-6">{props.description}</p>
     </div>
