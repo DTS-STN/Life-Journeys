@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  */
 export default function TopicBox(props) {
   return (
-    <div className="md:shadow-lg h-96 w-full rounded-md border-2 pl-2">
+    <div className="md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-2">
       <div className="grid grid-cols-3 grid-flow-row">
         <div className="col-span-2">
           <h3 className="font-extrabold">{props.title}</h3>
@@ -32,13 +32,15 @@ export default function TopicBox(props) {
           </li>
         ))}
       </ul>
-      <Link href={props.url}>
-        <a className="font-bold">
-          {" "}
-          Explore this journey{" "}
-          <FontAwesomeIcon icon={faArrowAltCircleRight} color="#2B4380" />
-        </a>
-      </Link>
+      <div className="pb-2">
+        <Link href={props.url}>
+          <a className="font-bold">
+            {" "}
+            Explore this journey{" "}
+            <FontAwesomeIcon icon={faArrowAltCircleRight} color="#2B4380" />
+          </a>
+        </Link>
+      </div>
     </div>
   );
 }
