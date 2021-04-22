@@ -8,10 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  */
 export default function TopicBox(props) {
   return (
-    <div className="shadow-lg h-96 w-96 rounded-md border-2 pl-2">
+    <div className="md:shadow-lg h-96 w-full rounded-md border-2 pl-2">
       <div className="grid grid-cols-3 grid-flow-row">
         <div className="col-span-2">
-          <h3 className="pt-2 pb-2 font-extrabold">{props.title}</h3>
+          <h3 className="font-extrabold">{props.title}</h3>
         </div>
         <div className="col-span-1">
           <Image
@@ -24,9 +24,8 @@ export default function TopicBox(props) {
         </div>
       </div>
       <p>{props.body}</p>
-      <br />
-      <h4 className="font-bold pb-4">Find information about</h4>{" "}
-      <ul className="flex flex-wrap gap-2 pb-1">
+      <h4 className="font-bold pb-4 pt-2">Find information about</h4>{" "}
+      <ul className="flex flex-wrap gap-2 pb-2">
         {props.subtopics.map((d, idx) => (
           <li key="idx" className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
             {d}

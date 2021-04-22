@@ -1,3 +1,4 @@
+import Link from "next/link";
 import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
@@ -15,21 +16,26 @@ export default function Home() {
         title="Life Journeys"
         description="Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor."
       />
-      <div className="flex flex-wrap gap-2 pb-1">
-        {data.map(function (d, idx) {
-          return (
-            <TopicBox
-              key={idx}
-              title={d.title}
-              body={d.body}
-              image={d.image}
-              imgalt={d.imgalt}
-              url={d.url}
-              dataCy={d.dataCy}
-              subtopics={d.subtopics}
-            />
-          );
-        })}
+      <Link href="/PondTest">
+        <a>Pond Test</a>
+      </Link>
+      <div className="flex flex-wrap">
+        <div className="sm:grid grid-cols-3 gap-10">
+          {data.map(function (d, idx) {
+            return (
+              <TopicBox
+                key={idx}
+                title={d.title}
+                body={d.body}
+                image={d.image}
+                imgalt={d.imgalt}
+                url={d.url}
+                dataCy={d.dataCy}
+                subtopics={d.subtopics}
+              />
+            );
+          })}
+        </div>
       </div>
     </Layout>
   );
