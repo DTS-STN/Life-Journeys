@@ -238,9 +238,7 @@ header {
 .pull-right {
   float: right !important; 
 }
-abbr[data-original-title], abbr[title] {
-  cursor: help;
-}
+
 .h3 {
   font-size: 1.2em;
   font-weight: 600;
