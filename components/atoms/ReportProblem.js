@@ -14,9 +14,9 @@ export default function ReportProblem() {
       {submitted ? (
         <>
           <div className="pt-2"></div>
-          <div className="pb-2.5 pr-5 pl-5 text-center border border-gray-md rounded bg-gray-light-report">
-            <h3 className="font-body mb-4">Thank you for your help!</h3>
-            <p className="font-body pl-3.5 text-left mb-4 w-56">
+          <div className="pt-4 pb-2.5 pr-5 pl-5 text-center border border-gray-md rounded bg-gray-light-report">
+            <h3 className="mb-4">Thank you for your help!</h3>
+            <p className="font-body pl-6 text-left mb-2 w-56">
               You will not receive a reply. For enquiries, please&nbsp;
               <a href="https://www.canada.ca/en/contact/index.html">
                 contact us
@@ -31,9 +31,11 @@ export default function ReportProblem() {
             <form action="#" onSubmit={onSubmitHandler}>
               <div className="container-sm border border-gray-md rounded bg-gray-light-report pb-5">
                 <fieldset>
-                  <legend className="text-center pb-3">
+                  <legend className="text-center pb-3 pt-4">
                     <span>
-                      <h3>Please select all that apply:</h3>
+                      <h3 className="font-normal">
+                        Please select all that apply:
+                      </h3>
                     </span>
                   </legend>
                   <div className="pl-5">
