@@ -46,6 +46,7 @@ module.exports = {
         "dk-blue": "#26374a",
         "hr-red-bar": "#AE3B43",
         "gray-light-report": "#EAEBED",
+        "gray-active": "#bbbfc5",
       },
     },
   },
