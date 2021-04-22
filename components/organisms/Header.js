@@ -1,9 +1,7 @@
 import Link from "next/link";
-
 import { HeaderLang } from "../atoms/HeaderLang";
 import { HeaderLogo } from "../atoms/HeaderLogo";
 import Breadcrumb from "../organisms/Breadcrumb";
-// import {HeaderNav}  from '../atoms/HeaderNav'
 
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";

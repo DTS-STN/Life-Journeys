@@ -1,51 +1,20 @@
 import { render, act } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { axe, toHaveNoViolations } from "jest-axe";
-import TopicBox from "./TopicBox";
+import Breadcrumb from "../organisms/Breadcrumb";
 
 expect.extend(toHaveNoViolations);
 
-const key = "topic1";
-const title = "Test";
-const body = "test";
-const imgalt = "test";
-const image = "/images/family.png";
-const url = "/";
-const dataCy = "topic1";
-const subtopics = ["test1", "test2", "test3"];
-
-describe("topicBox", () => {
-  it("renders topicbox", () => {
+describe("breadcrumb", () => {
+  it("renders breadcrumb", () => {
     const primary = act(() => {
-      render(
-        <TopicBox
-          key={key}
-          title={title}
-          body={body}
-          imgalt={imgalt}
-          image={image}
-          url={url}
-          dataCy={dataCy}
-          subtopics={subtopics}
-        />
-      );
+      render(<Breadcrumb />);
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
-    const { container } = render(
-      <TopicBox
-        key={key}
-        title={title}
-        body={body}
-        imgalt={imgalt}
-        image={image}
-        url={url}
-        dataCy={dataCy}
-        subtopics={subtopics}
-      />
-    );
+    const { container } = render(<Breadcrumb />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
