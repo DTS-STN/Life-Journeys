@@ -91,4 +91,5 @@ export default {
 
   home: "home (fr)",
   lifejourney: "Life Journey (fr)",
+  lifejourney: "Life Journey 2 (fr)",
 };

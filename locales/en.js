@@ -92,4 +92,5 @@ export default {
 
   home: "home",
   lifejourney: "Life Journey",
+  lifejourney: "Life Journey 2",
 };
