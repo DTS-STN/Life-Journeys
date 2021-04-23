@@ -10,7 +10,10 @@ export default function ReportProblem() {
   };
 
   return (
-    <DropDown text="Report a problem or mistake on this page">
+    <DropDown
+      text="Report a problem or mistake on this page"
+      dataTestId="dropdown"
+    >
       {submitted ? (
         <>
           <div className="pt-2"></div>
@@ -40,7 +43,7 @@ export default function ReportProblem() {
                   </legend>
                   <div className="pl-5">
                     <div className="absolute">
-                      <label for="problem1" className="cursor-pointer">
+                      <label htmlFor="problem1" className="cursor-pointer">
                         <input
                           name="problem1"
                           id="problem1"
@@ -54,7 +57,11 @@ export default function ReportProblem() {
                   </div>
                 </fieldset>
                 <div className="text-left pl-2 pt-8 text-sm font-display">
-                  <button className="bg-custom-blue-dark pb-1.5 pt-1.5 px-3 ml-2 rounded text-white hover:bg-custom-blue-canadaLight border border-custom-blue-dark">
+                  <button
+                    className="bg-custom-blue-dark pb-1.5 pt-1.5 px-3 ml-2 rounded text-white hover:bg-custom-blue-canadaLight border border-custom-blue-dark focus:ring-1 focus:ring-black focus:ring-offset-1 focus:bg-custom-blue-canadaLight active:bg-custom-blue-reportButtonActive"
+                    dataCy="report-a-problem-submit"
+                    data-testid="report-a-problem-submit"
+                  >
                     Submit
                   </button>
                 </div>
