@@ -50,7 +50,7 @@ export default function BreadcrumbsReact(props) {
               <Link href={breadcrumb.href}>
                 <a>
                   {"  "}
-                  {breadcrumb.breadcrumb !== "" && (
+                  {breadcrumb.breadcrumb && (
                     <FontAwesomeIcon icon={faAngleRight} color="#2B4380" />
                   )}
                   {"  "}

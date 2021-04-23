@@ -1,5 +1,5 @@
-import Layout from "../components/layout";
-import TitleSection from "../components/molecules/TitleSection";
+import Layout from "../../components/layout";
+import TitleSection from "../../components/molecules/TitleSection";
 
 export default function pondtest() {
   return (
