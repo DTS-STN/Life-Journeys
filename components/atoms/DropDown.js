@@ -7,7 +7,10 @@ import PropTypes from "prop-types";
 export default function DropDown(props) {
   return (
     <div className="pb-6 pt-6">
-      <details className="inline-block pb-4 flex-wrap">
+      <details
+        data-testid={props.dataTestId}
+        className="inline-block pb-4 flex-wrap"
+      >
         <summary
           className={
             "text-center hover:bg-gray-md text-sm pt-2.5 pb-2.5 pr-5 pl-5 border border-gray-md rounded bg-gray-light-report text-custom-blue-reportButton list-item focus:ring-1 focus:ring-black focus:ring-offset-1 focus:bg-gray-md cursor-pointer active:bg-gray-active"
@@ -43,4 +46,8 @@ DropDown.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
   ]),
+  /**
+   * unit test selector
+   */
+  dataTestId: PropTypes.string,
 };
