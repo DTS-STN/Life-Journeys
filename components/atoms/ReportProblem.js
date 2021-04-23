@@ -54,7 +54,11 @@ export default function ReportProblem() {
                   </div>
                 </fieldset>
                 <div className="text-left pl-2 pt-8 text-sm font-display">
-                  <button className="bg-custom-blue-dark pb-1.5 pt-1.5 px-3 ml-2 rounded text-white hover:bg-custom-blue-canadaLight border border-custom-blue-dark">
+                  <button
+                    className="bg-custom-blue-dark pb-1.5 pt-1.5 px-3 ml-2 rounded text-white hover:bg-custom-blue-canadaLight border border-custom-blue-dark focus:ring-1 focus:ring-black focus:ring-offset-1 focus:bg-custom-blue-canadaLight active:bg-custom-blue-reportButtonActive"
+                    dataCy="report-a-problem-submit"
+                    data-testid="report-a-problem-submit"
+                  >
                     Submit
                   </button>
                 </div>
