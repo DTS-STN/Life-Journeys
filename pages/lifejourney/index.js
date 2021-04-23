@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import TitleSection from "../../components/molecules/TitleSection";
 
-export default function pondtest() {
+export default function lifejourney() {
   return (
     <Layout>
       <TitleSection

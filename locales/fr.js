@@ -86,4 +86,9 @@ export default {
 
   //footer logo alt text
   footerCanadaCaAltText: "Symbole du gouvernement du Canada",
+
+  //breadcrumb
+
+  home: "home (fr)",
+  lifejourney: "Life Journey (fr)",
 };

@@ -4,6 +4,11 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
+import en from "../../locales/en";
+import fr from "../../locales/fr";
+
 /**
  * breadcrumb component
  */
@@ -19,6 +24,10 @@ const convertBreadcrumb = (string) => {
 export default function BreadcrumbsReact(props) {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState(null);
+
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
 
   useEffect(() => {
     if (router) {
@@ -41,7 +50,7 @@ export default function BreadcrumbsReact(props) {
       <div>
         <div className="inline">
           <Link href="/">
-            <a className="inline">home</a>
+            <a className="inline">{t.home}</a>
           </Link>
         </div>
         {breadcrumbs.map((breadcrumb, i) => {

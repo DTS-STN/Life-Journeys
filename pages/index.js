@@ -18,8 +18,8 @@ export default function Home() {
         description="Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor. Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor."
       />
       <div>
-        <Link href="/pondtest">
-          <a>Pond Test</a>
+        <Link href="/lifejourney">
+          <a>Life Journey</a>
         </Link>
       </div>
       <div className="flex flex-wrap">
