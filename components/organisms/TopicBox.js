@@ -27,7 +27,7 @@ export default function TopicBox(props) {
       <h4 className="font-bold pb-4 pt-2">Find information about</h4>{" "}
       <ul className="flex flex-wrap gap-2 pb-2">
         {props.subtopics.map((d, idx) => (
-          <li key="idx" className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
+          <li key={idx} className="h-auto w-auto rounded-md border-2 pl-2 pr-2">
             {d}
           </li>
         ))}
