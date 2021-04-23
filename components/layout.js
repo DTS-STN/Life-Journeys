@@ -5,8 +5,8 @@ import { Footer } from "./organisms/Footer";
 import { PageDetails } from "./organisms/PageDetails";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import { config } from '@fortawesome/fontawesome-svg-core';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
 
 import en from "../locales/en";
