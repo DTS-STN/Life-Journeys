@@ -25,10 +25,6 @@ export default function BreadcrumbsReact(props) {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState(null);
 
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
-  const t = language === "en" ? en : fr;
-
   useEffect(() => {
     if (router) {
       const linkPath = router.asPath.split("/");
@@ -45,6 +41,10 @@ export default function BreadcrumbsReact(props) {
   if (!breadcrumbs) {
     return null;
   }
+
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
   return (
     <nav aria-label="breadcrumbs">
       <div>
@@ -63,7 +63,7 @@ export default function BreadcrumbsReact(props) {
                     <FontAwesomeIcon icon={faAngleRight} color="#2B4380" />
                   )}
                   {"  "}
-                  {convertBreadcrumb(breadcrumb.breadcrumb)}
+                  {t[convertBreadcrumb(breadcrumb.breadcrumb)]}
                 </a>
               </Link>
             </div>
