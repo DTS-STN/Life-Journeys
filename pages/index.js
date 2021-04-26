@@ -8,8 +8,10 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
   const { data, error } = userSwr("/api/topics", fetcher);
-  if (error) return <div>Failed to load topics...</div>;
+
   if (!data) return <div>Loading...</div>;
+  if (error === !null) return <div>Failed to load topics...</div>;
+
   return (
     <Layout home>
       <TitleSection
