@@ -1,10 +1,7 @@
 import propTypes from "prop-types";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Accordion({ title, summary, description }) {
   const [openFlag, setOpenFlag] = useState(false);
@@ -16,9 +13,14 @@ export function Accordion({ title, summary, description }) {
     <div className="border-gray-300 flex border border-b-2 border-r-2 mb-2 p-8 shadow-lg">
       <div className="w-8  min-w-8 relative top-5">
         {openFlag ? (
-          <FontAwesomeIcon icon={faChevronRight} size="2x" color="red" />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            rotation={90}
+            size="2x"
+            color="red"
+          />
         ) : (
-          <FontAwesomeIcon icon={faChevronDown} size="2x" color="red" />
+          <FontAwesomeIcon icon={faChevronRight} size="2x" color="red" />
         )}
       </div>
 
