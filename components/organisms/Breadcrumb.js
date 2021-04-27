@@ -60,7 +60,11 @@ export default function BreadcrumbsReact(props) {
                 <a>
                   {"  "}
                   {breadcrumb.breadcrumb && (
-                    <FontAwesomeIcon icon={faAngleRight} color="#2B4380" />
+                    <FontAwesomeIcon
+                      icon={faAngleRight}
+                      size="sm"
+                      color="#2B4380"
+                    />
                   )}
                   {"  "}
                   {t[convertBreadcrumb(breadcrumb.breadcrumb)]}
