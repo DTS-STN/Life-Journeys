@@ -11,7 +11,7 @@ import fr from "../../locales/fr";
  * breadcrumb component
  */
 
-export default function BreadcrumbsReact(props) {
+export default function BreadCrumbs(props) {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState(null);
 
@@ -35,35 +35,52 @@ export default function BreadcrumbsReact(props) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
+  const countcrumbs = breadcrumbs.length;
+
   return (
     <nav aria-label="breadcrumbs">
       <div>
         <div className="inline">
-          <Link href="https://www.canada.ca/en/contact/index.html">
-            <a className="inline">Canada.ca</a>
-          </Link>
+          <BreadLink
+            url="https://www.canada.ca/en/contact/index.html"
+            text="Canada.ca"
+            arrow={false}
+          />
         </div>
-        {breadcrumbs.map((breadcrumb, i) => {
+        {breadcrumbs[0].breadcrumb && (
+          <div className="inline">
+            <BreadLink url="/" text={t.home} arrow={true} />
+          </div>
+        )}
+        {breadcrumbs.map((breadcrumb, idx) => {
           return (
             <div key={breadcrumb.href} className="inline">
-              <Link href={breadcrumb.href}>
-                <a>
-                  {"  "}
-                  {breadcrumb.breadcrumb && (
-                    <FontAwesomeIcon
-                      icon={faAngleRight}
-                      size="sm"
-                      color="#2B4380"
-                    />
-                  )}
-                  {"  "}
-                  {t[breadcrumb.breadcrumb]}
-                </a>
-              </Link>
+              {idx != countcrumbs - 1 && (
+                <BreadLink
+                  url={breadcrumb.href}
+                  text={t[breadcrumb.breadcrumb]}
+                  arrow={true}
+                />
+              )}
             </div>
           );
         })}
       </div>
     </nav>
+  );
+}
+
+function BreadLink({ url, text, arrow }) {
+  return (
+    <Link href={url}>
+      <a>
+        {"  "}
+        {arrow && (
+          <FontAwesomeIcon icon={faAngleRight} size="sm" color="#2B4380" />
+        )}
+        {"  "}
+        {text}
+      </a>
+    </Link>
   );
 }
