@@ -14,7 +14,7 @@ export default function MoreInfo(props) {
 
   return (
     <div className="pb-2 pt-2">
-      <div className="pb-2 pt-2 px-3 border border-custom-blue-dark rounded text-custom-blue-dark cursor-pointer focus:ring-1 focus:ring-black focus:ring-offset-1">
+      <div className="pb-2 pt-2 px-3 border border-custom-blue-dark rounded text-custom-blue-dark cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
         <Link href={googleSearch}>
           <a className="block w-full" id={props.id}>
             <h6>
