@@ -91,7 +91,5 @@ export default {
   //breadcrumb
 
   home: "Home",
-  lifejourney: "Life Journey",
-  lifejourney2: "Life Journey 2",
-  havingachild: "Having a Child",
+  "having-a-child": "Having a Child",
 };

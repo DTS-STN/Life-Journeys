@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
