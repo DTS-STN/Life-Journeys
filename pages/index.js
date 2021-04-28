@@ -27,7 +27,7 @@ export default function Home() {
                 image={d.image}
                 imgalt={d.imgalt}
                 url={d.url}
-                dataCy={d.dataCy}
+                datacy={d.datacy}
                 subtopics={d.subtopics}
               />
             );
