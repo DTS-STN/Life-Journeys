@@ -28,6 +28,9 @@ module.exports = {
       xxl: "1170px",
     },
     extend: {
+      backgroundImage: (theme) => ({
+        "banner-img": "url('../public/images/bg-banner.png')",
+      }),
       colors: {
         "custom-blue": {
           blue: "#2572B4",
