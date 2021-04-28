@@ -39,8 +39,8 @@ export default function BreadcrumbsReact(props) {
     <nav aria-label="breadcrumbs">
       <div>
         <div className="inline">
-          <Link href="/">
-            <a className="inline">{t.home}</a>
+          <Link href="https://www.canada.ca/en/contact/index.html">
+            <a className="inline">Canada.ca</a>
           </Link>
         </div>
         {breadcrumbs.map((breadcrumb, i) => {
