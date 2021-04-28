@@ -15,7 +15,6 @@ export function Accordion(props) {
   return (
     <div id="accordion" className="flex mb-2">
       <details
-        id="accordion"
         className={`flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
         data-cy={props.dataCy}
       >
