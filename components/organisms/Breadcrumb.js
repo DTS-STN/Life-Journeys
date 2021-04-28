@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-
-import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
@@ -12,14 +10,6 @@ import fr from "../../locales/fr";
 /**
  * breadcrumb component
  */
-
-const convertBreadcrumb = (string) => {
-  return string
-    .replace(/-/g, " ")
-    .replace(/oe/g, "ö")
-    .replace(/ae/g, "ä")
-    .replace(/ue/g, "ü");
-};
 
 export default function BreadcrumbsReact(props) {
   const router = useRouter();
@@ -67,7 +57,7 @@ export default function BreadcrumbsReact(props) {
                     />
                   )}
                   {"  "}
-                  {t[convertBreadcrumb(breadcrumb.breadcrumb)]}
+                  {t[breadcrumb.breadcrumb]}
                 </a>
               </Link>
             </div>
