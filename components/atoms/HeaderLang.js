@@ -8,15 +8,11 @@ import en from "../../locales/en";
 import fr from "../../locales/fr";
 
 export function HeaderLang() {
-  //
   const router = useRouter();
   const routerPathname = router.asPath;
-
-  //
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const changeLanguage = items.changeLanguage;
-
   const t = language === "en" ? en : fr;
 
   function onChangeLanguage(language) {
@@ -25,9 +21,6 @@ export function HeaderLang() {
       locale: language === "en" ? "fr" : "en",
     });
   }
-
-  //
-  //
 
   return (
     <section id="wb-lng" className="col-xs-3 col-sm-12 pull-right text-right">
