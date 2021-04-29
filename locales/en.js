@@ -87,4 +87,16 @@ export default {
   //footer logo alt text
 
   footerCanadaCaAltText: "Symbol of the Government of Canada",
+
+  //Banner text
+
+  havingAChildBannerTitle: "Having a child",
+  havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
+
+  //More Info Links
+
+  moreInfoCommunity: "Find community groups in my area",
+  moreInfoFertility: "Find fertility treatment in my area",
+  moreInfoHealth: "Find a health provider in my area",
+  moreInfoFinancial: "Find a financial planner in my area",
 };
