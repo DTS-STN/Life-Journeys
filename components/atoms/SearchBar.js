@@ -29,7 +29,6 @@ export function SearchBar(props) {
             }
           >
             <FontAwesomeIcon icon={faSearch} color="white" />
-            {/* <span className={"icon-magnifying"} />    where is this class ??? */}
           </button>
         </div>
       </form>
