@@ -621,10 +621,14 @@ ul, ol {
   font-size: 20px;
 }
 #accordion details > summary:hover {
-  background-color: rgba(207, 207, 207, 1)
+  background-color: #CFCFCF;
 }
-#accordion details > summary:active, #accordion details > summary:focus {
+#accordion details > summary:focus {
   border: 1px solid black;
+  background-color: #CFCFCF;
+}
+#accordion details > summary:active {
+  background-color: #BBBFC5;
 }
 
 #accordion details > summary::-webkit-details-marker {
