@@ -16,13 +16,11 @@ export default function MoreInfo(props) {
     <div className="pb-2 pt-2">
       <div className="pb-2 pt-2 px-3 border border-custom-blue-dark rounded text-custom-blue-dark cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
         <Link href={googleSearch}>
-          <a className="block w-full" id={props.id}>
-            <h6>
-              {props.text}
-              <span className="ml-3">
-                <FontAwesomeIcon icon={faArrowAltCircleRight} color="#26374A" />
-              </span>
-            </h6>
+          <a className="block w-full text-h6 font-display" id={props.id}>
+            {props.text}
+            <span className="ml-3">
+              <FontAwesomeIcon icon={faArrowAltCircleRight} color="#26374A" />
+            </span>
           </a>
         </Link>
       </div>
