@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { HeaderLang } from "../atoms/HeaderLang";
 import { HeaderLogo } from "../atoms/HeaderLogo";
-import Breadcrumb from "../organisms/Breadcrumb";
-
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
-
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
@@ -42,9 +39,6 @@ export function Header() {
               <HeaderLang />
               <HeaderLogo />
             </div>
-          </div>
-          <div id="wb-bc" property="breadcrumb" className="container">
-            <Breadcrumb />
           </div>
           {/* <HeaderNav /> */}
         </header>

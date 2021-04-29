@@ -89,6 +89,6 @@ export default {
 
   //breadcrumb
 
-  home: "Home (fr)",
+  home: "Life Journeys (fr)",
   "having-a-child": "Having a Child (fr)",
 };

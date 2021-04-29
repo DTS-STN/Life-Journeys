@@ -90,6 +90,6 @@ export default {
 
   //breadcrumb
 
-  home: "Home",
+  home: "Life Journeys",
   "having-a-child": "Having a Child",
 };
