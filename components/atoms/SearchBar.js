@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  */
 export function SearchBar(props) {
   return (
-    <div data-cy={props.dataCy}>
+    <div data-cy={props.datacy}>
       <form
         className="flex border border-solid border-gray-light-100"
         onSubmit={props.onSubmit}
@@ -29,7 +29,6 @@ export function SearchBar(props) {
             }
           >
             <FontAwesomeIcon icon={faSearch} color="white" />
-            {/* <span className={"icon-magnifying"} />    where is this class ??? */}
           </button>
         </div>
       </form>
@@ -56,5 +55,5 @@ SearchBar.propTypes = {
   /**
    * Test id for cypress test
    */
-  dataCy: PropTypes.string,
+  datacy: PropTypes.string,
 };

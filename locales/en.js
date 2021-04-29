@@ -87,4 +87,9 @@ export default {
   //footer logo alt text
 
   footerCanadaCaAltText: "Symbol of the Government of Canada",
+
+  //breadcrumb
+
+  home: "Life Journeys",
+  "having-a-child": "Having a Child",
 };

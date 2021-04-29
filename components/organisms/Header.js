@@ -1,13 +1,8 @@
 import Link from "next/link";
-
 import { HeaderLang } from "../atoms/HeaderLang";
 import { HeaderLogo } from "../atoms/HeaderLogo";
-// import {HeaderNav}  from '../atoms/HeaderNav'
-// import {Breadcrump} from '../atoms/Breadcrump';
-
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
-
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
@@ -45,9 +40,7 @@ export function Header() {
               <HeaderLogo />
             </div>
           </div>
-
           {/* <HeaderNav /> */}
-          {/* <Breadcrump /> */}
         </header>
       </div>
     </div>
