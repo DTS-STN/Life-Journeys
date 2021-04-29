@@ -41,11 +41,7 @@ export default function BreadCrumbs(props) {
     <nav aria-label="breadcrumbs">
       <div>
         <div className="inline">
-          <BreadLink
-            url="https://www.canada.ca/en/contact/index.html"
-            text="Canada.ca"
-            arrow={false}
-          />
+          <BreadLink url={t.gocLink} text="Canada.ca" arrow={false} />
         </div>
         {breadcrumbs[0].breadcrumb && (
           <div className="inline">
