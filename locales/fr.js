@@ -12,7 +12,7 @@ export default {
 
   // Government of Canada symbols
   goc: "Governement du Canada",
-  gocLink: "https://www.canada.ca/en.html",
+  gocLink: "https://www.canada.ca/fr.html",
   headerCanadaCaAltText: "Symbole du gouvernement du Canada",
 
   // Language section
@@ -98,4 +98,9 @@ export default {
   moreInfoFertility: "Trouver un traitement de fertilité dans ma région",
   moreInfoHealth: "Trouver un fournisseur de soins de santé dans ma région",
   moreInfoFinancial: "Trouver un planificateur financier dans ma région",
+
+  //breadcrumb
+
+  home: "Life Journeys (fr)",
+  "having-a-child": "Having a Child (fr)",
 };

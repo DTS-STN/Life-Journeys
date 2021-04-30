@@ -99,4 +99,9 @@ export default {
   moreInfoFertility: "Find fertility treatment in my area",
   moreInfoHealth: "Find a health provider in my area",
   moreInfoFinancial: "Find a financial planner in my area",
+
+  //breadcrumb
+
+  home: "Life Journeys",
+  "having-a-child": "Having a Child",
 };

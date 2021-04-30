@@ -3,6 +3,7 @@ import { Header } from "./organisms/Header";
 import { Main } from "./organisms/Main";
 import { Footer } from "./organisms/Footer";
 import { PageDetails } from "./organisms/PageDetails";
+import Breadcrumb from "./organisms/Breadcrumb";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -28,7 +29,9 @@ export default function Layout({ bannerText, bannerTitle, children }) {
       {bannerText && bannerTitle ? (
         <Banner siteTitle={bannerTitle} headline={bannerText} />
       ) : null}
-
+      <div id="wb-bc" className="container pt-4">
+        <Breadcrumb />
+      </div>
       <Main>{children}</Main>
 
       <PageDetails />

@@ -614,9 +614,33 @@ ul, ol {
     display: block !important; }
 } 
 
-
-
+#accordion details > summary {
+  list-style-type: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
 }
+#accordion details > summary:hover {
+  background-color: #CFCFCF;
+}
+#accordion details > summary:focus {
+  border: 1px solid black;
+  background-color: #CFCFCF;
+}
+#accordion details > summary:active {
+  background-color: #BBBFC5;
+}
+
+#accordion details > summary::-webkit-details-marker {
+  display: none;
+}
+
+#accordion details {
+  font-size: 20px;
+}
+
+} /* closing bracket for the @layer */
+
 
 @layer utilities {
   /*Default page layout*/
@@ -642,3 +666,5 @@ ul, ol {
     }
   }
 }
+
+

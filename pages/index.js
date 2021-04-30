@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
@@ -8,8 +7,10 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
   const { data, error } = userSwr("/api/topics", fetcher);
-  if (error) return <div>Failed to load topics...</div>;
+
   if (!data) return <div>Loading...</div>;
+  if (error === !null) return <div>Failed to load topics...</div>;
+
   return (
     <Layout home>
       <TitleSection
@@ -27,7 +28,7 @@ export default function Home() {
                 image={d.image}
                 imgalt={d.imgalt}
                 url={d.url}
-                dataCy={d.dataCy}
+                datacy={d.datacy}
                 subtopics={d.subtopics}
               />
             );
