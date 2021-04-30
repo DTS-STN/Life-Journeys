@@ -14,7 +14,7 @@ export function Landscape() {
 
   return (
     <div className="landscape">
-      <nav className="container wb-navcurr">
+      <nav id="footer-nav" aria-label="Footer" className="container wb-navcurr">
         <h2 className="wb-inv">About government</h2>
 
         <ul className="list-unstyled colcount-sm-2 colcount-md-3">

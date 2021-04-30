@@ -18,7 +18,7 @@ export default function ReportProblem() {
         <>
           <div className="pt-2"></div>
           <div className="pt-4 pb-2.5 pr-5 pl-5 text-center border border-gray-md rounded bg-gray-light-report">
-            <h3 className="mb-4">Thank you for your help!</h3>
+            <p className="mb-4 text-h3">Thank you for your help!</p>
             <p className="font-body pl-6 text-left mb-2 w-56">
               You will not receive a reply. For enquiries, please&nbsp;
               <a href="https://www.canada.ca/en/contact/index.html">
@@ -36,9 +36,9 @@ export default function ReportProblem() {
                 <fieldset>
                   <legend className="text-center pb-3 pt-4">
                     <span>
-                      <h3 className="font-normal">
+                      <p className="font-normal text-h3">
                         Please select all that apply:
-                      </h3>
+                      </p>
                     </span>
                   </legend>
                   <div className="pl-5">
