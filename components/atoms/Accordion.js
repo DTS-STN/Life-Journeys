@@ -84,7 +84,11 @@ Accordion.propTypes = {
   summaryClass: propTypes.string,
 
   // the actual content to be displayed
-  children: propTypes.string,
+  children: propTypes.oneOfType([
+    propTypes.string,
+    propTypes.element,
+    propTypes.arrayOf(propTypes.element),
+  ]),
 
   // data-cy with the intention tobe used by cypress tests
   dataCy: propTypes.string,
