@@ -37,6 +37,7 @@ export function Accordion(props) {
           </div>
           <div className="ml-8">
             <h2
+              id={`#${props.id}`}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
@@ -55,6 +56,7 @@ export function Accordion(props) {
 }
 
 Accordion.defaultProps = {
+  id: "#WhenArrives",
   title: "When your Child arrives",
   summary: "Your Relationship Changes",
   children: `Default text  --------------------
