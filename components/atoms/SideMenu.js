@@ -5,7 +5,7 @@ export function SideMenu({ title, links }) {
   return (
     <div
       id="Sidemenu"
-      className="m-2 p-4 sticky top-0 block max-w-sm float-left text-white"
+      className="mt-2 p-4 sticky top-0 block max-w-sm float-left text-white"
     >
       <h2 className="font-bold text-p mb-2">{title}</h2>
 
