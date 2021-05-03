@@ -73,6 +73,9 @@ Accordion.propTypes = {
   // add extra css to the main component using the props class
   mainClass: propTypes.string,
 
+  // this is the anchor to be used by the SideMenu to:  TODO('open' the accordion)
+  id: propTypes.string.isRequired,
+
   // Title of the page
   title: propTypes.string,
 
