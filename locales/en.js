@@ -104,4 +104,17 @@ export default {
 
   home: "Life Journeys",
   "having-a-child": "Having a Child",
+
+  //Table
+
+  row1text: "Assess your current health",
+  row1subtext: "See your doctor asap to make sure pregnancy is right for you",
+  row1link1: "Women's health checklist",
+  row1link2: "Men's health checklist",
+  row2text: "Natural birth stuff",
+  row2subtext: "Figure out conceiving naturally",
+  row2link: "Great checklist",
+  row3text: "Fertility treatments",
+  row3subtext: "What you need to know",
+  row3link: "Great checklist",
 };

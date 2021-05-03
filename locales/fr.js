@@ -103,4 +103,18 @@ export default {
 
   home: "Life Journeys (fr)",
   "having-a-child": "Having a Child (fr)",
+
+  //Table
+
+  row1text: "Évaluez votre état de santé actuel",
+  row1subtext:
+    "Consultez votre médecin dès que possible pour vous assurer que la grossesse vous convient",
+  row1link1: "Liste de contrôle de la santé des femmes",
+  row1link2: "Liste de contrôle de la santé des hommes",
+  row2text: "L'accouchement naturel",
+  row2subtext: "Trouver un moyen de concevoir naturellement",
+  row2link: "Grande liste de contrôle",
+  row3text: "Traitements de fertilité",
+  row3subtext: "Ce que vous devez savoir",
+  row3link: "Grande liste de contrôle",
 };
