@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
+import Banner from "../components/atoms/Banner";
+import Breadcrumb from "../components/organisms/Breadcrumb";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -14,10 +16,15 @@ export default function lifejourney() {
   const t = language === "en" ? en : fr;
 
   return (
-    <Layout
-      bannerTitle={t.havingAChildBannerTitle}
-      bannerText={t.havingAChildBannerText}
-    >
+    <Layout>
+      <Banner
+        siteTitle={t.havingAChildBannerTitle}
+        headline={t.havingAChildBannerText}
+      />
+      <div id="wb-bc" className="container pt-4">
+        <Breadcrumb />
+      </div>
+
       <div className="w-3/12">
         <SideMenu />
       </div>
