@@ -25,12 +25,12 @@ export default function lifejourney() {
         <Breadcrumb />
       </div>
 
-      <div className="container">
-        <div className="w-3/12 sticky top-0">
+      <div className="container flex flex-col md:flex-row align-items-center ">
+        <div className="pr-3 w-full lg:w-3/12 top-0 lg:sticky ">
           <SideMenu />
         </div>
 
-        <div className="w-9/12 float-right">
+        <div className="pt-2 w-full lg:w-9/12">
           <Accordion
             id="GettingReady"
             title="Getting Ready"
