@@ -1,6 +1,5 @@
 import { Meta } from "./atoms/Meta";
 import { Header } from "./organisms/Header";
-import { Main } from "./organisms/Main";
 import { Footer } from "./organisms/Footer";
 import { PageDetails } from "./organisms/PageDetails";
 import Breadcrumb from "./molecules/Breadcrumb";
@@ -9,12 +8,11 @@ import { LanguageContext } from "../context/languageProvider";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
-import { Banner } from "./atoms/Banner";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
 
-export default function Layout({ bannerText, bannerTitle, children }) {
+export default function Layout({ children }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
 
@@ -26,15 +24,11 @@ export default function Layout({ bannerText, bannerTitle, children }) {
 
       <Header />
 
-      {bannerText && bannerTitle ? (
-        <Banner siteTitle={bannerTitle} headline={bannerText} />
-      ) : null}
-      <div id="wb-bc" className="container pt-4">
-        <Breadcrumb />
-      </div>
-      <Main>{children}</Main>
+      <main>
+        {children}
+        <PageDetails />
+      </main>
 
-      <PageDetails />
       <Footer />
     </div>
   );

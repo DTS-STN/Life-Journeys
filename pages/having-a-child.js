@@ -3,6 +3,8 @@ import MoreInfo from "../components/atoms/MoreInfo";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
+import Banner from "../components/atoms/Banner";
+import Breadcrumb from "../components/organisms/Breadcrumb";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -13,10 +15,14 @@ export default function lifejourney() {
   const t = language === "en" ? en : fr;
 
   return (
-    <Layout
-      bannerTitle={t.havingAChildBannerTitle}
-      bannerText={t.havingAChildBannerText}
-    >
+    <Layout>
+      <Banner
+        siteTitle={t.havingAChildBannerTitle}
+        headline={t.havingAChildBannerText}
+      />
+      <div id="wb-bc" className="container pt-4">
+        <Breadcrumb />
+      </div>
       <Accordion>
         <div className="pr-6">
           <MoreInfo text={t.moreInfoCommunity} />

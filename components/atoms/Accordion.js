@@ -13,7 +13,7 @@ export function Accordion(props) {
   const arrowColor = "#D3080C";
 
   return (
-    <div id="accordion" className="flex mb-2">
+    <div id="accordion" className="flex mb-2 container">
       <details
         className={`flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
         data-cy={props.dataCy}
