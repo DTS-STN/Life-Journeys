@@ -18,7 +18,8 @@
     "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "beforePush": "npm run test:ci & npm run lint:fix & npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

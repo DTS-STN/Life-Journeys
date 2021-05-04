@@ -13,9 +13,9 @@ export function Accordion(props) {
   const arrowColor = "#D3080C";
 
   return (
-    <div id="accordion" className="flex mb-2 container">
+    <div className="flex mb-2">
       <details
-        className={`flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
+        className={`accordion flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
         data-cy={props.dataCy}
       >
         <summary onClick={() => openSummary()}>
@@ -37,6 +37,7 @@ export function Accordion(props) {
           </div>
           <div className="ml-8">
             <h2
+              id={props.id}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
@@ -55,6 +56,7 @@ export function Accordion(props) {
 }
 
 Accordion.defaultProps = {
+  id: "#WhenArrives",
   title: "When your Child arrives",
   summary: "Your Relationship Changes",
   children: `Default text  --------------------
@@ -70,6 +72,9 @@ Accordion.defaultProps = {
 Accordion.propTypes = {
   // add extra css to the main component using the props class
   mainClass: propTypes.string,
+
+  // this is the anchor to be used by the SideMenu to:  TODO('open' the accordion)
+  id: propTypes.string.isRequired,
 
   // Title of the page
   title: propTypes.string,
