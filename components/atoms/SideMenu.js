@@ -9,7 +9,11 @@ export function SideMenu({ title, links }) {
     >
       <h2 className="font-bold text-p mb-2">{title}</h2>
 
-      <nav className="mt-2 mb-2 mr-4 block">
+      <nav
+        id="side-menu"
+        className="mt-2 mb-2 mr-4 block"
+        aria-label="SideMenu"
+      >
         <ul className="list-none">
           {links.map(({ url, text }, index) => (
             <li key={index} className="m-0 p-0">
