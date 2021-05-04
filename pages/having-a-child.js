@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import Banner from "../components/atoms/Banner";
-import Breadcrumb from "../components/organisms/Breadcrumb";
+import Breadcrumb from "../components/molecules/Breadcrumb";
 
 import en from "../locales/en";
 import fr from "../locales/fr";

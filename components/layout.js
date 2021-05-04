@@ -2,7 +2,7 @@ import { Meta } from "./atoms/Meta";
 import { Header } from "./organisms/Header";
 import { Footer } from "./organisms/Footer";
 import { PageDetails } from "./organisms/PageDetails";
-import Breadcrumb from "./molecules/Breadcrumb";
+// import Breadcrumb from "./molecules/Breadcrumb";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import "@fortawesome/fontawesome-svg-core/styles.css";

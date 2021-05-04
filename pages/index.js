@@ -2,7 +2,7 @@ import TopicBox from "../components/organisms/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
 import TitleSection from "../components/molecules/TitleSection";
-import Breadcrumb from "../components/organisms/Breadcrumb";
+import Breadcrumb from "../components/molecules/Breadcrumb";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
