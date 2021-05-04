@@ -22,7 +22,7 @@ function Table({ rows, columns }) {
             <td className="text-center bg-gray-light-200">
               <a
                 href={href}
-                className="cursor-pointer hover:text-custom-blue-link hover:underline focus:text-custom-blue-link active:text-blue-500"
+                className="cursor-pointer hover:text-custom-blue-link hover:underline focus:text-custom-blue-link focus:underline"
               >
                 {link}
               </a>
