@@ -8,13 +8,17 @@ function Table({ rows, columns }) {
     <table className="w-full cursor-text text-left">
       <thead className="text-sm font-display">
         <tr>
-          <th className="pl-6 pb-2">{columns[0].heading}</th>
-          <th className="text-center pb-2">{columns[1].heading}</th>
+          <th key={columns[0].heading} className="pl-6 pb-2">
+            {columns[0].heading}
+          </th>
+          <th key={columns[1].heading} className="text-center pb-2">
+            {columns[1].heading}
+          </th>
         </tr>
       </thead>
       <tbody className="divide-y-2 divide-gray-light-100 border-2 border-gray-light-100">
-        {rows.map(({ text, subtext, link, href }) => (
-          <tr>
+        {rows.map(({ text, subtext, link, href }, idx) => (
+          <tr key={`${text[idx]}`}>
             <td className="pl-6 py-4 border-r-2 border-dk-blue">
               <div className="text-h6 font-display">{text}</div>
               <div className="text-sm font-body">{subtext}</div>
