@@ -13,9 +13,9 @@ export function Accordion(props) {
   const arrowColor = "#D3080C";
 
   return (
-    <div id="accordion" className="flex mb-2">
+    <div className="flex mb-2">
       <details
-        className={`flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
+        className={`accordion flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
         data-cy={props.dataCy}
       >
         <summary onClick={() => openSummary()}>
@@ -37,7 +37,7 @@ export function Accordion(props) {
           </div>
           <div className="ml-8">
             <h2
-              id={`#${props.id}`}
+              id={props.id}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
