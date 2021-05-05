@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  */
 export function SearchBar(props) {
   return (
-    <div data-cy={props.datacy}>
+    <div>
       <form
         className="flex border border-solid border-gray-light-100"
         onSubmit={props.onSubmit}
@@ -51,9 +51,4 @@ SearchBar.propTypes = {
    * Action to do on form submit
    */
   onSubmit: PropTypes.func,
-
-  /**
-   * Test id for cypress test
-   */
-  datacy: PropTypes.string,
 };
