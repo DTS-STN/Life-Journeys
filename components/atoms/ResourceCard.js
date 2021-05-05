@@ -19,7 +19,7 @@ export default function ResourceCard(props) {
             ></Image>
           </div>
           <span className="flex items-center justify-start">
-            <h5>{props.title}</h5>
+            <p className="text-h5 font-display font-bold">{props.title}</p>
           </span>
         </div>
       </Link>
