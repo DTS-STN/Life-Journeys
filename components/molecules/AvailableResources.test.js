@@ -8,13 +8,13 @@ expect.extend(toHaveNoViolations);
 describe("Available Resources tests", () => {
   it("renders Available Resources", () => {
     const primary = act(() => {
-      render(<AvailableResources />);
+      render(<AvailableResources title="test" />);
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
-    const { container } = render(<AvailableResources />);
+    const { container } = render(<AvailableResources title="test" />);
     const results = await axe(container);
 
     expect(results).toHaveNoViolations();
