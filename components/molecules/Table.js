@@ -18,7 +18,7 @@ function Table({ rows, columns }) {
       </thead>
       <tbody className="divide-y-2 divide-gray-light-100 border-2 border-gray-light-100">
         {rows.map(({ text, subtext, link, href }, idx) => (
-          <tr key={`${text[idx]}`}>
+          <tr key={idx}>
             <td className="pl-6 py-4 border-r-2 border-dk-blue">
               <div className="text-h6 font-display">{text}</div>
               <div className="text-sm font-body">{subtext}</div>
