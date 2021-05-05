@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
-import AvailableResources from "../components/atoms/AvailableResources";
+import AvailableResources from "../components/molecules/AvailableResources";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
