@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 export default function AvailableResources(props) {
   return (
     <div className="pt-3">
-      <h4>{props.title}</h4>
+      <p className="text-h4 font-display font-bold">{props.title}</p>
       <div className="mt-4 mb-4 pt-2 grid lg:grid-cols-4 grid-flow-row gap-3">
         <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
         <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
