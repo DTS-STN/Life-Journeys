@@ -5,8 +5,8 @@ import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 import Banner from "../components/atoms/Banner";
-import Breadcrumb from "../components/organisms/Breadcrumb";
 import Table from "../components/molecules/Table";
+import Breadcrumb from "../components/molecules/Breadcrumb";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
