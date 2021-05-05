@@ -9,7 +9,7 @@ describe("Available Resources tests", () => {
   it("renders Available Resources", () => {
     const primary = act(() => {
       render(
-        <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
+        <ResourceCard title="test1" image="/images/family.png" imgalt="test" />
       );
     });
     expect(primary).toBeTruthy();
@@ -17,7 +17,7 @@ describe("Available Resources tests", () => {
 
   it("has no a11y violations", async () => {
     const { container } = render(
-      <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
+      <ResourceCard title="test1" image="/images/family.png" imgalt="test" />
     );
     const results = await axe(container);
     expect(results).toHaveNoViolations();
