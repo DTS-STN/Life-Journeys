@@ -6,7 +6,6 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt1",
     url: "/having-a-child",
-    datacy: "topic1",
     subtopics: ["thing1", "thing2", "thing3"],
   },
   {
@@ -16,7 +15,6 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt2",
     url: "/",
-    datacy: "topic2",
     subtopics: ["thing1", "thing2", "thing3"],
   },
   {
@@ -26,7 +24,6 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt3",
     url: "/",
-    datacy: "topic3",
     subtopics: ["thing1", "thing2", "thing3"],
   },
   {
@@ -36,7 +33,6 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt4",
     url: "/",
-    datacy: "topic4",
     subtopics: ["thing1", "thing2", "thing3"],
   },
   {
@@ -46,7 +42,6 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt5",
     url: "/",
-    datacy: "topic5",
     subtopics: ["thing1", "thing2", "thing3"],
   },
 ];

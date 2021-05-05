@@ -106,4 +106,22 @@ export default {
 
   home: "Life Journeys (fr)",
   "having-a-child": "Having a Child (fr)",
+
+  //Table
+
+  header1: "Chose",
+  header2: "Des trucs pour aider ?",
+  row1text: "Évaluez votre état de santé actuel",
+  row1subtext:
+    "Consultez votre médecin dès que possible pour vous assurer que la grossesse vous convient",
+  row1link: "Liste de contrôle de santé personnelle",
+  row2text: "L'accouchement naturel",
+  row2subtext: "Trouver un moyen de concevoir naturellement",
+  row2link: "Grande liste de contrôle",
+  row3text: "Traitements de fertilité",
+  row3subtext: "Ce que vous devez savoir",
+
+  //Inner accordion text
+
+  getConnected: "Se connecter aux aides communautaires",
 };

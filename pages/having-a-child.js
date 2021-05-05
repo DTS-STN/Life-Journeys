@@ -6,6 +6,7 @@ import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 import Banner from "../components/atoms/Banner";
+import Table from "../components/molecules/Table";
 import Breadcrumb from "../components/molecules/Breadcrumb";
 
 import en from "../locales/en";
@@ -38,11 +39,16 @@ export default function lifejourney() {
             summary="Getting Ready summary text"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
-              <AvailableResources title={t.gettingready} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -52,10 +58,16 @@ export default function lifejourney() {
             summary="Lorem ipsun dolor summary"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -65,10 +77,16 @@ export default function lifejourney() {
             summary="When your child arrives summary text"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -78,10 +96,16 @@ export default function lifejourney() {
             summary="Consectur summary text"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -91,10 +115,16 @@ export default function lifejourney() {
             summary="Financial Support summary text"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -104,19 +134,31 @@ export default function lifejourney() {
             summary="Dolor Consectetur summary text"
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
           <Accordion id="Ipsum" title="Ipsum" summary="Ipsum summary text">
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
         </div>

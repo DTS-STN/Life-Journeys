@@ -16,7 +16,6 @@ export function Accordion(props) {
     <div className="flex mb-2">
       <details
         className={`accordion flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
-        data-cy={props.dataCy}
       >
         <summary onClick={() => openSummary()}>
           <div className="w-12 min-w-12 relative left-4 top-5 float-left ">
@@ -63,7 +62,6 @@ Accordion.defaultProps = {
               There's one more person to interact with, and that means less time for "us."
               The relationship dynamic is different, and you can get so busy you'll forget to talk. 
               If one of you provides most of the baby care, the other can feel slighted`,
-  dataCy: "Accordion1",
   mainClass: "",
   titleClass: "",
   summaryClass: "",
@@ -94,7 +92,4 @@ Accordion.propTypes = {
     propTypes.element,
     propTypes.arrayOf(propTypes.element),
   ]),
-
-  // data-cy with the intention tobe used by cypress tests
-  dataCy: propTypes.string,
 };

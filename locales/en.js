@@ -107,4 +107,21 @@ export default {
 
   home: "Life Journeys",
   "having-a-child": "Having a Child",
+
+  //Table
+
+  header1: "Thingy",
+  header2: "Stuff to help?",
+  row1text: "Assess your current health",
+  row1subtext: "See your doctor ASAP to make sure pregnancy is right for you",
+  row1link: "Personal health checklist",
+  row2text: "Natural birth stuff",
+  row2subtext: "Figure out conceiving naturally",
+  row2link: "Great checklist",
+  row3text: "Fertility treatments",
+  row3subtext: "What you need to know",
+
+  //Inner accordion text
+
+  getConnected: "Get connected to community supports",
 };
