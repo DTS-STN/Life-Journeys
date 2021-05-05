@@ -33,4 +33,8 @@ ResourceCard.propTypes = {
    * image path
    */
   image: PropTypes.string,
+  /**
+   * image alt
+   */
+  imgalt: PropTypes.string,
 };

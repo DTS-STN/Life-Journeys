@@ -8,15 +8,18 @@ expect.extend(toHaveNoViolations);
 describe("Available Resources tests", () => {
   it("renders Available Resources", () => {
     const primary = act(() => {
-      render(<ResourceCard />);
+      render(
+        <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
+      );
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
-    const { container } = render(<ResourceCard />);
+    const { container } = render(
+      <ResourceCard title="test1" image="/images/family.png" imgalt="test1" />
+    );
     const results = await axe(container);
-
     expect(results).toHaveNoViolations();
   });
 });
