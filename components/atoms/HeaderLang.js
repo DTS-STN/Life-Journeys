@@ -30,9 +30,9 @@ export function HeaderLang() {
           <ul className="list-inline margin-bottom-none">
             <li>
               {language === "fr" ? (
-                <Link href="/">
+                <Link href="">
                   <a
-                    href="/"
+                    href=""
                     lang="en"
                     className="underline"
                     onClick={() => onChangeLanguage(language)}
@@ -47,9 +47,9 @@ export function HeaderLang() {
                   </a>
                 </Link>
               ) : (
-                <Link href="/">
+                <Link href="">
                   <a
-                    href="/"
+                    href=""
                     lang="fr"
                     className="underline"
                     onClick={() => onChangeLanguage(language)}

@@ -19,36 +19,28 @@ export function HeaderLogo() {
 
   return (
     <>
-      <div
-        className="brand col-xs-9 col-sm-5 col-md-4"
-        property="publisher"
-        typeof="GovernmentOrganization"
-      >
+      <div className="brand col-xs-9 col-sm-5 col-md-4">
         {language === "fr" ? (
           <div>
             <Link href={t.gocLink}>
-              <a href={t.gocLink} property="url">
-                <img src={gocFr} alt="" property="logo" />
-                <span className="wb-inv" property="name">
-                  {t.goc}
-                </span>
+              <a href={t.gocLink}>
+                <img src={gocFr} alt="" />
+                <span className="wb-inv">{t.goc}</span>
               </a>
             </Link>
           </div>
         ) : (
           <div>
             <Link href={t.gocLink}>
-              <a href={t.gocLink} property="url">
-                <img src={gocEn} alt="" property="logo" />
-                <span className="wb-inv" property="name">
-                  {t.goc}
-                </span>
+              <a href={t.gocLink}>
+                <img src={gocEn} alt="" />
+                <span className="wb-inv">{t.goc}</span>
               </a>
             </Link>
           </div>
         )}
-        <meta property="areaServed" typeof="Country" content="Canada" />
-        <link property="logo" href={goc} />
+        <meta name="Country" content="Canada" />
+        <link href={goc} />
       </div>
 
       <section

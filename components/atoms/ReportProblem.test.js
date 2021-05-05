@@ -5,10 +5,10 @@ import ReportProblem from "./ReportProblem";
 
 expect.extend(toHaveNoViolations);
 
-describe("Report a problem", () => {
+describe("Report a problem tests", () => {
   it("displays a thank you message after submit button is pressed", () => {
-    render(<ReportProblem {...ReportProblem.args} />);
-    const submitButton = screen.getByTestId("report-a-problem-submit");
+    const { container } = render(<ReportProblem {...ReportProblem.args} />);
+    const submitButton = container.querySelector("button");
     submitButton.click();
     expect(screen.getByText("Thank you for your help!")).toBeTruthy();
   });
@@ -19,7 +19,7 @@ describe("Report a problem", () => {
   });
   it("has no a11y violations for thank you message", async () => {
     const { container } = render(<ReportProblem {...ReportProblem.args} />);
-    const submitButton = screen.getByTestId("report-a-problem-submit");
+    const submitButton = container.querySelector("button");
     submitButton.click();
     const results = await axe(container);
     expect(results).toHaveNoViolations();

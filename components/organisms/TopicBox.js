@@ -67,10 +67,6 @@ TopicBox.propTypes = {
    */
   url: PropTypes.string.isRequired,
   /**
-   * Test id for cypress test
-   */
-  datacy: PropTypes.string,
-  /**
    * array of subtopics to be listed
    */
   subtopics: PropTypes.array,

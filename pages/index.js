@@ -34,7 +34,6 @@ export default function Home() {
                 image={d.image}
                 imgalt={d.imgalt}
                 url={d.url}
-                datacy={d.datacy}
                 subtopics={d.subtopics}
               />
             );
