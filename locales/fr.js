@@ -99,6 +99,9 @@ export default {
   moreInfoHealth: "Trouver un fournisseur de soins de santé dans ma région",
   moreInfoFinancial: "Trouver un planificateur financier dans ma région",
 
+  //resource cards
+  gettingready: "Getting Ready (fr)",
+
   //breadcrumb
 
   home: "Life Journeys (fr)",

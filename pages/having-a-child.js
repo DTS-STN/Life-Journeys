@@ -42,6 +42,7 @@ export default function lifejourney() {
               <MoreInfo text={t.moreInfoFertility} />
               <MoreInfo text={t.moreInfoHealth} />
               <MoreInfo text={t.moreInfoFinancial} />
+              <AvailableResources title={t.gettingready} />
             </div>
           </Accordion>
 
@@ -118,8 +119,6 @@ export default function lifejourney() {
               <MoreInfo text={t.moreInfoFinancial} />
             </div>
           </Accordion>
-
-          <AvailableResources />
         </div>
       </div>
     </Layout>
