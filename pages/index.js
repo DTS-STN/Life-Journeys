@@ -1,4 +1,4 @@
-import TopicBox from "../components/organisms/TopicBox";
+import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
 import TitleSection from "../components/molecules/TitleSection";
