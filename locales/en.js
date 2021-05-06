@@ -100,6 +100,9 @@ export default {
   moreInfoHealth: "Find a health provider in my area",
   moreInfoFinancial: "Find a financial planner in my area",
 
+  //resource cards
+  gettingready: "Getting Ready",
+
   //breadcrumb
 
   home: "Life Journeys",
