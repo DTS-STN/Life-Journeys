@@ -4,7 +4,6 @@ import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 
 export default function lifejourney() {
-
   const [anchorId, setAnchorId] = useState("");
 
   // function handleSetAnchor() {
@@ -14,7 +13,6 @@ export default function lifejourney() {
 
   return (
     <Layout>
-
       <SideMenu selectedItem={setAnchorId} />
 
       <Accordion
@@ -22,25 +20,21 @@ export default function lifejourney() {
         title="Getting Ready"
         summary="Getting Ready summary text"
         anchorId={anchorId}
-      >
-      </Accordion>
+      ></Accordion>
 
       <Accordion
         id="LoremIpsun"
         title="Lorem Ipsun"
         summary="Lorem ipsun dolor summary"
         anchorId={anchorId}
-      >
-      </Accordion>
+      ></Accordion>
 
       <Accordion
         id="WhenArrives"
         title="When your child arrives"
         summary="When your child arrives summary text"
         anchorId={anchorId}
-      >
-      </Accordion>
-
+      ></Accordion>
     </Layout>
   );
 }
