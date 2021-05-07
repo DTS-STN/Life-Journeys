@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CheckBox } from "../atoms/CheckBox";
+import { CheckBox } from "../atoms/Checkbox";
 import { TextField } from "../atoms/TextField";
 import { MultiTextField } from "../atoms/MultiTextField";
 import PropTypes from "prop-types";
