@@ -1,9 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 import { LanguageContext } from "../../context/languageProvider";
+import { BreadLink } from "../atoms/BreadLink";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
@@ -11,8 +9,13 @@ import fr from "../../locales/fr";
  * breadcrumb component
  */
 
-export default function BreadCrumbs(props) {
+export default function BreadCrumbs() {
   const router = useRouter();
+
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+
   const [breadcrumbs, setBreadcrumbs] = useState(null);
 
   useEffect(() => {
@@ -28,13 +31,11 @@ export default function BreadCrumbs(props) {
       setBreadcrumbs(pathArray);
     }
   }, [router]);
+
   if (!breadcrumbs) {
     return null;
   }
 
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
-  const t = language === "en" ? en : fr;
   const countcrumbs = breadcrumbs.length;
 
   return (
@@ -63,20 +64,5 @@ export default function BreadCrumbs(props) {
         })}
       </div>
     </nav>
-  );
-}
-
-function BreadLink({ url, text, arrow }) {
-  return (
-    <Link href={url}>
-      <a>
-        {"  "}
-        {arrow && (
-          <FontAwesomeIcon icon={faAngleRight} size="sm" color="#2B4380" />
-        )}
-        {"  "}
-        {text}
-      </a>
-    </Link>
   );
 }

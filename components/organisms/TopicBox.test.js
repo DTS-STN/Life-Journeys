@@ -11,7 +11,6 @@ const body = "test";
 const imgalt = "test";
 const image = "/images/family.png";
 const url = "/";
-const datacy = "topic1";
 const subtopics = ["test1", "test2", "test3"];
 
 describe("topicBox", () => {
@@ -25,7 +24,6 @@ describe("topicBox", () => {
           imgalt={imgalt}
           image={image}
           url={url}
-          datacy={datacy}
           subtopics={subtopics}
         />
       );
@@ -42,7 +40,6 @@ describe("topicBox", () => {
         imgalt={imgalt}
         image={image}
         url={url}
-        datacy={datacy}
         subtopics={subtopics}
       />
     );

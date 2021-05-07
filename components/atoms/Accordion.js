@@ -78,7 +78,6 @@ Accordion.defaultProps = {
               There's one more person to interact with, and that means less time for "us."
               The relationship dynamic is different, and you can get so busy you'll forget to talk. 
               If one of you provides most of the baby care, the other can feel slighted`,
-  dataCy: "Accordion1",
   mainClass: "",
   titleClass: "",
   summaryClass: "",

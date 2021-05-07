@@ -1,24 +1,21 @@
-import { render, act, screen } from "@testing-library/react";
+import { render, act } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import DropDown from "./DropDown";
 import { axe, toHaveNoViolations } from "jest-axe";
+import { BreadLink } from "./BreadLink";
 
 expect.extend(toHaveNoViolations);
 
-const dropDownText = "Drop it like it's hot";
-const dropDownId = "testDropDownID";
-
-describe("DropDown tests", () => {
-  it("renders DropDown", () => {
+describe("breadlink", () => {
+  it("renders the breadlink component", () => {
     const primary = act(() => {
-      render(<DropDown text={dropDownText} id={dropDownId} />);
+      render(<BreadLink url="/" text="lksajfd" arrow="true" />);
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
     const { container } = render(
-      <DropDown text={dropDownText} id={dropDownId} />
+      <BreadLink url="/" text="lksajfd" arrow="true" />
     );
     const results = await axe(container);
     expect(results).toHaveNoViolations();

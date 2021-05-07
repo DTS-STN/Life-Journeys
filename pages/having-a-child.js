@@ -1,11 +1,13 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
+import AvailableResources from "../components/molecules/AvailableResources";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 import Banner from "../components/atoms/Banner";
-import Breadcrumb from "../components/organisms/Breadcrumb";
+import Table from "../components/molecules/Table";
+import Breadcrumb from "../components/molecules/Breadcrumb";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -41,10 +43,17 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+                <AvailableResources title={t.gettingready} />
+              </div>
             </div>
           </Accordion>
 
@@ -55,10 +64,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -69,10 +84,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -83,10 +104,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -97,10 +124,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -111,10 +144,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
 
@@ -125,10 +164,16 @@ export default function lifejourney() {
             anchorId={anchorId}
           >
             <div className="pr-6">
-              <MoreInfo text={t.moreInfoCommunity} />
-              <MoreInfo text={t.moreInfoFertility} />
-              <MoreInfo text={t.moreInfoHealth} />
-              <MoreInfo text={t.moreInfoFinancial} />
+              <Table />
+            </div>
+            <div className="py-6">
+              <p className="text-h4 font-bold font-display">{t.getConnected}</p>
+              <div className="pr-6">
+                <MoreInfo text={t.moreInfoCommunity} />
+                <MoreInfo text={t.moreInfoFertility} />
+                <MoreInfo text={t.moreInfoHealth} />
+                <MoreInfo text={t.moreInfoFinancial} />
+              </div>
             </div>
           </Accordion>
         </div>
