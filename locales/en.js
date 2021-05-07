@@ -124,4 +124,35 @@ export default {
   //Inner accordion text
 
   getConnected: "Get connected to community supports",
+
+  //Report a problem
+  reportAProblemButtonString: "Report a problem on this page",
+  reportAProblemCheckAllThatApply: "Please select all that apply:",
+  reportAProblemIncorrectInformation: "Incorrect Information",
+  reportAProblemUnclearInformation: "Unclear Information",
+  reportAProblemDidNotFindWhatYoureLookingFor:
+    "You didn't find what you were looking for",
+  reportAProblemPageDoesNotWorkWithAdaptiveTechnology:
+    "Page does not work with your adaptive technologies",
+  reportAProblemYoureWorriedAboutYourPrivacy:
+    "You're worried about your privacy",
+  reportAProblemNoWhereElseToGo: "You don't know where else to go for help",
+  reportAProblemOther: "Other",
+  reportAProblemProvideMoreDetails: "Provide more details (optional)",
+  reportAProblemNoReply: "You will not receive a reply.",
+  reportAProblemEnquiries: "For enquiries, please contact",
+  reportAProblemNoPersonalInfo: "Do not include any personal information",
+  reportAProblemNoPersonalInfoDetails:
+    "such as your name, social insurance number (SIN), home or business address or any case or file numbers",
+  reportAProblemMoreInfo: "For more information about this tool",
+  reportAProblemMoreInfoDetails: "please refer to our",
+  reportAProblemMoreInfoLink:
+    "https://www.canada.ca/en/transparency/terms.html",
+  reportAProblemMoreInfoLinkText: "terms and conditions",
+  reportAProblemThankYouForYourHelp: "Thank you for your help!",
+  reportAProblemYouWillNotBeContacted:
+    "You will not receive a reply. For enquiries, please contact us at",
+  reportAProblemPrivacyStatement: "Privacy statement",
+  reportAProblemPrivacyStatementLink:
+    "https://www.canada.ca/en/transparency/privacy.html",
 };
