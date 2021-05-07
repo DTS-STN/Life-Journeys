@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
@@ -11,6 +11,9 @@ import en from "../locales/en";
 import fr from "../locales/fr";
 
 export default function lifejourney() {
+  //
+  const [anchorId, setAnchorId] = useState("");
+
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
@@ -25,16 +28,17 @@ export default function lifejourney() {
         <Breadcrumb />
       </div>
 
-      <div className="container flex flex-col md:flex-row align-items-center ">
-        <div className="pr-3 w-full lg:w-3/12 top-0 lg:sticky ">
-          <SideMenu />
+      <div className="container flex flex-col md:flex-row align-items-center items-start">
+        <div className="pr-3 w-full md:w-3/12 top-0 md:sticky ">
+          <SideMenu selectedItem={setAnchorId} />
         </div>
 
-        <div className="pt-2 w-full lg:w-9/12">
+        <div className="pt-2 w-full md:w-9/12">
           <Accordion
             id="GettingReady"
             title="Getting Ready"
             summary="Getting Ready summary text"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -48,6 +52,7 @@ export default function lifejourney() {
             id="LoremIpsun"
             title="Lorem Ipsun"
             summary="Lorem ipsun dolor summary"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -61,6 +66,7 @@ export default function lifejourney() {
             id="WhenArrives"
             title="When your child arrives"
             summary="When your child arrives summary text"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -74,6 +80,7 @@ export default function lifejourney() {
             id="Consectur"
             title="Consectur"
             summary="Consectur summary text"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -87,6 +94,7 @@ export default function lifejourney() {
             id="FinancialSupport"
             title="Financial Support"
             summary="Financial Support summary text"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -100,6 +108,7 @@ export default function lifejourney() {
             id="DolorConsectetur"
             title="Dolor Consectetur"
             summary="Dolor Consectetur summary text"
+            anchorId={anchorId}
           >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
@@ -109,7 +118,12 @@ export default function lifejourney() {
             </div>
           </Accordion>
 
-          <Accordion id="Ipsum" title="Ipsum" summary="Ipsum summary text">
+          <Accordion
+            id="Ipsum"
+            title="Ipsum"
+            summary="Ipsum summary text"
+            anchorId={anchorId}
+          >
             <div className="pr-6">
               <MoreInfo text={t.moreInfoCommunity} />
               <MoreInfo text={t.moreInfoFertility} />

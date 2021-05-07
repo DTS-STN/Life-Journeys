@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
 import Link from "next/link";
 
-export function SideMenu({ title, links }) {
+export function SideMenu({ title, links, selectedItem }) {
   return (
     <div
       id="Sidemenu"
@@ -17,11 +17,13 @@ export function SideMenu({ title, links }) {
         <ul className="list-none">
           {links.map(({ url, text }, index) => (
             <li key={index} className="m-0 p-0">
-              <Link href={url} scroll={false}>
+              <Link href={`#${url}`} scroll={true}>
                 <a
                   className="menuLink text-white"
-                  href={url}
                   data-text={`${text}`}
+                  onClick={() => {
+                    selectedItem(url);
+                  }}
                 >
                   {text}
                 </a>
@@ -37,13 +39,13 @@ export function SideMenu({ title, links }) {
 SideMenu.defaultProps = {
   title: "Quick Navigation",
   links: [
-    { url: "#GettingReady", text: "Getting ready" },
-    { url: "#LoremIpsun", text: "Lorem ipsun dolor" },
-    { url: "#WhenArrives", text: "When your child arrives" },
-    { url: "#Consectur", text: "Consectur" },
-    { url: "#FinancialSupport", text: "Financial support" },
-    { url: "#DolorConsectetur", text: "Dolor consectetur" },
-    { url: "#Ipsum", text: "Ipsum" },
+    { url: "GettingReady", text: "Getting ready" },
+    { url: "LoremIpsun", text: "Lorem ipsun dolor" },
+    { url: "WhenArrives", text: "When your child arrives" },
+    { url: "Consectur", text: "Consectur" },
+    { url: "FinancialSupport", text: "Financial support" },
+    { url: "DolorConsectetur", text: "Dolor consectetur" },
+    { url: "Ipsum", text: "Ipsum" },
   ],
 };
 
@@ -58,4 +60,7 @@ SideMenu.propTypes = {
       text: propTypes.string.isRequired,
     })
   ),
+
+  // function to get the url the user selected
+  selectedItem: propTypes.func,
 };

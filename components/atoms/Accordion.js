@@ -1,13 +1,25 @@
 import propTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Accordion(props) {
-  const [openFlag, setOpenFlag] = useState(false);
+  const [openFlag, setopenFlag] = useState(false);
+  const [arrowFlag, setarrowFlag] = useState(false);
 
-  function openSummary() {
-    setOpenFlag(!openFlag);
+  const AccordionRef = useRef();
+
+  useEffect(() => {
+    if (
+      props.id === props.anchorId &&
+      !AccordionRef.current.hasAttribute("open")
+    ) {
+      setopenFlag(true);
+    }
+  }, [props.anchorId]);
+
+  function handleToggle() {
+    setarrowFlag(AccordionRef.current.hasAttribute("open"));
   }
 
   const arrowColor = "#D3080C";
@@ -15,12 +27,15 @@ export function Accordion(props) {
   return (
     <div className="flex mb-2">
       <details
+        id={props.id}
+        ref={AccordionRef}
+        onToggle={() => handleToggle()}
+        open={openFlag}
         className={`accordion flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
-        data-cy={props.dataCy}
       >
-        <summary onClick={() => openSummary()}>
+        <summary>
           <div className="w-12 min-w-12 relative left-4 top-5 float-left ">
-            {openFlag ? (
+            {arrowFlag ? (
               <FontAwesomeIcon
                 icon={faChevronRight}
                 rotation={90}
@@ -37,10 +52,10 @@ export function Accordion(props) {
           </div>
           <div className="ml-8">
             <h2
-              id={props.id}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
-              {props.title}
+              {props.title}, open = {openFlag ? "true" : "false"} arrow ={" "}
+              {arrowFlag ? "true" : "false"}
             </h2>
             <span
               className={`ml-6 (${props.summaryClass}) ? ${props.summaryClass} : ''`}
@@ -67,6 +82,7 @@ Accordion.defaultProps = {
   mainClass: "",
   titleClass: "",
   summaryClass: "",
+  anchorId: "",
 };
 
 Accordion.propTypes = {
@@ -95,6 +111,6 @@ Accordion.propTypes = {
     propTypes.arrayOf(propTypes.element),
   ]),
 
-  // data-cy with the intention tobe used by cypress tests
-  dataCy: propTypes.string,
+  // name of the accrodion that must open
+  anchorId: propTypes.string,
 };
