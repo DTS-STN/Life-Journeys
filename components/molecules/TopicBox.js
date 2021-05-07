@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
  */
 export default function TopicBox(props) {
   return (
-    <div className="md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-2 cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
+    <div className="group md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-2 cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
       <Link href={props.url}>
         <a>
           <div className="grid grid-cols-3 grid-flow-row">
