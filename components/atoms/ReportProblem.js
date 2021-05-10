@@ -30,7 +30,7 @@ export default function ReportProblem() {
             {t.reportAProblemYouWillNotBeContacted}
           </p>
           <a
-            className="block text-xxs font-body hover:text-custom-blue-link focus:text-custom-blue-link focus:underline text-canada-footer-font"
+            className="block text-sm font-body hover:text-custom-blue-link focus:text-custom-blue-link focus:underline text-canada-footer-font"
             href="mailto:experience@servicecanada.gc.ca"
           >
             experience@servicecanada.gc.ca
@@ -43,10 +43,10 @@ export default function ReportProblem() {
               {t.reportAProblemCheckAllThatApply}
             </legend>
             <OptionalTextField
-              checkBoxId="incorrectInformation"
+              checkBoxId="incorrectInformationCheckBox"
               textFieldId="incorrectInformationTextField"
-              checkBoxName="incorrectInformation"
-              textFieldName="incorrectInformationText"
+              checkBoxName="incorrect_information"
+              textFieldName="incorrect_information_text"
               checkBoxLabel={t.reportAProblemIncorrectInformation}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
@@ -56,10 +56,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="unclearInformation"
-              textFieldId="incorrectInformationTextField"
-              checkBoxName="incorrectInformation"
-              textFieldName="incorrectInformationText"
+              checkBoxId="unclearInformationCheckBox"
+              textFieldId="unclearInformationTextField"
+              checkBoxName="unclear_information"
+              textFieldName="unclear_information_details"
               checkBoxLabel={t.reportAProblemUnclearInformation}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
@@ -69,10 +69,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="infoNotFound"
+              checkBoxId="infoNotFoundCheckBox"
               textFieldId="infoNotFoundTextField"
-              checkBoxName="infoNotFound"
-              textFieldName="infoNotFoundText"
+              checkBoxName="info_not_found"
+              textFieldName="info_not_found_details"
               checkBoxLabel={t.reportAProblemDidNotFindWhatYoureLookingFor}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
@@ -82,10 +82,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="adaptiveTechnology"
+              checkBoxId="adaptiveTechnologyCheckBox"
               textFieldId="adaptiveTechnologyTextField"
-              checkBoxName="adaptiveTechnology"
-              textFieldName="adaptiveTechnologyText"
+              checkBoxName="adaptive_technology"
+              textFieldName="adaptive_technology_details"
               checkBoxLabel={
                 t.reportAProblemPageDoesNotWorkWithAdaptiveTechnology
               }
@@ -97,10 +97,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="privacyIssues"
+              checkBoxId="privacyIssuesCheckBox"
               textFieldId="privacyIssuesTextField"
-              checkBoxName="privacyIssues"
-              textFieldName="privacyIssuesText"
+              checkBoxName="privacy_issues"
+              textFieldName="privacy_issues_details"
               checkBoxLabel={t.reportAProblemIncorrectInformation}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
@@ -110,10 +110,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="noWhereElseToGo"
+              checkBoxId="noWhereElseToGoCheckBox"
               textFieldId="noWhereElseToGoTextField"
-              checkBoxName="noWhereElseToGo"
-              textFieldName="noWhereElseToGoText"
+              checkBoxName="no_where_else_to_go"
+              textFieldName="no_where_else_to_go_details"
               checkBoxLabel={t.reportAProblemNoWhereElseToGo}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
@@ -123,10 +123,10 @@ export default function ReportProblem() {
               maxLength={750}
             />
             <OptionalTextField
-              checkBoxId="other"
+              checkBoxId="otherCheckBox"
               textFieldId="otherTextField"
               checkBoxName="other"
-              textFieldName="otherText"
+              textFieldName="other_details"
               checkBoxLabel={t.reportAProblemOther}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}

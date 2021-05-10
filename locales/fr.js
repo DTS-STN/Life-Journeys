@@ -140,7 +140,7 @@ export default {
   reportAProblemNoWhereElseToGo: "Vous ne savez pas où trouver de l'aide",
   reportAProblemOther: "Autre",
   reportAProblemProvideMoreDetails: "Fournir plus de détails (facultatif)",
-  reportAProblemNoReply: "Vous ne recevrez pas de réponse.",
+  reportAProblemNoReply: "Vous ne recevrez pas de réponse. ",
   reportAProblemEnquiries:
     "Pour toute demande de renseignements, veuillez contacter",
   reportAProblemNoPersonalInfo: "N'incluez pas d'informations personnelles",
