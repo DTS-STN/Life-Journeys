@@ -8,6 +8,7 @@ module.exports = {
     },
     fontSize: {
       xxs: ["13px", "16px"],
+      xs: ["14px", "16px"],
       sm: ["16px", "22px"],
       base: ["18px", "28px"],
       p: ["20px", "30px"],
@@ -54,6 +55,57 @@ module.exports = {
         "gray-light-report": "#EAEBED",
         "gray-active": "#bbbfc5",
         "gray-subtopic": "#575757",
+        "details-button-gray": "#E7E8EA",
+        "details-button-active-gray": "#cfd1d5",
+        "details-button-hover-gray": "#bbbfc5",
+        "details-border-gray": "#e3e3e3",
+        "form-input-gray": "#555",
+        "form-input-border-gray": "#ccc",
+        "canada-footer-font": "#284162",
+      },
+      width: {
+        "40px": "40px",
+        "44px": "44px",
+        "300px": "300px",
+      },
+      height: {
+        "40px": "40px",
+        "44px": "44px",
+        "46px": "46px",
+      },
+      inset: {
+        "-2px": "-2px",
+      },
+      zIndex: {
+        1: "1",
+      },
+      padding: {
+        "4px": "4px",
+        "5px": "5px",
+        "6px": "6px",
+        "8px": "8px",
+        "12px": "12px",
+        "15px": "15px",
+        "40px": "40px",
+      },
+      margin: {
+        "5px": "5px",
+        "15px": "15px",
+        "10px": "10px",
+        "20px": "20px",
+      },
+
+      maxWidth: {
+        "350px": "350px",
+      },
+
+      minHeight: {
+        "40px": "40px",
+        "200px": "200px",
+      },
+
+      maxHeight: {
+        "40px": "40px",
       },
     },
   },

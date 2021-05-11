@@ -124,4 +124,36 @@ export default {
   //Inner accordion text
 
   getConnected: "Se connecter aux aides communautaires",
+
+  //Report a problem
+  reportAProblemButtonString: "Signaler un problème sur cette page",
+  reportAProblemCheckAllThatApply:
+    "Veuillez sélectionner tous les éléments qui s'appliquent:",
+  reportAProblemIncorrectInformation: "Informations incorrectes",
+  reportAProblemUnclearInformation: "Informations peu claires",
+  reportAProblemDidNotFindWhatYoureLookingFor:
+    "Vous n'avez pas trouvé ce que vous cherchiez.",
+  reportAProblemPageDoesNotWorkWithAdaptiveTechnology:
+    "La page ne fonctionne pas avec vos technologies d'adaptation",
+  reportAProblemYoureWorriedAboutYourPrivacy:
+    "Vous êtes inquiet pour votre vie privée",
+  reportAProblemNoWhereElseToGo: "Vous ne savez pas où trouver de l'aide",
+  reportAProblemOther: "Autre",
+  reportAProblemProvideMoreDetails: "Fournir plus de détails (facultatif)",
+  reportAProblemNoReply: "Vous ne recevrez pas de réponse. ",
+  reportAProblemEnquiries:
+    "Pour toute demande de renseignements, veuillez contacter",
+  reportAProblemNoPersonalInfo: "N'incluez pas d'informations personnelles",
+  reportAProblemNoPersonalInfoDetails:
+    "tels que votre nom, votre numéro d'assurance sociale (NAS), votre adresse personnelle ou professionnelle ou tout numéro de dossier ou d'affaire",
+  reportAProblemMoreInfo: "Pour plus d'informations sur cet outil",
+  reportAProblemMoreInfoDetails: "veuillez vous référer à nos",
+  reportAProblemMoreInfoLink: "https://www.canada.ca/fr/transparence/avis.html",
+  reportAProblemMoreInfoLinkText: "termes et conditions",
+  reportAProblemThankYouForYourHelp: "Merci pour votre aide!",
+  reportAProblemYouWillNotBeContacted:
+    "Vous ne recevrez pas de réponse. Pour toute demande de renseignements, veuillez nous contacter à",
+  reportAProblemPrivacyStatement: "Déclaration de confidentialité",
+  reportAProblemPrivacyStatementLink:
+    "https://www.canada.ca/fr/transparence/confidentialite.html",
 };

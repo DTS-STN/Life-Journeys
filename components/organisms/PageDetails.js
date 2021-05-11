@@ -6,7 +6,9 @@ import ReportProblem from "../atoms/ReportProblem";
 export function PageDetails(props) {
   return (
     <div className="container pb-8 pt-8">
-      <ReportProblem />
+      <div className="pb-8">
+        <ReportProblem />
+      </div>
       <DateModified />
     </div>
   );
