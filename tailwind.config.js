@@ -53,6 +53,7 @@ module.exports = {
         "hr-red-bar": "#AE3B43",
         "gray-light-report": "#EAEBED",
         "gray-active": "#bbbfc5",
+        "gray-subtopic": "#575757",
       },
     },
   },

@@ -6,12 +6,12 @@ import PropTypes from "prop-types";
  */
 export default function TopicBox(props) {
   return (
-    <div className="group md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 pl-2 cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
+    <div className="transition duration-500 group md:shadow-lg h-auto min-h-96 w-full rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
       <Link href={props.url}>
-        <a>
-          <div className="grid grid-cols-3 grid-flow-row">
+        <button className="pl-2 text-left">
+          <div className="grid grid-cols-3 grid-flow-row h-full">
             <div className="col-span-2 mt-8">
-              <h2 className="text-h3">{props.title}</h2>
+              <h2 className="text-h3 group-hover:underline">{props.title}</h2>
             </div>
             <div className="pt-1 col-span-1 xxl:ml-8">
               <Image
@@ -23,19 +23,19 @@ export default function TopicBox(props) {
               ></Image>
             </div>
           </div>
-          <p className="pb-4">{props.body}</p>
+          <p className="pt-2 pb-4">{props.body}</p>
           <h3 className="text-h5 pb-4">Find information about</h3>{" "}
-          <ul className="flex flex-wrap gap-2 pb-2">
+          <ul className="flex flex-wrap gap-2 pb-2 pr-2 h-full">
             {props.subtopics.map((d, idx) => (
               <li
                 key={idx}
-                className="h-auto w-auto rounded-md border-2 pl-2 pr-2"
+                className=" w-auto rounded-md bg-gray-subtopic uppercase font-bold text-white pl-2 pr-2"
               >
                 {d}
               </li>
             ))}
           </ul>
-        </a>
+        </button>
       </Link>
     </div>
   );

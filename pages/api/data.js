@@ -2,46 +2,55 @@ export const topics = [
   {
     title: "Having a Child",
     body:
-      "Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor.",
+      "Everything you need to know about planning to have a child and what to do after your baby is born",
     image: "/images/family.png",
     imgalt: "alt1",
     url: "/having-a-child",
-    subtopics: ["thing1", "thing2", "thing3"],
+    subtopics: [
+      "Pregnancy",
+      "In vitro Fertilization",
+      "Benefits",
+      "Community services",
+    ],
   },
   {
-    title: "Title 2",
+    title: "Adopting a Child",
     body:
-      "Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor.",
+      "Information about how to adopt a child, what to do once the child arrives, what assitance could be available",
     image: "/images/family.png",
     imgalt: "alt2",
     url: "/",
-    subtopics: ["thing1", "thing2", "thing3"],
+    subtopics: ["Adoption Agencies", "Advice", "Community Services"],
   },
   {
-    title: "Title 3",
+    title: "Become a Foster Parent",
     body:
-      "Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor.",
+      "Information about how to foster a child/children lorem ipsum dolor sit amet, lorem elit consectetur adipiscing",
     image: "/images/family.png",
     imgalt: "alt3",
     url: "/",
-    subtopics: ["thing1", "thing2", "thing3"],
+    subtopics: [
+      "What its like to be a foster parent",
+      "How to apply",
+      "Advice",
+    ],
   },
   {
-    title: "Title 4",
+    title: "Experiencing the Loss of Your Child",
     body:
-      "Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor.",
+      "Find resources and support to help you through this difficult time lorem ipsum",
     image: "/images/family.png",
     imgalt: "alt4",
     url: "/",
-    subtopics: ["thing1", "thing2", "thing3"],
+    subtopics: ["Government processes", "Mental health support"],
   },
   {
-    title: "Title 5",
+    title: "Raising a Child",
     body:
-      "Lorem ipsum dolor sit amet, lorem elit consectetur adipiscing elit, ame do sed eiusmod tempor.",
+      "Get information on important milestones, government benefits, child rearing advice",
     image: "/images/family.png",
     imgalt: "alt5",
     url: "/",
-    subtopics: ["thing1", "thing2", "thing3"],
+    subtopics: ["Tax credits/payments", "Advice", "Milestones"],
   },
 ];
