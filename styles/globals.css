@@ -34,6 +34,10 @@
     @apply text-base;
   }
 
+.border-outset {
+    border-style: outset;
+}
+
   
 /* 
 
