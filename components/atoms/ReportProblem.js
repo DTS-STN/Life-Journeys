@@ -101,7 +101,7 @@ export default function ReportProblem() {
               textFieldId="privacyIssuesTextField"
               checkBoxName="privacy_issues"
               textFieldName="privacy_issues_details"
-              checkBoxLabel={t.reportAProblemIncorrectInformation}
+              checkBoxLabel={t.reportAProblemYoureWorriedAboutYourPrivacy}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
               multiText={true}
