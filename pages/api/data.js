@@ -24,8 +24,7 @@ export const topics = [
   },
   {
     title: "Become a Foster Parent",
-    body:
-      "Information about how to foster a child/children lorem ipsum dolor sit amet, lorem elit consectetur adipiscing",
+    body: "Information about how to foster a child/children",
     image: "/images/family.png",
     imgalt: "alt3",
     url: "/",
@@ -37,8 +36,7 @@ export const topics = [
   },
   {
     title: "Experiencing the Loss of Your Child",
-    body:
-      "Find resources and support to help you through this difficult time lorem ipsum",
+    body: "Find resources and support to help you through this difficult time",
     image: "/images/family.png",
     imgalt: "alt4",
     url: "/",
