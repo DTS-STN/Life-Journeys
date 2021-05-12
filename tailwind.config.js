@@ -19,10 +19,11 @@ module.exports = {
       h2: ["30px", "33.5px"],
       h1: ["34px", "42px"],
       "h1-xl": ["40px", "46px"],
+      "h3-tall": ["24px", "30px"],
     },
     screens: {
       xxs: "768px",
-      xs: "768px",
+      xs: "425px",
       sm: "768px",
       md: "768px",
       lg: "992px",
@@ -111,7 +112,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["active"],
+      backgroundColor: ["active", "focus-visible"],
       textColor: ["visited"],
       outline: ["focus-visible"],
       ringWidth: ["focus-visible"],

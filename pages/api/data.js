@@ -8,7 +8,7 @@ export const topics = [
     url: "/having-a-child",
     subtopics: [
       "Pregnancy",
-      "In vitro Fertilization",
+      "In vitro fertilization",
       "Benefits",
       "Community services",
     ],
@@ -20,7 +20,7 @@ export const topics = [
     image: "/images/family.png",
     imgalt: "alt2",
     url: "/",
-    subtopics: ["Adoption Agencies", "Advice", "Community Services"],
+    subtopics: ["Adoption agencies", "Advice", "Community services"],
   },
   {
     title: "Become a Foster Parent",
@@ -29,7 +29,7 @@ export const topics = [
     imgalt: "alt3",
     url: "/",
     subtopics: [
-      "What its like to be a foster parent",
+      "What it's like to be a foster parent",
       "How to apply",
       "Advice",
     ],
