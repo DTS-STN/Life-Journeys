@@ -155,4 +155,10 @@ export default {
   reportAProblemPrivacyStatement: "Privacy statement",
   reportAProblemPrivacyStatementLink:
     "https://www.canada.ca/en/transparency/privacy.html",
+
+  //Landing Page Title Section
+  landingPageTitle: "Get Information About a Life Journey",
+  landingPageContent:
+    "The Life Journey Information Service helps make your journey through life easier by showing you the step-by-step process of a life event in your journey and show you the support that might be available to help you.",
+  landingPageSubtitle: "Select a journey to get started",
 };
