@@ -7,9 +7,9 @@ import PropTypes from "prop-types";
 export default function TopicBox(props) {
   return (
     <Link href={props.url}>
-      <a className="text-black focus-visible:outline-none focus-visible:bg-gray-light-report focus-visible:ring-2 focus-visible:ring-black pl-2 text-left transition duration-500 group md:shadow-lg h-auto min-h-full w-full rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
+      <a className="text-black focus-visible:outline-none focus-visible:bg-gray-light-report focus-visible:ring-2 focus-visible:ring-black pl-2 text-left transition duration-500 group md:shadow-lg h-auto w-auto rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
         <div className="grid grid-cols-3 grid-flow-col-dense">
-          <div className="col-span-2 mt-8 sm:mt-4 lg:mt-6 mb-2">
+          <div className="col-span-2 mt-8 sm:mt-4 lg:mt-6">
             <h2 className="text-h3-tall group-hover:underline">
               {props.title}
             </h2>
