@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container flex flex-wrap">
-        <div className="mt-4 mb-4 grid sm:grid-cols-3 grid-flow-row gap-3 md:gap-10">
+        <div className="mt-4 mb-4 grid lg:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-3 md:gap-10">
           {data.map(function (d, idx) {
             return (
               <TopicBox
