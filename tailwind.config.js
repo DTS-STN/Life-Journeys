@@ -19,6 +19,7 @@ module.exports = {
       h2: ["30px", "33.5px"],
       h1: ["34px", "42px"],
       "h1-xl": ["40px", "46px"],
+      "h3-tall": ["24px", "30px"],
     },
     screens: {
       xxs: "768px",
@@ -54,6 +55,7 @@ module.exports = {
         "hr-red-bar": "#AE3B43",
         "gray-light-report": "#EAEBED",
         "gray-active": "#bbbfc5",
+        "gray-subtopic": "#575757",
         "details-button-gray": "#E7E8EA",
         "details-button-active-gray": "#cfd1d5",
         "details-button-hover-gray": "#bbbfc5",
@@ -110,8 +112,11 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["active"],
+      backgroundColor: ["active", "focus-visible"],
       textColor: ["visited"],
+      outline: ["focus-visible"],
+      ringWidth: ["focus-visible"],
+      ringColor: ["focus-visible"],
     },
   },
   plugins: [

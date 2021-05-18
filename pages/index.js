@@ -1,4 +1,4 @@
-import TopicBox from "../components/organisms/TopicBox";
+import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import userSwr from "swr";
 import { useContext } from "react";
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container flex flex-wrap">
-        <div className="sm:grid grid-cols-3 gap-10">
+        <div className="mt-4 mb-4 grid lg:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-3 md:gap-10">
           {data.map(function (d, idx) {
             return (
               <TopicBox
