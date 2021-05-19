@@ -29,7 +29,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.0.4",
     "font-awesome": "^4.7.0",
-    "next": "v10.2.1-canary.2",
+    "next": "10.2.1",
     "postcss": "^8.1.10",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
