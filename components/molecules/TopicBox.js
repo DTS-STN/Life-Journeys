@@ -7,14 +7,14 @@ import PropTypes from "prop-types";
 export default function TopicBox(props) {
   return (
     <Link href={props.url}>
-      <a className="text-black focus-visible:outline-none focus-visible:bg-gray-light-report focus-visible:ring-2 focus-visible:ring-black pl-2 text-left transition duration-500 group md:shadow-lg h-auto w-auto rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
+      <a className="text-black focus-visible:outline-none focus-visible:bg-gray-light-report focus-visible:ring-2 focus-visible:ring-black pl-2 text-left transition duration-500 group md:shadow-lg xxl:w-full xl:w-10/12 lg:w-11/12 xxs:w-full xs:w-full sm:w-10/12 md:w-9/12 rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
         <div className="grid grid-cols-3 grid-flow-col-dense">
           <div className="col-span-2 mt-8 sm:mt-6 lg:mt-6 xs:mt-6">
             <h2 className="text-h3-tall group-hover:underline">
               {props.title}
             </h2>
           </div>
-          <div className="pt-1 col-span-1 lg:ml-8 sm:ml-8 xs:ml-6">
+          <div className="pt-1 col-span-1 xxl:ml-8 xl:ml-10 lg:ml-8 md:ml-9 sm:ml-6 xs:ml-6">
             <Image
               src={props.image}
               alt={props.imgalt}
