@@ -3,12 +3,22 @@ import "@testing-library/jest-dom/extend-expect";
 import { axe, toHaveNoViolations } from "jest-axe";
 import ReportProblem from "./ReportProblem";
 import { LanguageContext } from "../../context/languageProvider";
+import fetchMock from "fetch-mock";
 
 expect.extend(toHaveNoViolations);
 
 describe("Report a problem tests", () => {
   const contextValue = { items: { language: "en" } };
 
+  beforeEach(() => {
+    fetchMock.postOnce("/api/report-a-problem", {
+      status: 200,
+      body: "OK",
+    });
+  });
+  afterEach(() => {
+    fetchMock.restore();
+  });
   it("displays a thank you message after submit button is pressed", () => {
     const { container } = render(
       <LanguageContext.Provider value={contextValue}>

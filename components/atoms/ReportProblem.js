@@ -9,15 +9,34 @@ import fr from "../../locales/fr";
 
 export default function ReportProblem() {
   const [submitted, setSubmitted] = useState(false);
-
-  let onSubmitHandler = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
+
+  let onSubmitHandler = (e) => {
+    // prevent default behaviour of form
+    e.preventDefault();
+    // create FormData object from form
+    const formData = new FormData(e.target);
+    // create URLSearchParams object from FormData object
+    // this will be used to create url encoded string of names and values of the form fields
+    const urlEncoded = new URLSearchParams(formData);
+    // call report a problem API route
+    fetch("/api/report-a-problem", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      },
+      body: urlEncoded.toString(),
+    }).catch((e) => {
+      // handle error if fetch fails
+      // fetch only fails if there is no internet connection not for the actual
+      // request so there is nothing really to do here other than to log it
+      console.log(e);
+    });
+
+    setSubmitted(true);
+  };
 
   return (
     <DropDown text={t.reportAProblemButtonString}>
@@ -38,6 +57,7 @@ export default function ReportProblem() {
         </>
       ) : (
         <form className="w-full" action="#" onSubmit={onSubmitHandler}>
+          <input type="hidden" id="language" name="language" value={language} />
           <fieldset>
             <legend className="text-h3 text-center font-normal mb-6">
               {t.reportAProblemCheckAllThatApply}
@@ -46,7 +66,7 @@ export default function ReportProblem() {
               checkBoxId="incorrectInformationCheckBox"
               textFieldId="incorrectInformationTextField"
               checkBoxName="incorrect_information"
-              textFieldName="incorrect_information_text"
+              textFieldName="incorrect_information_details"
               checkBoxLabel={t.reportAProblemIncorrectInformation}
               textFieldLabel={t.reportAProblemProvideMoreDetails}
               uncontrolled={true}
