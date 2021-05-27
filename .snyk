@@ -10,6 +10,15 @@ ignore:
     - tailwindcss > resolve > path-parse:
         reason: None given
         expires: '2021-06-20T16:59:35.595Z'
+    - jest > @jest/core > @jest/reporters > jest-resolve > resolve > path-parse:
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
+    - npm > init-package-json > read-package-json > normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
+    - '@jest/core > @jest/reporters > jest-resolve > resolve > path-parse':
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
   SNYK-JS-POSTCSS-1255640:
     - tailwindcss > postcss-functions > postcss:
         reason: None given
