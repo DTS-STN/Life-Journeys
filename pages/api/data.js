@@ -1,8 +1,7 @@
 export const topics = [
   {
     title: "Having a Child",
-    body:
-      "Everything you need to know about planning to have a child and what to do after your baby is born",
+    body: "Everything you need to know about planning to have a child and what to do after your baby is born",
     image: "/images/family.png",
     imgalt: "alt1",
     url: "/having-a-child",
@@ -15,8 +14,7 @@ export const topics = [
   },
   {
     title: "Adopting a Child",
-    body:
-      "Information about how to adopt a child, what to do once the child arrives, what assitance could be available",
+    body: "Information about how to adopt a child, what to do once the child arrives, what assitance could be available",
     image: "/images/family.png",
     imgalt: "alt2",
     url: "/",
@@ -44,8 +42,7 @@ export const topics = [
   },
   {
     title: "Raising a Child",
-    body:
-      "Get information on important milestones, government benefits, child rearing advice",
+    body: "Get information on important milestones, government benefits, child rearing advice",
     image: "/images/family.png",
     imgalt: "alt5",
     url: "/",
