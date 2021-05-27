@@ -10,7 +10,7 @@ const NEXTJS_ADOBE_URL = process.env.NEXTJS_ADOBE_URL
 //
 
 export async function getTopics(locale) {
-  const lang = locale;
+  //const lang = locale;
   //const res = await fetch(`${NEXTJS_ADOBE_URL}/content/posts/?key=${NEXTJS_ADOBE_API_KEY}&filter=tag:${lang}`)
   const res = await fetch(`${NEXTJS_ADOBE_URL}`);
 
