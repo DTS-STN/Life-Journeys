@@ -1,3 +1,4 @@
+import { topics } from "../api/data";
 //  Fetch calls to AEM
 
 //const { NEXTJS_ADOBE_API_KEY, NEXTJS_ADOBE_URL } = process.env
@@ -9,9 +10,14 @@ const NEXTJS_ADOBE_URL = process.env.NEXTJS_ADOBE_URL
 // Fetch ALL topics from Adobe
 //
 
+export default function handler(req, res) {
+  res.status(200).json(topics);
+}
+
 export async function getTopics(locale) {
   //const lang = locale;
   //const res = await fetch(`${NEXTJS_ADOBE_URL}/content/posts/?key=${NEXTJS_ADOBE_API_KEY}&filter=tag:${lang}`)
+
   const res = await fetch(`${NEXTJS_ADOBE_URL}`);
 
   const errorCode = res.ok ? false : res.statusCode;
