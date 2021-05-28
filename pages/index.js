@@ -4,7 +4,7 @@ import { getTopics } from "./api/topics";
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Breadcrumb from "../components/molecules/Breadcrumb";
-import userSwr from "swr";
+import useSwr from "swr";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -19,7 +19,7 @@ export default function Home() {
   const [topicsData, setTopicData] = useState(null);
   const [errorCode, setErrorCode] = useState(false);
 
-  const { data, error } = userSwr("/api/topics", fetcher);
+  const { data, error } = useSwr("/api/topics", fetcher);
 
   const ADOBE_ENABLED = process.env.ADOBE_ENABLED
     ? process.env.ADOBE_ENABLED
