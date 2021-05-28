@@ -60,7 +60,9 @@ export default function Home() {
 
     if (errorCode) return <div>Failed to load topics...</div>;
   }
+  //
   //If on dev instance, use data.js for topic box content
+  //
   else {
     if (!data) return <div>Loading...</div>;
     if (error === !null) return <div>Failed to load topics...</div>;
