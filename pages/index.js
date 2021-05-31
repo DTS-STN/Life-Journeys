@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <Layout home>
-      <div class="xxs:ml-3 container lg:mx-auto">
+      <div className="container">
         <div id="wb-bc" className="pt-4">
           <Breadcrumb />
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
             {t.landingPageSubtitle}
           </p>
         </div>
-        <div className="flex flex-wrap grid xxl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-3 md:gap-5">
+        <div className="topicBoxSm flex flex-wrap grid xxl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-3 lg:gap-10 xxl:gap-5">
           {data.map(function (d, idx) {
             return (
               <TopicBox

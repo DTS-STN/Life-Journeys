@@ -701,4 +701,9 @@ details.accordion > summary::-webkit-details-marker {
   }
 }
 
+@media (max-width: 991px) {
+  .topicBoxSm {
+    max-width: 400px;
+  }
+}
 

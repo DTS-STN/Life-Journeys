@@ -12,14 +12,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "snyk test && jest --passWithNoTests --silent",
+    "test": "jest --passWithNoTests --silent",
     "test-dev": "jest --watch --silent",
     "test:ci": "jest --ci --passWithNoTests --silent",
     "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "beforePush": "npm run test:ci & npm run lint:fix & npm run build"
+    "beforePush": "npm run test:ci & npm run lint:fix & npm run build",
+    "snyk": "snyk test"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
