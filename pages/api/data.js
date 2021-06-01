@@ -1,6 +1,6 @@
 export const topics = [
   {
-    title: "Having a Baby",
+    title: "Having a Baby (Local)",
     body: "Everything you need to know about planning to have a child and what to do after your baby is born",
     image: "/images/family.png",
     imgalt: "alt1",
