@@ -20,7 +20,7 @@ export function getLocalData() {
 export async function getTopics(language) {
   //
   console.log(
-    `api url is: ${process.env.NEXTJS_CONTENT_API}  language is: ${language}`
+    `api url is: ${process.env.NEXTJS_CONTENT_API}  language is: ${language.locale}`
   );
 
   const res = await fetch(`${process.env.NEXTJS_CONTENT_API}`);
