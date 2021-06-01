@@ -1,20 +1,29 @@
+import fs from "fs";
+import path from "path";
+
 //
 // Fetch ALL topics from local Data
 //
 
-import { topics } from "../api/data";
+export function getLocalData() {
+  const dataDirectory = path.join(process.cwd(), "pages/api");
+  const fullPath = path.join(dataDirectory, `data.json`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const localData = JSON.parse(fileContents).topics;
 
-export default function handler(req, res) {
-  res.status(200).json(topics);
+  return { localData };
 }
 
 //
 // Fetch ALL topics from API
 //
 
-console.log(`api url is: ${process.env.NEXTJS_CONTENT_API} `);
-
 export async function getTopics(language) {
+  //
+  console.log(
+    `api url is: ${process.env.NEXTJS_CONTENT_API}  language is: ${language}`
+  );
+
   const res = await fetch(`${process.env.NEXTJS_CONTENT_API}`);
 
   const error = res.ok ? false : res.statusCode;

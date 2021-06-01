@@ -1,10 +1,9 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
-import { getTopics } from "./api/topics";
+import { getTopics, getLocalData } from "./api/topics";
 import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Breadcrumb from "../components/molecules/Breadcrumb";
-import useSwr from "swr";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -96,11 +95,10 @@ export async function getStaticProps(language) {
     //
     // Else get the content from the local file
     //
-    const fetcher = (url) => fetch(url).then((res) => res.json());
-    const { data, error } = userSwr("/api/topics", fetcher);
+    const { localData } = getLocalData();
 
-    topicsData = data;
-    errorCode = error;
+    topicsData = localData;
+    errorCode = false;
   }
 
   return {
