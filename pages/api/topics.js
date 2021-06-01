@@ -6,8 +6,6 @@ import path from "path";
 //
 
 export function getLocalData() {
-  //const dataDirectory = path.join(process.cwd(), "pages/api");
-  //const fullPath = path.join(process.cwd(), "pages", "api", "data.json");
   const fullPath = path.join(process.cwd(), "pages", "api", "data.json");
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const localData = JSON.parse(fileContents).topics;
