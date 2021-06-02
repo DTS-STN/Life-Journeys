@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-GLOBPARENT-1016905:
+    - tailwindcss > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-06-20T16:59:35.595Z'
+  SNYK-JS-PATHPARSE-1077067:
+    - tailwindcss > resolve > path-parse:
+        reason: None given
+        expires: '2021-06-20T16:59:35.595Z'
+    - jest > @jest/core > @jest/reporters > jest-resolve > resolve > path-parse:
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
+    - npm > init-package-json > read-package-json > normalize-package-data > resolve > path-parse:
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
+    - '@jest/core > @jest/reporters > jest-resolve > resolve > path-parse':
+        reason: None given
+        expires: '2021-06-24T19:45:13.307Z'
+  SNYK-JS-POSTCSS-1255640:
+    - tailwindcss > postcss-functions > postcss:
+        reason: None given
+        expires: '2021-06-20T16:59:35.595Z'
+patch: {}
