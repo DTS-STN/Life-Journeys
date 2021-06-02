@@ -1,6 +1,6 @@
 export default {
   //site title
-  siteTitle: "Voyages de vie",
+  siteTitle: "Parcours de vie",
 
   // Nav
   skipToMainContent: "Passer au contenu principal",
