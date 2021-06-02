@@ -24,7 +24,7 @@ export default function Home({ topicsData, errorCode }) {
     );
 
   return (
-    <Layout home>
+    <Layout home title={t.homeSiteTitle}>
       <div className="container">
         <div id="wb-bc" className="pt-4">
           <Breadcrumb />

@@ -18,7 +18,7 @@ export default function lifejourney() {
   const t = language === "en" ? en : fr;
 
   return (
-    <Layout>
+    <Layout title={t.havingABabyTitle}>
       <Banner
         siteTitle={t.havingAChildBannerTitle}
         headline={t.havingAChildBannerText}

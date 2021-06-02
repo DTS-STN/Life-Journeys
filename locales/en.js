@@ -1,6 +1,7 @@
 export default {
-  //site title
-  siteTitle: "Life Journeys",
+  //site titles
+  homeSiteTitle: "Life Journeys",
+  havingABabyTitle: "Having a Baby",
 
   // Nav
   skipToMainContent: "Skip to main content",
@@ -90,7 +91,7 @@ export default {
 
   //Banner text
 
-  havingAChildBannerTitle: "Having a child",
+  havingAChildBannerTitle: "Having a baby",
   havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
 
   //More Info Links
@@ -106,7 +107,7 @@ export default {
   //breadcrumb
 
   home: "Life Journeys",
-  "having-a-child": "Having a Child",
+  "having-a-baby": "Having a baby",
 
   //Table
 
