@@ -69,7 +69,7 @@ export async function getStaticProps(language) {
   // IF content enabled get the data from the api
   //
 
-  if (process.env.NEXTJS_CONTENT_API) {
+  if (process.env.NEXT_CONTENT_API) {
     const { apiData, error } = await getTopics(language.locale);
 
     let topics = [];

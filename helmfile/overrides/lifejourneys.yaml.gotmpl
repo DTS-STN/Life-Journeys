@@ -14,9 +14,7 @@ extraEnv:
     value: {{ requiredEnv "NOTIFY_REPORT_A_PROBLEM_EMAIL" | quote }}
   - name: NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID
     value: {{ requiredEnv "NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID" | quote }}
-  - name: NEXTJS_CONTENT_API
-    value: {{ requiredEnv "NEXTJS_CONTENT_API" | quote }}
-
+  {{/* WE ARE ALSO SENDING IN NEXT_CONTENT_API, NEXT_BUILD_ID AND NEXT_BUILD_DATE AS ARGUMENTS IN TC  */}}
 ingress:
       enabled: true
       hosts:
