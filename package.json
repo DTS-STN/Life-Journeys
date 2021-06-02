@@ -19,7 +19,8 @@
     "lint:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "beforePush": "npm run test:ci & npm run lint:fix & npm run build"
+    "beforePush": "npm run test:ci & npm run lint:fix & npm run build",
+    "snyk": "snyk test"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -33,9 +34,10 @@
     "next": "^10.2.3",
     "node-mocks-http": "^1.10.1",
     "postcss": "^8.2.14",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "snyk": "^1.605.0",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {

@@ -8,23 +8,23 @@ export default function TopicBox(props) {
   return (
     <Link href={props.url}>
       <a className="text-black focus-visible:outline-none focus-visible:bg-gray-light-report focus-visible:ring-2 focus-visible:ring-black pl-2 text-left transition duration-500 group md:shadow-lg h-auto w-auto rounded-md border-2 cursor-pointer hover:bg-gray-light-report active:bg-gray-active focus:ring-2 focus:ring-black">
-        <div className="grid grid-cols-3 grid-flow-col-dense">
+        <div className="relative grid grid-cols-3 grid-flow-col-dense">
           <div className="col-span-2 mt-8 sm:mt-6 lg:mt-6 xs:mt-6">
             <h2 className="text-h3-tall group-hover:underline">
               {props.title}
             </h2>
           </div>
-          <div className="pt-1 col-span-1 lg:ml-8 sm:ml-8 xs:ml-6">
+          <div className="absolute inset-y-0 right-0 pt-1 col-span-1">
             <Image
               src={props.image}
               alt={props.imgalt}
               width={73}
               height={73}
-              layout="responsive"
+              layout="intrinsic"
             ></Image>
           </div>
         </div>
-        <p className="pt-2 pb-4">{props.body}</p>
+        <p className="pt-4 pb-4">{props.body}</p>
         <h3 className="text-h5 mb-2">Find information about</h3>{" "}
         <ul className="flex flex-wrap gap-2 pb-2 pr-2">
           {props.subtopics.map((d, idx) => (
