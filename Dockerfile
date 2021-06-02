@@ -24,6 +24,7 @@ ENV NOTIFY_BASE_API_URL=https://api.notification.canada.ca
 ENV NOTIFY_API_KEY=""
 ENV NOTIFY_REPORT_A_PROBLEM_EMAIL=""
 ENV NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID=""
+ENV NEXTJS_CONTENT_API = ""
 WORKDIR /app
 COPY --from=build /build/package*.json ./
 COPY --from=build /build/next.config.js ./
