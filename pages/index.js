@@ -39,7 +39,7 @@ export default function Home({ topicsData, errorCode }) {
         </div>
       </div>
       <div className="container flex flex-wrap">
-        <div className="mt-4 mb-4 grid lg:grid-cols-3 sm:grid-cols-2 grid-flow-row gap-3 md:gap-10">
+        <div className="topicBoxSm grid xxl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-3 lg:gap-10 xxl:gap-5">
           {topicsData.map(
             ({ title, body, image, imgalt, url, subtopics }, idx) => {
               return (
