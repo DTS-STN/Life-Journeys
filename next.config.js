@@ -9,11 +9,15 @@ var builddate = process.env.NEXT_PUBLIC_BUILD_DATE
 var buildid = process.env.NEXT_PUBLIC_TC_BUILD
   ? process.env.NEXT_PUBLIC_TC_BUILD
   : "BUILD-IS-NA";
+var contentURL = process.env.NEXTJS_CONTENT_API
+  ? process.env.NEXTJS_CONTENT_API
+  : "";
 
 module.exports = {
   env: {
     NEXT_PUBLIC_BUILD_DATE: builddate,
     NEXT_PUBLIC_TC_BUILD: buildid,
+    NEXTJS_CONTENT_API: contentURL,
   },
   i18n: {
     locales: ["en", "fr"],

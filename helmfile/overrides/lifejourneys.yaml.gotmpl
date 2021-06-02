@@ -14,6 +14,8 @@ extraEnv:
     value: {{ requiredEnv "NOTIFY_REPORT_A_PROBLEM_EMAIL" | quote }}
   - name: NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID
     value: {{ requiredEnv "NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID" | quote }}
+  - name: NEXTJS_CONTENT_API
+    value: {{ requiredEnv "NEXTJS_CONTENT_API" | quote }}
 
 ingress:
       enabled: true
