@@ -10,9 +10,8 @@ ARG BUILD_DATE
 ARG TC_BUILD
 ENV NEXT_PUBLIC_BUILD_DATE=$BUILD_DATE
 ENV NEXT_PUBLIC_TC_BUILD=$TC_BUILD
+ENV NEXTJS_CONTENT_API = ""
 ENV NODE_ENV=production
-RUN echo $BUILD_DATE 
-RUN echo $TC_BUILD
 WORKDIR /build
 COPY --from=base /base ./
 RUN npm run build
@@ -24,7 +23,6 @@ ENV NOTIFY_BASE_API_URL=https://api.notification.canada.ca
 ENV NOTIFY_API_KEY=""
 ENV NOTIFY_REPORT_A_PROBLEM_EMAIL=""
 ENV NOTIFY_REPORT_A_PROBLEM_TEMPLATE_ID=""
-ENV NEXTJS_CONTENT_API = ""
 WORKDIR /app
 COPY --from=build /build/package*.json ./
 COPY --from=build /build/next.config.js ./
