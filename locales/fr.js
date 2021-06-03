@@ -1,6 +1,7 @@
 export default {
-  //site title
-  siteTitle: "Voyages de vie",
+  //site titles
+  homeSiteTitle: "Parcours de vie",
+  havingABabyTitle: "Avoir un bébé",
 
   // Nav
   skipToMainContent: "Passer au contenu principal",
@@ -89,7 +90,7 @@ export default {
 
   //Banner text
 
-  havingAChildBannerTitle: "Avoir un enfant",
+  havingAChildBannerTitle: "Avoir un bébé",
   havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
 
   //More Info Links
