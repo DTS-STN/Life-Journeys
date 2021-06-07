@@ -63,6 +63,7 @@ module.exports = {
         "form-input-gray": "#555",
         "form-input-border-gray": "#ccc",
         "canada-footer-font": "#284162",
+        "visited-link": "#7834bc",
       },
       width: {
         "40px": "40px",

@@ -6,12 +6,12 @@ import Link from "next/link";
 export function BreadLink({ url, text, arrow }) {
   return (
     <Link href={url}>
-      <a className="underline">
+      <a className="underline text-visited-link">
         {arrow && (
           <FontAwesomeIcon
             icon={faAngleRight}
             size="sm"
-            color="#2B4380"
+            color="#333"
             className="mx-4"
           />
         )}
