@@ -23,7 +23,7 @@ export default function lifejourney() {
         siteTitle={t.havingAChildBannerTitle}
         headline={t.havingAChildBannerText}
       />
-      <div id="wb-bc" className="container pt-4">
+      <div id="wb-bc" className="container my-6">
         <Breadcrumb />
       </div>
 
