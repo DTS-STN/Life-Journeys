@@ -13,11 +13,13 @@ export function SearchBar(props) {
         onSubmit={props.onSubmit}
       >
         <div className="searchBox">
+          <label htmlFor="searchBar">Search</label>
           <input
             type="text"
             placeholder={props.placeholder}
             className="placeholder-text-gray text-text-gray searchInput font-body py-1 px-2 focus:outline-none"
             onChange={props.onChange}
+            id="searchBar"
           />
         </div>
         <div>
