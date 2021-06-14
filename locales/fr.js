@@ -163,4 +163,8 @@ export default {
   landingPageContent:
     "Le service d'information sur le parcours de vie contribue à faciliter votre cheminement dans la vie en vous montrant le processus étape par étape d'un événement de votre parcours et en vous indiquant le soutien qui pourrait être disponible pour vous aider.",
   landingPageSubtitle: "Sélectionnez un voyage pour commencer",
+
+  //Phase Banner
+  Alpha: "Alpha",
+  alphaText: "Ce site changera au fur et à mesure que nous testons des idées.",
 };
