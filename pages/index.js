@@ -1,7 +1,7 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import { getTopics, getLocalData } from "./api/topics";
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Breadcrumb from "../components/molecules/Breadcrumb";
 
@@ -12,8 +12,7 @@ export default function Home({ topicsData, errorCode }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
-  const [region, setRegion] = useState(null);
-  const [permission, setPermission] = useState(null);
+  const region = useRef("ON");
 
   if (!topicsData)
     return <div className="text-center text-h3">Loading Data ...</div>;
@@ -27,29 +26,23 @@ export default function Home({ topicsData, errorCode }) {
 
   React.useEffect(() => {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(getPermissionState);
-      if (permission === "granted") {
-        getGeo();
-      }
+      navigator.geolocation.getCurrentPosition(successCall, error);
     } else {
       //will add functionality for older browsers and those who don't give geolocation permission to select a province at a later date
       alert("Sorry, browser does not support geolocation!");
     }
+    async function getGeo() {
+      const res = await fetch("http://ip-api.com/json");
+      const data = await res.json();
+      region.current = data.region;
+    }
+    function successCall() {
+      getGeo();
+    }
+    function error(err) {
+      console.warn("ERROR(" + err.code + "): " + err.message);
+    }
   });
-
-  async function getGeo() {
-    const res = await fetch("http://ip-api.com/json");
-    const data = await res.json();
-    setRegion(data.region);
-  }
-
-  function getPermissionState() {
-    navigator.permissions
-      .query({ name: "geolocation" })
-      .then(function (permissionStatus) {
-        setPermission(permissionStatus.state);
-      });
-  }
 
   return (
     <Layout home title={t.homeSiteTitle}>
