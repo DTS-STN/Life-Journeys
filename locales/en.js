@@ -162,4 +162,8 @@ export default {
   landingPageContent:
     "The Life Journey Information Service helps make your journey through life easier by showing you the step-by-step process of a life event in your journey and show you the support that might be available to help you.",
   landingPageSubtitle: "Select a journey to get started",
+
+  //Phase Banner
+  Alpha: "Alpha",
+  alphaText: "This site will change as we test ideas.",
 };
