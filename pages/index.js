@@ -1,7 +1,7 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import { getTopics, getLocalData } from "./api/topics";
-import React, { useContext, useRef } from "react";
+import { useEffect, useContext, useRef } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Breadcrumb from "../components/molecules/Breadcrumb";
 
@@ -24,7 +24,7 @@ export default function Home({ topicsData, errorCode }) {
       </div>
     );
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(successCall, error);
     } else {
@@ -35,6 +35,7 @@ export default function Home({ topicsData, errorCode }) {
       const res = await fetch("http://ip-api.com/json");
       const data = await res.json();
       region.current = data.region;
+      console.log(data);
     }
     function successCall() {
       getGeo();
