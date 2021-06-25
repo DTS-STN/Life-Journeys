@@ -33,9 +33,9 @@ export default function Home({ topicsData, errorCode }) {
           <h1 className="pb-2 pt-6">{t.landingPageTitle}</h1>
           <hr className="h-1 bg-hr-red-bar"></hr>
           <p className="pt-10 pb-10">{t.landingPageContent}</p>
-          <p className="text-h3 font-display font-bold pb-10">
+          <h2 className="text-h3 font-display font-bold pb-10">
             {t.landingPageSubtitle}
-          </p>
+          </h2>
         </div>
       </div>
       <div className="container flex flex-wrap">
