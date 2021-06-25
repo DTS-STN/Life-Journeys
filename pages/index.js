@@ -35,7 +35,6 @@ export default function Home({ topicsData, errorCode }) {
       const res = await fetch("http://ip-api.com/json");
       const data = await res.json();
       region.current = data.region;
-      console.log(data);
     }
     function successCall() {
       getGeo();
