@@ -18,7 +18,9 @@ export function getLocalData() {
 //
 
 export async function getTopics(language) {
-  const res = await fetch(`${process.env.NEXT_CONTENT_API}`);
+  const res = await fetch(
+    `${process.env.NEXT_CONTENT_API}?date=${process.env.NEXT_PUBLIC_BUILD_DATE}`
+  );
   const error = res.ok ? false : res.statusCode;
   const apiData = await res.json();
 

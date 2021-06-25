@@ -97,16 +97,18 @@ export async function getStaticProps(language) {
 
     apiData.entities.map((entity) => {
       if (entity.properties.contentFragment) {
-        topics.push({
-          title: entity.properties.elements.title.value,
-          body: entity.properties.elements.description.value,
-          image: "/images/family.png",
-          imgalt: "Alt text TBD",
-          url: entity.properties.elements.link.value,
-          subtopics: entity.properties.elements.tags.value
-            .toString()
-            .split(","),
-        });
+        if (entity.properties.elements.lang.value === language.locale) {
+          topics.push({
+            title: entity.properties.elements.title.value,
+            body: entity.properties.elements.description.value,
+            image: "/images/family.png",
+            imgalt: "Alt text TBD",
+            url: entity.properties.elements.link.value,
+            subtopics: entity.properties.elements.tags.value
+              .toString()
+              .split(","),
+          });
+        }
       }
     });
 
