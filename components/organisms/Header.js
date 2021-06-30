@@ -1,30 +1,105 @@
-import { HeaderLang } from "../atoms/HeaderLang";
-import { HeaderLogo } from "../atoms/HeaderLogo";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { PhaseBanner } from "../atoms/PhaseBanner";
+import { SearchBar } from "../atoms/SearchBar";
+import Breadcrumb from "../molecules/Breadcrumb";
+
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
+
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
 export function Header() {
+  //
   const { items } = useContext(LanguageContext);
+  const changeLanguage = items.changeLanguage;
+
+  const setLanguage = (language) => {
+    language === "fr"
+      ? window.localStorage.setItem("lang", "fr")
+      : window.localStorage.setItem("lang", "en");
+    changeLanguage(language);
+  };
+
   const language = items.language;
   const t = language === "en" ? en : fr;
 
+  const { asPath } = useRouter();
+
   return (
-    <div className="par iparys_inherited">
-      <div className="global-header">
-        <header>
-          <PhaseBanner phase={t.Alpha}>{t.alphaText}</PhaseBanner>
-          <div id="wb-bnr" className="container">
-            <div className="row">
-              <HeaderLang />
-              <HeaderLogo />
-            </div>
+    <>
+      <nav className="skip-main">
+        <a
+          id="skipToMainContent"
+          className="bg-custom-blue-dark text-white py-1 px-2 hover:bg-gray-dark"
+          href="#pageMainTitle"
+          data-cy-button={"skip-Content"}
+          role="button"
+          draggable="false"
+        >
+          {t.skipToMainContent}
+        </a>
+      </nav>
+
+      <header>
+        <PhaseBanner phase={t.Alpha}>{t.alphaText}</PhaseBanner>
+
+        <div className="layout-container flex-col flex lg:flex lg:flex-row justify-between mt-2">
+          <div className="flex flex-row justify-between items-center lg:mt-7 mt-1.5">
+            <img
+              className="h-5 w-auto xs:h-6 sm:h-8 md:h-8 lg:h-7 xl:h-8"
+              src={
+                language === "en"
+                  ? "/images/sig-blk-en.svg"
+                  : "/images/sig-blk-fr.svg"
+              }
+              alt="Symbol of the Government of Canada"
+            />
+
+            {/* Language selector for small screens */}
+            <Link key={language} href={asPath} locale={language}>
+              <a
+                className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
+                onClick={() => setLanguage(language)}
+              >
+                {language === "en" ? "EN" : "FR"}
+              </a>
+            </Link>
           </div>
-          {/* <HeaderNav /> */}
-        </header>
-      </div>
-    </div>
+
+          <div className="flex-col flex">
+            {/* Language selector for mid to larger screens */}
+            <Link
+              key={language}
+              href={asPath}
+              locale={language}
+              onClick={() => setLanguage(language)}
+            >
+              <a
+                className="lg:visible invisible pb-0 lg:pb-2 self-end underline font-body text-canada-footer-font hover:text-canada-footer-hover-font-blue "
+                data-cy="toggle-language-link"
+                onClick={() => setLanguage(language)}
+              >
+                {language === "en" ? "English" : "Français"}
+              </a>
+            </Link>
+
+            <SearchBar
+              placeholder={t.searchPlaceholder}
+              dataCy={"search-bar"}
+            />
+          </div>
+        </div>
+
+        <div className="mb-2 border-t pb-2 mt-4"></div>
+
+        {/* <HeaderNav /> */}
+
+        <div className="layout-container my-2">
+          <Breadcrumb />
+        </div>
+      </header>
+    </>
   );
 }

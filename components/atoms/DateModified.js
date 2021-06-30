@@ -5,9 +5,10 @@ import propTypes from "prop-types";
  */
 export default function DateModified(props) {
   return (
-    <div id={props.id}>
-      {props.text} {process.env.NEXT_PUBLIC_BUILD_DATE}
-    </div>
+    <dl id={props.id} className="mt-8 py-2 font-body font-normal text-sm">
+      <dt className="inline">{props.text}</dt>
+      <dd className="inline">{process.env.NEXT_PUBLIC_BUILD_DATE}</dd>
+    </dl>
   );
 }
 

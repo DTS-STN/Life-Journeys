@@ -3,6 +3,11 @@
 @tailwind utilities;
 @tailwind screens;
 
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 @layer base {
   /* Font families */
   h1, h2, h3, h4, h5 {
@@ -33,23 +38,26 @@
   h6 {
     @apply text-base;
   }
-
-.border-outset {
+  /*Focused*/
+  h1:focus {
+    @apply ring-1;
+  }
+  .border-outset {
     border-style: outset;
-}
+  }
 
   
 /* 
 
-  below is the CSS from Canada theme 
+  below is the CSS from Canada theme =============================================================
 
 */
 
 
-.header {
+/* .header {
   background-color: #26374a;
   color: white;
-}
+} */
 
 .glyphicon {
   position: relative;
@@ -71,7 +79,7 @@
 }
 .visible-xs {
   display: none !important;
-}
+} 
 
 
 
@@ -79,7 +87,7 @@
 /*    Grid Rules rules    */
 /**************************/
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+/* .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -215,13 +223,13 @@
     width: 100%; }
   .col-lg-offset-4 {
     margin-left: 33.3333333333%; }
-}    
+}     */
 
 /**************************/
 /*   Header  &  Header  Media rules   */
 /**************************/
 
-#mainbody {
+/* #mainbody {
   min-height: 480px;
 }
 #wb-tphp {
@@ -430,14 +438,14 @@ header .brand img {
 
 .searchBox { display: flex !important; flex: 1}
 .searchButton { min-width: 46px; width: 46px !important; }
-.searchInput { flex: 1 !important;  }
+.searchInput { flex: 1 !important;  } */
 
 
 /**************************/
 /*   Footer  &  Footer Media rules   */
 /**************************/
 
-#wb-info .brand {
+/* #wb-info .brand {
   background: #f8f8f8;
   line-height: 30px;
 }
@@ -616,7 +624,7 @@ ul, ol {
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
     display: block !important; }
-} 
+}  */
 
 details.accordion {
   font-size: 20px;
@@ -677,14 +685,72 @@ details.accordion > summary::-webkit-details-marker {
 
 
 @layer utilities {
-  /*Default page layout*/
+  
+  .blur{
+    filter: blur(1.5px);
+  }
+
+  .error404-link::before{
+    display: inline-block;
+    margin: 2px 5px;
+    content: " ";
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+  }
+
+  .splash-link::after{
+    display: inline-block;
+    margin: 2px 5px;
+    content: " ";
+    border: 1px solid #284162;
+    background-color: #284162;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+  }
+
+  .circle-background {
+    border-radius: 50%;
+    width: 148px;
+    height: 148px;
+    background-color: #EEEEEE;
+  }
+
+  .textbuttonField > p{
+    @apply text-sm leading-normal font-normal font-body py-4
+  }
+
+  .textbuttonField > h1, h2, h3, h4, h5, h6{
+    @apply mb-4
+  }
+
+  .border-outset {
+    border-style: outset;
+  }
+
+  .icon-up-caret:before {
+    content: url(../public/images/up-caret.svg);
+  }
+
+  .skip-main{
+    @apply absolute w-px h-px -left-96
+  }
+
+  .skip-main:focus-within{
+    @apply absolute w-screen h-auto top-16 left-0 z-50 flex justify-center
+  }
+
+  /* Default page layout */
   .layout-container {
     @apply mx-6;
   }
 
   @screen xxs {
     .layout-container {
-      @apply mx-6;
+      @apply mx-4;
     }
   }
   
@@ -694,9 +760,38 @@ details.accordion > summary::-webkit-details-marker {
     }
   }
 
+  @screen md {
+    .layout-container {
+      @apply px-0;
+    }
+
+    .textbuttonField > p{
+      @apply text-p
+    }
+  }
+  
   @screen lg {
     .layout-container {
       @apply container mx-auto px-6;
+    }
+    
+    .circle-background {
+      width: 120px;
+      height: 120px;
+    } 
+  }
+
+  @screen xl {
+    .circle-background {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @screen xxl {
+    .circle-background {
+      width: 218px;
+      height: 218px;
     }
   }
 }
@@ -707,3 +802,7 @@ details.accordion > summary::-webkit-details-marker {
   }
 }
 
+
+.footerBackground {
+  background:#26374a url(../public/images/landscape.png) no-repeat right bottom;
+}
