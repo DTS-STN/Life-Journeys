@@ -168,4 +168,19 @@ export default {
   //Phase Banner
   Alpha: "Alpha",
   alphaText: "Ce site changera au fur et à mesure que nous testons des idées.",
+
+  //Province options
+  alberta: "L’Alberta",
+  britishColumbia: "La Colombie-Britannique",
+  manitoba: "Le Manitoba",
+  newBrunswick: "Le Nouveau-Brunswick",
+  newfoundland: "Terre-Neuve-et-Labrador",
+  northwestTerritories: "Les Territoires du Nord-Ouest",
+  novaScotia: "La Nouvelle-Écosse",
+  nunavut: "Le Nunavut",
+  ontario: "L’Ontario",
+  princeEdwardIsland: "L’île du Prince-Édouard",
+  quebec: "Le Québec",
+  saskatchewan: "La Saskatchewan",
+  yukonTerritories: "La Saskatchewan",
 };

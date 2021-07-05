@@ -8,14 +8,57 @@ import { SideMenu } from "../components/atoms/SideMenu";
 import Banner from "../components/atoms/Banner";
 import Table from "../components/molecules/Table";
 import Breadcrumb from "../components/molecules/Breadcrumb";
+import Select from "react-select";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
+import { useEffect, useRef } from "react";
 
 export default function lifejourney() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
+  const region = useRef("CAN");
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(successCall, error);
+    } else {
+      alert("Sorry, browser does not support geolocation!");
+    }
+    async function getGeo() {
+      const res = await fetch("http://ip-api.com/json");
+      const data = await res.json();
+      region.current = data.region;
+    }
+    function successCall() {
+      getGeo();
+    }
+    function error(err) {
+      console.warn("ERROR(" + err.code + "): " + err.message);
+    }
+  });
+
+  const options = [
+    { value: "AB", label: t.alberta },
+    { value: "BC", label: t.britishColumbia },
+    { value: "MB", label: t.manitoba },
+    { value: "NB", label: t.newBrunswick },
+    { value: "NL", label: t.newfoundland },
+    { value: "NT", label: t.northwestTerritories },
+    { value: "NS", label: t.novaScotia },
+    { value: "NU", label: t.nunavut },
+    { value: "ON", label: t.ontario },
+    { value: "PE", label: t.princeEdwardIsland },
+    { value: "QC", label: t.quebec },
+    { value: "SK", label: t.saskatchewan },
+    { value: "YT", label: t.yukonTerritories },
+  ];
+
+  function onChangeFunc(optionSelected) {
+    region.current = optionSelected.value;
+    console.log(region.current);
+  }
 
   return (
     <Layout title={t.havingABabyTitle}>
@@ -25,6 +68,20 @@ export default function lifejourney() {
       />
       <div id="wb-bc" className="container my-6">
         <Breadcrumb />
+      </div>
+
+      <div className="mb-2 w-52">
+        <label className="mr-2" htmlFor="provinceSelector">
+          Showing top requests for:
+        </label>
+
+        <Select
+          defaultValue={{ value: "CAN", label: "Canada" }}
+          options={options}
+          onChange={onChangeFunc}
+          instanceId="provinceSelector"
+          name="provinceSelector"
+        />
       </div>
 
       <div className="container flex flex-col md:flex-row align-items-center ">
