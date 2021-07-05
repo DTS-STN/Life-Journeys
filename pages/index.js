@@ -45,11 +45,8 @@ export default function Home({ topicsData, errorCode }) {
 
   return (
     <Layout home title={t.homeSiteTitle}>
-      <section className="layout-container mb-2 mt-12">
+      <section className="layout-container mb-2 mt-4">
         <div className="container">
-          {/* <div id="wb-bc" className="pt-4">
-            <Breadcrumb />
-          </div> */}
           <div>
             <h1 className="pb-2 pt-6">{t.landingPageTitle}</h1>
             <hr className="h-1 bg-hr-red-bar"></hr>
