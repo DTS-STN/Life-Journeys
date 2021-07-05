@@ -57,7 +57,6 @@ export default function lifejourney() {
 
   function onChangeFunc(optionSelected) {
     region.current = optionSelected.value;
-    console.log(region.current);
   }
 
   return (
