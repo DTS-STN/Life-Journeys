@@ -16,11 +16,14 @@ export function PageDetails(props) {
   const t = language === "en" ? en : fr;
 
   return (
-    <div className="container pb-8 pt-8">
-      <div className="pb-8">
+    <>
+      <div className="layout-container my-3">
         <ReportProblem />
       </div>
-      <DateModified text={t.dateModified} />
-    </div>
+
+      <div className="layout-container">
+        <DateModified text={t.dateModified} />
+      </div>
+    </>
   );
 }

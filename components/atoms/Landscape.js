@@ -13,68 +13,65 @@ export function Landscape() {
   const t = language === "en" ? en : fr;
 
   return (
-    <div className="landscape">
-      <nav id="footer-nav" aria-label="Footer" className="container wb-navcurr">
-        <h2 className="wb-inv">About government</h2>
+    <div className="w-full h-auto  footerBackground">
+      <div className="py-7 layout-container  ">
+        <nav
+          id="footer-nav"
+          aria-label="Footer"
+          className="container wb-navcurr"
+        >
+          <h2 className="invisible w-0 hidden">About government</h2>
 
-        <ul className="list-unstyled colcount-sm-2 colcount-md-3">
-          <li>
-            <Link href={t.contactLink}>
-              <a href={t.contactLink}>{t.contactText}</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.departmentAndAgenciesLink}>
-              <a href={t.departmentAndAgenciesLink}>
+          <ul className=" flex flex-col text-xs   lg:grid lg:grid-cols-2  xl:grid xl:grid-cols-3  lg:gap-1">
+            {" "}
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.contactLink}>
+                {t.contactText}
+              </a>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.newsLink}>
+                {t.newsText}
+              </a>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.primeministerLink}>
+                {t.primeministerText}
+              </a>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.departmentAndAgenciesLink}>
                 {t.departmentAndAgenciesText}
               </a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.publicServiceAndMilitaryLink}>
-              <a href={t.publicServiceAndMilitaryLink}>
-                {t.publicServiceAndMilitaryText}
-              </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href={t.newsLink}>
-              <a href={t.newsLink}>{t.newsText}</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.treatiesLawsAndRegulationLink}>
-              <a href={t.treatiesLawsAndRegulationLink}>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.treatiesLawsAndRegulationLink}>
                 {t.treatiesLawsAndRegulationText}
               </a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.governmentWideReportingLink}>
-              <a href={t.governmentWideReportingLink}>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.aboutgovernmentLink}>
+                {t.aboutgovernmentText}
+              </a>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.publicServiceAndMilitaryLink}>
+                {t.publicServiceAndMilitaryText}
+              </a>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.governmentWideReportingLink}>
                 {t.governmentWideReportingText}
               </a>
-            </Link>
-          </li>
-
-          <li>
-            <Link href={t.primeministerLink}>
-              <a href={t.primeministerLink}>{t.primeministerText}</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.aboutgovernmentLink}>
-              <a href={t.aboutgovernmentLink}>{t.aboutgovernmentText}</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={t.opengovernmentLink}>
-              <a href={t.opengovernmentLink}>{t.opengovernmentText}</a>
-            </Link>
-          </li>
-        </ul>
-      </nav>
+            </li>
+            <li className="text-white w-64 md:w-56 lg:w-80   my-2.5   hover:underline">
+              <a className="font-body" href={t.opengovernmentLink}>
+                {t.opengovernmentText}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 }

@@ -14,57 +14,70 @@ export function WordMark() {
   const t = language === "en" ? en : fr;
 
   return (
-    <div className="brand">
-      <div className="container">
-        <div className="row">
-          <nav className="col-md-10 ftr-urlt-lnk">
-            <h2 className="wb-inv">{t.aboutThisSite}</h2>
-            <ul>
-              <li>
-                <Link href={t.socialmediaLink}>
-                  <a href={t.socialmediaLink}>{t.socialmediaText}</a>
-                </Link>
+    <div className="w-full h-full bg-footer-background-color pb-4">
+      <div className="h-auto bg-footer-white pt-5 layout-container flex flex-col xl:flex xl:flex-row  md:justify-between">
+        <div className="mt-3.5 xl:mt-5 ">
+          <nav>
+            <h2 className="invisible w-0 hidden">{t.aboutThisSite}</h2>
+
+            <ul className=" flex flex-col md:grid md:grid-cols-2  xl:flex lg:flex-row ">
+              <li className="lg:mb-4 mb-5 mr-2.5 list-inside list-disc xl:list-none text-xxs">
+                <a
+                  className="text-xs font-body hover:text-canada-footer-hover-font-blue text-canada-footer-font "
+                  href={t.socialmediaLink}
+                >
+                  {t.socialmediaText}
+                </a>
               </li>
-              <li>
-                <Link href={t.mobileapplicationsLink}>
-                  <a href={t.mobileapplicationsLink}>
-                    {t.mobileapplicationsText}
-                  </a>
-                </Link>
+              <li className="lg:mb-4 mb-5 mr-2.5 list-inside list-disc text-xxs">
+                <a
+                  className="text-xs font-body hover:text-canada-footer-hover-font-blue text-canada-footer-font "
+                  href={t.mobileapplicationsLink}
+                >
+                  {t.mobileapplicationsText}
+                </a>
               </li>
-              <li>
-                <Link href={t.aboutLink}>
-                  <a href={t.aboutLink}>{t.aboutText}</a>
-                </Link>
+              <li className="lg:mb-4 mb-5 mr-2.5 list-inside list-disc text-xxs">
+                <a
+                  className="text-xs font-body hover:text-canada-footer-hover-font-blue text-canada-footer-font "
+                  href={t.aboutLink}
+                >
+                  {t.aboutText}
+                </a>
               </li>
-              <li>
-                <Link href={t.termsAndConditionsLink}>
-                  <a href={t.termsAndConditionsLink}>
-                    {t.termsAndConditionsText}
-                  </a>
-                </Link>
+              <li className="lg:mb-4 mb-5 mr-2.5 list-inside list-disc text-xxs">
+                <a
+                  className="text-xs font-body hover:text-canada-footer-hover-font-blue text-canada-footer-font "
+                  href={t.termsAndConditionsLink}
+                >
+                  {t.termsAndConditionsText}
+                </a>
               </li>
-              <li>
-                <Link href={t.privacyLink}>
-                  <a href={t.privacyLink}>{t.privacyText}</a>
-                </Link>
+              <li className="lg:mb-4 mb-5 mr-2.5 list-inside list-disc text-xxs">
+                <a
+                  className="text-xs font-body hover:text-canada-footer-hover-font-blue text-canada-footer-font "
+                  href={t.privacyLink}
+                >
+                  {t.privacyText}
+                </a>
               </li>
             </ul>
           </nav>
-          <div className="col-xs-6 visible-sm visible-xs tofpg">
+        </div>
+
+        <div>
+          <div className="xl:hidden xxs:block mb-2.5 mt-8 xl:mt-0 h-6 md:h-10 w-auto float-left">
             <a href="#wb-cont">
               {t.topOfPage}{" "}
               <span className="glyphicon glyphicon-chevron-up"></span>
             </a>
           </div>
 
-          <div className="col-xs-6 col-md-2 text-right">
-            <img
-              className="float-right"
-              src={gocWordmark}
-              alt={t.footerCanadaCaAltText}
-            />
-          </div>
+          <img
+            className="mb-2.5 mt-8 xl:mt-0 h-6 md:h-10  w-auto float-right"
+            src={gocWordmark}
+            alt={t.footerCanadaCaAltText}
+          />
         </div>
       </div>
     </div>
