@@ -9,7 +9,7 @@ import { PageDetails } from "../organisms/PageDetails";
 
 export function Footer(props) {
   return (
-    <footer id="wb-info">
+    <footer id="wb-info" className="pt-8">
       <PageDetails />
 
       <div className="w-full ">
