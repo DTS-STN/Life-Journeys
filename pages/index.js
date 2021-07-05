@@ -1,7 +1,7 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import { getTopics, getLocalData } from "./api/topics";
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 
 import en from "../locales/en";
