@@ -70,17 +70,17 @@ export default function lifejourney() {
         <Breadcrumb />
       </div>
 
-      <div className="mb-2 w-52">
-        <label className="mr-2" htmlFor="provinceSelector">
+      <div className="my-2 mx-2">
+        <label className="text-base" htmlFor="provinceSelector">
           Showing top requests for:
         </label>
-
         <Select
           defaultValue={{ value: "CAN", label: "Canada" }}
           options={options}
           onChange={onChangeFunc}
           instanceId="provinceSelector"
           name="provinceSelector"
+          className="w-36"
         />
       </div>
 
