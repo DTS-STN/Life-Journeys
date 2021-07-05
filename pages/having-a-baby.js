@@ -40,19 +40,19 @@ export default function lifejourney() {
   });
 
   const options = [
-    { value: "AB", label: t.alberta },
-    { value: "BC", label: t.britishColumbia },
-    { value: "MB", label: t.manitoba },
-    { value: "NB", label: t.newBrunswick },
-    { value: "NL", label: t.newfoundland },
-    { value: "NT", label: t.northwestTerritories },
-    { value: "NS", label: t.novaScotia },
-    { value: "NU", label: t.nunavut },
-    { value: "ON", label: t.ontario },
-    { value: "PE", label: t.princeEdwardIsland },
-    { value: "QC", label: t.quebec },
-    { value: "SK", label: t.saskatchewan },
-    { value: "YT", label: t.yukonTerritories },
+    { value: "AB", label: "Alberta" },
+    { value: "BC", label: "British Columbia" },
+    { value: "MB", label: "Manitoba" },
+    { value: "NB", label: "New Brunswick" },
+    { value: "NL", label: "Newfoundland and Labrador" },
+    { value: "NT", label: "Northwest Territories" },
+    { value: "NS", label: "Nova Scotia" },
+    { value: "NU", label: "Nunavut" },
+    { value: "ON", label: "Ontario" },
+    { value: "PE", label: "Prince Edward Island" },
+    { value: "QC", label: "Québec" },
+    { value: "SK", label: "Saskatchewan" },
+    { value: "YT", label: "Yukon Territories" },
   ];
 
   function onChangeFunc(optionSelected) {

@@ -167,19 +167,4 @@ export default {
   //Phase Banner
   Alpha: "Alpha",
   alphaText: "This site will change as we test ideas.",
-
-  //Province options
-  alberta: "Alberta",
-  britishColumbia: "British Columbia",
-  manitoba: "Manitoba",
-  newBrunswick: "New Brunswick",
-  newfoundland: "Newfoundland and Labrador",
-  northwestTerritories: "Northwest Territories",
-  novaScotia: "Nova Scotia",
-  nunavut: "Nunavut",
-  ontario: "Ontario",
-  princeEdwardIsland: "Prince Edward Island",
-  quebec: "Québec",
-  saskatchewan: "Saskatchewan",
-  yukonTerritories: "Yukon Territories",
 };
