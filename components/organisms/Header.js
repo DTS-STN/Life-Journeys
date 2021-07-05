@@ -4,21 +4,17 @@ import { PhaseBanner } from "../atoms/PhaseBanner";
 import { SearchBar } from "../atoms/SearchBar";
 import Breadcrumb from "../molecules/Breadcrumb";
 
-import { useContext } from "react";
+import { useEffect, useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
 
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
 export function Header() {
-  //
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
 
   const setLanguage = (language) => {
-    language === "fr"
-      ? window.localStorage.setItem("lang", "fr")
-      : window.localStorage.setItem("lang", "en");
     changeLanguage(language);
   };
 
@@ -26,6 +22,16 @@ export function Header() {
   const t = language === "en" ? en : fr;
 
   const { asPath } = useRouter();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const lang = window.localStorage.getItem("lang");
+      if (lang) {
+        router.replace(asPath, asPath, { locale: lang });
+      }
+    }
+  }, [language]);
 
   return (
     <>
@@ -63,7 +69,7 @@ export function Header() {
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
               >
-                {language === "en" ? "EN" : "FR"}
+                {language === "fr" ? "EN" : "FR"}
               </a>
             </Link>
           </div>
@@ -81,7 +87,7 @@ export function Header() {
                 data-cy="toggle-language-link"
                 onClick={() => setLanguage(language)}
               >
-                {language === "en" ? "English" : "Français"}
+                {language === "fr" ? "English" : "Français"}
               </a>
             </Link>
 
