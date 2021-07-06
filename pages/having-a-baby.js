@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
 import AvailableResources from "../components/molecules/AvailableResources";
-import { useContext } from "react";
+import { useEffect, useRef, useState, useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
@@ -12,15 +12,23 @@ import Select from "react-select";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
-import { useEffect, useRef } from "react";
+import optionsEN from "./api/optionsEN";
+import optionsFR from "./api/optionsFR";
 
 export default function lifejourney() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
   const region = useRef("CAN");
+  const [options, setOptions] = useState([]);
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
+    if (language === "en") {
+      setOptions(optionsEN);
+    } else {
+      setOptions(optionsFR);
+    }
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(successCall, error);
     } else {
@@ -39,24 +47,9 @@ export default function lifejourney() {
     }
   });
 
-  const options = [
-    { value: "AB", label: "Alberta" },
-    { value: "BC", label: "British Columbia" },
-    { value: "MB", label: "Manitoba" },
-    { value: "NB", label: "New Brunswick" },
-    { value: "NL", label: "Newfoundland and Labrador" },
-    { value: "NT", label: "Northwest Territories" },
-    { value: "NS", label: "Nova Scotia" },
-    { value: "NU", label: "Nunavut" },
-    { value: "ON", label: "Ontario" },
-    { value: "PE", label: "Prince Edward Island" },
-    { value: "QC", label: "Québec" },
-    { value: "SK", label: "Saskatchewan" },
-    { value: "YT", label: "Yukon Territories" },
-  ];
-
   function onChangeFunc(optionSelected) {
     region.current = optionSelected.value;
+    setSelected(optionSelected);
   }
 
   return (
@@ -74,7 +67,7 @@ export default function lifejourney() {
           Showing top requests for:
         </label>
         <Select
-          defaultValue={{ value: "CAN", label: "Canada" }}
+          value={selected || { value: "CAN", label: "Canada" }}
           options={options}
           onChange={onChangeFunc}
           instanceId="provinceSelector"

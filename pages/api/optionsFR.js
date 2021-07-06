@@ -1,0 +1,15 @@
+export default [
+  { value: "AB", label: "Alberta" },
+  { value: "BC", label: "Colombie-Britannique" },
+  { value: "PE", label: "L'Île-du-Prince-Édouard" },
+  { value: "MB", label: "Manitoba" },
+  { value: "NB", label: "Nouveau-Brunswick" },
+  { value: "NS", label: "Nouvelle-Écosse" },
+  { value: "NU", label: "Nunavut" },
+  { value: "ON", label: "Ontario" },
+  { value: "QC", label: "Québec" },
+  { value: "SK", label: "Saskatchewan" },
+  { value: "NL", label: "Terre-Neuve-et-Labrador " },
+  { value: "NT", label: "Territoires du Nord-Ouest" },
+  { value: "YT", label: "Yukon" },
+];
