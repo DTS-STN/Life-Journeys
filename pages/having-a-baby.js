@@ -1,14 +1,14 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
 import AvailableResources from "../components/molecules/AvailableResources";
-import { useEffect, useRef, useState, useContext } from "react";
+import { useEffect, useRef, useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 import Banner from "../components/atoms/Banner";
 import Table from "../components/molecules/Table";
 import Breadcrumb from "../components/molecules/Breadcrumb";
-import Select from "react-select";
+import Select from "../components/atoms/Select";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -20,15 +20,8 @@ export default function lifejourney() {
   const language = items.language;
   const t = language === "en" ? en : fr;
   const region = useRef("CAN");
-  const [options, setOptions] = useState([]);
-  const [selected, setSelected] = useState();
 
   useEffect(() => {
-    if (language === "en") {
-      setOptions(optionsEN);
-    } else {
-      setOptions(optionsFR);
-    }
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(successCall, error);
     } else {
@@ -38,6 +31,7 @@ export default function lifejourney() {
       const res = await fetch("http://ip-api.com/json");
       const data = await res.json();
       region.current = data.region;
+      console.log(region.current);
     }
     function successCall() {
       getGeo();
@@ -45,11 +39,11 @@ export default function lifejourney() {
     function error(err) {
       console.warn("ERROR(" + err.code + "): " + err.message);
     }
-  });
+  }, []);
 
   function onChangeFunc(optionSelected) {
-    region.current = optionSelected.value;
-    setSelected(optionSelected);
+    region.current = optionSelected;
+    console.log(region.current);
   }
 
   return (
@@ -62,19 +56,12 @@ export default function lifejourney() {
         <Breadcrumb />
       </div>
 
-      <div className="my-2 mx-2">
-        <label className="text-base" htmlFor="provinceSelector">
-          Showing top requests for:
-        </label>
-        <Select
-          value={selected || { value: "CAN", label: "Canada" }}
-          options={options}
-          onChange={onChangeFunc}
-          instanceId="provinceSelector"
-          name="provinceSelector"
-          className="w-36"
-        />
-      </div>
+      <Select
+        options={language === "en" ? optionsEN : optionsFR}
+        onChange={onChangeFunc}
+        name="provinceSelector"
+        defaultValue="CAN"
+      />
 
       <div className="container flex flex-col md:flex-row align-items-center ">
         <div className="pr-3 w-full lg:w-3/12 top-0 lg:sticky ">
