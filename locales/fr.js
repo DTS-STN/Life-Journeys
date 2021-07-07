@@ -96,10 +96,10 @@ export default {
 
   //More Info Links
 
-  moreInfoCommunity: "Trouver des groupes communautaires dans ma région",
-  moreInfoFertility: "Trouver un traitement de fertilité dans ma région",
-  moreInfoHealth: "Trouver un fournisseur de soins de santé dans ma région",
-  moreInfoFinancial: "Trouver un planificateur financier dans ma région",
+  moreInfoParentingNetworks: "Trouver des réseaux de parents dans ma région",
+  moreInfoParentingClasses:
+    "Trouver des cours d'éducation parentale dans ma région",
+  moreInfoProvincialSite: "Emmenez-moi sur mon site provincial",
 
   //resource cards
   gettingready: "Getting Ready (fr)",

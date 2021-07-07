@@ -97,10 +97,9 @@ export default {
 
   //More Info Links
 
-  moreInfoCommunity: "Find community groups in my area",
-  moreInfoFertility: "Find fertility treatment in my area",
-  moreInfoHealth: "Find a health provider in my area",
-  moreInfoFinancial: "Find a financial planner in my area",
+  moreInfoParentingNetworks: "Find parenting networks in my area",
+  moreInfoParentingClasses: "Find parenting classes in my area",
+  moreInfoProvincialSite: "Take me to my provincial site",
 
   //resource cards
   gettingready: "Getting Ready",
