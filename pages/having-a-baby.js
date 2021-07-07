@@ -28,9 +28,9 @@ export default function lifejourney() {
       alert("Sorry, browser does not support geolocation!");
     }
     async function getGeo() {
-      const res = await fetch("http://ip-api.com/json");
+      const res = await fetch("https://ipapi.co/json/");
       const data = await res.json();
-      region.current = data.region;
+      region.current = data.region_code;
       console.log(region.current);
     }
     function successCall() {
