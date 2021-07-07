@@ -11,18 +11,19 @@ const options = [
   { value: "MB", label: "Manitoba" },
 ];
 const selectName = "test";
+const label = "Showing top requests for";
 
 describe("Select tests", () => {
   it("renders Select", () => {
     const primary = act(() => {
-      render(<Select options={options} name={selectName} />);
+      render(<Select options={options} name={selectName} label={label} />);
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
     const { container } = render(
-      <Select options={options} name={selectName} />
+      <Select options={options} name={selectName} label={label} />
     );
     const results = await axe(container);
     expect(results).toHaveNoViolations();

@@ -61,6 +61,7 @@ export default function lifejourney() {
         onChange={onChangeFunc}
         name="provinceSelector"
         defaultValue="CAN"
+        label="Showing top requests for"
       />
 
       <div className="container flex flex-col md:flex-row align-items-center ">

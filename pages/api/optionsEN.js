@@ -1,4 +1,5 @@
 export default [
+  { value: "CAN", label: "Canada" },
   { value: "AB", label: "Alberta" },
   { value: "BC", label: "British Columbia" },
   { value: "MB", label: "Manitoba" },

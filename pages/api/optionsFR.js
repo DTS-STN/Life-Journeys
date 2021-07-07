@@ -1,4 +1,5 @@
 export default [
+  { value: "CAN", label: "Canada" },
   { value: "AB", label: "Alberta" },
   { value: "BC", label: "Colombie-Britannique" },
   { value: "PE", label: "L'Île-du-Prince-Édouard" },
