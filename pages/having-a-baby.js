@@ -14,7 +14,7 @@ import en from "../locales/en";
 import fr from "../locales/fr";
 import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
-import ProvincialLink from "../components/atoms/provincialLink";
+import ProvincialLink from "../components/atoms/ProvincialLink";
 
 export default function lifejourney() {
   const { items } = useContext(LanguageContext);
