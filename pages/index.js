@@ -1,7 +1,7 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import { getTopics, getLocalData } from "./api/topics";
-import { useEffect, useContext, useRef } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 
 import en from "../locales/en";
@@ -11,7 +11,6 @@ export default function Home({ topicsData, errorCode }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
-  const region = useRef("ON");
 
   if (!topicsData)
     return <div className="text-center text-h3">Loading Data ...</div>;
@@ -22,26 +21,6 @@ export default function Home({ topicsData, errorCode }) {
         Failed to load topics...
       </div>
     );
-
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(successCall, error);
-    } else {
-      //will add functionality for older browsers and those who don't give geolocation permission to select a province at a later date
-      alert("Sorry, browser does not support geolocation!");
-    }
-    async function getGeo() {
-      const res = await fetch("http://ip-api.com/json");
-      const data = await res.json();
-      region.current = data.region;
-    }
-    function successCall() {
-      getGeo();
-    }
-    function error(err) {
-      console.warn("ERROR(" + err.code + "): " + err.message);
-    }
-  });
 
   return (
     <Layout home title={t.homeSiteTitle}>
