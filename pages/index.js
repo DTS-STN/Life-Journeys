@@ -7,10 +7,11 @@ import { LanguageContext } from "../context/languageProvider";
 import en from "../locales/en";
 import fr from "../locales/fr";
 
-export default function Home({ topicsData, errorCode }) {
+export default function Home({ locale, topicsData, errorCode }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
+  // console.log('current language is :', locale)
   const region = useRef("ON");
 
   if (!topicsData)
@@ -83,6 +84,7 @@ export default function Home({ topicsData, errorCode }) {
 export async function getStaticProps(language) {
   let topicsData = [];
   let errorCode = false;
+  // console.log("language at getStaticProps is : ", language.locale)
 
   //
   // IF content enabled get the data from the api
@@ -126,6 +128,7 @@ export async function getStaticProps(language) {
     props: {
       topicsData,
       errorCode,
+      locale: language.locale,
     },
   };
 }
