@@ -100,6 +100,7 @@ export default {
   moreInfoParentingClasses:
     "Trouver des cours d'éducation parentale dans ma région",
   moreInfoProvincialSite: "Emmenez-moi sur mon site provincial",
+  moreInfoCanadaSite: "Emmenez-moi sur Canada.ca",
 
   //resource cards
   gettingready: "Getting Ready (fr)",

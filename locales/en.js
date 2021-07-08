@@ -100,6 +100,7 @@ export default {
   moreInfoParentingNetworks: "Find parenting networks in my area",
   moreInfoParentingClasses: "Find parenting classes in my area",
   moreInfoProvincialSite: "Take me to my provincial site",
+  moreInfoCanadaSite: "Take me to Canada.ca",
 
   //resource cards
   gettingready: "Getting Ready",

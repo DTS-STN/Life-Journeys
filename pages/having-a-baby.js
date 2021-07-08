@@ -88,7 +88,11 @@ export default function lifejourney() {
                 <ProvincialLink
                   language={language}
                   region={region.current}
-                  text={t.moreInfoProvincialSite}
+                  text={
+                    region.current === "CAN"
+                      ? t.moreInfoCanadaSite
+                      : t.moreInfoProvincialSite
+                  }
                   id="provincialLink"
                 ></ProvincialLink>
                 <AvailableResources title={t.gettingready} />
