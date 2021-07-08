@@ -1,19 +1,48 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
 import AvailableResources from "../components/molecules/AvailableResources";
-import { useContext } from "react";
+import { useEffect, useRef, useContext } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
 import Table from "../components/molecules/Table";
+import Select from "../components/atoms/Select";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
+import optionsEN from "./api/optionsEN";
+import optionsFR from "./api/optionsFR";
 
 export default function lifejourney() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
+  const region = useRef("CAN");
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(successCall, error);
+    } else {
+      alert("Sorry, browser does not support geolocation!");
+    }
+    async function getGeo() {
+      const res = await fetch("https://ipapi.co/json/");
+      const data = await res.json();
+      region.current = data.region_code;
+      console.log(region.current);
+    }
+    function successCall() {
+      getGeo();
+    }
+    function error(err) {
+      console.warn("ERROR(" + err.code + "): " + err.message);
+    }
+  }, []);
+
+  function onChangeFunc(optionSelected) {
+    region.current = optionSelected;
+    console.log(region.current);
+  }
 
   return (
     <>
@@ -23,6 +52,22 @@ export default function lifejourney() {
         bannerText={t.havingAChildBannerText}
       >
         <section className="layout-container mb-2 mt-4">
+          {/* <Banner
+        siteTitle={t.havingAChildBannerTitle}
+        headline={t.havingAChildBannerText}
+      />
+      <div id="wb-bc" className="container my-6">
+        <Breadcrumb />
+      </div> */}
+
+          <Select
+            options={language === "en" ? optionsEN : optionsFR}
+            onChange={onChangeFunc}
+            name="provinceSelector"
+            defaultValue="CAN"
+            label="Showing top requests for"
+          />
+
           <div className="container flex flex-col md:flex-row align-items-center ">
             <div className="pr-3 w-full lg:w-3/12 top-0 lg:sticky ">
               <SideMenu />

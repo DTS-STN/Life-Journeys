@@ -179,6 +179,7 @@ module.exports = {
       outline: ["focus-visible"],
       ringWidth: ["focus-visible"],
       ringColor: ["focus-visible"],
+      width: ["focus"],
     },
   },
   plugins: [
