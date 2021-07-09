@@ -7,7 +7,7 @@ import { PageDetails } from "../organisms/PageDetails";
  * footer element for all pages
  */
 
-export function Footer(props) {
+export function Footer() {
   return (
     <footer id="wb-info" className="pt-8">
       <PageDetails />

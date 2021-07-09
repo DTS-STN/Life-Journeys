@@ -1,7 +1,10 @@
+import propTypes from "prop-types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { PhaseBanner } from "../atoms/PhaseBanner";
 import { SearchBar } from "../atoms/SearchBar";
+
+import Banner from "../atoms/Banner";
 import Breadcrumb from "../molecules/Breadcrumb";
 
 import { useEffect, useContext } from "react";
@@ -10,7 +13,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header() {
+export function Header({ bannerTitle, bannerText }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
 
@@ -102,6 +105,13 @@ export function Header() {
 
         {/* <HeaderNav /> */}
 
+        {/* Display a banner when requested */}
+        {bannerTitle ? (
+          <Banner siteTitle={bannerTitle} headline={bannerText} />
+        ) : (
+          ""
+        )}
+
         <div className="layout-container my-2">
           <Breadcrumb />
         </div>
@@ -109,3 +119,14 @@ export function Header() {
     </>
   );
 }
+
+Header.propTypes = {
+  // Title of the page
+  title: propTypes.string,
+
+  // Banner Text
+  bannerTitle: propTypes.string,
+
+  //Child Banner Text
+  bannerText: propTypes.string,
+};

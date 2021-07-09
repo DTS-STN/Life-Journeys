@@ -10,7 +10,7 @@ import fr from "../../locales/fr";
 /**
  * contains the timestamp and other page details just above the footer
  */
-export function PageDetails(props) {
+export function PageDetails() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
