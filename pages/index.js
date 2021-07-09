@@ -1,18 +1,13 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
 import { getTopics, getLocalData } from "./api/topics";
-import { useContext } from "react";
-import { LanguageContext } from "../context/languageProvider";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
 
 export default function Home({ locale, topicsData, errorCode }) {
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
-  const t = language === "en" ? en : fr;
-
-  // console.log('current language is :', locale)
+  //
+  const t = locale === "en" ? en : fr;
 
   if (!topicsData)
     return <div className="text-center text-h3">Loading Data ...</div>;
@@ -25,7 +20,7 @@ export default function Home({ locale, topicsData, errorCode }) {
     );
 
   return (
-    <Layout home title={t.homeSiteTitle}>
+    <Layout home title={t.homeSiteTitle} locale={locale}>
       <section className="layout-container mb-2 mt-4">
         <div className="container">
           <div>
@@ -37,6 +32,7 @@ export default function Home({ locale, topicsData, errorCode }) {
             </h2>
           </div>
         </div>
+
         <div className="container flex flex-wrap">
           <div className="topicBoxSm grid xxl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-3 lg:gap-10 xxl:gap-5">
             {topicsData.map(
@@ -48,6 +44,7 @@ export default function Home({ locale, topicsData, errorCode }) {
                     body={body}
                     image={image}
                     imgalt={imgalt}
+                    findInfo={t.findInformationAbout}
                     url={url}
                     subtopics={subtopics}
                   />
@@ -61,23 +58,24 @@ export default function Home({ locale, topicsData, errorCode }) {
   );
 }
 
-export async function getStaticProps(language) {
+export async function getStaticProps({ locale }) {
   let topicsData = [];
   let errorCode = false;
-  // console.log("language at getStaticProps is : ", language.locale)
+
+  console.log("language object at getStaticProps is ", locale);
 
   //
   // IF content enabled get the data from the api
   //
 
   if (process.env.NEXT_CONTENT_API) {
-    const { apiData, error } = await getTopics(language.locale);
+    const { apiData, error } = await getTopics(locale);
 
     let topics = [];
 
     apiData.entities.map((entity) => {
       if (entity.properties.contentFragment) {
-        if (entity.properties.elements.lang.value === language.locale) {
+        if (entity.properties.elements.lang.value === locale) {
           topics.push({
             title: entity.properties.elements.title.value,
             body: entity.properties.elements.description.value,
@@ -108,7 +106,7 @@ export async function getStaticProps(language) {
     props: {
       topicsData,
       errorCode,
-      locale: language.locale,
+      locale,
     },
   };
 }

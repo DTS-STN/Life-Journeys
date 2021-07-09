@@ -18,35 +18,27 @@ export default function Layout({
       <Meta title={title} />
 
       <div className="overflow-x-hidden">
-        <Header
-          locale={locale}
-          bannerTitle={bannerTitle}
-          bannerText={bannerText}
-        />
+        <Header bannerTitle={bannerTitle} bannerText={bannerText} />
 
         <main>
+          <div className="bg-pink-700 text-white font-extrabold pl-8">
+            locale is : {locale}{" "}
+          </div>
           <div>{children}</div>
         </main>
 
-        <Footer locale={locale} />
+        <Footer />
       </div>
     </>
   );
 }
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    locale: locale,
-  },
-});
-
-Layout.defaultProps = {
-  language: "en",
-};
-
 Layout.propTypes = {
   // Title of the page
   title: propTypes.string,
+
+  // Current Language
+  locale: propTypes.string.isRequired,
 
   // Banner Text, for sub pages that requires a banner, this variable is required
   bannerTitle: propTypes.string,
