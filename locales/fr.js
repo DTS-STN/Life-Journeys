@@ -97,8 +97,7 @@ export default {
   //More Info Links
 
   moreInfoParentingNetworks: "Trouver des réseaux de parents dans ma région",
-  moreInfoParentingClasses:
-    "Trouver des cours d'éducation parentale dans ma région",
+  moreInfoPrenatalClasses: "Trouver des cours prénataux dans ma région",
   moreInfoProvincialSite: "Emmenez-moi sur mon site provincial",
   moreInfoCanadaSite: "Emmenez-moi sur Canada.ca",
 

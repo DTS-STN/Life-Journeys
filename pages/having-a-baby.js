@@ -83,16 +83,11 @@ export default function lifejourney() {
             <div className="py-6">
               <p className="text-h4 font-bold font-display">{t.getConnected}</p>
               <div className="pr-6">
-                <MoreInfo text={t.moreInfoParentingClasses} />
+                <MoreInfo text={t.moreInfoPrenatalClasses} />
                 <MoreInfo text={t.moreInfoParentingNetworks} />
                 <ProvincialLink
                   language={language}
                   region={region.current}
-                  text={
-                    region.current === "CAN"
-                      ? t.moreInfoCanadaSite
-                      : t.moreInfoProvincialSite
-                  }
                   id="provincialLink"
                 ></ProvincialLink>
                 <AvailableResources title={t.gettingready} />

@@ -98,7 +98,7 @@ export default {
   //More Info Links
 
   moreInfoParentingNetworks: "Find parenting networks in my area",
-  moreInfoParentingClasses: "Find parenting classes in my area",
+  moreInfoPrenatalClasses: "Find prenatal classes in my area",
   moreInfoProvincialSite: "Take me to my provincial site",
   moreInfoCanadaSite: "Take me to Canada.ca",
 
