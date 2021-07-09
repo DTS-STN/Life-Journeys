@@ -13,9 +13,14 @@ export default function MoreInfo(props) {
     .replace(/\s/g, "+");
 
   return (
-    <div className="mt-4 mb-4 pb-2 pt-2 px-3 border border-custom-blue-dark rounded text-custom-blue-dark cursor-pointer hover:bg-gray-light-report focus:ring-1 focus:ring-black focus:ring-offset-1 active:bg-gray-active">
+    <div className="mt-4 mb-4 pb-2 pt-2 px-3 w-max text-custom-blue-dark cursor-pointer underline hover:text-custom-blue-link focus:ring-1 focus:ring-black focus:ring-offset-1 focus:underline focus:text-custom-blue-link">
       <Link href={googleSearch}>
-        <a className="block w-full text-h6 font-display" id={props.id}>
+        <a
+          className="block w-full text-h6 font-display"
+          id={props.id}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.text}
           <span className="ml-3">
             <FontAwesomeIcon icon={faArrowAltCircleRight} color="#26374A" />
