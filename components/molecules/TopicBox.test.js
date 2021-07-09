@@ -11,6 +11,7 @@ const body = "test";
 const imgalt = "test";
 const image = "/images/family.png";
 const url = "/";
+const findInfo = "Find mroe information...";
 const subtopics = ["test1", "test2", "test3"];
 
 describe("topicBox", () => {
@@ -23,6 +24,7 @@ describe("topicBox", () => {
           body={body}
           imgalt={imgalt}
           image={image}
+          findInfo={findInfo}
           url={url}
           subtopics={subtopics}
         />
@@ -39,6 +41,7 @@ describe("topicBox", () => {
         body={body}
         imgalt={imgalt}
         image={image}
+        findInfo={findInfo}
         url={url}
         subtopics={subtopics}
       />
