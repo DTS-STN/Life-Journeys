@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import MoreInfo from "../components/atoms/MoreInfo";
 import AvailableResources from "../components/molecules/AvailableResources";
-import { useEffect, useRef, useContext } from "react";
+import { useEffect, useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import { Accordion } from "../components/atoms/Accordion";
 import { SideMenu } from "../components/atoms/SideMenu";
@@ -12,12 +12,14 @@ import en from "../locales/en";
 import fr from "../locales/fr";
 import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
+import ProvincialLink from "../components/atoms/ProvincialLink";
 
 export default function lifejourney() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
   const region = useRef("CAN");
+  const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -29,7 +31,7 @@ export default function lifejourney() {
       const res = await fetch("https://ipapi.co/json/");
       const data = await res.json();
       region.current = data.region_code;
-      console.log(region.current);
+      forceUpdate();
     }
     function successCall() {
       getGeo();
@@ -41,7 +43,7 @@ export default function lifejourney() {
 
   function onChangeFunc(optionSelected) {
     region.current = optionSelected;
-    console.log(region.current);
+    forceUpdate();
   }
 
   return (
@@ -52,14 +54,6 @@ export default function lifejourney() {
         bannerText={t.havingAChildBannerText}
       >
         <section className="layout-container mb-2 mt-4">
-          {/* <Banner
-        siteTitle={t.havingAChildBannerTitle}
-        headline={t.havingAChildBannerText}
-      />
-      <div id="wb-bc" className="container my-6">
-        <Breadcrumb />
-      </div> */}
-
           <Select
             options={language === "en" ? optionsEN : optionsFR}
             onChange={onChangeFunc}
@@ -87,10 +81,13 @@ export default function lifejourney() {
                     {t.getConnected}
                   </p>
                   <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
+                    <MoreInfo text={t.moreInfoPrenatalClasses} />
+                    <MoreInfo text={t.moreInfoParentingNetworks} />
+                    <ProvincialLink
+                      language={language}
+                      region={region.current}
+                      id="provincialLink"
+                    ></ProvincialLink>
                     <AvailableResources title={t.gettingready} />
                   </div>
                 </div>
@@ -108,12 +105,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
 
@@ -129,12 +120,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
 
@@ -150,12 +135,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
 
@@ -171,12 +150,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
 
@@ -192,12 +165,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
 
@@ -209,12 +176,6 @@ export default function lifejourney() {
                   <p className="text-h4 font-bold font-display">
                     {t.getConnected}
                   </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoCommunity} />
-                    <MoreInfo text={t.moreInfoFertility} />
-                    <MoreInfo text={t.moreInfoHealth} />
-                    <MoreInfo text={t.moreInfoFinancial} />
-                  </div>
                 </div>
               </Accordion>
             </div>
