@@ -14,6 +14,7 @@ import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
 
 export default function lifejourney() {
+  //
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;

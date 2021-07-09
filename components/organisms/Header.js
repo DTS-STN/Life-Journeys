@@ -24,14 +24,19 @@ export function Header({ bannerTitle, bannerText }) {
   const language = items.language;
   const t = language === "en" ? en : fr;
 
-  const { asPath } = useRouter();
   const router = useRouter();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const lang = window.localStorage.getItem("lang");
+
+      // if cookie language is different this will sync both
+      if (lang !== language) {
+        changeLanguage(lang);
+      }
+
       if (lang) {
-        router.replace(asPath, asPath, { locale: lang });
+        router.replace(router.asPath, router.asPath, { locale: lang });
       }
     }
   }, [language]);
@@ -67,12 +72,12 @@ export function Header({ bannerTitle, bannerText }) {
             />
 
             {/* Language selector for small screens */}
-            <Link key={language} href={asPath} locale={language}>
+            <Link key={language} href={router.asPath} locale={language}>
               <a
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
               >
-                {language === "fr" ? "EN" : "FR"}
+                {language === "en" ? "FR" : "EN"}
               </a>
             </Link>
           </div>
@@ -81,16 +86,16 @@ export function Header({ bannerTitle, bannerText }) {
             {/* Language selector for mid to larger screens */}
             <Link
               key={language}
-              href={asPath}
+              href={router.asPath}
               locale={language}
-              onClick={() => setLanguage(language)}
+              //onClick={() => setLanguage(language)}
             >
               <a
                 className="lg:visible invisible pb-0 lg:pb-2 self-end underline font-body text-canada-footer-font hover:text-canada-footer-hover-font-blue "
                 data-cy="toggle-language-link"
                 onClick={() => setLanguage(language)}
               >
-                {language === "fr" ? "English" : "Français"}
+                {language === "en" ? "Français" : "English"}
               </a>
             </Link>
 

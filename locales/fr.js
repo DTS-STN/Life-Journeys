@@ -94,6 +94,9 @@ export default {
   havingAChildBannerTitle: "Avoir un bébé",
   havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
 
+  // Find more information about
+  findInformationAbout: "Rechercher des informations sur",
+
   //More Info Links
 
   moreInfoCommunity: "Trouver des groupes communautaires dans ma région",

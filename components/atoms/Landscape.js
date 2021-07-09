@@ -1,6 +1,3 @@
-//import LandscapePng from '../assets/landscape.png'
-import Link from "next/link";
-
 import { useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
 
@@ -10,6 +7,7 @@ import fr from "../../locales/fr";
 export function Landscape() {
   const { items } = useContext(LanguageContext);
   const language = items.language;
+
   const t = language === "en" ? en : fr;
 
   return (
