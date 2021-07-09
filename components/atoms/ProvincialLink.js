@@ -45,7 +45,4 @@ ProvincialLink.propTypes = {
    * Identify which region user is in to determine which page to show
    */
   region: PropTypes.string.isRequired,
-  /**
-   * Text for the link
-   */
 };
