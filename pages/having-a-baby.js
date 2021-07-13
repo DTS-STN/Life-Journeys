@@ -1,10 +1,10 @@
 import Layout from "../components/layout";
-import MoreInfo from "../components/atoms/MoreInfo";
-import AvailableResources from "../components/molecules/AvailableResources";
+// import MoreInfo from "../components/atoms/MoreInfo";
+// import AvailableResources from "../components/molecules/AvailableResources";
 import { useEffect, useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
-import { Accordion } from "../components/atoms/Accordion";
-import Table from "../components/molecules/Table";
+// import { Accordion } from "../components/atoms/Accordion";
+// import Table from "../components/molecules/Table";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
 
@@ -12,7 +12,7 @@ import en from "../locales/en";
 import fr from "../locales/fr";
 import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
-import ProvincialLink from "../components/atoms/ProvincialLink";
+// import ProvincialLink from "../components/atoms/ProvincialLink";
 
 export default function lifejourney() {
   //
@@ -74,6 +74,8 @@ export default function lifejourney() {
             <Card
               title="Maternity and Parental Leave"
               service="Employment Insurance"
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
               links={[
                 { text: "More Info", url: "nextpage" },
                 { text: "Apply Now", url: "nextpage" },
@@ -82,16 +84,22 @@ export default function lifejourney() {
             <Card
               title="Benefits Finder"
               service="Service Canada"
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
               links={[{ text: "Find Benefits", url: "nextpage" }]}
             />
             <Card
-              title="Mental qand physical health resources"
+              title="Mental and physical health resources"
               service="Public Health Agency of Canada"
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
               links={[{ text: "More Info", url: "nextpage" }]}
             />
             <Card
               title="Newborn care resources"
               service="Health Canada"
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
               links={[{ text: "More Info", url: "nextpage" }]}
             />
           </div>
