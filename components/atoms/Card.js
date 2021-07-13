@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 export default function Card(props) {
   return (
     <div className="text-black text-left card rounded-tl-md rounded-b-md border cursor-pointer my-6 mx-4">
-      <div className="">
+      <div>
         <Image
           src={props.image}
           alt={props.imgalt}
