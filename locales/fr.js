@@ -132,7 +132,7 @@ export default {
 
   //Inner accordion text
 
-  getConnected: "Se connecter aux aides communautaires",
+  getConnected: "Connectez-vous aux ressources locales",
 
   //Report a problem
   reportAProblemButtonString: "Signaler un problème sur cette page",
