@@ -112,6 +112,10 @@ export default {
   home: "Life Journeys (fr)",
   "having-a-child": "Having a Child (fr)",
 
+  // Having a baby
+  topRequested:
+    "(French) See the top requested resources to answer your questions about having a child",
+
   //Table
 
   header1: "Chose",
@@ -128,7 +132,7 @@ export default {
 
   //Inner accordion text
 
-  getConnected: "Se connecter aux aides communautaires",
+  getConnected: "Connectez-vous aux ressources locales",
 
   //Report a problem
   reportAProblemButtonString: "Signaler un problème sur cette page",

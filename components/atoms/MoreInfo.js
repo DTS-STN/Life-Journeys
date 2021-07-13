@@ -13,10 +13,10 @@ export default function MoreInfo(props) {
     .replace(/\s/g, "+");
 
   return (
-    <div className="mt-4 mb-4 pb-2 pt-2 px-3 w-max text-custom-blue-dark cursor-pointer underline hover:text-custom-blue-link focus:ring-1 focus:ring-black focus:ring-offset-1 focus:underline focus:text-custom-blue-link">
+    <div className="mt-4 pb-2 pt-2 w-max text-custom-blue-dark cursor-pointer underline hover:text-custom-blue-link focus:ring-1 focus:ring-black focus:ring-offset-1 focus:underline focus:text-custom-blue-link">
       <Link href={googleSearch}>
         <a
-          className="block w-full text-h6 font-display"
+          className="block w-full text-sm sm:text-h6 font-display"
           id={props.id}
           target="_blank"
           rel="noopener noreferrer"

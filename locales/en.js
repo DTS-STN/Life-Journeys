@@ -113,6 +113,10 @@ export default {
   home: "Life Journeys",
   "having-a-baby": "Having a baby",
 
+  // Having a baby
+  topRequested:
+    "See the top requested resources to answer your questions about having a child",
+
   //Table
 
   header1: "Thingy",
@@ -128,7 +132,7 @@ export default {
 
   //Inner accordion text
 
-  getConnected: "Get connected to community supports",
+  getConnected: "Connect to local resources",
 
   //Report a problem
   reportAProblemButtonString: "Report a problem on this page",

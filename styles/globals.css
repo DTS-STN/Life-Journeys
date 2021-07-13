@@ -131,6 +131,10 @@ html {
     font-weight: 700;
     color: white;
   }
+
+  .card {
+    max-width: 252px;
+  }
 } /* closing bracket for the @layer */
 
 @layer utilities {
