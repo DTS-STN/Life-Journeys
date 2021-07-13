@@ -25,7 +25,7 @@ export default function TopicBox(props) {
           </div>
         </div>
         <p className="pt-4 pb-4">{props.body}</p>
-        <h3 className="text-h5 mb-2">Find information about</h3>{" "}
+        <h3 className="text-h5 mb-2">{props.findInfo}</h3>{" "}
         <ul className="flex flex-wrap gap-2 pb-2 pr-2">
           {props.subtopics.map((d, idx) => (
             <li
@@ -58,6 +58,10 @@ TopicBox.propTypes = {
    * image alt text
    */
   imgalt: PropTypes.string.isRequired,
+  /**
+   * Find More Information About
+   */
+  findInfo: PropTypes.string.isRequired,
   /**
    * link url for topic tile
    */

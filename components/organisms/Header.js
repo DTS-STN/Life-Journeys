@@ -5,7 +5,7 @@ import { PhaseBanner } from "../atoms/PhaseBanner";
 import { SearchBar } from "../atoms/SearchBar";
 
 import Banner from "../atoms/Banner";
-import Breadcrumb from "../molecules/Breadcrumb";
+import { Breadcrumb } from "../molecules/Breadcrumb";
 
 import { useEffect, useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
@@ -13,7 +13,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header({ bannerTitle, bannerText }) {
+export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
 
@@ -24,14 +24,19 @@ export function Header({ bannerTitle, bannerText }) {
   const language = items.language;
   const t = language === "en" ? en : fr;
 
-  const { asPath } = useRouter();
   const router = useRouter();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const lang = window.localStorage.getItem("lang");
+
+      // if cookie language is different this will sync both
+      if (lang !== language) {
+        changeLanguage(lang);
+      }
+
       if (lang) {
-        router.replace(asPath, asPath, { locale: lang });
+        router.replace(router.asPath, router.asPath, { locale: lang });
       }
     }
   }, [language]);
@@ -67,12 +72,12 @@ export function Header({ bannerTitle, bannerText }) {
             />
 
             {/* Language selector for small screens */}
-            <Link key={language} href={asPath} locale={language}>
+            <Link key={language} href={router.asPath} locale={language}>
               <a
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
               >
-                {language === "fr" ? "EN" : "FR"}
+                {language === "en" ? "FR" : "EN"}
               </a>
             </Link>
           </div>
@@ -81,16 +86,16 @@ export function Header({ bannerTitle, bannerText }) {
             {/* Language selector for mid to larger screens */}
             <Link
               key={language}
-              href={asPath}
+              href={router.asPath}
               locale={language}
-              onClick={() => setLanguage(language)}
+              //onClick={() => setLanguage(language)}
             >
               <a
                 className="lg:visible invisible pb-0 lg:pb-2 self-end underline font-body text-canada-footer-font hover:text-canada-footer-hover-font-blue "
                 data-cy="toggle-language-link"
                 onClick={() => setLanguage(language)}
               >
-                {language === "fr" ? "English" : "Français"}
+                {language === "en" ? "Français" : "English"}
               </a>
             </Link>
 
@@ -113,7 +118,7 @@ export function Header({ bannerTitle, bannerText }) {
         )}
 
         <div className="layout-container my-2">
-          <Breadcrumb />
+          <Breadcrumb items={breadcrumbItems} />
         </div>
       </header>
     </>
@@ -129,4 +134,20 @@ Header.propTypes = {
 
   //Child Banner Text
   bannerText: propTypes.string,
+  /**
+   * Array of Items for the breadcrumb
+   */
+  breadcrumbItems: propTypes.arrayOf(
+    propTypes.shape({
+      /**
+       * Text for the breadcrumb
+       */
+      text: propTypes.string,
+
+      /**
+       * Link for the breadcrumb
+       */
+      link: propTypes.string,
+    })
+  ),
 };
