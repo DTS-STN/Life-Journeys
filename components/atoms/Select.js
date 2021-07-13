@@ -6,7 +6,7 @@ export default function Select(props) {
       {props.label}
       <select
         defaultValue={props.defaultValue}
-        className="ml-2 mb-2 py-1 px-2 shadow-inner w-36 overflow-ellipsis border border-black rounded-xl focus-visible:outline-none focus:ring-black focus:ring-1 transition-shadow duration-300 focus:w-auto"
+        className="ml-2 mb-2 py-1 px-2 shadow-inner w-36 overflow-ellipsis border-2 border-gray-300 focus-visible:outline-none focus:ring-black focus:ring-1 transition-shadow duration-300 focus:w-auto bg-white"
         name={props.name}
         onChange={(e) => props.onChange(e.currentTarget.value)}
       >

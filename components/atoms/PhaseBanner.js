@@ -5,14 +5,19 @@ import PropTypes from "prop-types";
  * Displays the PhaseBanner on the page
  */
 
-export const PhaseBanner = ({ phase, children }) => {
+export const PhaseBanner = ({ phase, children, link, linkText }) => {
   return (
-    <div className="bg-gray-100 sm:max-h-14">
-      <div className="flex items-start py-4 layout-container">
-        <span className="font-body text-xs leading-5 sm:text-sm sm:leading-5 uppercase tracking-normal border-2 border-black px-2">
-          {phase}
-        </span>
-        <p className="font-body text-xxs sm:text-xs break-words ml-4 pt-1">
+    <div className="bg-circle-color">
+      <div className="flex py-4 layout-container">
+        <div className="flex-container">
+          <div className="mb-3 py-1 font-body text-xs leading-5 h-full sm:text-sm sm:leading-5 font-black tracking-normal border-2 border-black px-2 bg-white text-circle-color w-max">
+            {phase}
+          </div>
+          <div className="mb-3 underline text-white">
+            <a href={link}>{linkText}</a>
+          </div>
+        </div>
+        <p className="font-body text-white block text-xs break-words pt-1">
           {children}
         </p>
       </div>
@@ -25,6 +30,14 @@ PhaseBanner.propTypes = {
    * Phase stage in the PhaseBanner
    */
   phase: PropTypes.string.isRequired,
+  /**
+   * Link back to projects
+   */
+  link: PropTypes.string.isRequired,
+  /**
+   * Text for link
+   */
+  linkText: PropTypes.string.isRequired,
   /**
    * Phase stage in the PhaseBanner
    */

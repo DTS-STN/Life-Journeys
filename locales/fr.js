@@ -169,6 +169,8 @@ export default {
   landingPageSubtitle: "Sélectionnez un voyage pour commencer",
 
   //Phase Banner
-  Alpha: "Alpha",
-  alphaText: "Ce site changera au fur et à mesure que nous testons des idées.",
+  Alpha: "Test site (fr)",
+  testSiteText:
+    "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change. (fr)",
+  backToProject: "Back to projects (fr)",
 };
