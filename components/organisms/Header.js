@@ -5,7 +5,7 @@ import { PhaseBanner } from "../atoms/PhaseBanner";
 import { SearchBar } from "../atoms/SearchBar";
 
 import Banner from "../atoms/Banner";
-import Breadcrumb from "../molecules/Breadcrumb";
+import { Breadcrumb } from "../molecules/Breadcrumb";
 
 import { useEffect, useContext } from "react";
 import { LanguageContext } from "../../context/languageProvider";
@@ -13,7 +13,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header({ bannerTitle, bannerText }) {
+export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
 
@@ -118,7 +118,7 @@ export function Header({ bannerTitle, bannerText }) {
         )}
 
         <div className="layout-container my-2">
-          <Breadcrumb />
+          <Breadcrumb items={breadcrumbItems} />
         </div>
       </header>
     </>
@@ -134,4 +134,20 @@ Header.propTypes = {
 
   //Child Banner Text
   bannerText: propTypes.string,
+  /**
+   * Array of Items for the breadcrumb
+   */
+  breadcrumbItems: propTypes.arrayOf(
+    propTypes.shape({
+      /**
+       * Text for the breadcrumb
+       */
+      text: propTypes.string,
+
+      /**
+       * Link for the breadcrumb
+       */
+      link: propTypes.string,
+    })
+  ),
 };

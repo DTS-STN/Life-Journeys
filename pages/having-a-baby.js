@@ -53,6 +53,8 @@ export default function lifejourney() {
         title={t.havingABabyTitle}
         bannerTitle={t.havingAChildBannerTitle}
         bannerText={t.havingAChildBannerText}
+        locale={language}
+        breadcrumbItems={[{ text: t.homeSiteTitle, link: "/" }]}
       >
         <section className="layout-container mb-2 mt-4">
           <Select

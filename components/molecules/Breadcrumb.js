@@ -1,68 +1,62 @@
-import { useContext, useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import { LanguageContext } from "../../context/languageProvider";
-import { BreadLink } from "../atoms/BreadLink";
-import en from "../../locales/en";
-import fr from "../../locales/fr";
+import propTypes from "prop-types";
+import Link from "next/link";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 /**
- * breadcrumb component
+ *  Breadcrumb component
  */
-
-export default function BreadCrumbs() {
-  const router = useRouter();
-
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
-  const t = language === "en" ? en : fr;
-
-  const [breadcrumbs, setBreadcrumbs] = useState(null);
-
-  useEffect(() => {
-    if (router) {
-      const linkPath = router.asPath.split("/");
-      linkPath.shift();
-      const pathArray = linkPath.map((path, i) => {
-        return {
-          breadcrumb: path,
-          href: "/" + linkPath.slice(0, i + 1).join("/"),
-        };
-      });
-      setBreadcrumbs(pathArray);
-    }
-  }, [router]);
-
-  if (!breadcrumbs) {
-    return null;
-  }
-
-  const countcrumbs = breadcrumbs.length;
-
+export function Breadcrumb(props) {
   return (
     <nav aria-label="breadcrumbs">
-      <div>
-        <div className="inline">
-          <BreadLink url={t.gocLink} text="Canada.ca" arrow={false} />
-        </div>
-        {breadcrumbs[0].breadcrumb && (
-          <div className="inline">
-            <BreadLink url="/" text={t.home} arrow={true} />
-          </div>
-        )}
-        {breadcrumbs.map((breadcrumb, idx) => {
-          return (
-            <div key={breadcrumb.href} className="inline">
-              {idx != countcrumbs - 1 && (
-                <BreadLink
-                  url={breadcrumb.href}
-                  text={t[breadcrumb.breadcrumb]}
-                  arrow={true}
-                />
-              )}
-            </div>
-          );
-        })}
-      </div>
+      <ul className="block text-custom-blue-dark text-sm font-body">
+        <li className="inline-block min-w-0 max-w-full truncate">
+          <Link href="https://www.canada.ca/">
+            <a className="hover:text-custom-blue-link visited:text-purple-700 underline">
+              Canada.ca
+            </a>
+          </Link>
+        </li>
+
+        {props.items
+          ? props.items.map((item, key) => {
+              return (
+                <li
+                  key={key}
+                  className="inline-block min-w-0 max-w-full truncate"
+                >
+                  <span className="text-gray-dark-100 mx-4">
+                    <FontAwesomeIcon icon={faAngleRight} size="sm" />
+                  </span>
+                  <Link href={item.link}>
+                    <a className="hover:text-custom-blue-link visited:text-purple-700 underline">
+                      {item.text}
+                    </a>
+                  </Link>
+                </li>
+              );
+            })
+          : null}
+      </ul>
     </nav>
   );
 }
+
+Breadcrumb.propTypes = {
+  /**
+   * Array of Items for the breadcrumb
+   */
+  items: propTypes.arrayOf(
+    propTypes.shape({
+      /**
+       * Text for the breadcrumb
+       */
+      text: propTypes.string,
+
+      /**
+       * Link for the breadcrumb
+       */
+      link: propTypes.string,
+    })
+  ),
+};

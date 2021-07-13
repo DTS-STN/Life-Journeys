@@ -12,18 +12,20 @@ export default function Layout({
   locale,
   bannerTitle,
   bannerText,
+  breadcrumbItems,
 }) {
   return (
     <>
       <Meta title={title} />
 
       <div className="overflow-x-hidden">
-        <Header bannerTitle={bannerTitle} bannerText={bannerText} />
+        <Header
+          bannerTitle={bannerTitle}
+          bannerText={bannerText}
+          breadcrumbItems={breadcrumbItems}
+        />
 
         <main>
-          <div className="bg-pink-700 text-white font-extrabold pl-8">
-            locale is : {locale}{" "}
-          </div>
           <div>{children}</div>
         </main>
 
@@ -45,4 +47,20 @@ Layout.propTypes = {
 
   //Child Banner Text, for sub pages that requires a banner
   bannerText: propTypes.string,
+  /**
+   * Array of Items for the breadcrumb
+   */
+  breadcrumbItems: propTypes.arrayOf(
+    propTypes.shape({
+      /**
+       * Text for the breadcrumb
+       */
+      text: propTypes.string,
+
+      /**
+       * Link for the breadcrumb
+       */
+      link: propTypes.string,
+    })
+  ),
 };
