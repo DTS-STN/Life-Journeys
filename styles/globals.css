@@ -124,6 +124,9 @@ html {
     color: white;
   }
 
+  .card {
+    max-width: 252px;
+  }
 } /* closing bracket for the @layer */
 
 

@@ -109,6 +109,10 @@ export default {
   home: "Life Journeys (fr)",
   "having-a-child": "Having a Child (fr)",
 
+  // Having a baby
+  topRequested:
+    "(French) See the top requested resources to answer your questions about having a child",
+
   //Table
 
   header1: "Chose",
