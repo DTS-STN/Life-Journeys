@@ -5,8 +5,8 @@ import path from "path";
 // Fetch ALL topics from local Data
 //
 
-export function getLocalData() {
-  const fullPath = path.join(process.cwd(), "pages", "api", "data.json");
+export function getLocalTopics() {
+  const fullPath = path.join(process.cwd(), "pages", "api", "topics.json");
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const localData = JSON.parse(fileContents).topics;
 
@@ -25,4 +25,16 @@ export async function getTopics(language) {
   const apiData = await res.json();
 
   return { apiData, error };
+}
+
+//
+// Fetch ALL journeys from local Data
+//
+
+export function getLocalJourneys() {
+  const fullPath = path.join(process.cwd(), "pages", "api", "journeys.json");
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const localData = JSON.parse(fileContents).Journeys;
+
+  return { localData };
 }
