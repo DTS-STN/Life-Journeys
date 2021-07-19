@@ -134,7 +134,24 @@ html {
 
   .card {
     max-width: 252px;
+    width: 252px;
+    min-width: 252px; 
   }
+
+  .journeyButton {
+    background-color: #2572B4;
+    color: white;
+    border: #26374A solid 1px; 
+  }
+  .journeyButton:hover {
+    background-color: #1C578A;
+  }
+  .journeyButton:active {
+    background-color: #16446C;
+  }
+  
+
+
 } /* closing bracket for the @layer */
 
 @layer utilities {

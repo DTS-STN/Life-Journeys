@@ -4,6 +4,8 @@ import { useEffect, useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
+import Stages from "../components/atoms/Stages";
+import { getLocalJourneys } from "./api/getData";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -11,7 +13,10 @@ import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
 import ProvincialLink from "../components/atoms/ProvincialLink";
 
-export default function lifejourney() {
+//
+
+export default function lifejourney({ journeysData }) {
+  //
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
@@ -66,7 +71,7 @@ export default function lifejourney() {
           />
 
           {/* Top cards */}
-          <div className="container flex flex-col md:flex-row align-items-center mt-4">
+          <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
             <Card
               title="Maternity and Parental Leave"
               service="Employment Insurance"
@@ -100,6 +105,8 @@ export default function lifejourney() {
             />
           </div>
 
+          {/* Journey Stages Section */}
+
           <div className="container flex flex-col w-full bg-gray-200 md:flex-row align-items-center mt-4">
             <div className="p-2">
               <h2 className="text-h3-tall">
@@ -109,6 +116,12 @@ export default function lifejourney() {
               <p>Learn more about the keytask during each stage in journey</p>
             </div>
           </div>
+
+          <div className="container mt-4">
+            <Stages journeys={journeysData} />
+          </div>
+
+          {/* Connect to Local Resources */}
 
           <div className="container flex flex-col w-full text-center md:w-32 md:flex-row align-items-center mt-4">
             <div>
@@ -129,37 +142,25 @@ export default function lifejourney() {
               ></ProvincialLink>
             </div>
           </div>
-
-          {/* <div className="container flex flex-col md:flex-row align-items-center" >
-            <div className="pt-2 w-full lg:w-9/12">
-              <Accordion
-                id="GettingReady"
-                title="Getting Ready"
-                summary="Getting Ready summary text"
-              >
-                <div className="pr-6">
-                  <Table />
-                </div>
-                <div className="py-6">
-                  <p className="text-h4 font-bold font-display">
-                    {t.getConnected}
-                  </p>
-                  <div className="pr-6">
-                    <MoreInfo text={t.moreInfoPrenatalClasses} />
-                    <MoreInfo text={t.moreInfoParentingNetworks} />
-                    <ProvincialLink
-                      language={language}
-                      region={region.current}
-                      id="provincialLink"
-                    ></ProvincialLink>
-                    <AvailableResources title={t.gettingready} />
-                  </div>
-                </div>
-              </Accordion>
-            </div> 
-          </div> */}
         </section>
       </Layout>
     </>
   );
+}
+
+// getting static data before loading the page
+
+export async function getStaticProps({ locale }) {
+  console.log("language object at getStaticProps is ", locale);
+
+  const { localData } = getLocalJourneys();
+  const errorCode = false;
+
+  return {
+    props: {
+      journeysData: localData,
+      errorCode,
+      locale,
+    },
+  };
 }

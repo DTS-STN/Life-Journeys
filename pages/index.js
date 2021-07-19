@@ -1,6 +1,6 @@
 import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
-import { getTopics, getLocalData } from "./api/topics";
+import { getTopics, getLocalTopics } from "./api/getData";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
@@ -96,7 +96,7 @@ export async function getStaticProps({ locale }) {
     //
     // Else get the content from the local file
     //
-    const { localData } = getLocalData();
+    const { localData } = getLocalTopics();
 
     topicsData = localData;
     errorCode = false;
