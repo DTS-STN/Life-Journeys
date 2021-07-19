@@ -10,7 +10,7 @@ export default [
   { value: "NU", label: "Nunavut" },
   { value: "ON", label: "Ontario" },
   { value: "PE", label: "Prince Edward Island" },
-  { value: "QC", label: "Québec" },
+  { value: "QC", label: "Quebec" },
   { value: "SK", label: "Saskatchewan" },
   { value: "YT", label: "Yukon" },
 ];
