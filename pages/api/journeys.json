@@ -1,0 +1,72 @@
+{
+  "Journeys": [
+    {
+      "title": "journey 1 title",
+      "subJourney": [
+        {
+          "title": "Sub journey 1 title",
+          "content": "this will be the content for subjourney 1"
+        },
+        {
+          "title": "Sub journey 2 title",
+          "content": "this will be the content for sub journey 2"
+        },
+        {
+          "title": "Sub journey 3 title",
+          "content": "this will be the content for sub journey 3"
+        }
+      ]
+    },
+    {
+      "title": "journey 2 title",
+      "subJourney": [
+        {
+          "title": "Sub journey 1 title",
+          "content": "this will be the content for subjourney 1"
+        },
+        {
+          "title": "Sub journey 2 title",
+          "content": "this will be the content for sub journey 2"
+        },
+        {
+          "title": "Sub journey 3 title",
+          "content": "this will be the content for sub journey 3"
+        }
+      ]
+    },
+    {
+      "title": "journey 3 title",
+      "subJourney": [
+        {
+          "title": "Sub journey 1 title",
+          "content": "this will be the content for subjourney 1"
+        },
+        {
+          "title": "Sub journey 2 title",
+          "content": "this will be the content for sub journey 2"
+        },
+        {
+          "title": "Sub journey 3 title",
+          "content": "this will be the content for sub journey 3"
+        }
+      ]
+    },
+    {
+      "title": "journey 4 title",
+      "subJourney": [
+        {
+          "title": "Sub journey 1 title",
+          "content": "this will be the content for subjourney 1"
+        },
+        {
+          "title": "Sub journey 2 title",
+          "content": "this will be the content for sub journey 2"
+        },
+        {
+          "title": "Sub journey 3 title",
+          "content": "this will be the content for sub journey 3"
+        }
+      ]
+    }
+  ]
+}
