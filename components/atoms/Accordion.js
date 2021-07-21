@@ -35,12 +35,12 @@ export function Accordion(props) {
             )}
           </div>
           <div className="ml-8">
-            <h2
+            <h3
               id={props.id}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
-            </h2>
+            </h3>
             <span
               className={`ml-6 (${props.summaryClass}) ? ${props.summaryClass} : ''`}
             >

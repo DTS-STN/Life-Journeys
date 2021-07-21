@@ -5,6 +5,7 @@ import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
 import Stages from "../components/atoms/Stages";
+import Stages2 from "../components/atoms/Stagesv2";
 import { getLocalJourneys } from "./api/getData";
 
 import en from "../locales/en";
@@ -107,18 +108,18 @@ export default function lifejourney({ journeysData }) {
 
           {/* Journey Stages Section */}
 
-          <div className="container flex flex-col w-full bg-gray-200 md:flex-row align-items-center mt-4">
-            <div className="p-2">
-              <h2 className="text-h3-tall">
+          <div className="container flex flex-row w-full bg-gray-200 xs:flex-col align-items-center mt-4">
+            <div className="p-2 w-full">
+              <h2 className="text-h3-tall w-full">
                 Discover the stages of the new child life Journey
               </h2>
 
               <p>Learn more about the keytask during each stage in journey</p>
             </div>
-          </div>
 
-          <div className="container mt-4">
-            <Stages journeys={journeysData} />
+            <div className="mt-4 w-full">
+              <Stages2 journeys={journeysData} />
+            </div>
           </div>
 
           {/* Connect to Local Resources */}
