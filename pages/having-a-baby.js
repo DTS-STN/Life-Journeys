@@ -4,7 +4,6 @@ import { useEffect, useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
-import Stages from "../components/atoms/Stages";
 import Stages2 from "../components/atoms/Stagesv2";
 import { getLocalJourneys } from "./api/getData";
 

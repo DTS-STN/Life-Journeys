@@ -10,13 +10,8 @@ export default function Stages(props) {
   // const language = items.language;
   // const t = language === "en" ? en : fr;
 
-  const [openFlag, setOpenFlag] = useState(false);
   const [showFlag, setShowFlag] = useState(false);
   const subJourneyData = useRef();
-
-  function openSummary() {
-    setOpenFlag(!openFlag);
-  }
 
   function onClickHandler(data) {
     subJourneyData.current = data;

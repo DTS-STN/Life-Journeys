@@ -10,25 +10,16 @@ export default function Stages2(props) {
   // const language = items.language;
   // const t = language === "en" ? en : fr;
 
-  const [openFlag, setOpenFlag] = useState(false);
   const [showData, setShowData] = useState();
   const subJourneyData = useRef();
 
-  function openSummary() {
-    setOpenFlag(!openFlag);
-  }
-
   function onChangeHandler(option) {
     subJourneyData.current = option.currentTarget.value;
-    console.log(option.currentTarget.value);
-    console.log(
-      props.journeys.map((journey) =>
-        journey.titleId === option.currentTarget.value
-          ? setShowData(journey.subJourney)
-          : null
-      )
+    props.journeys.map((journey) =>
+      journey.titleId === option.currentTarget.value
+        ? setShowData(journey.subJourney)
+        : null
     );
-    console.log(showData);
   }
 
   return (
@@ -44,7 +35,7 @@ export default function Stages2(props) {
             id="stage"
             onChange={onChangeHandler}
           >
-            <option key="0" value="0">
+            <option key="0" value="0" defaultValue>
               Select a stage
             </option>
             {props.journeys.map((journey, idx) => (
@@ -68,13 +59,16 @@ export default function Stages2(props) {
             ))
           ) : (
             <div className="subJourneys mt-6 bg-white w-full">
-              {/* <ul className="flex flex-col sm:flex-wrap sm-flex-row items-center justify-center py-4"> */}
               {showData.map((subJourney, idx) => (
-                <Accordion id={idx} title={subJourney.title} summary="">
+                <Accordion
+                  key={idx}
+                  id={idx.toString()}
+                  title={subJourney.title}
+                  summary=""
+                >
                   {subJourney.content}
                 </Accordion>
               ))}
-              {/* </ul> */}
             </div>
           )}
         </div>
