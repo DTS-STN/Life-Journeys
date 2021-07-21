@@ -200,7 +200,7 @@ export default [
       },
       {
         label:
-          "Je veux m'informer sur les prestations de maternité et parentales de l'assurance-emploi",
+          "Je veux m'informer sur le Régime québécois d'assurance parentale",
         link: "https://www.rqap.gouv.qc.ca/fr",
       },
     ],
