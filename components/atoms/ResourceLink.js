@@ -3,7 +3,7 @@ import sitesEN from "../../pages/api/provincialSitesEN";
 import sitesFR from "../../pages/api/provincialSitesFR";
 
 /**
- *  This component creates a link to a provincial website based on the user's region
+ *  This component creates a link to a provincial website based on the user's region OR a google search query with the provided text
  */
 
 export default function ResourceLink(props) {
