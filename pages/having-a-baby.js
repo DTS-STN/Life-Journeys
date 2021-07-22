@@ -139,7 +139,6 @@ export default function lifejourney({ journeysData }) {
               <ResourceLink
                 language={language}
                 region={region.current}
-                id="provincialLink"
                 isProvincialLink={true}
               ></ResourceLink>
             </div>

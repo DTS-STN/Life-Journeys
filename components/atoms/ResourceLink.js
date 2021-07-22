@@ -20,7 +20,7 @@ export default function ResourceLink(props) {
           <a
             href={link}
             className="underline w-full text-sm sm:text-h6 font-display"
-            id={props.id}
+            id={link}
             target="_blank"
             rel="noopener noreferrer"
           >
