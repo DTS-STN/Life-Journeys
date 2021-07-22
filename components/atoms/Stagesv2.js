@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import { Accordion } from "../atoms/Accordion";
+import { Accordion2 } from "../atoms/Accordion2";
 import { useState, useRef } from "react";
 /**
  *  Stages Component
  */
+
+const stagesImg = "/images/stages.png";
 
 export default function Stages2(props) {
   // const { items } = useContext(LanguageContext);
@@ -23,20 +25,20 @@ export default function Stages2(props) {
   }
 
   return (
-    <div className="bg-circle-color p-4">
-      <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center border border-black p-4 ">
+    <div className="p-4">
+      <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center">
         <div className="w-full text-center">
-          <label className="text-white pr-4" htmlFor="stage">
-            Stage:{" "}
+          <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
+            Journey stage:
           </label>
 
           <select
-            className="w-auto h-8 rounded"
+            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive my-2"
             id="stage"
             onChange={onChangeHandler}
           >
-            <option key="0" value="0" defaultValue>
-              Select a stage
+            <option key="0" value="0" defaultValue hidden>
+              -select-
             </option>
             {props.journeys.map((journey, idx) => (
               <option key={idx} value={journey.titleId}>
@@ -48,26 +50,18 @@ export default function Stages2(props) {
 
         <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center ">
           {showData === undefined ? (
-            props.journeys.map((journey, idx) => (
-              <div
-                key={idx}
-                className="h-46px card my-6 mx-4 pt-3 rounded font-body text-sm text-center text-white cursor-pointer border journeyButton"
-                onClick={() => onClickHandler(journey.subJourney)}
-              >
-                {journey.title}
-              </div>
-            ))
+            <img src={stagesImg} alt="" />
           ) : (
             <div className="subJourneys mt-6 bg-white w-full">
               {showData.map((subJourney, idx) => (
-                <Accordion
+                <Accordion2
                   key={idx}
                   id={idx.toString()}
                   title={subJourney.title}
                   summary=""
                 >
                   {subJourney.content}
-                </Accordion>
+                </Accordion2>
               ))}
             </div>
           )}
