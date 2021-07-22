@@ -130,9 +130,11 @@ export default {
   row3text: "Fertility treatments",
   row3subtext: "What you need to know",
 
-  //Inner accordion text
+  //Connect to local resources
 
   getConnected: "Connect to local resources",
+  getConnectedDescription:
+    "We often lean on those closest to us for advice. Find and build your support close to where you live.",
 
   //Report a problem
   reportAProblemButtonString: "Report a problem on this page",
