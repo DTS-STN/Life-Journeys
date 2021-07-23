@@ -13,9 +13,9 @@ export function Accordion2(props) {
   const arrowColor = "#335075";
 
   return (
-    <div className="flex mb-2">
+    <div className="flex mb-0 ">
       <details
-        className={`accordion flex-1 flex-wrap p-4 border-2 rounded-md mb-2 shadow-lg ((${props.mainClass})? ${props.mainClass} : '') `}
+        className={`accordion flex-1 flex-wrap p-4 border border-gray-300 rounded bg-white ((${props.mainClass})? ${props.mainClass} : '') `}
       >
         <summary onClick={() => openSummary()}>
           <div className="w-12 min-w-12 relative left-4 top-2 float-left ">

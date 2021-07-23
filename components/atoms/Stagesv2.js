@@ -52,7 +52,7 @@ export default function Stages2(props) {
           {showData === undefined ? (
             <img src={stagesImg} alt="" />
           ) : (
-            <div className="subJourneys mt-6 bg-white w-full">
+            <div className="subJourneys mt-6 w-full">
               {showData.map((subJourney, idx) => (
                 <Accordion2
                   key={idx}
