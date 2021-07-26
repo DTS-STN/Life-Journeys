@@ -1,107 +1,529 @@
 {
   "Journeys": [
     {
-      "titleEN": "Anticipating a child",
-      "titleFR": "Attendre un enfant",
+      "title": "Attendre un enfant",
       "titleId": "1",
       "subJourney": [
         {
-          "titleEN": "General Planning",
-          "titleFR": "Planification générale",
-          "content": "this will be the content for subjourney 1.1"
+          "title": "Planification générale",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Recherche pour avoir un enfant",
+                "Décider d’amorcer la conception",
+                "Essayer de concevoir naturellement",
+                "Recherche d’options de fertilité",
+                "Confirmation de la grossesse"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Les fournisseurs de soins de santé",
+                "Médecin de famille",
+                "Nutritionniste",
+                "Pharmacie",
+                "Appli de suivi de la fertilité",
+                "Professionnels de la santé et du bien être",
+                "Clinique de fertilité"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Adoption process",
-          "titleFR": "Processus d’adoption",
-          "content": "this will be the content for sub journey 1.2"
+          "title": "Processus d’adoption",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Explorer les types d’adoption",
+                "Élaborer et partager un profil d’adoption",
+                "Assister à des cours de préparation à l’adoption",
+                "Faire une demande d’adoption",
+                "Évaluation psychosociale",
+                "Affectation du dossier à un spécialiste de l’adoption",
+                "Références et vérification des antécédents",
+                "Étude du milieu familial"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Spécialiste de l’adoption",
+                "Agende d’adoption",
+                "Avocat",
+                "Sites internet consacrées à l’adoption",
+                "Commission de l’Immigration et du statut de Réfugie",
+                "Aide a l’enfance/Services sociaux",
+                "Travailleur social",
+                "Professionnel de la santé mentale",
+                "Administrateurs des forces de l’ordre"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Fertility treatment",
-          "titleFR": "Traitement de fertilité",
-          "content": "this will be the content for sub journey 1.3"
+          "title": "Traitement de fertilité",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Traitements de fertilité",
+                "Analyses et examens médicaux",
+                "Trouver une donneuse d’ovules ou un donneur de sperme",
+                "Trouver un partenaire de maternité de substitution",
+                "Recherche d’options alternatives à la planification familiale",
+                "Consultations en santé mentale",
+                "Congélation des ovules et du sperme"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Fournisseurs de soins de santé",
+                "Médecin de famille",
+                "Professionnel de l’accouchement",
+                "Professionnel de la santé mentale",
+                "Clinique de fertilité",
+                "Laboratoire d’analyse médicale",
+                "Organisme donateur"
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "title": "Preparing for arrival",
-      "titleFR": "Planification de l’arrivée",
+      "title": "Planification de l’arrivée",
       "titleId": "2",
       "subJourney": [
         {
           "titleEN": "Gestation",
-          "titleFR": "Gestation",
-          "content": "this will be the content for subjourney 2.1"
+          "title": "Gestation",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Gérer la santé et bien-être maternel et fœtal",
+                "Consultation avec un professionnel de l’accouchement",
+                "Analyse médicale spécialisée",
+                "Traitements spécialisés pour grossesses à haut risque"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Médecin de famille",
+                "Professionnel de l’accouchement",
+                "Nutritionniste",
+                "Professionnel de la santé mentale",
+                "Laboratoire d’analyse médicale",
+                "Examens à la maison",
+                "Studios mise en forme",
+                "Cours prénataux",
+                "Hôpital/Clinique",
+                "Médecins spécialistes"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Preparation for birth",
-          "titleFR": "Préparation à la naissance",
-          "content": "this will be the content for sub journey 2.2"
+          "title": "Préparation à la naissance",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Formalités liées à l’arrivée",
+                "Planification de l’arrivée",
+                "Planification de la naissance"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Fournisseurs de soin de santé",
+                "Médecin de famille",
+                "Professional de l’accouchement",
+                "Hôpital/Clinique/Centres des naissances",
+                "Spécialistes de la médecine fœtale",
+                "Médecins spécialistes"
+              ]
+            }
+          ]
         },
         {
-          "titleEN": "Planning for arrival",
-          "titleFR": "Planification de l’arrivée",
-          "content": "this will be the content for sub journey 2.3"
+          "title": "Adoption visitation",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Jumelé avec un enfant",
+                "Demande d’immigration ou de citoyenneté au Canada",
+                "Visites de pré-placement",
+                "Arrangements post-placement",
+                "Proposition d’adoption",
+                "Visites avec l’enfant"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Spécialiste de l’adoption",
+                "Travailleur social",
+                "Conseiller des parents biologiques",
+                "Gouvernement provincial",
+                "Aide à l’enfance/Soins sociaux",
+                "Service Canada",
+                "Immigration, Réfugiés et Citoyenneté Canada"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ecosystem preparation",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Préparer le soutien suite à l’arrivée",
+                "Créer/gérer les documents juridiques",
+                "Acquisition d’articles pour bébé",
+                "Évaluer et préparer les options en matière de services de garde",
+                "Planification financière"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Employeur",
+                "Avocat",
+                "Organismes de bienfaisance/Organismes à but non lucratif",
+                "Institution financière",
+                "Service Canada",
+                "Assureur",
+                "Consultante en lactation",
+                "Professionnels de la santé et du bien être",
+                "Détaillants",
+                "Care providers",
+                "Coach du sommeil",
+                "Spécialiste d’adoption*",
+                "Aide à l’enfance/Soins sociaux*",
+                "Travailleur social*",
+                "Juge de paix*"
+              ]
+            },
+            {
+              "title": " ",
+              "list": ["* Specific to the adoption path french"]
+            }
+          ]
+        },
+        {
+          "title": "Leave/benefits coordination",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Planification financière",
+                "Coordination avec l’employeur",
+                "Obtenir l’information nécessaire",
+                "Rechercher/évaluer les options",
+                "Présenter une demande"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Employeur",
+                "Comptable",
+                "Assureur",
+                "Service Canada",
+                "Planificateur financière"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pregnancy termination",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Évaluation des options",
+                "Procédure d'interruption",
+                "Soutien suivant l'interruption"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Fournisseurs de soins de santé",
+                "Médecin de famille",
+                "Professionnel de l’accouchement",
+                "Professionnels de la santé et du bien être",
+                "Laboratoire d’analyse médicale",
+                "Médecins spécialistes",
+                "Médecins chargés des grossesses à haut risque",
+                "Généticien",
+                "Groupes de soutien",
+                "Hôpital/Clinique"
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "title": "Child's arrival",
-      "titleFR": "Child's arrival -- French",
+      "title": "Child's arrival -- French",
       "titleId": "3",
       "subJourney": [
         {
           "titleEN": "Birth",
-          "titleFR": "Naissance",
-          "content": "this will be the content for subjourney 3.1"
+          "title": "Naissance",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Arrivée au lieu de naissance",
+                "Surveillance et travail précoce",
+                "Complications lors du travail",
+                "Travail et accouchement actifs"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Hôpital/Clinique/Centre des naissances",
+                "Professionnels de l’accouchement",
+                "Médecins chargés des grossesses à haut risque",
+                "Spécialistes de la médecine foetale"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "New child arrives",
-          "titleFR": "Arrivée de l'enfant",
-          "content": "this will be the content for sub journey 3.2"
+          "title": "Arrivée de l'enfant",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Lien affectif et soins postnataux",
+                "Arrivée de l’enfant adopté et période de probation*",
+                "Complications relatives à la santé de l’enfant"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Médecins spécialistes",
+                "Médecin de famille",
+                "Birthing professional",
+                "Hospital/Clinic/Birthing centre**",
+                "Travailleur social*",
+                "Spécialiste de l’adoption*",
+                "Immigration. Réfugiés et Citoyenneté Canada*",
+                "Unité de soins intensifs nouveau-né"
+              ]
+            },
+            {
+              "title": " ",
+              "list": [
+                "* Specific to the adoption path french",
+                "**Specific to giving birth french"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Child registration",
-          "titleFR": "Inscription de l’enfant",
-          "content": "this will be the content for sub journey 3.3"
+          "title": "Inscription de l’enfant",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": ["présenter une demande de certificat de naissance"]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Hôpital/Clinique/Centre de naissances",
+                "Gouvernement provincial"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Loss – grief journey",
-          "titleFR": "Le cheminement du deuil s'amorce",
-          "content": "this will be the content for sub journey 3.3"
+          "title": "Le cheminement du deuil s'amorce",
+          "content": [
+            {
+              "title": "Common situations:",
+              "list": [
+                "Décès d’un nourrisson",
+                "Accouchement d'un mort-né",
+                "Décès d’un parent au moment de l’accouchement"
+              ]
+            },
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Analyse et rapports médicaux suivant la perte du bébé",
+                "Préparer les arrangements de fin de vie",
+                "Soutien en matière de santé mentale et émotionnelle",
+                "Garder leur mémoire vivante"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Médecin de famille",
+                "Professionnels de l’accouchement",
+                "Hôpital/Clinique/Centre des naissances",
+                "Professionnels de la santé mentale",
+                "Groupes de soutien",
+                "Organismes de bienfaisance/Organismes à but non-lucratif",
+                "Généticien",
+                "Spécialistes de la médecine fœtale",
+                "Médecins spécialistes",
+                "Analyse médicale",
+                "Médecins chargés des grossesses à haut risque",
+                "Travailleur social",
+                "Professionnels de la santé et du bien être"
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "titleEN": "Transition to a new normal",
-      "titleFR": "Transition vers la nouvelle normalité",
+      "title": "Transition vers la nouvelle normalité",
       "titleId": "4",
       "subJourney": [
         {
           "titleEN": "The child is “home”",
-          "titleFR": "L’enfant est à la maison",
-          "content": "this will be the content for subjourney 4.1"
+          "title": "L’enfant est à la maison",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Santé mentale de la mère et soutien post-partum",
+                "Surveillance du développement de l’enfant",
+                "Nutrition et planification de l’alimentation",
+                "Socialisation et activités",
+                "Immunisations",
+                "Célébration",
+                "Soutien aux parents et consultation",
+                "Finaliser l’adoption légale"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Groupes de soutien",
+                "Coach de sommeil",
+                "Appli de suivi du développement",
+                "Médecin de famille",
+                "Cours de loisir",
+                "Fournisseurs de soins",
+                "Community centres",
+                "Consultante en lactation",
+                "Pédiatre",
+                "Professionnels de la santé mentale",
+                "Travailleur social*",
+                "Gouvernement Provincial*",
+                "Avocat*"
+              ]
+            },
+            {
+              "title": " ",
+              "list": ["* Specific to the adoption path french"]
+            }
+          ]
         },
         {
           "titleEN": "Leave/benefits coordination",
-          "titleFR": "Coordination des congés/prestations",
-          "content": "this will be the content for sub journey 4.2"
+          "title": "Coordination des congés/prestations",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": ["Retroactive/emergency benefit co-ordination french"]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Employeurs",
+                "Médecin familiale",
+                "Fournisseurs de soins",
+                "Service Canada"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Transition planning",
-          "titleFR": "Planification de la transition",
-          "content": "this will be the content for sub journey 4.3"
+          "title": "Planification de la transition",
+          "content": [
+            {
+              "title": "Étapes Commun :",
+              "list": [
+                "Fin de la période des prestations",
+                "Coordination du retour à la maison/sortie",
+                "Planification de la garde d’enfants"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Médecins de famille",
+                "Employeur",
+                "Professionnel de la naissance",
+                "Service Canada"
+              ]
+            }
+          ]
         },
         {
           "titleEN": "Extended-care complex journey",
-          "titleFR": "Extended-care complex journey French",
+          "title": "Extended-care complex journey French",
           "content": [
             {
-              "title": "Common steps:",
-              "list": ["Stillbirth"]
+              "title": "Étapes Commun :",
+              "list": [
+                "Organiser l’équipe de soutien physique et médical",
+                "Soutien développemental et social destiné au parent",
+                "Soutien développemental et social destiné à l’enfant",
+                "Évaluer les articles de bébé et les exigences"
+              ]
             },
             {
-              "title": "Étapes commun :",
-              "list": ["Stillbirth"]
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Agence d’adoption",
+                "Professionnels de la santé et du bien être",
+                "Médecins spécialistes",
+                "Médecin de famille",
+                "Travailleur social",
+                "Professionnel de la santé mentale",
+                "Fournisseurs de soins",
+                "Professionnels de la naissance",
+                "Service Canada",
+                "Laboratoire d’analyse médicale",
+                "Organismes de bienfaisance/Organismes à but non-lucratifs",
+                "Détaillants"
+              ]
             }
           ]
         }

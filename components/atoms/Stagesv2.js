@@ -8,15 +8,9 @@ import { useState, useRef } from "react";
 const stagesImg = "/images/stages.png";
 
 export default function Stages2(props) {
-  // const { items } = useContext(LanguageContext);
-  // const language = items.language;
-  // const t = language === "en" ? en : fr;
-
   const [showData, setShowData] = useState();
-  const subJourneyData = useRef();
 
   function onChangeHandler(option) {
-    subJourneyData.current = option.currentTarget.value;
     props.journeys.map((journey) =>
       journey.titleId === option.currentTarget.value
         ? setShowData(journey.subJourney)
