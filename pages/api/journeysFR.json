@@ -1,0 +1,158 @@
+{
+  "Journeys": [
+    {
+      "titleEN": "Anticipating a child",
+      "titleFR": "Attendre un enfant",
+      "titleId": "1",
+      "subJourney": [
+        {
+          "titleEN": "General Planning",
+          "titleFR": "Planification générale",
+          "content": "this will be the content for subjourney 1.1"
+        },
+        {
+          "titleEN": "Adoption process",
+          "titleFR": "Processus d’adoption",
+          "content": "this will be the content for sub journey 1.2"
+        },
+        {
+          "titleEN": "Fertility treatment",
+          "titleFR": "Traitement de fertilité",
+          "content": "this will be the content for sub journey 1.3"
+        }
+      ]
+    },
+    {
+      "title": "Preparing for arrival",
+      "titleFR": "Planification de l’arrivée",
+      "titleId": "2",
+      "subJourney": [
+        {
+          "titleEN": "Gestation",
+          "titleFR": "Gestation",
+          "content": "this will be the content for subjourney 2.1"
+        },
+        {
+          "titleEN": "Preparation for birth",
+          "titleFR": "Préparation à la naissance",
+          "content": "this will be the content for sub journey 2.2"
+        },
+        {
+          "titleEN": "Planning for arrival",
+          "titleFR": "Planification de l’arrivée",
+          "content": "this will be the content for sub journey 2.3"
+        }
+      ]
+    },
+    {
+      "title": "Child's arrival",
+      "titleFR": "Child's arrival -- French",
+      "titleId": "3",
+      "subJourney": [
+        {
+          "titleEN": "Birth",
+          "titleFR": "Naissance",
+          "content": "this will be the content for subjourney 3.1"
+        },
+        {
+          "titleEN": "New child arrives",
+          "titleFR": "Arrivée de l'enfant",
+          "content": "this will be the content for sub journey 3.2"
+        },
+        {
+          "titleEN": "Child registration",
+          "titleFR": "Inscription de l’enfant",
+          "content": "this will be the content for sub journey 3.3"
+        },
+        {
+          "titleEN": "Loss – grief journey",
+          "titleFR": "Le cheminement du deuil s'amorce",
+          "content": "this will be the content for sub journey 3.3"
+        }
+      ]
+    },
+    {
+      "titleEN": "Transition to a new normal",
+      "titleFR": "Transition vers la nouvelle normalité",
+      "titleId": "4",
+      "subJourney": [
+        {
+          "titleEN": "The child is “home”",
+          "titleFR": "L’enfant est à la maison",
+          "content": "this will be the content for subjourney 4.1"
+        },
+        {
+          "titleEN": "Leave/benefits coordination",
+          "titleFR": "Coordination des congés/prestations",
+          "content": "this will be the content for sub journey 4.2"
+        },
+        {
+          "titleEN": "Transition planning",
+          "titleFR": "Planification de la transition",
+          "content": "this will be the content for sub journey 4.3"
+        },
+        {
+          "titleEN": "Extended-care complex journey",
+          "titleFR": "Extended-care complex journey French",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": ["Stillbirth"]
+            },
+            {
+              "title": "Étapes commun :",
+              "list": ["Stillbirth"]
+            }
+          ]
+        }
+      ]
+    },
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    {
+      "title": "Experience a loss FRENCH",
+      "titleId": "5",
+      "subJourney": [
+        {
+          "title": "Le cheminement du deuil s'amorce",
+          "content": [
+            {
+              "title": "Situations communs:",
+              "list": [
+                "Stillbirth fr",
+                "Infant death fr",
+                "Birthing parent death fr"
+              ]
+            },
+            {
+              "title": "Étapes communs :",
+              "list": [
+                "Analyse et rapports médicaux suivant la fausse-couche ou la naissance mort-né",
+                "Préparer les arrangements de fin de vie",
+                "Soutien en matière de santé mentale et émotionnelle",
+                "Garder leur mémoire vivante"
+              ]
+            },
+            {
+              "title": "Fournisseurs de services communs :",
+              "list": [
+                "Professionnels de la santé",
+                "Médecin de famille",
+                "Professionnel de la naissance",
+                "Travailleur social",
+                "Professionnels de la santé et du bien être",
+                "Hôpital/Clinique/Centre des naissances",
+                "Professionnel de la santé mentale",
+                "Organismes de bienfaisance/Organismes à but non-lucratif",
+                "Spécialistes de la médecine fœtale",
+                "Généticien",
+                "Médecins spécialistes",
+                "Analyse médicale",
+                "Médecins chargés des grossesses à haut risque"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

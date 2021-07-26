@@ -60,7 +60,16 @@ export default function Stages2(props) {
                   title={subJourney.title}
                   summary=""
                 >
-                  {subJourney.content}
+                  {subJourney.content.map(({ title, list }) => (
+                    <div>
+                      <h4 className="text-base mx-2">{title}</h4>
+                      <ul className="text-sm list-disc ml-6 mb-3">
+                        {list.map((point) => (
+                          <li>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </Accordion2>
               ))}
             </div>

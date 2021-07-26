@@ -15,10 +15,10 @@ export function Accordion2(props) {
   return (
     <div className="flex mb-0 ">
       <details
-        className={`accordion flex-1 flex-wrap p-4 border border-gray-300 rounded bg-white ((${props.mainClass})? ${props.mainClass} : '') `}
+        className={`accordion flex-1 flex-wrap border border-gray-300 rounded bg-white ((${props.mainClass})? ${props.mainClass} : '') `}
       >
         <summary onClick={() => openSummary()}>
-          <div className="w-12 min-w-12 relative left-4 top-2 float-left ">
+          <div className="w-12 min-w-12 relative left-4 py-2 float-left ">
             {openFlag ? (
               <FontAwesomeIcon
                 icon={faChevronRight}
@@ -35,7 +35,7 @@ export function Accordion2(props) {
             )}
           </div>
 
-          <div className="ml-8 py-2">
+          <div className="ml-8 py-3">
             <h3
               id={props.id}
               className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
