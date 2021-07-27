@@ -82,6 +82,7 @@ html {
   details.accordion > summary {
     list-style-type: none;
     outline: none;
+    
     cursor: pointer;
   }
   details.accordion > summary:hover {

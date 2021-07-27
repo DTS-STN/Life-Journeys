@@ -207,14 +207,14 @@
                 "Détaillants",
                 "Care providers",
                 "Coach du sommeil",
-                "Spécialiste d’adoption*",
-                "Aide à l’enfance/Soins sociaux*",
-                "Travailleur social*",
-                "Juge de paix*"
+                "Spécialiste d’adoption *",
+                "Aide à l’enfance/Soins sociaux *",
+                "Travailleur social *",
+                "Juge de paix *"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": ["* Specific to the adoption path french"]
             }
           ]
@@ -309,7 +309,7 @@
               "title": "Étapes Commun :",
               "list": [
                 "Lien affectif et soins postnataux",
-                "Arrivée de l’enfant adopté et période de probation*",
+                "Arrivée de l’enfant adopté et période de probation *",
                 "Complications relatives à la santé de l’enfant"
               ]
             },
@@ -320,18 +320,18 @@
                 "Médecins spécialistes",
                 "Médecin de famille",
                 "Birthing professional",
-                "Hospital/Clinic/Birthing centre**",
-                "Travailleur social*",
-                "Spécialiste de l’adoption*",
-                "Immigration. Réfugiés et Citoyenneté Canada*",
+                "Hospital/Clinic/Birthing centre **",
+                "Travailleur social *",
+                "Spécialiste de l’adoption *",
+                "Immigration. Réfugiés et Citoyenneté Canada *",
                 "Unité de soins intensifs nouveau-né"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": [
                 "* Specific to the adoption path french",
-                "**Specific to giving birth french"
+                "** Specific to giving birth french"
               ]
             }
           ]
@@ -429,13 +429,13 @@
                 "Consultante en lactation",
                 "Pédiatre",
                 "Professionnels de la santé mentale",
-                "Travailleur social*",
-                "Gouvernement Provincial*",
-                "Avocat*"
+                "Travailleur social *",
+                "Gouvernement Provincial *",
+                "Avocat *"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": ["* Specific to the adoption path french"]
             }
           ]

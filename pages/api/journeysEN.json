@@ -209,14 +209,14 @@
                 "Retailers",
                 "Care providers",
                 "Sleeping coach",
-                "Adoption practitioner*",
-                "Children’s Aid/Social services*",
-                "Social worker*",
-                "Justice of the Peace*"
+                "Adoption practitioner *",
+                "Children’s Aid/Social services *",
+                "Social worker *",
+                "Justice of the Peace *"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": ["* Specific to the adoption path"]
             }
           ]
@@ -311,7 +311,7 @@
               "title": "Common steps:",
               "list": [
                 "Post-birth bonding and care",
-                "Arrival of adopted child and probation period*",
+                "Arrival of adopted child and probation period *",
                 "Complications with the child’s health"
               ]
             },
@@ -322,15 +322,15 @@
                 "Specialist doctors",
                 "Family doctor",
                 "Birthing professional",
-                "Hospital/Clinic/Birthing centre**",
-                "social worker*",
-                "Adoption practitioner*",
-                "Immigration, Refugees, and Citizenship Canada*",
+                "Hospital/Clinic/Birthing centre **",
+                "social worker *",
+                "Adoption practitioner *",
+                "Immigration, Refugees, and Citizenship Canada *",
                 "Newborn intensive care unit"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": [
                 "* Specific to the adoption path",
                 "**Specific to giving birth"
@@ -410,7 +410,7 @@
                 "Immunizations",
                 "Celebration",
                 "Parental support and counselling",
-                "Finalizing legal adoption*"
+                "Finalizing legal adoption *"
               ]
             },
             {
@@ -427,14 +427,14 @@
                 "Lactation consultant",
                 "Pediatrician",
                 "Mental health practitioners",
-                "Social worker*",
-                "Provincial government*",
-                "Adoption practitioner*",
-                "Lawyer*"
+                "Social worker *",
+                "Provincial government *",
+                "Adoption practitioner *",
+                "Lawyer *"
               ]
             },
             {
-              "title": " ",
+              "title": "",
               "list": ["* Specific to the adoption path"]
             }
           ]

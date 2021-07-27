@@ -54,10 +54,14 @@ export default function Stages2(props) {
                   title={subJourney.title}
                   summary=""
                 >
-                  {subJourney.content.map(({ title, list }) => (
-                    <div>
+                  {subJourney.content.map(({ title, list }, idx) => (
+                    <div key={idx}>
                       <h4 className="text-base -mx-4">{title}</h4>
-                      <ul className="text-sm list-disc mb-4">
+                      <ul
+                        className={`mb-4 ${
+                          title !== "" ? "list-disc text-sm" : "-mx-4 text-xs"
+                        } `}
+                      >
                         {list.map((point, idx) => (
                           <li key={idx}>{point}</li>
                         ))}
