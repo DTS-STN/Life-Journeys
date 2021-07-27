@@ -32,7 +32,6 @@
           ]
         },
         {
-          "titleEN": "Adoption process",
           "title": "Processus d’adoption",
           "content": [
             {
@@ -65,7 +64,6 @@
           ]
         },
         {
-          "titleEN": "Fertility treatment",
           "title": "Traitement de fertilité",
           "content": [
             {
@@ -97,12 +95,10 @@
       ]
     },
     {
-      "title": "Preparing for arrival",
       "title": "Planification de l’arrivée",
       "titleId": "2",
       "subJourney": [
         {
-          "titleEN": "Gestation",
           "title": "Gestation",
           "content": [
             {
@@ -133,7 +129,6 @@
           ]
         },
         {
-          "titleEN": "Preparation for birth",
           "title": "Préparation à la naissance",
           "content": [
             {
@@ -280,12 +275,10 @@
       ]
     },
     {
-      "title": "Child's arrival",
-      "title": "Child's arrival -- French",
+      "title": "L’arrivee de l’enfant",
       "titleId": "3",
       "subJourney": [
         {
-          "titleEN": "Birth",
           "title": "Naissance",
           "content": [
             {
@@ -310,7 +303,6 @@
           ]
         },
         {
-          "titleEN": "New child arrives",
           "title": "Arrivée de l'enfant",
           "content": [
             {
@@ -345,7 +337,6 @@
           ]
         },
         {
-          "titleEN": "Child registration",
           "title": "Inscription de l’enfant",
           "content": [
             {
@@ -362,7 +353,6 @@
           ]
         },
         {
-          "titleEN": "Loss – grief journey",
           "title": "Le cheminement du deuil s'amorce",
           "content": [
             {
@@ -406,12 +396,10 @@
       ]
     },
     {
-      "titleEN": "Transition to a new normal",
-      "title": "Transition vers la nouvelle normalité",
+      "title": "transition vers la nouvelle normalité",
       "titleId": "4",
       "subJourney": [
         {
-          "titleEN": "The child is “home”",
           "title": "L’enfant est à la maison",
           "content": [
             {
@@ -453,7 +441,6 @@
           ]
         },
         {
-          "titleEN": "Leave/benefits coordination",
           "title": "Coordination des congés/prestations",
           "content": [
             {
@@ -472,7 +459,6 @@
           ]
         },
         {
-          "titleEN": "Transition planning",
           "title": "Planification de la transition",
           "content": [
             {
@@ -495,7 +481,6 @@
           ]
         },
         {
-          "titleEN": "Extended-care complex journey",
           "title": "Extended-care complex journey French",
           "content": [
             {
@@ -530,7 +515,7 @@
       ]
     },
     {
-      "title": "Experience a loss FRENCH",
+      "title": "Vivre un deuil",
       "titleId": "5",
       "subJourney": [
         {
@@ -539,9 +524,9 @@
             {
               "title": "Situations communs:",
               "list": [
-                "Stillbirth fr",
-                "Infant death fr",
-                "Birthing parent death fr"
+                "Décès d’un nourrisson",
+                "Accouchement d'un mort-né",
+                "Décès d’un parent au moment de l’accouchement"
               ]
             },
             {
