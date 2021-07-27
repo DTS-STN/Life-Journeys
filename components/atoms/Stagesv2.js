@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Accordion2 } from "../atoms/Accordion2";
-import { useState, useRef } from "react";
+import { useState } from "react";
 /**
  *  Stages Component
  */
