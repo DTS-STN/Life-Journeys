@@ -107,7 +107,7 @@ export default function lifejourney({ journeysData }) {
 
           {/* Journey Stages Section */}
 
-          <div className="container flex flex-row w-full bg-gray-200 xxs:flex-col align-items-center mt-4">
+          <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
             <div className="p-2 w-full">
               <h2 className="text-h3-tall w-full">
                 Discover the stages of the new child life Journey

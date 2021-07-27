@@ -23,28 +23,28 @@ export function Accordion2(props) {
               <FontAwesomeIcon
                 icon={faChevronRight}
                 rotation={90}
-                size="md"
+                size="1x"
                 color={arrowColor}
               />
             ) : (
               <FontAwesomeIcon
                 icon={faChevronRight}
-                size="md"
+                size="1x"
                 color={arrowColor}
               />
             )}
           </div>
 
-          <div className="ml-8 py-3">
+          <div className="ml-8 py-2 text-custom-blue-reportButton">
             <h3
               id={props.id}
-              className={`ml-6 (${props.titleClass}) ? ${props.titleClass} : ''`}
+              className={`ml-1 text-h6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
             </h3>
           </div>
         </summary>
-        <div className="ml-14 mt-6">{props.children}</div>
+        <div className="ml-8 mt-2">{props.children}</div>
       </details>
     </div>
   );

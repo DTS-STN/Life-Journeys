@@ -21,13 +21,13 @@ export default function Stages2(props) {
   return (
     <div className="p-4">
       <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center">
-        <div className="w-full text-center">
+        <div className="w-full">
           <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
             Journey stage:
           </label>
 
           <select
-            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive my-2"
+            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2"
             id="stage"
             onChange={onChangeHandler}
           >
@@ -46,7 +46,7 @@ export default function Stages2(props) {
           {showData === undefined ? (
             <img src={stagesImg} alt="" />
           ) : (
-            <div className="subJourneys mt-6 w-full">
+            <div className="mt-0 pt-1 w-full">
               {showData.map((subJourney, idx) => (
                 <Accordion2
                   key={idx}
@@ -56,10 +56,10 @@ export default function Stages2(props) {
                 >
                   {subJourney.content.map(({ title, list }) => (
                     <div>
-                      <h4 className="text-base mx-2">{title}</h4>
-                      <ul className="text-sm list-disc ml-6 mb-3">
-                        {list.map((point) => (
-                          <li>{point}</li>
+                      <h4 className="text-base -mx-4">{title}</h4>
+                      <ul className="text-sm list-disc mb-4">
+                        {list.map((point, idx) => (
+                          <li key={idx}>{point}</li>
                         ))}
                       </ul>
                     </div>

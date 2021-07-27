@@ -30,7 +30,7 @@ export default function Stages(props) {
           </div>
         ))
       ) : (
-        <div className="subJourneys">
+        <div>
           <ul className="flex flex-col sm:flex-wrap sm-flex-row items-center justify-center pb-4">
             {subJourneyData.current.map((subJourney, idx) => (
               <li key={idx} className="w-auto text-blue-800 text-sm px-3">
