@@ -93,12 +93,6 @@ variable "secondary_public_ip_fqdn" {
 variable "application_url" {
     type = string
 }
-variable "api_url" {
-    type = string
-}
-variable "admin_url" {
-    type = string
-}
 variable "primary_application_appservice_hostname"{
     type = string
     default = ""

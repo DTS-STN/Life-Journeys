@@ -11,13 +11,6 @@ dependency "infrastructure" {
 dependency "appService" {
   config_path = "../appservice"
 }
-dependency "appServiceAdmin" {
-  config_path = "../appserviceadmin"
-}
-dependency "appServiceAPI" {
-  config_path = "../appserviceapi"
-}
-
 
 inputs = merge({
   network_resource_group  = dependency.resourceGroups.outputs.networkRgName
@@ -27,8 +20,6 @@ inputs = merge({
   primary_public_ip_fqdn = dependency.infrastructure.outputs.publicIpFqdn_primary
   public_ip_id_primary = dependency.infrastructure.outputs.publicIpId_primary
   primary_application_appservice_hostname = dependency.appService.outputs.primaryAppServiceHostname
-  primary_admin_appservice_hostname = dependency.appServiceAdmin.outputs.primaryAdminAppServiceHostname
-  primary_api_appservice_hostname = dependency.appServiceAPI.outputs.primaryApiAppServiceHostname
   diagnostic_storage_account_id  = dependency.infrastructure.outputs.diagnosticStorageAccountId
 })
 

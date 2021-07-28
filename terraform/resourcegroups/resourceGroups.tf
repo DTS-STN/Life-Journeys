@@ -3,11 +3,6 @@ resource "azurerm_resource_group" "network" {
   location = var.location
 }
 
-resource "azurerm_resource_group" "database" {
-  name = var.database_resource_group
-  location = var.location
-}
-
 resource "azurerm_resource_group" "appService" {
   name = var.appservice_resource_group
   location = var.location

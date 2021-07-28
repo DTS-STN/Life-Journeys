@@ -10,10 +10,6 @@ dependency "infrastructure" {
   config_path = "../infrastructure"
 }
 
-dependency "cosmosdb" {
-  config_path = "../cosmosdb"
-}
-
 inputs = merge({
     appservice_resource_group   = dependency.resourceGroups.outputs.appServiceRgName
     location  = dependency.resourceGroups.outputs.location
@@ -22,8 +18,6 @@ inputs = merge({
     docker_registry = dependency.infrastructure.outputs.dockerRegistryLogin
     docker_registry_username = dependency.infrastructure.outputs.dockerRegistryUsername
     docker_registry_password = dependency.infrastructure.outputs.dockerRegistryPassword
-    MONGO_URL = dependency.cosmosdb.outputs.mongoUri
-    MONGO_DB =  dependency.cosmosdb.outputs.mongoDB
 })
 
 terraform {

@@ -18,19 +18,11 @@ output "dockerRegistryUsername" {
 }
 output "dockerRegistryPassword" {
   value = azurerm_container_registry.acr.admin_password
+  sensitive=true
 }
 output "keyvaultID" {
   value = azurerm_key_vault.keyvault.id
 }
 output "diagnosticStorageAccountId" {
   value = azurerm_storage_account.appservice-diagnostics.id
-}
-output "alphasiteStorageAccountName" {
-  value = azurerm_storage_account.storageacct.name
-}
-output "alphasiteStorageAccountKey" {
-  value = azurerm_storage_account.storageacct.primary_access_key
-}
-output "alphasiteStorageAccountUrl" {
-  value = azurerm_storage_account.storageacct.primary_blob_endpoint
 }

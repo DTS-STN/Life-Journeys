@@ -17,6 +17,6 @@ az account set --subscription $subscription_id
 echo $remote_state_storage_account_name
 echo "Creating remote tfstate container..."
 export AZURE_STORAGE_KEY=$(az storage account keys list -g $tfstate_storage_rg -n $remote_state_storage_account_name --query [0].value -o tsv)
-az storage container create --account-name $remote_state_storage_account_name --name $application_name --auth-mode key
+#az storage container create --account-name $remote_state_storage_account_name --name $application_name --auth-mode key
 
 echo "Done."
