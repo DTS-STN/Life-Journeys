@@ -110,11 +110,12 @@ export default {
   //breadcrumb
 
   home: "Life Journeys (fr)",
-  "having-a-child": "Having a Child (fr)",
+  "having-a-child": "Avoir un enfant",
 
   // Having a baby
   topRequested:
-    "(French) See the top requested resources to answer your questions about having a child",
+    "Trouvez des ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
+  topRequestedLabel: "Afficher les ressources pour :",
 
   //Table
 
@@ -130,9 +131,64 @@ export default {
   row3text: "Traitements de fertilité",
   row3subtext: "Ce que vous devez savoir",
 
+  //Cards
+  card1Title: "Congé de maternité et congé parental",
+  card1Service: "Assurance-emploi",
+  card1Links: [
+    {
+      text: "En savoir plus",
+      url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
+    },
+    {
+      text: "Soumettre une demande",
+      url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales/demande.html",
+    },
+  ],
+
+  card1QuebecTitle: "L'assurance parentale",
+  card1QuebecService: "Régime québécois d'assurance parentale",
+  card1QuebecLinks: [{ text: "", url: "" }],
+
+  card2Title: "Chercheur de prestations",
+  card2Service: "Service Canada",
+  card2Links: [
+    {
+      text: "Trouver des prestations",
+      url: "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+    },
+  ],
+
+  card3Title: "Santé mentale et physique",
+  card3Service: "Agence de la santé publique du Canada",
+  card3Links: [
+    {
+      text: "En savoir plus",
+      url: "https://www.canada.ca/fr/sante-publique.html",
+    },
+  ],
+
+  card4Title: "Soins aux nouveau-nés",
+  card4Service: "Santé Canada",
+  card4Links: [
+    {
+      text: "En savoir plus",
+      url: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
+    },
+  ],
+
+  // Stages
+  stagesTitle:
+    "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
+  stagesDescr:
+    "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
+  stagesLabel: "Étape du parcours :",
+  stagesSelect: "-Sélectionner-",
+
   //Inner accordion text
 
   getConnected: "Connectez-vous aux ressources locales",
+  getConnectedSummary:
+    "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre soutien près de chez vous.",
 
   //Report a problem
   reportAProblemButtonString: "Signaler un problème sur cette page",

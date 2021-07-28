@@ -20,10 +20,10 @@ export default function Stages2(props) {
 
   return (
     <div className="p-4">
-      <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center">
-        <div className="w-full">
+      <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center">
+        <div>
           <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
-            Journey stage:
+            {props.labelText}
           </label>
 
           <select
@@ -32,7 +32,7 @@ export default function Stages2(props) {
             onChange={onChangeHandler}
           >
             <option key="0" value="0" defaultValue hidden>
-              -select-
+              {props.selectPlaceholder}
             </option>
             {props.journeys.map((journey, idx) => (
               <option key={idx} value={journey.titleId}>
@@ -80,7 +80,15 @@ export default function Stages2(props) {
 
 Stages2.propTypes = {
   /**
-   * json formatted array of data/links as per journey.json
+   * json formatted array of data/links as per journeyEN.json or journeyFR.json
    */
   journeys: PropTypes.array.isRequired,
+  /**
+   * select label
+   */
+  labelText: PropTypes.string.isRequired,
+  /**
+   * select label
+   */
+  selectPlaceholder: PropTypes.string.isRequired,
 };

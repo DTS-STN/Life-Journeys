@@ -67,41 +67,38 @@ export default function lifejourney({ journeysData }) {
             onChange={onChangeFunc}
             name="provinceSelector"
             defaultValue="CAN"
-            label="Showing top requests for"
+            label={t.topRequestedLabel}
           />
 
           {/* Top cards */}
           <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
             <Card
-              title="Maternity and Parental Leave"
-              service="Employment Insurance"
+              title={t.card1Title}
+              service={t.card1Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[
-                { text: "More Info", url: "nextpage" },
-                { text: "Apply Now", url: "nextpage" },
-              ]}
+              links={t.card1Links}
             />
             <Card
-              title="Benefits Finder"
-              service="Service Canada"
+              title={t.card2Title}
+              service={t.card2Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "Find Benefits", url: "nextpage" }]}
+              links={t.card2Links}
             />
             <Card
-              title="Mental and physical health resources"
-              service="Public Health Agency of Canada"
+              title={t.card3Title}
+              service={t.card3Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "More Info", url: "nextpage" }]}
+              links={t.card3Links}
             />
             <Card
-              title="Newborn care resources"
-              service="Health Canada"
+              title={t.card4Title}
+              service={t.card4Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "More Info", url: "nextpage" }]}
+              links={t.card4Links}
             />
           </div>
 
@@ -109,15 +106,17 @@ export default function lifejourney({ journeysData }) {
 
           <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
             <div className="p-2 w-full">
-              <h2 className="text-h3-tall w-full">
-                Discover the stages of the new child life Journey
-              </h2>
+              <h2 className="text-h3-tall w-full">{t.stagesTitle}</h2>
 
-              <p>Learn more about the keytask during each stage in journey</p>
+              <p>{t.stagesDescr}</p>
             </div>
 
             <div className="mt-4 w-full">
-              <Stages2 journeys={journeysData} />
+              <Stages2
+                journeys={journeysData}
+                selectPlaceholder={t.stagesSelect}
+                labelText={t.stagesLabel}
+              />
             </div>
           </div>
 
@@ -128,10 +127,7 @@ export default function lifejourney({ journeysData }) {
               <p className="text-h4 mb-4 font-bold font-display">
                 {t.getConnected}
               </p>
-              <p className="text-base">
-                We often lean on those closest to us for advice. Find and build
-                your support close to where you live.{" "}
-              </p>
+              <p className="text-base">{t.getConnectedSummary}</p>
 
               <MoreInfo text={t.moreInfoPrenatalClasses} />
               <MoreInfo text={t.moreInfoParentingNetworks} />

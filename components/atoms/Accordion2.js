@@ -10,32 +10,30 @@ export function Accordion2(props) {
     setOpenFlag(!openFlag);
   }
 
-  const arrowColor = "#335075";
-
   return (
     <div className="flex mb-0 ">
       <details
         className={`accordion flex-1 flex-wrap border border-gray-300 rounded bg-white ((${props.mainClass})? ${props.mainClass} : '') `}
       >
         <summary onClick={() => openSummary()}>
-          <div className="w-12 min-w-12 relative left-4 py-2 float-left ">
+          <div className="w-12 min-w-12 relative left-4 pt-3 float-left ">
             {openFlag ? (
               <FontAwesomeIcon
                 icon={faChevronRight}
                 rotation={90}
                 size="1x"
-                color={arrowColor}
+                className="text-custom-blue-reportButton"
               />
             ) : (
               <FontAwesomeIcon
                 icon={faChevronRight}
                 size="1x"
-                color={arrowColor}
+                className="text-custom-blue-reportButton"
               />
             )}
           </div>
 
-          <div className="ml-8 py-2 text-custom-blue-reportButton">
+          <div className="ml-8 pt-3 text-custom-blue-reportButton">
             <h3
               id={props.id}
               className={`ml-1 text-h6 (${props.titleClass}) ? ${props.titleClass} : ''`}

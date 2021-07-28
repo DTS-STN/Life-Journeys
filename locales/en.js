@@ -116,6 +116,7 @@ export default {
   // Having a baby
   topRequested:
     "See the top requested resources to answer your questions about having a child",
+  topRequestedLabel: "Showing top requests for:",
 
   //Table
 
@@ -130,9 +131,56 @@ export default {
   row3text: "Fertility treatments",
   row3subtext: "What you need to know",
 
+  //Cards
+  card1Title: "Maternity and Parental leave",
+  card1Service: "Employment Insurance",
+  card1Links: [
+    {
+      text: "More info",
+      url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
+    },
+    {
+      text: "Apply",
+      url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
+    },
+  ],
+
+  card1QuebecTitle: "Parental Insurance",
+  card1QuebecService: "Québec Parental Insurance Plan",
+  card1QuebecLinks: [{ text: "", url: "" }],
+
+  card2Title: "Benefits finder",
+  card2Service: "Service Canada",
+  card2Links: [
+    { text: "Find benefits", url: "https://benefitsfinder.services.gc.ca/hm" },
+  ],
+
+  card3Title: "Mental and physical health resources",
+  card3Service: "Public Health Agency of Canada",
+  card3Links: [
+    { text: "More info", url: "https://www.canada.ca/en/public-health.html" },
+  ],
+
+  card4Title: "Newborn care resources",
+  card4Service: "Health Canada",
+  card4Links: [
+    {
+      text: "More info",
+      url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
+    },
+  ],
+
+  // Stages
+  stagesTitle: "Discover the stages of the new child life journey",
+  stagesDescr: "Learn more about the key tasks during each stage in journey.",
+  stagesLabel: "Journey stage:",
+  stagesSelect: "-Select-",
+
   //Inner accordion text
 
   getConnected: "Connect to local resources",
+  getConnectedSummary:
+    "We often lean on those closest to us for advice. Find and build your support close to where you live.",
 
   //Report a problem
   reportAProblemButtonString: "Report a problem on this page",
