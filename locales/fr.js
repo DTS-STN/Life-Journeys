@@ -184,10 +184,9 @@ export default {
   stagesLabel: "Étape du parcours :",
   stagesSelect: "-Sélectionner-",
 
-  //Inner accordion text
-
+  //Connect to local resources
   getConnected: "Connectez-vous aux ressources locales",
-  getConnectedSummary:
+  getConnectedDescription:
     "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre soutien près de chez vous.",
 
   //Report a problem

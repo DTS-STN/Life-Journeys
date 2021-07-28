@@ -176,10 +176,10 @@ export default {
   stagesLabel: "Journey stage:",
   stagesSelect: "-Select-",
 
-  //Inner accordion text
+  //Connect to local resources
 
   getConnected: "Connect to local resources",
-  getConnectedSummary:
+  getConnectedDescription:
     "We often lean on those closest to us for advice. Find and build your support close to where you live.",
 
   //Report a problem
