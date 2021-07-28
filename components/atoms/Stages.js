@@ -1,55 +1,94 @@
 import PropTypes from "prop-types";
-import { useState, useRef } from "react";
+import { Accordion2 } from "./Accordion2";
+import { useState } from "react";
 /**
  *  Stages Component
  */
 
+const stagesImg = "/images/stages.png";
+
 export default function Stages(props) {
-  // const { items } = useContext(LanguageContext);
-  // const language = items.language;
-  // const t = language === "en" ? en : fr;
+  const [showData, setShowData] = useState();
 
-  const [showFlag, setShowFlag] = useState(false);
-  const subJourneyData = useRef();
-
-  function onClickHandler(data) {
-    subJourneyData.current = data;
-    setShowFlag(true);
+  function onChangeHandler(option) {
+    props.journeys.map((journey) =>
+      journey.titleId === option.currentTarget.value
+        ? setShowData(journey.subJourney)
+        : null
+    );
   }
 
   return (
-    <div className="bg-image flex flex-col sm:flex-wrap sm:flex-row justify-center border border-black">
-      {showFlag === false ? (
-        props.journeys.map((journey, idx) => (
-          <div
-            key={idx}
-            className="h-46px card my-6 mx-4 pt-3 rounded font-body text-sm text-center text-white cursor-pointer border journeyButton"
-            onClick={() => onClickHandler(journey.subJourney)}
-          >
-            {journey.title}
-          </div>
-        ))
-      ) : (
+    <div className="p-4">
+      <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center">
         <div>
-          <ul className="flex flex-col sm:flex-wrap sm-flex-row items-center justify-center pb-4">
-            {subJourneyData.current.map((subJourney, idx) => (
-              <li key={idx} className="w-auto text-blue-800 text-sm px-3">
-                <button className="bg-purple-400 h-46px card my-6 mx-1 pt-2 rounded font-body text-sm text-center">
-                  Sub{subJourney.title}
-                </button>
-                <p>{subJourney.content}</p>
-              </li>
+          <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
+            {props.labelText}
+          </label>
+
+          <select
+            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2"
+            id="stage"
+            onChange={onChangeHandler}
+          >
+            <option key="0" value="0" defaultValue hidden>
+              {props.selectPlaceholder}
+            </option>
+            {props.journeys.map((journey, idx) => (
+              <option key={idx} value={journey.titleId}>
+                {journey.title}
+              </option>
             ))}
-          </ul>
+          </select>
         </div>
-      )}
+
+        <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center ">
+          {showData === undefined ? (
+            <img src={stagesImg} alt="" />
+          ) : (
+            <div className="mt-0 pt-1 w-full">
+              {showData.map((subJourney, idx) => (
+                <Accordion2
+                  key={idx}
+                  id={idx.toString()}
+                  title={subJourney.title}
+                  summary=""
+                >
+                  {subJourney.content.map(({ title, list }, idx) => (
+                    <div key={idx}>
+                      <h4 className="text-base -mx-4">{title}</h4>
+                      <ul
+                        className={`mb-4 ${
+                          title !== "" ? "list-disc text-sm" : "-mx-4 text-xs"
+                        } `}
+                      >
+                        {list.map((point, idx) => (
+                          <li key={idx}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </Accordion2>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
 
 Stages.propTypes = {
   /**
-   * json formatted array of data/links as per journey.json
+   * json formatted array of data/links as per journeyEN.json or journeyFR.json
    */
   journeys: PropTypes.array.isRequired,
+  /**
+   * select label
+   */
+  labelText: PropTypes.string.isRequired,
+  /**
+   * select label
+   */
+  selectPlaceholder: PropTypes.string.isRequired,
 };

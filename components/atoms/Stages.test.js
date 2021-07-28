@@ -5,6 +5,9 @@ import Stages from "./Stages";
 
 expect.extend(toHaveNoViolations);
 
+const selectPlaceholder = "-select one-";
+const labelText = "This is the label";
+
 const journey = [
   {
     title: "journey 1 title",
@@ -27,13 +30,25 @@ const journey = [
 describe("Stages", () => {
   it("renders the Stages component", () => {
     const primary = act(() => {
-      render(<Stages journeys={journey} />);
+      render(
+        <Stages
+          journeys={journey}
+          labelText={labelText}
+          selectPlaceholder={selectPlaceholder}
+        />
+      );
     });
     expect(primary).toBeTruthy();
   });
 
   it("has no a11y violations", async () => {
-    const { container } = render(<Stages journeys={journey} />);
+    const { container } = render(
+      <Stages
+        journeys={journey}
+        labelText={labelText}
+        selectPlaceholder={selectPlaceholder}
+      />
+    );
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
