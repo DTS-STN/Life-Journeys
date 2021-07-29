@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import MoreInfo from "../components/atoms/MoreInfo";
 import { useEffect, useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
@@ -11,12 +10,9 @@ import en from "../locales/en";
 import fr from "../locales/fr";
 import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
-import ProvincialLink from "../components/atoms/ProvincialLink";
-
-//
+import ResourceLink from "../components/atoms/ResourceLink";
 
 export default function lifejourney({ journeysData }) {
-  //
   const { items } = useContext(LanguageContext);
   const language = items.language;
   const t = language === "en" ? en : fr;
@@ -123,23 +119,28 @@ export default function lifejourney({ journeysData }) {
 
           {/* Connect to Local Resources */}
 
-          <div className="container flex flex-col w-full text-center md:w-32 md:flex-row align-items-center mt-4">
+          <div className="container flex flex-col w-full md:w-32 md:flex-row mt-4">
             <div>
               <p className="text-h4 mb-4 font-bold font-display">
                 {t.getConnected}
               </p>
-              <p className="text-base">
-                We often lean on those closest to us for advice. Find and build
-                your support close to where you live.{" "}
-              </p>
+              <p className="text-base">{t.getConnectedDescription}</p>
 
-              <MoreInfo text={t.moreInfoPrenatalClasses} />
-              <MoreInfo text={t.moreInfoParentingNetworks} />
-              <ProvincialLink
+              <ResourceLink
+                text={t.moreInfoPrenatalClasses}
+                isProvincialLink={false}
+                id="prenatalClasses"
+              />
+              <ResourceLink
+                text={t.moreInfoParentingNetworks}
+                isProvincialLink={false}
+                id="parentingNetworks"
+              />
+              <ResourceLink
                 language={language}
                 region={region.current}
-                id="provincialLink"
-              ></ProvincialLink>
+                isProvincialLink={true}
+              ></ResourceLink>
             </div>
           </div>
         </section>
