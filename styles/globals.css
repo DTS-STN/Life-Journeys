@@ -82,17 +82,18 @@ html {
   details.accordion > summary {
     list-style-type: none;
     outline: none;
+    
     cursor: pointer;
   }
   details.accordion > summary:hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
   }
   details.accordion > summary:focus {
-    border: 1px solid black;
-    background-color: #cfcfcf;
+    border: 2px solid #0E62C9;
+    /* background-color: #cfcfcf; */
   }
   details.accordion > summary:active {
-    background-color: #bbbfc5;
+    /* background-color: #bbbfc5; */
   }
   details.accordion > summary::-webkit-details-marker {
     display: none;

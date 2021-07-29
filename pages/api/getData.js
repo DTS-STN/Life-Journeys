@@ -31,8 +31,13 @@ export async function getTopics(language) {
 // Fetch ALL journeys from local Data
 //
 
-export function getLocalJourneys() {
-  const fullPath = path.join(process.cwd(), "pages", "api", "journeys.json");
+export function getLocalJourneys(language) {
+  const fullPath = path.join(
+    process.cwd(),
+    "pages",
+    "api",
+    `journeys${language.toUpperCase()}.json`
+  );
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const localData = JSON.parse(fileContents).Journeys;
 

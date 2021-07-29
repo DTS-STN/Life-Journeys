@@ -1,0 +1,560 @@
+{
+  "Journeys": [
+    {
+      "title": "Anticipating a child",
+      "titleId": "1",
+      "subJourney": [
+        {
+          "title": "General Planning",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Researching having a child",
+                "Deciding to start trying to conceive",
+                "Trying to conceive naturally",
+                "Researching Fertility options",
+                "Pregnancy confirmation"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Health care providers",
+                "Family doctor",
+                "Nutritionist",
+                "Drug store",
+                "Fertility tracking app",
+                "Health and wellness practitioners",
+                "Fertility clinic"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Adoption process",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Exploring adoption types",
+                "Building/sharing adoption profile",
+                "Attending adoption preparation classes",
+                "Applying for adoption",
+                "Psychosocial evaluation",
+                "Assignment of adoption practitioner",
+                "Reference and background checks",
+                "Home study (family suitability assessment)"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Adoption practitioner",
+                "Adoption agency",
+                "Lawyer",
+                "Adoption websites",
+                "Immigration and Refugee Board",
+                "Children’s Aid/Social Services",
+                "Social worker",
+                "Mental health practitioner",
+                "Law enforcement administrators"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fertility treatment",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Fertility treatments",
+                "Medical tests and exams",
+                "Finding donor egg/sperm",
+                "Finding surrogacy partner",
+                "Researching alternative family planning options",
+                "Mental health consultations",
+                "Freezing egg/sperm"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Health care providers",
+                "Family doctor",
+                "Birthing professional",
+                "Mental health practitioner",
+                "Fertility clinic",
+                "Medical/testing lab",
+                "Donor agency"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Planning for arrival",
+      "titleId": "2",
+      "subJourney": [
+        {
+          "title": "Gestation",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Managing maternal and fetal health and wellbeing",
+                "Consulting with birthing professional",
+                "Specialized medical testing",
+                "Specialized treatments for high-risk pregnancy"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Health care practitioners",
+                "Family doctor",
+                "Birthing professional",
+                "Nutritionist",
+                "Health and wellness practitioner",
+                "Mental health practitioner",
+                "Medical/testing lab",
+                "At home tests",
+                "Fitness studios",
+                "Prenatal classes",
+                "Hospital/Clinic",
+                "Specialist doctors",
+                "Fetal medicine specialists"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Preparation for birth",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Baby's arrival administrative paperwork",
+                "Arrival planning",
+                "Birth planning"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Health care providers",
+                "Family doctor",
+                "Birthing professional",
+                "Hospital/Clinic/Birthing centre",
+                "Fetal medicine specialists",
+                "Specialist doctors"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Adoption visitation",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Matched with a child",
+                "Citizenship and Immigration application",
+                "Pre-placement visitations",
+                "Arrangements for post-placement",
+                "Adoption proposal",
+                "Visits with child"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Adoption practitioner",
+                "Social worker",
+                "Birth parent counsellor",
+                "Provincial government",
+                "Children’s Aid/ Social Services",
+                "Service Canada",
+                "Immigration, Refugees, and Citizenship Canada"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ecosystem preparation",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Preparing post arrival support network",
+                "Creating/managing legal documents",
+                "Acquiring baby gear",
+                "Evaluating/preparing child care options",
+                "Financial planning"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Employer",
+                "Lawyer",
+                "Charities/Not-for-Profits",
+                "Financial institutions",
+                "Service Canada",
+                "Insurance provider",
+                "Lactation consultant",
+                "Health and wellness practitioners",
+                "Retailers",
+                "Care providers",
+                "Sleeping coach",
+                "Adoption practitioner *",
+                "Children’s Aid/Social services *",
+                "Social worker *",
+                "Justice of the Peace *"
+              ]
+            },
+            {
+              "title": "",
+              "list": ["* Specific to the adoption path"]
+            }
+          ]
+        },
+        {
+          "title": "Leave/benefits coordination",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Financial planning",
+                "Co-ordinating with employer",
+                "Obtaining necessary information",
+                "Researching/evaluating options",
+                "Applying for benefits"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Employer",
+                "Accountant",
+                "Insurance provider",
+                "Service Canada",
+                "Financial Planner"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pregnancy termination",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Evaluating options",
+                "Termination procedure",
+                "Post termination support"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Health care providers",
+                "Family doctor",
+                "Birthing professional",
+                "Health and wellness practitioners",
+                "Medical/testing lab",
+                "Specialist doctors",
+                "High risk doctors",
+                "Geneticist",
+                "Support groups",
+                "Hospital/Clinic"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Child's arrival",
+      "titleId": "3",
+      "subJourney": [
+        {
+          "title": "Birth",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Arrival at place of birth",
+                "Monitoring and early labour",
+                "Complications with labour",
+                "Active labour and delivery"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Healthcare practitioners",
+                "Hospital/clinic/birthing centre",
+                "Birthing professionals",
+                "High risk doctors",
+                "fetal medicine specialists"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "New child arrives",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Post-birth bonding and care",
+                "Arrival of adopted child and probation period *",
+                "Complications with the child’s health"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Healthcare practitioners",
+                "Specialist doctors",
+                "Family doctor",
+                "Birthing professional",
+                "Hospital/Clinic/Birthing centre **",
+                "social worker *",
+                "Adoption practitioner *",
+                "Immigration, Refugees, and Citizenship Canada *",
+                "Newborn intensive care unit"
+              ]
+            },
+            {
+              "title": "",
+              "list": [
+                " * Specific to the adoption path",
+                "** Specific to giving birth"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Child registration",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": ["Apply for birth certificate"]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Hospital/Clinic/Birthing Centre",
+                "Provincial government"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Loss – grief journey",
+          "content": [
+            {
+              "title": "Common situations:",
+              "list": ["Stillbirth", "Infant death", "Birthing parent death"]
+            },
+            {
+              "title": "Common steps:",
+              "list": [
+                "Post-loss medical testing and reports",
+                "Preparing end of life arrangements",
+                "Emotional and mental health support",
+                "Keeping their memory alive"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Healthcare practitioners",
+                "Family doctor",
+                "Birthing professional",
+                "Hospital/clinic/birthing centre",
+                "Mental health practitioner",
+                "support groups",
+                "Charities/Not-for-Profits",
+                "Geneticist",
+                "Fetal medicine specialist",
+                "Specialist doctors",
+                "Medical/Lab testing",
+                "High risk doctors",
+                "Social worker",
+                "Health and wellness practitioners"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transition to a new normal",
+      "titleId": "4",
+      "subJourney": [
+        {
+          "title": "The child is “home”",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Maternal mental health and post-partum support",
+                "Monitoring child development",
+                "Nutrition and feeding planning",
+                "Socialization and activities",
+                "Immunizations",
+                "Celebration",
+                "Parental support and counselling",
+                "Finalizing legal adoption *"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Healthcare practitioners",
+                "Support groups",
+                "Sleeping coach",
+                "Development tracking apps",
+                "Family doctor",
+                "Recreation classes",
+                "Care providers",
+                "Community centres",
+                "Lactation consultant",
+                "Pediatrician",
+                "Mental health practitioners",
+                "Social worker *",
+                "Provincial government *",
+                "Adoption practitioner *",
+                "Lawyer *"
+              ]
+            },
+            {
+              "title": "",
+              "list": ["* Specific to the adoption path"]
+            }
+          ]
+        },
+        {
+          "title": "Leave/benefits coordination",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": ["Retroactive/emergency benefit co-ordination"]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Employer",
+                "Family doctor",
+                "Care providers",
+                "Service Canada"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Transition planning",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "End of benefit period",
+                "Coordinating return to work/exit",
+                "Planning childcare"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Family doctor",
+                "Employer",
+                "Birthing professional",
+                "Service Canada"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Extended-care complex journey",
+          "content": [
+            {
+              "title": "Common steps:",
+              "list": [
+                "Arrange physical and medical support team",
+                "Developmental and social support for parent",
+                "Developmental and social support for child",
+                "Evaluate baby gear and requirements"
+              ]
+            },
+            {
+              "title": "Common service providers:",
+              "list": [
+                "Healthcare practitioners",
+                "Adoption agency",
+                "Health and wellness practitioners",
+                "Specialist doctors",
+                "Family doctor",
+                "Social worker",
+                "Mental health practitioner",
+                "Care providers",
+                "Birthing professional",
+                "Service Canada",
+                "Medical/Testing lab",
+                "Charities/Not-for-Profits",
+                "Retailers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Experience a loss",
+      "titleId": "5",
+      "subJourney": [
+        {
+          "title": "Grief journey begins",
+          "content": [
+            {
+              "title": "Common situations:",
+              "list": ["Stillbirth", "Infant death", "Birthing parent death"]
+            },
+            {
+              "title": "Common situations:",
+              "list": [
+                "Post-loss medical testing and reports",
+                "Preparing end of life arrangements",
+                "Emotional and mental health support",
+                "Keeping their memory alive"
+              ]
+            },
+            {
+              "title": "Common situations:",
+              "list": [
+                "Healthcare practitioners",
+                "Family doctor",
+                "Birthing professional",
+                "social worker",
+                "Health and wellness practitioners",
+                "Hospital/clinic/birthing centre",
+                "Mental health practitioner",
+                "support groups",
+                "Charities/Not-for-Profits",
+                "Fetal medicine specialists",
+                "Geneticist",
+                "Specialist doctors",
+                "Medical testing",
+                "High-risk doctors"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
