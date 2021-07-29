@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 
 export default function Select(props) {
   return (
-    <label className="text-base px-3">
+    <label className="text-black text-base px-3">
       {props.label}
       <select
         defaultValue={props.defaultValue}

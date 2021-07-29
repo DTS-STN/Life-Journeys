@@ -1,11 +1,11 @@
 {
   "topics": [
     {
-      "title": "Having a Baby (Local)",
+      "title": "Having a Child (Local)",
       "body": "Everything you need to know about planning to have a child and what to do after your baby is born",
       "image": "/images/family.png",
       "imgalt": "alt1",
-      "url": "/having-a-baby",
+      "url": "/having-a-child",
       "subtopics": [
         "Pregnancy",
         "In vitro fertilization",
