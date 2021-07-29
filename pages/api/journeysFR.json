@@ -8,7 +8,7 @@
           "title": "Planification générale",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Recherche pour avoir un enfant",
                 "Décider d’amorcer la conception",
@@ -20,12 +20,12 @@
             {
               "title": "Fournisseurs de services communs :",
               "list": [
-                "Les fournisseurs de soins de santé",
+                "Fournisseurs de soins de santé",
                 "Médecin de famille",
                 "Nutritionniste",
                 "Pharmacie",
                 "Appli de suivi de la fertilité",
-                "Professionnels de la santé et du bien être",
+                "Professionnels de la santé et du bien-être",
                 "Clinique de fertilité"
               ]
             }
@@ -35,27 +35,27 @@
           "title": "Processus d’adoption",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Explorer les types d’adoption",
                 "Élaborer et partager un profil d’adoption",
                 "Assister à des cours de préparation à l’adoption",
-                "Faire une demande d’adoption",
+                "Présenter une demande d’adoption",
                 "Évaluation psychosociale",
                 "Affectation du dossier à un spécialiste de l’adoption",
                 "Références et vérification des antécédents",
-                "Étude du milieu familial"
+                "Étude du milieu familial (évaluation de l’aptitude de la famille)"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Spécialiste de l’adoption",
-                "Agende d’adoption",
+                "Agence d’adoption",
                 "Avocat",
-                "Sites internet consacrées à l’adoption",
-                "Commission de l’Immigration et du statut de Réfugie",
-                "Aide a l’enfance/Services sociaux",
+                "Sites Internet consacrés à l’adoption",
+                "Commission de l’immigration et du statut de réfugié",
+                "Aide à l’enfance/Services sociaux",
                 "Travailleur social",
                 "Professionnel de la santé mentale",
                 "Administrateurs des forces de l’ordre"
@@ -67,7 +67,7 @@
           "title": "Traitement de fertilité",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Traitements de fertilité",
                 "Analyses et examens médicaux",
@@ -79,7 +79,7 @@
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Fournisseurs de soins de santé",
                 "Médecin de famille",
@@ -87,7 +87,7 @@
                 "Professionnel de la santé mentale",
                 "Clinique de fertilité",
                 "Laboratoire d’analyse médicale",
-                "Organisme donateur"
+                "Organisme donneur"
               ]
             }
           ]
@@ -102,10 +102,10 @@
           "title": "Gestation",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Gérer la santé et bien-être maternel et fœtal",
-                "Consultation avec un professionnel de l’accouchement",
+                "Consulter un professionnel de l’accouchement",
                 "Analyse médicale spécialisée",
                 "Traitements spécialisés pour grossesses à haut risque"
               ]
@@ -117,13 +117,15 @@
                 "Médecin de famille",
                 "Professionnel de l’accouchement",
                 "Nutritionniste",
+                "Professionnel de la santé et du bien-être",
                 "Professionnel de la santé mentale",
                 "Laboratoire d’analyse médicale",
                 "Examens à la maison",
-                "Studios mise en forme",
+                "Studios de mise en forme",
                 "Cours prénataux",
                 "Hôpital/Clinique",
-                "Médecins spécialistes"
+                "Médecins spécialistes",
+                "Spécialistes de la médecine fœtale"
               ]
             }
           ]
@@ -134,8 +136,8 @@
             {
               "title": "Étapes Commun :",
               "list": [
-                "Formalités liées à l’arrivée",
-                "Planification de l’arrivée",
+                "Formalités administratives liées à l’arrivée du bébé",
+                "Planification de l’arrivée du bébé",
                 "Planification de la naissance"
               ]
             },
@@ -145,7 +147,7 @@
                 "Fournisseurs de soin de santé",
                 "Médecin de famille",
                 "Professional de l’accouchement",
-                "Hôpital/Clinique/Centres des naissances",
+                "Hôpital/Clinique/Centre des naissances",
                 "Spécialistes de la médecine fœtale",
                 "Médecins spécialistes"
               ]
@@ -156,10 +158,10 @@
           "title": "Adoption visitation",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
-                "Jumelé avec un enfant",
-                "Demande d’immigration ou de citoyenneté au Canada",
+                "Jumelage avec un enfant",
+                "Demande d’immigration ou de citoyenneté",
                 "Visites de pré-placement",
                 "Arrangements post-placement",
                 "Proposition d’adoption",
@@ -167,7 +169,7 @@
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Spécialiste de l’adoption",
                 "Travailleur social",
@@ -184,9 +186,9 @@
           "title": "Ecosystem preparation",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
-                "Préparer le soutien suite à l’arrivée",
+                "Préparer le réseau de soutien suite à l’arrivée",
                 "Créer/gérer les documents juridiques",
                 "Acquisition d’articles pour bébé",
                 "Évaluer et préparer les options en matière de services de garde",
@@ -203,19 +205,19 @@
                 "Service Canada",
                 "Assureur",
                 "Consultante en lactation",
-                "Professionnels de la santé et du bien être",
+                "Professionnels de la santé et du bien-être",
                 "Détaillants",
-                "Care providers",
+                "Fournisseurs de soins",
                 "Coach du sommeil",
-                "Spécialiste d’adoption *",
-                "Aide à l’enfance/Soins sociaux *",
-                "Travailleur social *",
-                "Juge de paix *"
+                "Spécialiste de l’adoption*",
+                "Aide à l’enfance/Services sociaux*",
+                "Travailleur social*",
+                "Juge de paix*"
               ]
             },
             {
               "title": "",
-              "list": ["* Specific to the adoption path french"]
+              "list": ["* Propres au parcours de l’adoption"]
             }
           ]
         },
@@ -223,13 +225,13 @@
           "title": "Leave/benefits coordination",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Planification financière",
                 "Coordination avec l’employeur",
                 "Obtenir l’information nécessaire",
                 "Rechercher/évaluer les options",
-                "Présenter une demande"
+                "Présenter une demande de prestations"
               ]
             },
             {
@@ -239,7 +241,7 @@
                 "Comptable",
                 "Assureur",
                 "Service Canada",
-                "Planificateur financière"
+                "Planificateur financier"
               ]
             }
           ]
@@ -248,24 +250,24 @@
           "title": "Pregnancy termination",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Évaluation des options",
-                "Procédure d'interruption",
-                "Soutien suivant l'interruption"
+                "Procédure d'interruption de grossesse",
+                "Soutien suivant l'interruption de grossesse"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Fournisseurs de soins de santé",
                 "Médecin de famille",
                 "Professionnel de l’accouchement",
-                "Professionnels de la santé et du bien être",
+                "Professionnels de la santé et du bien-être",
                 "Laboratoire d’analyse médicale",
                 "Médecins spécialistes",
                 "Médecins chargés des grossesses à haut risque",
-                "Généticien",
+                "Généticien/généticienne",
                 "Groupes de soutien",
                 "Hôpital/Clinique"
               ]
@@ -282,7 +284,7 @@
           "title": "Naissance",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Arrivée au lieu de naissance",
                 "Surveillance et travail précoce",
@@ -297,7 +299,7 @@
                 "Hôpital/Clinique/Centre des naissances",
                 "Professionnels de l’accouchement",
                 "Médecins chargés des grossesses à haut risque",
-                "Spécialistes de la médecine foetale"
+                "Spécialistes de la médecine fœtale"
               ]
             }
           ]
@@ -306,32 +308,32 @@
           "title": "Arrivée de l'enfant",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Lien affectif et soins postnataux",
-                "Arrivée de l’enfant adopté et période de probation *",
+                "Arrivée de l’enfant adopté et période de probation*",
                 "Complications relatives à la santé de l’enfant"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
                 "Médecins spécialistes",
                 "Médecin de famille",
-                "Birthing professional",
-                "Hospital/Clinic/Birthing centre **",
-                "Travailleur social *",
-                "Spécialiste de l’adoption *",
-                "Immigration. Réfugiés et Citoyenneté Canada *",
-                "Unité de soins intensifs nouveau-né"
+                "Professionnel de l’accouchement",
+                "Hôpital/Clinique/Centre des naissances**",
+                "Travailleur social*",
+                "Spécialiste de l’adoption*",
+                "Immigration, Réfugiés et Citoyenneté Canada*",
+                "Unité de soins intensifs pour nouveau-nés"
               ]
             },
             {
               "title": "",
               "list": [
-                "* Specific to the adoption path french",
-                "** Specific to giving birth french"
+                "* Propre au parcours de l’adoption",
+                "** Propre à la naissance"
               ]
             }
           ]
@@ -340,13 +342,13 @@
           "title": "Inscription de l’enfant",
           "content": [
             {
-              "title": "Étapes Commun :",
-              "list": ["présenter une demande de certificat de naissance"]
+              "title": "Étapes communes :",
+              "list": ["Présenter une demande de certificat de naissance"]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
-                "Hôpital/Clinique/Centre de naissances",
+                "Hôpital/Clinique/Centre des naissances",
                 "Gouvernement provincial"
               ]
             }
@@ -356,39 +358,39 @@
           "title": "Le cheminement du deuil s'amorce",
           "content": [
             {
-              "title": "Common situations:",
+              "title": "Situations communes :",
               "list": [
-                "Décès d’un nourrisson",
                 "Accouchement d'un mort-né",
+                "Décès d’un nourrisson",
                 "Décès d’un parent au moment de l’accouchement"
               ]
             },
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Analyse et rapports médicaux suivant la perte du bébé",
-                "Préparer les arrangements de fin de vie",
+                "Procéder aux arrangements de fin de vie",
                 "Soutien en matière de santé mentale et émotionnelle",
                 "Garder leur mémoire vivante"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
                 "Médecin de famille",
-                "Professionnels de l’accouchement",
+                "Professionnel de l’accouchement",
                 "Hôpital/Clinique/Centre des naissances",
-                "Professionnels de la santé mentale",
+                "Professionnel de la santé mentale",
                 "Groupes de soutien",
-                "Organismes de bienfaisance/Organismes à but non-lucratif",
-                "Généticien",
+                "Organismes de bienfaisance/Organismes à but non lucratif",
+                "Généticien/généticienne",
                 "Spécialistes de la médecine fœtale",
                 "Médecins spécialistes",
                 "Analyse médicale",
                 "Médecins chargés des grossesses à haut risque",
                 "Travailleur social",
-                "Professionnels de la santé et du bien être"
+                "Professionnels de la santé et du bien-être"
               ]
             }
           ]
@@ -403,7 +405,7 @@
           "title": "L’enfant est à la maison",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Santé mentale de la mère et soutien post-partum",
                 "Surveillance du développement de l’enfant",
@@ -412,11 +414,11 @@
                 "Immunisations",
                 "Célébration",
                 "Soutien aux parents et consultation",
-                "Finaliser l’adoption légale"
+                "Finaliser l’adoption légale*"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
                 "Groupes de soutien",
@@ -425,18 +427,19 @@
                 "Médecin de famille",
                 "Cours de loisir",
                 "Fournisseurs de soins",
-                "Community centres",
+                "Centre communautaires",
                 "Consultante en lactation",
                 "Pédiatre",
                 "Professionnels de la santé mentale",
-                "Travailleur social *",
-                "Gouvernement Provincial *",
-                "Avocat *"
+                "Travailleur social*",
+                "Gouvernement provincial*",
+                "Spécialiste de l’adoption*",
+                "Avocat*"
               ]
             },
             {
               "title": "",
-              "list": ["* Specific to the adoption path french"]
+              "list": ["* Propre au parcours de l’adoption"]
             }
           ]
         },
@@ -444,14 +447,14 @@
           "title": "Coordination des congés/prestations",
           "content": [
             {
-              "title": "Étapes Commun :",
-              "list": ["Retroactive/emergency benefit co-ordination french"]
+              "title": "Étapes communes :",
+              "list": ["Coordination des prestations rétroactives/ d’urgence"]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
-                "Employeurs",
-                "Médecin familiale",
+                "Employeur",
+                "Médecin de famille",
                 "Fournisseurs de soins",
                 "Service Canada"
               ]
@@ -462,7 +465,7 @@
           "title": "Planification de la transition",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Fin de la période des prestations",
                 "Coordination du retour à la maison/sortie",
@@ -470,9 +473,9 @@
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
-                "Médecins de famille",
+                "Médecin de famille",
                 "Employeur",
                 "Professionnel de la naissance",
                 "Service Canada"
@@ -484,7 +487,7 @@
           "title": "Extended-care complex journey French",
           "content": [
             {
-              "title": "Étapes Commun :",
+              "title": "Étapes communes :",
               "list": [
                 "Organiser l’équipe de soutien physique et médical",
                 "Soutien développemental et social destiné au parent",
@@ -493,20 +496,20 @@
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
                 "Agence d’adoption",
-                "Professionnels de la santé et du bien être",
+                "Professionnels de la santé et du bien-être",
                 "Médecins spécialistes",
                 "Médecin de famille",
                 "Travailleur social",
                 "Professionnel de la santé mentale",
                 "Fournisseurs de soins",
-                "Professionnels de la naissance",
+                "Professionnel de la naissance",
                 "Service Canada",
                 "Laboratoire d’analyse médicale",
-                "Organismes de bienfaisance/Organismes à but non-lucratifs",
+                "Organismes de bienfaisance/Organismes à but non lucratif",
                 "Détaillants"
               ]
             }
@@ -522,35 +525,35 @@
           "title": "Le cheminement du deuil s'amorce",
           "content": [
             {
-              "title": "Situations communs:",
+              "title": "Situations communes :",
               "list": [
-                "Décès d’un nourrisson",
                 "Accouchement d'un mort-né",
+                "Décès d’un nourrisson",
                 "Décès d’un parent au moment de l’accouchement"
               ]
             },
             {
-              "title": "Étapes communs :",
+              "title": "Étapes communes :",
               "list": [
-                "Analyse et rapports médicaux suivant la fausse-couche ou la naissance mort-né",
-                "Préparer les arrangements de fin de vie",
+                "Analyse et rapports médicaux suivant l’accouchement du mort-né",
+                "Procéder aux arrangements de fin de vie",
                 "Soutien en matière de santé mentale et émotionnelle",
                 "Garder leur mémoire vivante"
               ]
             },
             {
-              "title": "Fournisseurs de services communs :",
+              "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
                 "Médecin de famille",
                 "Professionnel de la naissance",
                 "Travailleur social",
-                "Professionnels de la santé et du bien être",
+                "Professionnels de la santé et du bien-être",
                 "Hôpital/Clinique/Centre des naissances",
                 "Professionnel de la santé mentale",
-                "Organismes de bienfaisance/Organismes à but non-lucratif",
+                "Organismes de bienfaisance/Organismes à but non lucratif",
                 "Spécialistes de la médecine fœtale",
-                "Généticien",
+                "Généticien/généticienne",
                 "Médecins spécialistes",
                 "Analyse médicale",
                 "Médecins chargés des grossesses à haut risque"

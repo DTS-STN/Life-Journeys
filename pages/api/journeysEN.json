@@ -79,7 +79,7 @@
               ]
             },
             {
-              "title": "Common service providers:",
+              "title": "Common service providers",
               "list": [
                 "Health care providers",
                 "Family doctor",
@@ -209,10 +209,10 @@
                 "Retailers",
                 "Care providers",
                 "Sleeping coach",
-                "Adoption practitioner *",
-                "Children’s Aid/Social services *",
-                "Social worker *",
-                "Justice of the Peace *"
+                "Adoption practitioner*",
+                "Children’s Aid/Social services*",
+                "Social worker*",
+                "Justice of the Peace*"
               ]
             },
             {
@@ -299,7 +299,7 @@
                 "Hospital/clinic/birthing centre",
                 "Birthing professionals",
                 "High risk doctors",
-                "fetal medicine specialists"
+                "Fetal medicine specialists"
               ]
             }
           ]
@@ -311,7 +311,7 @@
               "title": "Common steps:",
               "list": [
                 "Post-birth bonding and care",
-                "Arrival of adopted child and probation period *",
+                "Arrival of adopted child and probation period*",
                 "Complications with the child’s health"
               ]
             },
@@ -322,10 +322,10 @@
                 "Specialist doctors",
                 "Family doctor",
                 "Birthing professional",
-                "Hospital/Clinic/Birthing centre **",
-                "social worker *",
-                "Adoption practitioner *",
-                "Immigration, Refugees, and Citizenship Canada *",
+                "Hospital/Clinic/Birthing centre**",
+                "Social worker*",
+                "Adoption practitioner*",
+                "Immigration, Refugees, and Citizenship Canada*",
                 "Newborn intensive care unit"
               ]
             },
@@ -410,7 +410,7 @@
                 "Immunizations",
                 "Celebration",
                 "Parental support and counselling",
-                "Finalizing legal adoption *"
+                "Finalizing legal adoption*"
               ]
             },
             {
@@ -427,10 +427,10 @@
                 "Lactation consultant",
                 "Pediatrician",
                 "Mental health practitioners",
-                "Social worker *",
-                "Provincial government *",
-                "Adoption practitioner *",
-                "Lawyer *"
+                "Social worker*",
+                "Provincial government*",
+                "Adoption practitioner*",
+                "Lawyer*"
               ]
             },
             {
@@ -525,7 +525,7 @@
               "list": ["Stillbirth", "Infant death", "Birthing parent death"]
             },
             {
-              "title": "Common situations:",
+              "title": "Common steps:",
               "list": [
                 "Post-loss medical testing and reports",
                 "Preparing end of life arrangements",
@@ -534,12 +534,12 @@
               ]
             },
             {
-              "title": "Common situations:",
+              "title": "Common service providers:",
               "list": [
                 "Healthcare practitioners",
                 "Family doctor",
                 "Birthing professional",
-                "social worker",
+                "Social worker",
                 "Health and wellness practitioners",
                 "Hospital/clinic/birthing centre",
                 "Mental health practitioner",
