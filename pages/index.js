@@ -1,110 +1,163 @@
-import TopicBox from "../components/molecules/TopicBox";
 import Layout from "../components/layout";
-import { getTopics, getLocalTopics } from "./api/getData";
+import { useEffect, useRef, useContext, useReducer } from "react";
+import { LanguageContext } from "../context/languageProvider";
+import Select from "../components/atoms/Select";
+import Card from "../components/atoms/Card";
+import Stages from "../components/atoms/Stages";
+import { getLocalJourneys } from "./api/getData";
 
 import en from "../locales/en";
 import fr from "../locales/fr";
+import optionsEN from "./api/optionsEN";
+import optionsFR from "./api/optionsFR";
+import ResourceLink from "../components/atoms/ResourceLink";
 
-export default function Home({ locale, topicsData, errorCode }) {
-  //
-  const t = locale === "en" ? en : fr;
+export default function lifejourney({ journeysData }) {
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+  const region = useRef("CAN");
+  const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
 
-  if (!topicsData)
-    return <div className="text-center text-h3">Loading Data ...</div>;
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(successCall, error);
+    } else {
+      alert("Sorry, browser does not support geolocation!");
+    }
+    async function getGeo() {
+      const res = await fetch("https://ipapi.co/json/");
+      const data = await res.json();
+      region.current = data.region_code;
+      forceUpdate();
+    }
+    function successCall() {
+      getGeo();
+    }
+    function error(err) {
+      console.warn("ERROR(" + err.code + "): " + err.message);
+    }
+  }, []);
 
-  if (errorCode)
-    return (
-      <div className="text-center text-h3 text-red-800">
-        Failed to load topics...
-      </div>
-    );
+  function onChangeFunc(optionSelected) {
+    region.current = optionSelected;
+    forceUpdate();
+  }
 
   return (
-    <Layout home title={t.homeSiteTitle} locale={locale}>
-      <section className="layout-container mb-2 mt-4">
-        <div className="container">
-          <div>
-            <h1 className="pb-2 pt-6">{t.landingPageTitle}</h1>
-            <hr className="h-1 bg-hr-red-bar"></hr>
-            <p className="pt-10 pb-10">{t.landingPageContent}</p>
-            <h2 className="text-h3 font-display font-bold pb-10">
-              {t.landingPageSubtitle}
-            </h2>
+    <>
+      <Layout
+        title={t.havingABabyTitle}
+        bannerTitle={t.havingAChildBannerTitle}
+        bannerText={t.havingAChildBannerText}
+        locale={language}
+      >
+        <section id="pageMainTitle" className="layout-container mb-2 mt-4">
+          <div className="my-4">
+            <p id="wb-cont">{t.topRequested}</p>
           </div>
-        </div>
 
-        <div className="container flex flex-wrap">
-          <div className="topicBoxSm grid xxl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-3 lg:gap-10 xxl:gap-5">
-            {topicsData.map(
-              ({ title, body, image, imgalt, url, subtopics }, idx) => {
-                return (
-                  <TopicBox
-                    key={idx}
-                    title={title}
-                    body={body}
-                    image={image}
-                    imgalt={imgalt}
-                    findInfo={t.findInformationAbout}
-                    url={url}
-                    subtopics={subtopics}
-                  />
-                );
-              }
-            )}
+          <Select
+            options={language === "en" ? optionsEN : optionsFR}
+            onChange={onChangeFunc}
+            name="provinceSelector"
+            defaultValue="CAN"
+            label={t.topRequestedLabel}
+          />
+
+          {/* Top cards */}
+          <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
+            <Card
+              title={t.card1Title}
+              service={t.card1Service}
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
+              links={t.card1Links}
+            />
+            <Card
+              title={t.card2Title}
+              service={t.card2Service}
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
+              links={t.card2Links}
+            />
+            <Card
+              title={t.card3Title}
+              service={t.card3Service}
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
+              links={t.card3Links}
+            />
+            <Card
+              title={t.card4Title}
+              service={t.card4Service}
+              image="/images/card-bg.png"
+              imgalt="image description TBC"
+              links={t.card4Links}
+            />
           </div>
-        </div>
-      </section>
-    </Layout>
+
+          {/* Journey Stages Section */}
+
+          <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
+            <div className="p-2 w-full">
+              <h2 className="text-h3-tall w-full">{t.stagesTitle}</h2>
+
+              <p>{t.stagesDescr}</p>
+            </div>
+
+            <div className="mt-4 w-full">
+              <Stages
+                journeys={journeysData}
+                selectPlaceholder={t.stagesSelect}
+                labelText={t.stagesLabel}
+              />
+            </div>
+          </div>
+
+          {/* Connect to Local Resources */}
+
+          <div className="container flex flex-col w-full md:w-32 md:flex-row mt-4">
+            <div>
+              <h3 className="text-h4 mb-4 font-bold font-display">
+                {t.getConnected}
+              </h3>
+              <p className="text-base">{t.getConnectedDescription}</p>
+
+              <ResourceLink
+                text={t.moreInfoPrenatalClasses}
+                isProvincialLink={false}
+                id="prenatalClasses"
+              />
+              <ResourceLink
+                text={t.moreInfoParentingNetworks}
+                isProvincialLink={false}
+                id="parentingNetworks"
+              />
+              <ResourceLink
+                language={language}
+                region={region.current}
+                isProvincialLink={true}
+              ></ResourceLink>
+            </div>
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 }
 
-export async function getStaticProps({ locale }) {
-  let topicsData = [];
-  let errorCode = false;
+// getting static data before loading the page
 
+export async function getStaticProps({ locale }) {
   console.log("language object at getStaticProps is ", locale);
 
-  //
-  // IF content enabled get the data from the api
-  //
-
-  if (process.env.NEXT_CONTENT_API) {
-    const { apiData, error } = await getTopics(locale);
-
-    let topics = [];
-
-    apiData.entities.map((entity) => {
-      if (entity.properties.contentFragment) {
-        if (entity.properties.elements.lang.value === locale) {
-          topics.push({
-            title: entity.properties.elements.title.value,
-            body: entity.properties.elements.description.value,
-            image: "/images/family.png",
-            imgalt: "Alt text TBD",
-            url: entity.properties.elements.link.value,
-            subtopics: entity.properties.elements.tags.value
-              .toString()
-              .split(","),
-          });
-        }
-      }
-    });
-
-    topicsData = topics;
-    errorCode = error;
-  } else {
-    //
-    // Else get the content from the local file
-    //
-    const { localData } = getLocalTopics();
-
-    topicsData = localData;
-    errorCode = false;
-  }
+  const { localData } = getLocalJourneys(locale);
+  const errorCode = false;
 
   return {
     props: {
-      topicsData,
+      journeysData: localData,
       errorCode,
       locale,
     },
