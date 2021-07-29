@@ -63,58 +63,57 @@ export default function lifejourney({ journeysData }) {
             onChange={onChangeFunc}
             name="provinceSelector"
             defaultValue="CAN"
-            label="Showing top requests for"
+            label={t.topRequestedLabel}
           />
 
           {/* Top cards */}
           <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
             <Card
-              title="Maternity and Parental Leave"
-              service="Employment Insurance"
+              title={t.card1Title}
+              service={t.card1Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[
-                { text: "More Info", url: "nextpage" },
-                { text: "Apply Now", url: "nextpage" },
-              ]}
+              links={t.card1Links}
             />
             <Card
-              title="Benefits Finder"
-              service="Service Canada"
+              title={t.card2Title}
+              service={t.card2Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "Find Benefits", url: "nextpage" }]}
+              links={t.card2Links}
             />
             <Card
-              title="Mental and physical health resources"
-              service="Public Health Agency of Canada"
+              title={t.card3Title}
+              service={t.card3Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "More Info", url: "nextpage" }]}
+              links={t.card3Links}
             />
             <Card
-              title="Newborn care resources"
-              service="Health Canada"
+              title={t.card4Title}
+              service={t.card4Service}
               image="/images/card-bg.png"
               imgalt="image description TBC"
-              links={[{ text: "More Info", url: "nextpage" }]}
+              links={t.card4Links}
             />
           </div>
 
           {/* Journey Stages Section */}
 
-          <div className="container flex flex-col w-full bg-gray-200 md:flex-row align-items-center mt-4">
-            <div className="p-2">
-              <h2 className="text-h3-tall">
-                Discover the stages of the new child life Journey
-              </h2>
+          <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
+            <div className="p-2 w-full">
+              <h2 className="text-h3-tall w-full">{t.stagesTitle}</h2>
 
-              <p>Learn more about the keytask during each stage in journey</p>
+              <p>{t.stagesDescr}</p>
             </div>
-          </div>
 
-          <div className="container mt-4">
-            <Stages journeys={journeysData} />
+            <div className="mt-4 w-full">
+              <Stages
+                journeys={journeysData}
+                selectPlaceholder={t.stagesSelect}
+                labelText={t.stagesLabel}
+              />
+            </div>
           </div>
 
           {/* Connect to Local Resources */}
@@ -154,7 +153,7 @@ export default function lifejourney({ journeysData }) {
 export async function getStaticProps({ locale }) {
   console.log("language object at getStaticProps is ", locale);
 
-  const { localData } = getLocalJourneys();
+  const { localData } = getLocalJourneys(locale);
   const errorCode = false;
 
   return {
