@@ -26,7 +26,7 @@ export default function ResourceLink(props) {
           >
             {label}
           </a>
-          {" ➜"}
+          {" -➔"}
         </div>
       ))}
     </div>
@@ -42,7 +42,7 @@ export default function ResourceLink(props) {
         >
           {props.text}
         </a>
-        {" ➜"}
+        {" -➔"}
       </div>
     </div>
   );

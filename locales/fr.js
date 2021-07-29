@@ -228,8 +228,9 @@ export default {
   landingPageSubtitle: "Sélectionnez un voyage pour commencer",
 
   //Phase Banner
-  Alpha: "Test site (fr)",
+  Alpha: "Site d’essai",
   testSiteText:
-    "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change. (fr)",
-  backToProject: "Back to projects (fr)",
+    "Vous ne pouvez pas demander de services ou de prestations par l’intermédiaire de ce site d’essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées.",
+  backToProject: "Retourner aux projets",
+  backToProjectsLink: "https://alphasite.dts-stn.com/fr/projects",
 };

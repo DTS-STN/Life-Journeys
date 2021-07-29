@@ -13,8 +13,10 @@ export const PhaseBanner = ({ phase, children, link, linkText }) => {
           <div className="mb-3 py-1 font-body text-xs leading-5 h-full sm:text-sm sm:leading-5 font-black tracking-normal border-2 border-black px-2 bg-white text-circle-color w-max">
             {phase}
           </div>
-          <div className="mb-3 underline text-white">
-            <a href={link}>{linkText}</a>
+          <div className="mb-3">
+            <a className="underline text-white" href={link}>
+              {linkText}
+            </a>
           </div>
         </div>
         <p className="font-body text-white block text-xs break-words pt-1">
