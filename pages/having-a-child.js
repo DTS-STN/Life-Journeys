@@ -53,9 +53,9 @@ export default function lifejourney({ journeysData }) {
         locale={language}
         breadcrumbItems={[{ text: t.homeSiteTitle, link: "/" }]}
       >
-        <section className="layout-container mb-2 mt-4">
+        <section id="pageMainTitle" className="layout-container mb-2 mt-4">
           <div className="my-4">
-            <p>{t.topRequested}</p>
+            <p id="wb-cont">{t.topRequested}</p>
           </div>
 
           <Select
@@ -120,9 +120,9 @@ export default function lifejourney({ journeysData }) {
 
           <div className="container flex flex-col w-full md:w-32 md:flex-row mt-4">
             <div>
-              <p className="text-h4 mb-4 font-bold font-display">
+              <h3 className="text-h4 mb-4 font-bold font-display">
                 {t.getConnected}
-              </p>
+              </h3>
               <p className="text-base">{t.getConnectedDescription}</p>
 
               <ResourceLink

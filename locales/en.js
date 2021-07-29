@@ -1,7 +1,7 @@
 export default {
   //site titles
   homeSiteTitle: "Life Journeys",
-  havingABabyTitle: "Having a Baby",
+  havingABabyTitle: "Having a Child",
 
   // Nav
   skipToMainContent: "Skip to main content",
@@ -111,7 +111,7 @@ export default {
   //breadcrumb
 
   home: "Life Journeys",
-  "having-a-baby": "Having a baby",
+  "having-a-baby": "Having a Child",
 
   // Having a baby
   topRequested:
