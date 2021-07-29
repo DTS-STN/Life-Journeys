@@ -27,7 +27,7 @@ export default function Stages(props) {
           </label>
 
           <select
-            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2"
+            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2 xxs:max-w-full"
             id="stage"
             onChange={onChangeHandler}
           >

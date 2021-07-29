@@ -98,6 +98,10 @@ html {
   details.accordion > summary::-webkit-details-marker {
     display: none;
   }
+  .arrow {
+    width: 24px; 
+    min-width: 24px;
+  }
 
   /* Sticky menu CSS */
   #Sidemenu {
