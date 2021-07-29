@@ -1,5 +1,5 @@
 resource "azurerm_key_vault" "keyvault" {
-  name                        = "${var.application_name}-Keyvault-${var.environment}"
+  name                        = "${var.application_name}KV${var.environment}"
   location                    = var.location
   resource_group_name         = var.depot_resource_group
   tenant_id                   = var.tenant_id
