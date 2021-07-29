@@ -198,7 +198,7 @@ export default [
         link: "https://services.etatcivil.gouv.qc.ca/DEClic2/index.aspx?lang=en",
       },
       {
-        label: "I want to find out about EI maternity and parental benefits",
+        label: "I want to find out about the Québec Parental Insurance Plan",
         link: "https://www.rqap.gouv.qc.ca/en",
       },
     ],
