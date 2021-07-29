@@ -70,7 +70,11 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
                   ? "/images/sig-blk-en.svg"
                   : "/images/sig-blk-fr.svg"
               }
-              alt="Symbol of the Government of Canada"
+              alt={
+                language === "en"
+                  ? "Symbol of the Government of Canada"
+                  : "Gouvernement du Canada"
+              }
             />
 
             {/* Language selector for small screens */}
