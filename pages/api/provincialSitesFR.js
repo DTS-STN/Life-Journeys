@@ -137,7 +137,7 @@ export default [
     sites: [
       {
         label: "Je veux déclarer la naissance de mon bébé",
-        link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance",
+        link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance/#",
       },
       {
         label: "Je veux me renseigner sur les garderies",

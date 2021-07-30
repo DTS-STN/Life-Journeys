@@ -136,7 +136,7 @@ export default [
     sites: [
       {
         label: "I want to register my baby’s birth",
-        link: "https://www.gov.nu.ca/health/information/birth-certificate",
+        link: "https://www.gov.nu.ca/health/information/birth-certificate/#",
       },
       {
         label: "I want to find out about day care",

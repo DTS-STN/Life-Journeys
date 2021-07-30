@@ -68,32 +68,44 @@ export default function lifejourney({ journeysData }) {
           {/* Top cards */}
           <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
             <Card
-              title={t.card1Title}
-              service={t.card1Service}
+              title={
+                region.current !== "QC" ? t.card1Title : t.card1QuebecTitle
+              }
+              service={
+                region.current !== "QC" ? t.card1Service : t.card1QuebecService
+              }
               image="/images/card-bg.png"
-              imgalt="image description TBC"
-              links={t.card1Links}
+              imgalt={
+                region.current !== "QC" ? t.card1Title : t.card1QuebecTitle
+              }
+              links={
+                region.current !== "QC" ? t.card1Links : t.card1QuebecLinks
+              }
+              region={region.current}
             />
             <Card
               title={t.card2Title}
               service={t.card2Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/benefits.png"
+              imgalt={t.card2Title}
               links={t.card2Links}
+              region={region.current}
             />
             <Card
               title={t.card3Title}
               service={t.card3Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/mh.png"
+              imgalt={t.card3Title}
               links={t.card3Links}
+              region={region.current}
             />
             <Card
               title={t.card4Title}
               service={t.card4Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/newborn.png"
+              imgalt={t.card4Title}
               links={t.card4Links}
+              region={region.current}
             />
           </div>
 
