@@ -150,8 +150,7 @@ export default function lifejourney({ journeysData }) {
 // getting static data before loading the page
 
 export async function getStaticProps({ locale }) {
-  console.log("language object at getStaticProps is ", locale);
-
+  //
   const { localData } = getLocalJourneys(locale);
   const errorCode = false;
 

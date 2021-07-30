@@ -115,7 +115,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "See the top requested resources to answer your questions about having a child",
+    "Find resources to help you make the right decisions along this journey ",
   topRequestedLabel: "Showing top requests for:",
 
   //Table
@@ -140,7 +140,7 @@ export default {
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
     },
     {
-      text: "Apply",
+      text: "Apply now",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
     },
   ],
@@ -173,12 +173,11 @@ export default {
   // Stages
   stagesTitle: "Discover the stages of the new child life journey",
   stagesDescr: "Learn more about the key tasks during each stage in journey.",
-  stagesLabel: "Journey stage:",
+  stagesLabel: "Journey stage",
   stagesSelect: "-Select-",
 
   //Connect to local resources
-
-  getConnected: "Connect to local resources",
+  getConnected: "Connect to local resources ",
   getConnectedDescription:
     "We often lean on those closest to us for advice. Find and build your support close to where you live.",
 

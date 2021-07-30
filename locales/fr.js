@@ -115,7 +115,7 @@ export default {
   // Having a baby
   topRequested:
     "Trouvez des ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
-  topRequestedLabel: "Afficher les ressources pour :",
+  topRequestedLabel: "Afficher les principales demandes pour :",
 
   //Table
 
@@ -140,7 +140,7 @@ export default {
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
     },
     {
-      text: "Soumettre une demande",
+      text: "Présenter une demande",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales/demande.html",
     },
   ],
@@ -158,7 +158,7 @@ export default {
     },
   ],
 
-  card3Title: "Santé mentale et physique",
+  card3Title: "Ressources en santé mentale et physique",
   card3Service: "Agence de la santé publique du Canada",
   card3Links: [
     {
@@ -167,7 +167,7 @@ export default {
     },
   ],
 
-  card4Title: "Soins aux nouveau-nés",
+  card4Title: "Ressources en matière de soins aux nouveau-nés",
   card4Service: "Santé Canada",
   card4Links: [
     {
@@ -181,13 +181,13 @@ export default {
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
   stagesDescr:
     "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
-  stagesLabel: "Étape du parcours :",
+  stagesLabel: "Étape du parcours",
   stagesSelect: "-Sélectionner-",
 
   //Connect to local resources
   getConnected: "Connectez-vous aux ressources locales",
   getConnectedDescription:
-    "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre soutien près de chez vous.",
+    "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre réseau de soutien près de chez vous.",
 
   //Report a problem
   reportAProblemButtonString: "Signaler un problème sur cette page",
