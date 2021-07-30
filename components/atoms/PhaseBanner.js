@@ -10,7 +10,7 @@ export const PhaseBanner = ({ phase, children, link, linkText }) => {
     <div className="bg-circle-color">
       <div className="flex py-4 layout-container">
         <div className="flex-container">
-          <div className="mb-3 py-1 font-body text-xs leading-5 h-full sm:text-sm sm:leading-5 font-black tracking-normal border-2 border-black px-2 bg-white text-circle-color w-max">
+          <div className="mb-3 px-4 py-1 font-body text-xs leading-6 font-black tracking-normal bg-white text-circle-color w-max">
             {phase}
           </div>
           <div className="mb-3">
@@ -19,7 +19,7 @@ export const PhaseBanner = ({ phase, children, link, linkText }) => {
             </a>
           </div>
         </div>
-        <p className="font-body text-white block text-xs break-words pt-1">
+        <p className="font-body text-white block text-xs break-words pt-2">
           {children}
         </p>
       </div>

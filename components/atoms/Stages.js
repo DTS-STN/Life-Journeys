@@ -45,7 +45,7 @@ export default function Stages(props) {
           </label>
 
           <select
-            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2 overflow-ellipsis xxs:max-w-full"
+            className="w-auto mb-2 px-2 h-8 rounded border bg-white border-gray-400 mt-2 overflow-ellipsis xxs:max-w-full focus:shadow-blue focus:border-custom-blue-focus focus-visible:outline-none"
             id="stage"
             onChange={onChangeHandler}
           >

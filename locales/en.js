@@ -223,5 +223,5 @@ export default {
   testSiteText:
     "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
   backToProject: "Back to projects",
-  backToProjectsLink: "https://alphasite.dts-stn.com/projects",
+  backToProjectsLink: "https://alpha.service.canada.ca/projects",
 };
