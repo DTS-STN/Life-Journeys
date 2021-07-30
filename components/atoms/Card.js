@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import PropTypes from "prop-types";
 
 /**
@@ -24,7 +23,7 @@ export default function Card(props) {
         {props.title}
       </h2>
 
-      <p className="pl-2 pb-4 text-sm" style={{ height: 50 + "px" }}>
+      <p className="px-2 pb-4 text-sm" style={{ height: 50 + "px" }}>
         {props.service}
       </p>
 
@@ -62,4 +61,8 @@ Card.propTypes = {
    * array of links in the follwoing format [{"text": "click text", "url":"the url to visit"}]
    */
   links: PropTypes.array,
+  /**
+   * this is just to force a reload
+   */
+  region: PropTypes.string,
 };

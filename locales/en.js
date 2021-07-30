@@ -147,7 +147,12 @@ export default {
 
   card1QuebecTitle: "Parental Insurance",
   card1QuebecService: "Québec Parental Insurance Plan",
-  card1QuebecLinks: [{ text: "", url: "" }],
+  card1QuebecLinks: [
+    {
+      text: "Apply now",
+      url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
+    },
+  ],
 
   card2Title: "Benefits finder",
   card2Service: "Service Canada",
