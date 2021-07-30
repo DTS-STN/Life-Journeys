@@ -147,7 +147,12 @@ export default {
 
   card1QuebecTitle: "L'assurance parentale",
   card1QuebecService: "Régime québécois d'assurance parentale",
-  card1QuebecLinks: [{ text: "", url: "" }],
+  card1QuebecLinks: [
+    {
+      text: "Présenter une demande",
+      url: "https://www.rqap.gouv.qc.ca/fr/services-en-ligne/faire-ma-demande-de-prestations",
+    },
+  ],
 
   card2Title: "Chercheur de prestations",
   card2Service: "Service Canada",
