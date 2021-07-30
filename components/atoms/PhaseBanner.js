@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
  * Displays the PhaseBanner on the page
  */
 
-export const PhaseBanner = ({ phase, children, link, linkText }) => {
+export const PhaseBanner = ({ phase, children, link, linkText, locale }) => {
   return (
     <div className="bg-circle-color">
       <div className="flex py-4 layout-container">
@@ -19,7 +19,12 @@ export const PhaseBanner = ({ phase, children, link, linkText }) => {
             </a>
           </div>
         </div>
-        <p className="font-body text-white block text-xs break-words pt-2">
+        <p
+          className={
+            "font-body text-white block text-xs break-words " +
+            (locale === "fr" ? "pt-0.5" : "pt-2")
+          }
+        >
           {children}
         </p>
       </div>
@@ -44,6 +49,10 @@ PhaseBanner.propTypes = {
    * Phase stage in the PhaseBanner
    */
   children: PropTypes.string.isRequired,
+  /**
+   * language for banner
+   */
+  locale: PropTypes.string.isRequired,
 };
 
 export default PhaseBanner;

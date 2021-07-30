@@ -38,6 +38,7 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
       }
     }
   }, [language]);
+  console.log(language);
 
   return (
     <>
@@ -59,6 +60,7 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
           phase={t.Alpha}
           link={t.backToProjectsLink}
           linkText={t.backToProject}
+          locale={language}
         >
           {t.testSiteText}
         </PhaseBanner>
