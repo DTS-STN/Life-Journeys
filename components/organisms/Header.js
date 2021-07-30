@@ -2,8 +2,6 @@ import propTypes from "prop-types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { PhaseBanner } from "../atoms/PhaseBanner";
-import { SearchBar } from "../atoms/SearchBar";
-
 import Banner from "../atoms/Banner";
 import { Breadcrumb } from "../molecules/Breadcrumb";
 
