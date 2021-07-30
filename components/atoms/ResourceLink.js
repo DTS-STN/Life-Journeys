@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import sitesEN from "../../pages/api/provincialSitesEN";
 import sitesFR from "../../pages/api/provincialSitesFR";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 /**
  *  This component creates a link to a provincial website based on the user's region OR a google search query with the provided text
@@ -26,7 +28,9 @@ export default function ResourceLink(props) {
           >
             {label}
           </a>
-          {" -➔"}
+          <span className="pl-1">
+            <FontAwesomeIcon icon={faArrowRight} size="sm" />
+          </span>
         </div>
       ))}
     </div>
@@ -42,7 +46,9 @@ export default function ResourceLink(props) {
         >
           {props.text}
         </a>
-        {" -➔"}
+        <span className="pl-1">
+          <FontAwesomeIcon icon={faArrowRight} size="sm" />
+        </span>
       </div>
     </div>
   );

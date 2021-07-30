@@ -53,7 +53,7 @@ export default function lifejourney({ journeysData }) {
         locale={language}
       >
         <section id="pageMainTitle" className="layout-container mb-2 mt-4">
-          <div className="my-4">
+          <div className="mx-3 my-4">
             <p id="wb-cont">{t.topRequested}</p>
           </div>
 
@@ -102,7 +102,6 @@ export default function lifejourney({ journeysData }) {
           <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
             <div className="p-2 w-full">
               <h2 className="text-h3-tall w-full">{t.stagesTitle}</h2>
-
               <p>{t.stagesDescr}</p>
             </div>
 

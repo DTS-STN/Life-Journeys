@@ -19,6 +19,9 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    boxShadow: {
+      blue: "0 1px 3px 0 #66AFE9",
+    },
     fontFamily: {
       display: ["Lato"],
       body: ["Noto sans"],
@@ -67,6 +70,7 @@ module.exports = {
           canadaLight: "#1c578a",
           reportButton: "#335075",
           reportButtonActive: "#16446c",
+          focus: "#66AFE9",
           "experiment-blue": "#004986",
         },
         "gray-light-200": "#f5f5f5",
