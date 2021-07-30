@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Accordion2(props) {
   const [openFlag, setOpenFlag] = useState(false);
@@ -13,27 +13,27 @@ export function Accordion2(props) {
   return (
     <div className="flex mb-0 ">
       <details
-        className={`accordion flex-1 flex-wrap border border-gray-300 rounded bg-white ((${props.mainClass})? ${props.mainClass} : '') `}
+        className={`accordion flex-1 flex-wrap border border-gray-300 rounded bg-white`}
       >
         <summary onClick={() => openSummary()}>
-          <div className="w-12 min-w-12 relative left-4 pt-3 float-left ">
+          <div className="arrow relative left-3 pt-3 float-left">
             {openFlag ? (
               <FontAwesomeIcon
-                icon={faChevronRight}
+                icon={faCaretRight}
                 rotation={90}
                 size="1x"
                 className="text-custom-blue-reportButton"
               />
             ) : (
               <FontAwesomeIcon
-                icon={faChevronRight}
+                icon={faCaretRight}
                 size="1x"
                 className="text-custom-blue-reportButton"
               />
             )}
           </div>
 
-          <div className="ml-8 pt-3 text-custom-blue-reportButton">
+          <div className="ml-7 pt-3 text-custom-blue-reportButton">
             <h3
               id={props.id}
               className={`ml-1 text-h6 (${props.titleClass}) ? ${props.titleClass} : ''`}

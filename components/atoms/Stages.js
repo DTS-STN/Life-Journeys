@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Accordion2 } from "./Accordion2";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+
 /**
  *  Stages Component
  */
@@ -9,8 +10,13 @@ const stagesImg = "/images/stages.png";
 
 export default function Stages(props) {
   const [showData, setShowData] = useState();
+  const selected = useRef(null);
 
+  //
+  // updates the accordions content with the selection
   function onChangeHandler(option) {
+    selected.current = option.currentTarget.value;
+
     props.journeys.map((journey) =>
       journey.titleId === option.currentTarget.value
         ? setShowData(journey.subJourney)
@@ -18,16 +24,28 @@ export default function Stages(props) {
     );
   }
 
+  //
+  // updates the language of the accordions when switching languages
+  useEffect(() => {
+    if (selected.current !== null) {
+      props.journeys.map((journey) =>
+        journey.titleId === selected.current
+          ? setShowData(journey.subJourney)
+          : null
+      );
+    }
+  }, [props.journeys]);
+
   return (
     <div className="p-4">
-      <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center">
+      <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-left">
         <div>
           <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
             {props.labelText}
           </label>
 
           <select
-            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2"
+            className="w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2 overflow-ellipsis xxs:max-w-full"
             id="stage"
             onChange={onChangeHandler}
           >
@@ -42,7 +60,7 @@ export default function Stages(props) {
           </select>
         </div>
 
-        <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-center ">
+        <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-left ">
           {showData === undefined ? (
             <img src={stagesImg} alt="" />
           ) : (
