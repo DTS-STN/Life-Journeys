@@ -97,13 +97,12 @@ export default function Stages(props) {
                       ) : (
                         ""
                       )}
-
                       <ul
-                        className={`mb-4 ${
+                        className={`mb-4 pl-1 ${
                           title !== "hidden"
                             ? "list-disc text-sm"
                             : "-mx-4 text-xs"
-                        } `}
+                        }`}
                       >
                         {list.map((point, idx) => (
                           <li key={idx}>{point}</li>
