@@ -92,7 +92,7 @@ export default {
 
   //Banner text
 
-  havingAChildBannerTitle: "Having a baby",
+  havingAChildBannerTitle: "Having a child",
   havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
 
   // Find more information about
