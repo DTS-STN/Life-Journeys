@@ -2,8 +2,6 @@ import propTypes from "prop-types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { PhaseBanner } from "../atoms/PhaseBanner";
-import { SearchBar } from "../atoms/SearchBar";
-
 import Banner from "../atoms/Banner";
 import { Breadcrumb } from "../molecules/Breadcrumb";
 
@@ -57,7 +55,11 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
       </nav>
 
       <header>
-        <PhaseBanner phase={t.Alpha} link="#" linkText={t.backToProject}>
+        <PhaseBanner
+          phase={t.Alpha}
+          link={t.backToProjectsLink}
+          linkText={t.backToProject}
+        >
           {t.testSiteText}
         </PhaseBanner>
 
@@ -104,11 +106,6 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
                 {language === "en" ? "Français" : "English"}
               </a>
             </Link>
-
-            <SearchBar
-              placeholder={t.searchPlaceholder}
-              dataCy={"search-bar"}
-            />
           </div>
         </div>
 
@@ -116,16 +113,16 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
 
         {/* <HeaderNav /> */}
 
+        <div className="layout-container my-2">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+
         {/* Display a banner when requested */}
         {bannerTitle ? (
           <Banner siteTitle={bannerTitle} headline={bannerText} />
         ) : (
           ""
         )}
-
-        <div className="layout-container my-2">
-          <Breadcrumb items={breadcrumbItems} />
-        </div>
       </header>
     </>
   );

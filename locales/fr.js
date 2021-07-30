@@ -232,5 +232,5 @@ export default {
   testSiteText:
     "Vous ne pouvez pas demander de services ou de prestations par l’intermédiaire de ce site d’essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées.",
   backToProject: "Retourner aux projets",
-  backToProjectsLink: "https://alphasite.dts-stn.com/fr/projects",
+  backToProjectsLink: "https://alpha.service.canada.ca/fr/projects",
 };
