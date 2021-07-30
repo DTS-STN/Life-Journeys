@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 /**
@@ -7,8 +8,8 @@ import PropTypes from "prop-types";
 
 export default function Card(props) {
   return (
-    <div className="text-black text-left card rounded-tl-md rounded-b-md border cursor-pointer my-6 mx-4">
-      <div>
+    <div className="bg-gray-100 text-black text-left card rounded-tl-md rounded-b-md border my-6 mx-4">
+      <div className="bg-white">
         <Image
           src={props.image}
           alt={props.imgalt}
@@ -18,16 +19,21 @@ export default function Card(props) {
         ></Image>
       </div>
 
-      <h2 className="text-h3-tall pt-2 pl-2" style={{ height: 80 + "px" }}>
-        {" "}
+      <h2
+        className="border-b border-gray-200 bg-white mb-2 text-h3 pt-2 pl-2"
+        style={{ height: 80 + "px" }}
+      >
         {props.title}
       </h2>
 
-      <p className="px-2 pb-4 text-sm" style={{ height: 50 + "px" }}>
+      <p
+        className="mt-2 text-center pl-2 text-sm"
+        style={{ height: 50 + "px" }}
+      >
         {props.service}
       </p>
 
-      <ul className="flex items-center justify-center pb-4">
+      <ul className="bg-gray-100 flex items-center justify-center pb-4">
         {props.links.map((d, idx) => (
           <li key={idx} className="w-auto text-blue-800 text-sm px-3">
             <a aria-label={d.text + " " + props.service} href={d.url}>
@@ -61,8 +67,4 @@ Card.propTypes = {
    * array of links in the follwoing format [{"text": "click text", "url":"the url to visit"}]
    */
   links: PropTypes.array,
-  /**
-   * this is just to force a reload
-   */
-  region: PropTypes.string,
 };
