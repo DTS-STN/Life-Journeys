@@ -216,7 +216,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": ["* Specific to the adoption path"]
             }
           ]
@@ -330,7 +330,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": [
                 " * Specific to the adoption path",
                 "** Specific to giving birth"
@@ -434,7 +434,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": ["* Specific to the adoption path"]
             }
           ]

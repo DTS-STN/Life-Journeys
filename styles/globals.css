@@ -75,6 +75,10 @@ html {
     display: none !important;
   }
 
+  ul.bg-line {
+    background: url(../public/images/line3.png) no-repeat ; 
+  }
+
   /* Accordion CSS rules*/
   details.accordion {
     font-size: 20px;

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { Accordion2 } from "./Accordion2";
 import { useState, useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 /**
  *  Stages Component
@@ -60,9 +62,25 @@ export default function Stages(props) {
           </select>
         </div>
 
+        {/* Display the options as a "map" or the accordions once an option has been selected */}
+
         <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-left ">
           {showData === undefined ? (
-            <img src={stagesImg} alt="" />
+            <>
+              <ul className="text-xs bg-lineXX mt-2">
+                {props.journeys.map((journey, idx) => (
+                  <li key={idx} className="py-2 pl-2 ">
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="text-custom-blue-reportButton"
+                      />
+                    </span>
+                    <span className="pl-3">{journey.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
           ) : (
             <div className="mt-0 pt-1 w-full">
               {showData.map((subJourney, idx) => (
@@ -74,10 +92,17 @@ export default function Stages(props) {
                 >
                   {subJourney.content.map(({ title, list }, idx) => (
                     <div key={idx}>
-                      <h4 className="text-base -mx-4">{title}</h4>
+                      {title !== "hidden" ? (
+                        <h4 className="text-base -mx-4">{title}</h4>
+                      ) : (
+                        ""
+                      )}
+
                       <ul
                         className={`mb-4 ${
-                          title !== "" ? "list-disc text-sm" : "-mx-4 text-xs"
+                          title !== "hidden"
+                            ? "list-disc text-sm"
+                            : "-mx-4 text-xs"
                         } `}
                       >
                         {list.map((point, idx) => (

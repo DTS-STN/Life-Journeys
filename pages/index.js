@@ -77,22 +77,22 @@ export default function lifejourney({ journeysData }) {
             <Card
               title={t.card2Title}
               service={t.card2Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/benefits.png"
+              imgalt={t.card2Title}
               links={t.card2Links}
             />
             <Card
               title={t.card3Title}
               service={t.card3Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/mh.png"
+              imgalt={t.card3Title}
               links={t.card3Links}
             />
             <Card
               title={t.card4Title}
               service={t.card4Service}
-              image="/images/card-bg.png"
-              imgalt="image description TBC"
+              image="/images/newborn.png"
+              imgalt={t.card4Title}
               links={t.card4Links}
             />
           </div>

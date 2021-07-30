@@ -216,7 +216,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": ["* Propres au parcours de l’adoption"]
             }
           ]
@@ -330,7 +330,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": [
                 "* Propre au parcours de l’adoption",
                 "** Propre à la naissance"
@@ -438,7 +438,7 @@
               ]
             },
             {
-              "title": "",
+              "title": "hidden",
               "list": ["* Propre au parcours de l’adoption"]
             }
           ]
