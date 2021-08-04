@@ -26,10 +26,10 @@ export default function lifejourney({ journeysData }) {
       alert("Sorry, browser does not support geolocation!");
     }
 
-    console.log("current region saved = ", region.current);
-    console.log("region cookie = ", window.localStorage.getItem("region"));
-    if (region.current !== window.localStorage.getItem("region")) {
-      region.current = window.localStorage.getItem("region");
+    if (typeof window !== "undefined") {
+      if (region.current !== window.localStorage.getItem("region")) {
+        region.current = window.localStorage.getItem("region");
+      }
     }
 
     async function getGeo() {
