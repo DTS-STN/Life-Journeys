@@ -11,7 +11,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
+export function Header({ bannerText, breadcrumbItems }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
 
@@ -118,7 +118,7 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
         </div>
 
         {/* Display a banner when requested */}
-        {bannerTitle ? <Banner headline={bannerTitle} /> : ""}
+        {bannerText ? <Banner headline={bannerText} /> : ""}
       </header>
     </>
   );

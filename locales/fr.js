@@ -91,8 +91,7 @@ export default {
 
   //Banner text
 
-  havingAChildBannerTitle: "Avoir un enfant",
-  havingAChildBannerText: "Lorem ipsum dolor sit amet, consectetur",
+  havingAChildBannerText: "Avoir un enfant",
 
   // Find more information about
   findInformationAbout: "Rechercher des informations sur",
