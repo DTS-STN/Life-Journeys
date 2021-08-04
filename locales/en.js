@@ -29,7 +29,7 @@ export default {
   // Footer
   //
 
-  dateModified: "Date Modified:",
+  dateModified: "Date Modified: ",
   // Landscape Links
 
   contactLink: "https://www.canada.ca/en/contact.html",
