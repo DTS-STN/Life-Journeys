@@ -145,7 +145,7 @@ export default {
     },
   ],
 
-  card1QuebecTitle: "Parental Insurance",
+  card1QuebecTitle: "Parental leave",
   card1QuebecService: "Québec Parental Insurance Plan",
   card1QuebecLinks: [
     {
