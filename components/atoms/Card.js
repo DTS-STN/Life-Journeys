@@ -27,9 +27,9 @@ export default function Card(props) {
         {props.service}
       </p>
 
-      <ul className="flex items-center justify-center pb-4">
+      <ul className="flex items-center justify-right pb-4">
         {props.links.map((d, idx) => (
-          <li key={idx} className="w-auto text-blue-800 text-sm px-3">
+          <li key={idx} className="w-auto text-blue-800 text-sm px-4">
             <a aria-label={d.text + " " + props.service} href={d.url}>
               {d.text}
             </a>
