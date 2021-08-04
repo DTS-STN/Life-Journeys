@@ -168,7 +168,7 @@ export default {
   card3Links: [
     {
       text: "En savoir plus",
-      url: "https://www.canada.ca/fr/sante-publique.html",
+      url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
     },
   ],
 
