@@ -163,7 +163,10 @@ export default {
   card3Title: "Mental and physical health resources",
   card3Service: "Public Health Agency of Canada",
   card3Links: [
-    { text: "More info", url: "https://www.canada.ca/en/public-health.html" },
+    {
+      text: "More info",
+      url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
+    },
   ],
 
   card4Title: "Newborn care resources",

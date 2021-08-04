@@ -13,7 +13,7 @@
                 "Researching having a child",
                 "Deciding to start trying to conceive",
                 "Trying to conceive naturally",
-                "Researching Fertility options",
+                "Researching fertility options",
                 "Pregnancy confirmation"
               ]
             },
@@ -79,7 +79,7 @@
               ]
             },
             {
-              "title": "Common service providers",
+              "title": "Common service providers:",
               "list": [
                 "Health care providers",
                 "Family doctor",
@@ -123,7 +123,7 @@
                 "At home tests",
                 "Fitness studios",
                 "Prenatal classes",
-                "Hospital/Clinic",
+                "Hospital/clinic",
                 "Specialist doctors",
                 "Fetal medicine specialists"
               ]
@@ -147,7 +147,7 @@
                 "Health care providers",
                 "Family doctor",
                 "Birthing professional",
-                "Hospital/Clinic/Birthing centre",
+                "Hospital/clinic/birthing centre",
                 "Fetal medicine specialists",
                 "Specialist doctors"
               ]
@@ -269,7 +269,7 @@
                 "High risk doctors",
                 "Geneticist",
                 "Support groups",
-                "Hospital/Clinic"
+                "Hospital/clinic"
               ]
             }
           ]
@@ -322,7 +322,7 @@
                 "Specialist doctors",
                 "Family doctor",
                 "Birthing professional",
-                "Hospital/Clinic/Birthing centre**",
+                "Hospital/clinic/birthing centre**",
                 "Social worker*",
                 "Adoption practitioner*",
                 "Immigration, Refugees, and Citizenship Canada*",
@@ -348,7 +348,7 @@
             {
               "title": "Common service providers:",
               "list": [
-                "Hospital/Clinic/Birthing Centre",
+                "Hospital/clinic/birthing Centre",
                 "Provincial government"
               ]
             }
@@ -378,12 +378,12 @@
                 "Birthing professional",
                 "Hospital/clinic/birthing centre",
                 "Mental health practitioner",
-                "support groups",
+                "Support groups",
                 "Charities/Not-for-Profits",
                 "Geneticist",
                 "Fetal medicine specialist",
                 "Specialist doctors",
-                "Medical/Lab testing",
+                "Medical/lab testing",
                 "High risk doctors",
                 "Social worker",
                 "Health and wellness practitioners"
@@ -504,7 +504,7 @@
                 "Care providers",
                 "Birthing professional",
                 "Service Canada",
-                "Medical/Testing lab",
+                "Medical/testing lab",
                 "Charities/Not-for-Profits",
                 "Retailers"
               ]
@@ -514,7 +514,7 @@
       ]
     },
     {
-      "title": "Experience a loss",
+      "title": "Experiencing a loss",
       "titleId": "5",
       "subJourney": [
         {
@@ -543,7 +543,7 @@
                 "Health and wellness practitioners",
                 "Hospital/clinic/birthing centre",
                 "Mental health practitioner",
-                "support groups",
+                "Support groups",
                 "Charities/Not-for-Profits",
                 "Fetal medicine specialists",
                 "Geneticist",
