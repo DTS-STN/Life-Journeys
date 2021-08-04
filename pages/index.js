@@ -25,6 +25,13 @@ export default function lifejourney({ journeysData }) {
     } else {
       alert("Sorry, browser does not support geolocation!");
     }
+
+    console.log("current region saved = ", region.current);
+    console.log("region cookie = ", window.localStorage.getItem("region"));
+    if (region.current !== window.localStorage.getItem("region")) {
+      region.current = window.localStorage.getItem("region");
+    }
+
     async function getGeo() {
       const res = await fetch("https://ipapi.co/json/");
       const data = await res.json();
@@ -41,6 +48,7 @@ export default function lifejourney({ journeysData }) {
 
   function onChangeFunc(optionSelected) {
     region.current = optionSelected;
+    window.localStorage.setItem("region", optionSelected);
     forceUpdate();
   }
 
