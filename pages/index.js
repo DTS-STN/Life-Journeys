@@ -19,26 +19,6 @@ export default function lifejourney({ journeysData }) {
   const region = useRef("CAN");
   const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
 
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(successCall, error);
-    } else {
-      alert("Sorry, browser does not support geolocation!");
-    }
-    async function getGeo() {
-      const res = await fetch("https://ipapi.co/json/");
-      const data = await res.json();
-      region.current = data.region_code;
-      forceUpdate();
-    }
-    function successCall() {
-      getGeo();
-    }
-    function error(err) {
-      console.warn("ERROR(" + err.code + "): " + err.message);
-    }
-  }, []);
-
   function onChangeFunc(optionSelected) {
     region.current = optionSelected;
     forceUpdate();

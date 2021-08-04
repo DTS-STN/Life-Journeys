@@ -5,16 +5,17 @@ import PropTypes from "prop-types";
  * Displays the banner on the page
  */
 
-export const Banner = ({ siteTitle, headline }) => {
+export const Banner = ({ headline }) => {
   return (
-    <div title="Life Journeys Banner" className="bg-cover bg-banner-img py-8">
-      <div className="lg:container xxs:mx-0 xxs:px-0 lg:mx-auto lg:px-6 xxl:mx-auto">
-        <div className="xxs:w-screen lg:w-2/3 xl:w-1/2 bg-dk-blue bg-opacity-90 text-white p-4">
-          <h1 className="text-h1-xl font-medium pt-4 pb-2 break-words">
-            {siteTitle}
-          </h1>
-          <hr className="border-2 border-hr-red-bar bg-hr-red-bar bg-opacity-90 border-opacity-90 w-3/4" />
-          <p className="text-base font-normal py-4 break-words">{headline}</p>
+    <div className="bg-banner-green">
+      <div
+        title="Life Journeys Banner"
+        className="bg-cover bg-no-repeat xxs:bg-center bg-right h-full md:bg-banner-img md:py-10 xxs:bg-banner-img-mobile"
+      >
+        <div className="lg:container lg:px-8 xxl:mx-auto xxs:pl-4 lg:py-10 xxs:pt-8">
+          <p className="md:text-h1l text-h1 font-bold font-display py-20 md:py-8 break-words xxs:pb-4">
+            {headline}
+          </p>
         </div>
       </div>
     </div>
@@ -22,11 +23,6 @@ export const Banner = ({ siteTitle, headline }) => {
 };
 
 Banner.propTypes = {
-  /**
-   * Text area that displays the title for the page
-   */
-  siteTitle: PropTypes.string.isRequired,
-
   /**
    * text area for headline in the banner
    */

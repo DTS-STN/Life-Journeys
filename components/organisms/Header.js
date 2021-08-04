@@ -118,11 +118,7 @@ export function Header({ bannerTitle, bannerText, breadcrumbItems }) {
         </div>
 
         {/* Display a banner when requested */}
-        {bannerTitle ? (
-          <Banner siteTitle={bannerTitle} headline={bannerText} />
-        ) : (
-          ""
-        )}
+        {bannerTitle ? <Banner headline={bannerTitle} /> : ""}
       </header>
     </>
   );
