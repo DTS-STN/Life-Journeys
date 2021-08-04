@@ -131,7 +131,7 @@ export default {
   row3subtext: "Ce que vous devez savoir",
 
   //Cards
-  card1Title: "Congé de maternité et congé parental",
+  card1Title: "Congé parental",
   card1Service: "Assurance-emploi",
   card1Links: [
     {
@@ -167,7 +167,7 @@ export default {
   card3Links: [
     {
       text: "En savoir plus",
-      url: "https://www.canada.ca/fr/sante-publique.html",
+      url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
     },
   ],
 
