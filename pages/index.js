@@ -21,7 +21,6 @@ export default function lifejourney({ journeysData }) {
 
   function onChangeFunc(optionSelected) {
     region.current = optionSelected;
-    window.localStorage.setItem("region", optionSelected);
     forceUpdate();
   }
 
