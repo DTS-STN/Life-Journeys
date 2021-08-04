@@ -10,10 +10,10 @@ export const Banner = ({ headline }) => {
     <div className="bg-banner-green">
       <div
         title="Life Journeys Banner"
-        className="bg-cover bg-no-repeat xxs:bg-center bg-right h-full md:bg-banner-img md:py-10 xxs:bg-banner-img-mobile"
+        className="bg-cover bg-no-repeat xxs:bg-center bg-right h-full lg:bg-banner-img md:pt-16 lg:pt-4 lg:py-7 xxs:bg-banner-img-mobile"
       >
-        <div className="lg:container lg:px-8 xxl:mx-auto xxs:pl-4 lg:py-10 xxs:pt-8">
-          <h1 className="md:text-h1l text-h1 font-bold font-display py-20 md:py-8 break-words xxs:pb-4">
+        <div className="lg:container xxl:px-8 lg:px-4 xxl:mx-auto xxs:pl-4 lg:py-14 xxs:pt-8">
+          <h1 className="lg:text-h1l text-h1 font-bold font-display py-20 lg:py-9 break-words xxs:pb-4">
             {headline}
           </h1>
         </div>
