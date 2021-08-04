@@ -1,16 +1,7 @@
 export default [
   {
     value: "CAN",
-    sites: [
-      {
-        label: "Learn more about newborn health",
-        link: "https://www.canada.ca/en/health-canada/services/infant-care.html",
-      },
-      {
-        label: "Find out about EI maternity and parental benefits",
-        link: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
-      },
-    ],
+    sites: [],
   },
   {
     value: "AB",

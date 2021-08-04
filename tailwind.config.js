@@ -55,7 +55,8 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         // "splash-img": "url('../public/images/bg-banner.jpg')",
-        "banner-img": "url('../public/images/bg-banner.png')",
+        "banner-img": "url('../public/images/having-a-child.png')",
+        "banner-img-mobile": "url('../public/images/mobileBanner.png')",
         "footer-parliament-image": "url(../public/images/landscape.png)",
         // "lightbulb-right-img": "url('../public/images/lightbulb_right.jpg')",
       }),
@@ -109,6 +110,8 @@ module.exports = {
         "splash-page-bottom": "#e1e4e7",
         //
         "visited-link": "#7834bc",
+        //
+        "banner-green": "#cae9de",
       },
       width: {
         "40px": "40px",

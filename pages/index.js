@@ -28,7 +28,6 @@ export default function lifejourney({ journeysData }) {
     <>
       <Layout
         title={t.havingABabyTitle}
-        bannerTitle={t.havingAChildBannerTitle}
         bannerText={t.havingAChildBannerText}
         locale={language}
       >
