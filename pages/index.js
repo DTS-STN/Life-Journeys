@@ -45,7 +45,7 @@ export default function lifejourney({ journeysData }) {
           />
 
           {/* Top cards */}
-          <div className="container flex flex-col sm:flex-wrap sm:flex-row justify-center mt-4">
+          <div className="container flex flex-row flex-wrap xl:w-10/12 xxl:w-full justify-evenly mt-4">
             <Card
               title={
                 region.current !== "QC" ? t.card1Title : t.card1QuebecTitle
