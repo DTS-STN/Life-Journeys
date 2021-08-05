@@ -16,7 +16,7 @@ export default function ResourceLink(props) {
     .replace(/\s/g, "+");
 
   return props.isProvincialLink ? (
-    <div className="flex flex-wrap">
+    <div className="sm:block flex flex-wrap">
       {filteredLinks.sites.map(({ label, link }) => (
         <div key={link} className={props.className}>
           <a

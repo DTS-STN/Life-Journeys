@@ -14,6 +14,7 @@ export function MultiTextField(props) {
       >
         {props.label}
       </label>
+      <p className="pb-4 pt-2 text-xs sm:text-sm">{props.disclaimer}</p>
       <textarea
         className="text-input font-body w-full min-h-40px rounded shadow-sm text-form-input-gray border border-form-input-border-gray py-6px px-12px"
         id={props.id}
@@ -90,4 +91,8 @@ MultiTextField.propTypes = {
    * call back for when the value of the multi text field changes
    */
   onChange: PropTypes.func,
+  /**
+   * Disclaimer text to go above the text field
+   */
+  disclaimer: PropTypes.string,
 };
