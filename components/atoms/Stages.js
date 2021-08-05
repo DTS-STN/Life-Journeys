@@ -19,11 +19,15 @@ export default function Stages(props) {
   function onChangeHandler(option) {
     selected.current = option.currentTarget.value;
 
-    props.journeys.map((journey) =>
-      journey.titleId === option.currentTarget.value
-        ? setShowData(journey.subJourney)
-        : null
-    );
+    if (option.currentTarget.value == 0) {
+      setShowData(undefined);
+    } else {
+      props.journeys.map((journey) =>
+        journey.titleId === option.currentTarget.value
+          ? setShowData(journey.subJourney)
+          : null
+      );
+    }
   }
 
   //
@@ -51,7 +55,7 @@ export default function Stages(props) {
             id="stage"
             onChange={onChangeHandler}
           >
-            <option key="0" value="0" defaultValue>
+            <option key="0" value={0} defaultValue>
               {props.selectPlaceholder}
             </option>
             {props.journeys.map((journey, idx) => (
