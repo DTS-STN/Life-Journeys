@@ -40,21 +40,28 @@ export default function ReportProblem() {
 
   return (
     <Details text={t.reportAProblemButtonString}>
+      <div role="status">
+        {submitted ? (
+          <>
+            <h2 className="text-base font-body mb-4">
+              {t.reportAProblemThankYouForYourHelp}
+            </h2>
+            <p className="text-sm font-body mb-4">
+              {t.reportAProblemYouWillNotBeContacted}
+            </p>
+            <a
+              className="underline text-sm font-body hover:text-custom-blue-link focus:text-custom-blue-link text-canada-footer-font"
+              href="mailto:experience@servicecanada.gc.ca"
+            >
+              experience@servicecanada.gc.ca
+            </a>
+          </>
+        ) : (
+          ""
+        )}
+      </div>
       {submitted ? (
-        <>
-          <h2 className="text-base font-body mb-4">
-            {t.reportAProblemThankYouForYourHelp}
-          </h2>
-          <p className="text-sm font-body mb-4">
-            {t.reportAProblemYouWillNotBeContacted}
-          </p>
-          <a
-            className="underline text-sm font-body hover:text-custom-blue-link focus:text-custom-blue-link text-canada-footer-font"
-            href="mailto:experience@servicecanada.gc.ca"
-          >
-            experience@servicecanada.gc.ca
-          </a>
-        </>
+        ""
       ) : (
         <>
           <h2 className="sm:text-h3-tall text-h5 font-display">
@@ -65,7 +72,7 @@ export default function ReportProblem() {
               <b>{t.reportAProblemNoReply}</b>
               {t.reportAProblemEnquiries}
               <a
-                className="block text-xs sm:text-sm font-body hover:underline hover:text-custom-blue-link focus:text-custom-blue-link focus:underline text-canada-footer-font"
+                className="block text-xs sm:text-sm font-body underline hover:text-custom-blue-link focus:text-custom-blue-link focus:underline text-canada-footer-font"
                 href="mailto:experience@servicecanada.gc.ca"
               >
                 experience@servicecanada.gc.ca

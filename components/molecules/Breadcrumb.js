@@ -8,7 +8,7 @@ export function Breadcrumb(props) {
   return (
     <nav aria-label="breadcrumbs">
       <ul className="block text-custom-blue-dark text-sm font-body">
-        <li className="inline-block min-w-0 max-w-full truncate">
+        <li className="inline-block min-w-0 max-w-full">
           <Link href="https://www.canada.ca/">
             <a className="hover:text-custom-blue-link visited:text-purple-700 underline">
               Canada.ca
