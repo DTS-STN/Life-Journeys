@@ -107,7 +107,7 @@ export default function lifejourney({ journeysData }) {
 
           {/* Connect to Local Resources */}
 
-          <div className="container flex flex-col w-full md:w-32 md:flex-row mt-4">
+          <div className="container flex flex-col w-full md:w-1/2 md:flex-row mt-4">
             <div>
               <h3 className="text-h4 mb-4 font-bold font-display">
                 {t.getConnected}

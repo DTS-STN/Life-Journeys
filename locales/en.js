@@ -189,6 +189,7 @@ export default {
     "We often lean on those closest to us for advice. Find and build your support close to where you live.",
 
   //Report a problem
+  reportAProblemTitle: "Report a problem or mistake on this page",
   reportAProblemButtonString: "Report a problem on this page",
   reportAProblemCheckAllThatApply: "Please select all that apply:",
   reportAProblemIncorrectInformation: "Incorrect Information",
@@ -203,21 +204,17 @@ export default {
   reportAProblemOther: "Other",
   reportAProblemProvideMoreDetails: "Provide more details (optional)",
   reportAProblemNoReply: "You will not receive a reply. ",
-  reportAProblemEnquiries: "For enquiries, please contact",
-  reportAProblemNoPersonalInfo: "Do not include any personal information",
-  reportAProblemNoPersonalInfoDetails:
-    "such as your name, social insurance number (SIN), home or business address or any case or file numbers",
-  reportAProblemMoreInfo: "For more information about this tool",
-  reportAProblemMoreInfoDetails: "please refer to our",
-  reportAProblemMoreInfoLink:
-    "https://www.canada.ca/en/transparency/terms.html",
-  reportAProblemMoreInfoLinkText: "terms and conditions",
+  reportAProblemEnquiries: "For enquiries, please contact ",
+  reportAProblemConfidential: "Your feedback will be condifential",
+  reportAProblemNoPersonalInfo:
+    "Do not include any personal, medical, or financial details, such as your name, social insurance number (SIN), home or business address, phone number or any case or file numbers.",
   reportAProblemThankYouForYourHelp: "Thank you for your help!",
   reportAProblemYouWillNotBeContacted:
-    "You will not receive a reply. For enquiries, please contact us at",
+    "You will not receive a reply. For enquiries, please contact us at ",
   reportAProblemPrivacyStatement: "Privacy statement",
   reportAProblemPrivacyStatementLink:
     "https://www.canada.ca/en/transparency/privacy.html",
+  reportAProblemSubmit: "Submit",
 
   //Landing Page Title Section
   landingPageTitle: "Get Information About a Life Journey",
