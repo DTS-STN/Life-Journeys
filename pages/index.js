@@ -54,9 +54,7 @@ export default function lifejourney({ journeysData }) {
                 region.current !== "QC" ? t.card1Service : t.card1QuebecService
               }
               image="/images/card-bg.png"
-              imgalt={
-                region.current !== "QC" ? t.card1Title : t.card1QuebecTitle
-              }
+              imgalt=""
               links={
                 region.current !== "QC" ? t.card1Links : t.card1QuebecLinks
               }
@@ -66,7 +64,7 @@ export default function lifejourney({ journeysData }) {
               title={t.card2Title}
               service={t.card2Service}
               image="/images/benefits.png"
-              imgalt={t.card2Title}
+              imgalt=""
               links={t.card2Links}
               region={region.current}
             />
@@ -74,7 +72,7 @@ export default function lifejourney({ journeysData }) {
               title={t.card3Title}
               service={t.card3Service}
               image="/images/mh.png"
-              imgalt={t.card3Title}
+              imgalt=""
               links={t.card3Links}
               region={region.current}
             />
@@ -82,7 +80,7 @@ export default function lifejourney({ journeysData }) {
               title={t.card4Title}
               service={t.card4Service}
               image="/images/newborn.png"
-              imgalt={t.card4Title}
+              imgalt=""
               links={t.card4Links}
               region={region.current}
             />

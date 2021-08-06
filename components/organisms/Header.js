@@ -86,6 +86,7 @@ export function Header({ bannerText, breadcrumbItems }) {
               <a
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
+                lang={language === "en" ? "fr" : "en"}
               >
                 {language === "en" ? "FR" : "EN"}
               </a>
@@ -104,6 +105,7 @@ export function Header({ bannerText, breadcrumbItems }) {
                 className="lg:visible invisible pb-0 lg:pb-2 self-end underline font-body text-canada-footer-font hover:text-canada-footer-hover-font-blue "
                 data-cy="toggle-language-link"
                 onClick={() => setLanguage(language)}
+                lang={language === "en" ? "fr" : "en"}
               >
                 {language === "en" ? "Français" : "English"}
               </a>

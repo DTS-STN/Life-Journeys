@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PropTypes from "prop-types";
 
 /**
@@ -9,13 +8,13 @@ export default function Card(props) {
   return (
     <div className="text-black text-left card rounded-tl-md rounded-b-md border my-6 mx-4">
       <div>
-        <Image
+        <img
           src={props.image}
           alt={props.imgalt}
           width={252}
           height={101}
           layout="intrinsic"
-        ></Image>
+        />
       </div>
 
       <h2 className="text-h3-tall pt-2 pl-2" style={{ height: 80 + "px" }}>
@@ -33,6 +32,7 @@ export default function Card(props) {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              className="underline"
               aria-label={d.text + " " + props.service}
               href={d.url}
             >
