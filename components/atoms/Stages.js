@@ -55,7 +55,7 @@ export default function Stages(props) {
             id="stage"
             onChange={onChangeHandler}
           >
-            <option key="0" value={0} defaultValue>
+            <option key="0" value={0} defaultValue disabled selected>
               {props.selectPlaceholder}
             </option>
             {props.journeys.map((journey, idx) => (
