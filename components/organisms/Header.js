@@ -29,8 +29,10 @@ export function Header({ bannerText, breadcrumbItems }) {
       const lang = window.localStorage.getItem("lang");
 
       // if cookie language is different this will sync both
-      if (lang !== language) {
-        changeLanguage(lang);
+      if (lang === "en" || lang === "fr") {
+        if (lang !== language) {
+          changeLanguage(lang);
+        }
       }
 
       if (lang) {
