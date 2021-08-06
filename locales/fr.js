@@ -113,7 +113,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "Trouvez des ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
+    "Ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
   topRequestedLabel: "Afficher les principales demandes pour :",
 
   //Table
@@ -132,12 +132,13 @@ export default {
 
   //Cards
   card1Title: "Congé parental",
-  card1Service: "Assurance-emploi",
+  card1Service: "De : Assurance-emploi",
   card1Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
-      ariaLabel: "",
+      ariaLabel:
+        "apprenez comment présenter une demande de congé de maternité et de congé parental sur le site web de service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
     },
     {
       text: "Présenter une demande",
@@ -147,42 +148,46 @@ export default {
   ],
 
   card1QuebecTitle: "L'assurance parentale",
-  card1QuebecService: "Régime québécois d'assurance parentale",
+  card1QuebecService: "De : Régime québécois d'assurance parentale",
   card1QuebecLinks: [
     {
       text: "Présenter une demande",
       url: "https://www.rqap.gouv.qc.ca/fr/services-en-ligne/faire-ma-demande-de-prestations",
-      ariaLabel: "",
+      ariaLabel:
+        "apprenez comment présenter une demande de congé parental sur le site web de l'assurance parentale. Ce lein va ouvrir le site Web de l'assurance parentale dans un nouvel fenêtre",
     },
   ],
 
   card2Title: "Chercheur de prestations",
-  card2Service: "Service Canada",
+  card2Service: "De : Service Canada",
   card2Links: [
     {
       text: "Trouver des prestations",
       url: "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
-      ariaLabel: "",
+      ariaLabel:
+        "Cherchez les prestations sur le site web de Service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
     },
   ],
 
   card3Title: "Ressources en santé mentale et physique",
-  card3Service: "Agence de la santé publique du Canada",
+  card3Service: "De : Agence de la santé publique du Canada",
   card3Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Consultez la ressource sur la santé mentale et physique sur le site de l'agence de santé publique du Canada. Ce lein va ouvrir le site Web de l’Agence de la santé publique du Canada dans un nouvel fenêtre.",
     },
   ],
 
   card4Title: "Ressources en matière de soins aux nouveau-nés",
-  card4Service: "Santé Canada",
+  card4Service: "De : Santé Canada",
   card4Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Consultez la ressource sur les soins aux nouveau-nés sur le site Web de Santé Canada. Ce lein va ouvrir le site Web de Santé Canada dans un nouvel fenêtre",
     },
   ],
 

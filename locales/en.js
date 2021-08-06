@@ -114,7 +114,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "Find resources to help you make the right decisions along this journey ",
+    "Resources to help you make the right decisions along this journey ",
   topRequestedLabel: "Showing top requests for:",
 
   //Table
@@ -132,12 +132,13 @@ export default {
 
   //Cards
   card1Title: "Maternity and Parental leave",
-  card1Service: "Employment Insurance",
+  card1Service: "From: Employment Insurance",
   card1Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Learn how to apply for maternity and parental leave on the service canada website. This link will open the Service Canada website in a new window",
     },
     {
       text: "Apply now",
@@ -147,42 +148,46 @@ export default {
   ],
 
   card1QuebecTitle: "Parental leave",
-  card1QuebecService: "Québec Parental Insurance Plan",
+  card1QuebecService: "From: Québec Parental Insurance Plan",
   card1QuebecLinks: [
     {
       text: "Apply now",
       url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
-      ariaLabel: "",
+      ariaLabel:
+        "Learn how to apply for parental leave on the Québec Parental Insurance Plan website. This link will open the Québec Parental Insurance Plan website in a new window",
     },
   ],
 
   card2Title: "Benefits finder",
-  card2Service: "Service Canada",
+  card2Service: "From: Service Canada",
   card2Links: [
     {
       text: "Find benefits",
       url: "https://benefitsfinder.services.gc.ca/hm",
-      ariaLabel: "",
+      ariaLabel:
+        "Search for benefits on the Service canada website. This link will open the Service Canada website in a new window",
     },
   ],
 
   card3Title: "Mental and physical health resources",
-  card3Service: "Public Health Agency of Canada",
+  card3Service: "From: Public Health Agency of Canada",
   card3Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Go to the mental and physical health resource on the public health agency of canada website. This link will open the Public Health Agency of Canada’s website in a new window",
     },
   ],
 
   card4Title: "Newborn care resources",
-  card4Service: "Health Canada",
+  card4Service: "From: Health Canada",
   card4Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Go to the resource on newborn care on the health canada website. This link will open Health Canada’s website in a new window",
     },
   ],
 
