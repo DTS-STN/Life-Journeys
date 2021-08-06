@@ -194,6 +194,7 @@ export default {
     "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre réseau de soutien près de chez vous.",
 
   //Report a problem
+  reportAProblemTitle: "Signaler un problème ou une erreur sur cette page",
   reportAProblemButtonString: "Signaler un problème sur cette page",
   reportAProblemCheckAllThatApply:
     "Veuillez sélectionner tous les éléments qui s'appliquent:",
@@ -211,19 +212,16 @@ export default {
   reportAProblemNoReply: "Vous ne recevrez pas de réponse. ",
   reportAProblemEnquiries:
     "Pour toute demande de renseignements, veuillez contacter",
-  reportAProblemNoPersonalInfo: "N'incluez pas d'informations personnelles",
-  reportAProblemNoPersonalInfoDetails:
-    "tels que votre nom, votre numéro d'assurance sociale (NAS), votre adresse personnelle ou professionnelle ou tout numéro de dossier ou d'affaire",
-  reportAProblemMoreInfo: "Pour plus d'informations sur cet outil",
-  reportAProblemMoreInfoDetails: "veuillez vous référer à nos",
-  reportAProblemMoreInfoLink: "https://www.canada.ca/fr/transparence/avis.html",
-  reportAProblemMoreInfoLinkText: "termes et conditions",
+  reportAProblemConfidential: "Vos commentaires sont confidentiels",
+  reportAProblemNoPersonalInfo:
+    "Ne pas inclure de renseignements personnels, médicaux ou financiers, comme par exemple, un numéro d'assurance sociale (NAS), une adresse de domicile ou de lieu de travail, un numéro de téléphone ou numéro de dossier.",
   reportAProblemThankYouForYourHelp: "Merci pour votre aide!",
   reportAProblemYouWillNotBeContacted:
     "Vous ne recevrez pas de réponse. Pour toute demande de renseignements, veuillez nous contacter à",
   reportAProblemPrivacyStatement: "Déclaration de confidentialité",
   reportAProblemPrivacyStatementLink:
     "https://www.canada.ca/fr/transparence/confidentialite.html",
+  reportAProblemSubmit: "Soumettre",
 
   //Landing Page Title Section
   landingPageTitle: "Obtenir Des Informations Sur Un Parcours De Vie",
