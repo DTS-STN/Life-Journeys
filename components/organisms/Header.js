@@ -29,8 +29,10 @@ export function Header({ bannerText, breadcrumbItems }) {
       const lang = window.localStorage.getItem("lang");
 
       // if cookie language is different this will sync both
-      if (lang !== language) {
-        changeLanguage(lang);
+      if (lang === "en" || lang === "fr") {
+        if (lang !== language) {
+          changeLanguage(lang);
+        }
       }
 
       if (lang) {
@@ -41,7 +43,7 @@ export function Header({ bannerText, breadcrumbItems }) {
 
   return (
     <>
-      <nav className="hidden" aria-label="skip-main">
+      <nav className="hidden" aria-label={t.skipToMainContent}>
         <a
           id="skipToMainContent"
           className="bg-custom-blue-dark text-white py-1 px-2 hover:bg-gray-dark"
