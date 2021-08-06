@@ -33,6 +33,7 @@ export default function Card(props) {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              className="underline"
               aria-label={d.text + " " + props.service}
               href={d.url}
             >
