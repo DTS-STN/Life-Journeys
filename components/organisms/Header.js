@@ -43,7 +43,7 @@ export function Header({ bannerText, breadcrumbItems }) {
 
   return (
     <>
-      <nav className="hidden" aria-label="skip-main">
+      <nav className="hidden" aria-label={t.skipToMainContent}>
         <a
           id="skipToMainContent"
           className="bg-custom-blue-dark text-white py-1 px-2 hover:bg-gray-dark"
