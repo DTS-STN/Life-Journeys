@@ -2,6 +2,7 @@ import propTypes from "prop-types";
 import { Meta } from "./atoms/Meta";
 import { Header } from "./organisms/Header";
 import { Footer } from "./organisms/Footer";
+import Banner from "./atoms/Banner";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; /* eslint-disable import/first */
@@ -9,8 +10,6 @@ config.autoAddCss = false; /* eslint-disable import/first */
 export default function Layout({
   children,
   title,
-  locale,
-  bannerTitle,
   bannerText,
   breadcrumbItems,
 }) {
@@ -19,13 +18,11 @@ export default function Layout({
       <Meta title={title} />
 
       <div className="overflow-x-hidden">
-        <Header
-          bannerTitle={bannerTitle}
-          bannerText={bannerText}
-          breadcrumbItems={breadcrumbItems}
-        />
+        <Header breadcrumbItems={breadcrumbItems} />
 
         <main>
+          {/* Display a banner when requested */}
+          {bannerText ? <Banner headline={bannerText} /> : ""}
           <div>{children}</div>
         </main>
 
