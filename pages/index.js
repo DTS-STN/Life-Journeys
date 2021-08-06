@@ -123,7 +123,6 @@ export default function lifejourney({ journeysData }) {
                 id="parentingNetworks"
               />
               <ResourceLink
-                language={language}
                 region={region.current}
                 isProvincialLink={true}
               ></ResourceLink>
