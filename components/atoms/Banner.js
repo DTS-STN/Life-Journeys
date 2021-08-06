@@ -13,7 +13,10 @@ export const Banner = ({ headline }) => {
         className="bg-cover bg-no-repeat xxs:bg-center bg-right h-full lg:bg-banner-img md:pt-16 lg:pt-4 lg:py-7 xxs:bg-banner-img-mobile"
       >
         <div className="lg:container xxl:px-8 lg:px-4 xxl:mx-auto xxs:pl-4 lg:py-14 xxs:pt-8">
-          <h1 className="lg:text-h1l text-h1 font-bold font-display py-20 lg:py-9 break-words xxs:pb-4">
+          <h1
+            id="wb-cont"
+            className="lg:text-h1l text-h1 font-bold font-display py-20 lg:py-9 break-words xxs:pb-4"
+          >
             {headline}
           </h1>
         </div>
