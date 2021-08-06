@@ -46,8 +46,26 @@ export default function Stages(props) {
     <div className="p-4">
       <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-left">
         <div>
+          <h4>{props.stagesSubtitle}</h4>
+
+          <ul className="text-xs mt-2 mb-6">
+            {props.journeys.map((journey, idx) => (
+              <li key={idx} className="py-2 pl-2 ">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="text-custom-blue-reportButton"
+                  />
+                </span>
+                <span className="pl-3">{journey.title}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h4>{props.stagesSelectTitle}</h4>
+
           <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
-            {props.labelText}
+            {props.stagesSelectLabel}
           </label>
 
           <select
@@ -55,8 +73,8 @@ export default function Stages(props) {
             id="stage"
             onChange={onChangeHandler}
           >
-            <option key="0" value={0} defaultValue disabled selected>
-              {props.selectPlaceholder}
+            <option key="0" value={0} defaultValue disabled>
+              {props.stagesSelectPlaceholder}
             </option>
             {props.journeys.map((journey, idx) => (
               <option key={idx} value={journey.titleId}>
@@ -70,21 +88,7 @@ export default function Stages(props) {
 
         <div className="w-full flex flex-col sm:flex-wrap sm:flex-row justify-left ">
           {showData === undefined ? (
-            <>
-              <ul className="text-xs bg-lineXX mt-2">
-                {props.journeys.map((journey, idx) => (
-                  <li key={idx} className="py-2 pl-2 ">
-                    <span>
-                      <FontAwesomeIcon
-                        icon={faCircle}
-                        className="text-custom-blue-reportButton"
-                      />
-                    </span>
-                    <span className="pl-3">{journey.title}</span>
-                  </li>
-                ))}
-              </ul>
-            </>
+            <>&nbsp;</>
           ) : (
             <div className="mt-0 pt-1 w-full">
               {showData.map((subJourney, idx) => (
@@ -130,11 +134,19 @@ Stages.propTypes = {
    */
   journeys: PropTypes.array.isRequired,
   /**
-   * select label
+   * Title above the list of options available to select on the journeys
    */
-  labelText: PropTypes.string.isRequired,
+  stagesSubtitle: PropTypes.string.isRequired,
+  /**
+   * Title above the Select that "describes" the section
+   */
+  stagesSelectTitle: PropTypes.string.isRequired,
   /**
    * select label
    */
-  selectPlaceholder: PropTypes.string.isRequired,
+  stagesSelectLabel: PropTypes.string.isRequired,
+  /**
+   * select label
+   */
+  stagesSelectPlaceholder: PropTypes.string.isRequired,
 };
