@@ -137,10 +137,12 @@ export default {
     {
       text: "More info",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
+      ariaLabel: "",
     },
     {
       text: "Apply now",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
+      ariaLabel: "",
     },
   ],
 
@@ -150,13 +152,18 @@ export default {
     {
       text: "Apply now",
       url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
+      ariaLabel: "",
     },
   ],
 
   card2Title: "Benefits finder",
   card2Service: "Service Canada",
   card2Links: [
-    { text: "Find benefits", url: "https://benefitsfinder.services.gc.ca/hm" },
+    {
+      text: "Find benefits",
+      url: "https://benefitsfinder.services.gc.ca/hm",
+      ariaLabel: "",
+    },
   ],
 
   card3Title: "Mental and physical health resources",
@@ -165,6 +172,7 @@ export default {
     {
       text: "More info",
       url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
+      ariaLabel: "",
     },
   ],
 
@@ -174,6 +182,7 @@ export default {
     {
       text: "More info",
       url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
+      ariaLabel: "",
     },
   ],
 

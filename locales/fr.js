@@ -137,10 +137,12 @@ export default {
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
+      ariaLabel: "",
     },
     {
       text: "Présenter une demande",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales/demande.html",
+      ariaLabel: "",
     },
   ],
 
@@ -150,6 +152,7 @@ export default {
     {
       text: "Présenter une demande",
       url: "https://www.rqap.gouv.qc.ca/fr/services-en-ligne/faire-ma-demande-de-prestations",
+      ariaLabel: "",
     },
   ],
 
@@ -159,6 +162,7 @@ export default {
     {
       text: "Trouver des prestations",
       url: "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+      ariaLabel: "",
     },
   ],
 
@@ -168,6 +172,7 @@ export default {
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
+      ariaLabel: "",
     },
   ],
 
@@ -177,6 +182,7 @@ export default {
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
+      ariaLabel: "",
     },
   ],
 

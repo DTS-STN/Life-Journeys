@@ -33,7 +33,7 @@ export default function Card(props) {
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
-              aria-label={d.text + " " + props.service}
+              aria-label={d.ariaLabel}
               href={d.url}
             >
               {d.text}
@@ -63,7 +63,7 @@ Card.propTypes = {
    */
   imgalt: PropTypes.string.isRequired,
   /**
-   * array of links in the follwoing format [{"text": "click text", "url":"the url to visit"}]
+   * array of links in the follwoing format [{"text": "click text", "url":"the url to visit"}, "ariaLabel":provides a description of the link for a11y  ]
    */
   links: PropTypes.array,
   /**
