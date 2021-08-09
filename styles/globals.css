@@ -317,3 +317,11 @@ html {
   white-space: nowrap; 
   width: 1px;
 }
+
+.skip-main{
+  @apply absolute w-px h-px -left-96
+}
+
+.skip-main:focus-within{
+  @apply absolute w-screen h-auto top-16 left-0 z-50 flex justify-center
+}

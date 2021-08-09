@@ -14,8 +14,9 @@ export const Banner = ({ headline }) => {
       >
         <div className="lg:container xxl:px-8 lg:px-4 xxl:mx-auto xxs:pl-4 lg:py-14 xxs:pt-8">
           <h1
-            id="wb-cont"
             className="lg:text-h1l text-h1 font-bold font-display py-20 lg:py-9 break-words xxs:pb-4"
+            id="wb-cont"
+            tabIndex="-1"
           >
             {headline}
           </h1>

@@ -31,13 +31,8 @@ export default function lifejourney({ journeysData }) {
         bannerText={t.havingAChildBannerText}
         locale={language}
       >
-        {/*  id="wb-cont"  the id should go in the H1 adding it here for now because Kris is updating the header */}
-
-        <section
-          id="wb-cont"
-          id="pageMainTitle"
-          className="layout-container mb-2 mt-4"
-        >
+        <section className="layout-container mb-2 mt-4">
+          <p className="mx-3 pt-2 pb-6">{t.findGuidance}</p>
           <Select
             options={language === "en" ? optionsEN : optionsFR}
             onChange={onChangeFunc}
