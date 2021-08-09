@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import sitesEN from "../../pages/api/provincialSitesEN";
 import sitesFR from "../../pages/api/provincialSitesFR";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 /**
  *  This component creates a link to a provincial website based on the user's region OR a google search query with the provided text
@@ -16,7 +16,7 @@ export default function ResourceLink(props) {
     .replace(/\s/g, "+");
 
   return props.isProvincialLink ? (
-    <div className="flex flex-wrap">
+    <div className="sm:block flex flex-wrap">
       {filteredLinks.sites.map(({ label, link }) => (
         <div key={link} className={props.className}>
           <a
@@ -27,9 +27,10 @@ export default function ResourceLink(props) {
             rel="noopener noreferrer"
           >
             {label}
+            <span className="sr-only">{props.srOnly}</span>
           </a>
           <span className="pl-1">
-            <FontAwesomeIcon icon={faArrowRight} size="sm" />
+            <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
           </span>
         </div>
       ))}
@@ -45,9 +46,10 @@ export default function ResourceLink(props) {
           href={googleSearch}
         >
           {props.text}
+          <span className="sr-only">{props.srOnly}</span>
         </a>
         <span className="pl-1">
-          <FontAwesomeIcon icon={faArrowRight} size="sm" />
+          <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
         </span>
       </div>
     </div>
@@ -85,4 +87,8 @@ ResourceLink.propTypes = {
    * CSS overrides for the element
    */
   className: PropTypes.string,
+  /**
+   * Screen Reader Text
+   */
+  srOnly: PropTypes.string,
 };

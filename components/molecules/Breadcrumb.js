@@ -1,15 +1,23 @@
 import propTypes from "prop-types";
 import Link from "next/link";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
 /**
  *  Breadcrumb component
  */
 export function Breadcrumb(props) {
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+
   return (
     <nav aria-label="breadcrumbs">
       <ul className="block text-custom-blue-dark text-sm font-body">
-        <li className="inline-block min-w-0 max-w-full truncate">
-          <Link href="https://www.canada.ca/">
+        <li className="inline-block min-w-0 max-w-full">
+          <Link href={t.gocLink}>
             <a className="hover:text-custom-blue-link visited:text-purple-700 underline">
               Canada.ca
             </a>

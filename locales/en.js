@@ -114,7 +114,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "Find resources to help you make the right decisions along this journey ",
+    "Resources to help you make the right decisions along this journey ",
   topRequestedLabel: "Showing top requests for:",
 
   //Table
@@ -132,63 +132,84 @@ export default {
 
   //Cards
   card1Title: "Maternity and Parental leave",
-  card1Service: "Employment Insurance",
+  card1Service: "From: Employment Insurance",
   card1Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
+      ariaLabel:
+        "Learn how to apply for maternity and parental leave on the service Canada website. This link will open the Service Canada website in a new window.",
     },
     {
       text: "Apply now",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
+      ariaLabel:
+        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
     },
   ],
 
   card1QuebecTitle: "Parental leave",
-  card1QuebecService: "Québec Parental Insurance Plan",
+  card1QuebecService: "From: Québec Parental Insurance Plan",
   card1QuebecLinks: [
     {
       text: "Apply now",
       url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
+      ariaLabel:
+        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
     },
   ],
 
   card2Title: "Benefits finder",
-  card2Service: "Service Canada",
+  card2Service: "From: Service Canada",
   card2Links: [
-    { text: "Find benefits", url: "https://benefitsfinder.services.gc.ca/hm" },
+    {
+      text: "Find benefits",
+      url: "https://benefitsfinder.services.gc.ca/hm",
+      ariaLabel:
+        "Search for benefits on the Service Canada website. This link will open the Service Canada website in a new window.",
+    },
   ],
 
   card3Title: "Mental and physical health resources",
-  card3Service: "Public Health Agency of Canada",
+  card3Service: "From: Public Health Agency of Canada",
   card3Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
+      ariaLabel:
+        "Go to the mental and physical health resource on the Public Health Agency of Canada’s website. This link will open the Public Health Agency of Canada’s website in a new window.",
     },
   ],
 
   card4Title: "Newborn care resources",
-  card4Service: "Health Canada",
+  card4Service: "From: Health Canada",
   card4Links: [
     {
       text: "More info",
       url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
+      ariaLabel:
+        "Go to the resource on newborn care on the health Canada website. This link will open Health Canada’s website in a new window.",
     },
   ],
 
   // Stages
   stagesTitle: "Discover the stages of the new child life journey",
-  stagesDescr: "Learn more about the key tasks during each stage in journey.",
-  stagesLabel: "Journey stage",
-  stagesSelect: "-Select-",
+  stagesDescr: [
+    "Many future parents learn about having a child through their family and friends network. But what if your journey is different from theirs?",
+    "To help parents discover what they don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
+    "In this tool, you will find information about the common steps and service providers at each stage in your journey.",
+  ],
+  stagesSubtitle: "Journey Stages",
+  stagesSelectTitle: "Select a stage to learn more about the key stages",
+  stagesSelectLabel: "Journey stage:",
+  stagesSelectPlaceholder: "-Select-",
 
   //Connect to local resources
   getConnected: "Connect to local resources ",
-  getConnectedDescription:
-    "We often lean on those closest to us for advice. Find and build your support close to where you live.",
+  getConnectedDescription: "Find guidance and support close to where you live.",
 
   //Report a problem
+  reportAProblemTitle: "Report a problem or mistake on this page",
   reportAProblemButtonString: "Report a problem on this page",
   reportAProblemCheckAllThatApply: "Please select all that apply:",
   reportAProblemIncorrectInformation: "Incorrect Information",
@@ -203,21 +224,17 @@ export default {
   reportAProblemOther: "Other",
   reportAProblemProvideMoreDetails: "Provide more details (optional)",
   reportAProblemNoReply: "You will not receive a reply. ",
-  reportAProblemEnquiries: "For enquiries, please contact",
-  reportAProblemNoPersonalInfo: "Do not include any personal information",
-  reportAProblemNoPersonalInfoDetails:
-    "such as your name, social insurance number (SIN), home or business address or any case or file numbers",
-  reportAProblemMoreInfo: "For more information about this tool",
-  reportAProblemMoreInfoDetails: "please refer to our",
-  reportAProblemMoreInfoLink:
-    "https://www.canada.ca/en/transparency/terms.html",
-  reportAProblemMoreInfoLinkText: "terms and conditions",
+  reportAProblemEnquiries: "For enquiries, please contact ",
+  reportAProblemConfidential: "Your feedback will be condifential",
+  reportAProblemNoPersonalInfo:
+    "Do not include any personal, medical, or financial details, such as your name, social insurance number (SIN), home or business address, phone number or any case or file numbers.",
   reportAProblemThankYouForYourHelp: "Thank you for your help!",
   reportAProblemYouWillNotBeContacted:
-    "You will not receive a reply. For enquiries, please contact us at",
+    "You will not receive a reply. For enquiries, please contact us at ",
   reportAProblemPrivacyStatement: "Privacy statement",
   reportAProblemPrivacyStatementLink:
     "https://www.canada.ca/en/transparency/privacy.html",
+  reportAProblemSubmit: "Submit",
 
   //Landing Page Title Section
   landingPageTitle: "Get Information About a Life Journey",
@@ -231,4 +248,7 @@ export default {
     "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
   backToProject: "Back to projects",
   backToProjectsLink: "https://alpha.service.canada.ca/projects",
+
+  //Screen reader link text
+  newWindow: ", this link will open in a new window.",
 };

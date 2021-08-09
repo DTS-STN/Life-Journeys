@@ -113,7 +113,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "Trouvez des ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
+    "Ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
   topRequestedLabel: "Afficher les principales demandes pour :",
 
   //Table
@@ -132,51 +132,62 @@ export default {
 
   //Cards
   card1Title: "Congé parental",
-  card1Service: "Assurance-emploi",
+  card1Service: "De : Assurance-emploi",
   card1Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
+      ariaLabel:
+        "apprenez comment présenter une demande de congé de maternité et de congé parental sur le site web de service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
     },
     {
       text: "Présenter une demande",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales/demande.html",
+      ariaLabel: "",
     },
   ],
 
   card1QuebecTitle: "L'assurance parentale",
-  card1QuebecService: "Régime québécois d'assurance parentale",
+  card1QuebecService: "De : Régime québécois d'assurance parentale",
   card1QuebecLinks: [
     {
       text: "Présenter une demande",
       url: "https://www.rqap.gouv.qc.ca/fr/services-en-ligne/faire-ma-demande-de-prestations",
+      ariaLabel:
+        "apprenez comment présenter une demande de congé parental sur le site web de l'assurance parentale. Ce lein va ouvrir le site Web de l'assurance parentale dans un nouvel fenêtre",
     },
   ],
 
   card2Title: "Chercheur de prestations",
-  card2Service: "Service Canada",
+  card2Service: "De : Service Canada",
   card2Links: [
     {
       text: "Trouver des prestations",
       url: "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
+      ariaLabel:
+        "Cherchez les prestations sur le site web de Service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
     },
   ],
 
   card3Title: "Ressources en santé mentale et physique",
-  card3Service: "Agence de la santé publique du Canada",
+  card3Service: "De : Agence de la santé publique du Canada",
   card3Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
+      ariaLabel:
+        "Consultez la ressource sur la santé mentale et physique sur le site de l'agence de santé publique du Canada. Ce lein va ouvrir le site Web de l’Agence de la santé publique du Canada dans un nouvel fenêtre.",
     },
   ],
 
   card4Title: "Ressources en matière de soins aux nouveau-nés",
-  card4Service: "Santé Canada",
+  card4Service: "De : Santé Canada",
   card4Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
+      ariaLabel:
+        "Consultez la ressource sur les soins aux nouveau-nés sur le site Web de Santé Canada. Ce lein va ouvrir le site Web de Santé Canada dans un nouvel fenêtre",
     },
   ],
 
@@ -185,15 +196,17 @@ export default {
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
   stagesDescr:
     "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
-  stagesLabel: "Étape du parcours",
-  stagesSelect: "-Sélectionner-",
+  stagesSubtitle: "FRENCH Journey Stages",
+  stagesSelectTitle: "FRENCH Select a stage to learn more about the key stages",
+  stagesSelectLabel: "Étape du parcours : ",
+  stagesSelectPlaceholder: "-Sélectionner-",
 
   //Connect to local resources
   getConnected: "Connectez-vous aux ressources locales",
-  getConnectedDescription:
-    "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre réseau de soutien près de chez vous.",
+  getConnectedDescription: "Trouvez des conseils et l’appui près de chez vous.",
 
   //Report a problem
+  reportAProblemTitle: "Signaler un problème ou une erreur sur cette page",
   reportAProblemButtonString: "Signaler un problème sur cette page",
   reportAProblemCheckAllThatApply:
     "Veuillez sélectionner tous les éléments qui s'appliquent:",
@@ -211,19 +224,16 @@ export default {
   reportAProblemNoReply: "Vous ne recevrez pas de réponse. ",
   reportAProblemEnquiries:
     "Pour toute demande de renseignements, veuillez contacter",
-  reportAProblemNoPersonalInfo: "N'incluez pas d'informations personnelles",
-  reportAProblemNoPersonalInfoDetails:
-    "tels que votre nom, votre numéro d'assurance sociale (NAS), votre adresse personnelle ou professionnelle ou tout numéro de dossier ou d'affaire",
-  reportAProblemMoreInfo: "Pour plus d'informations sur cet outil",
-  reportAProblemMoreInfoDetails: "veuillez vous référer à nos",
-  reportAProblemMoreInfoLink: "https://www.canada.ca/fr/transparence/avis.html",
-  reportAProblemMoreInfoLinkText: "termes et conditions",
+  reportAProblemConfidential: "Vos commentaires sont confidentiels",
+  reportAProblemNoPersonalInfo:
+    "Ne pas inclure de renseignements personnels, médicaux ou financiers, comme par exemple, un numéro d'assurance sociale (NAS), une adresse de domicile ou de lieu de travail, un numéro de téléphone ou numéro de dossier.",
   reportAProblemThankYouForYourHelp: "Merci pour votre aide!",
   reportAProblemYouWillNotBeContacted:
     "Vous ne recevrez pas de réponse. Pour toute demande de renseignements, veuillez nous contacter à",
   reportAProblemPrivacyStatement: "Déclaration de confidentialité",
   reportAProblemPrivacyStatementLink:
     "https://www.canada.ca/fr/transparence/confidentialite.html",
+  reportAProblemSubmit: "Soumettre",
 
   //Landing Page Title Section
   landingPageTitle: "Obtenir Des Informations Sur Un Parcours De Vie",
@@ -237,4 +247,7 @@ export default {
     "Vous ne pouvez pas demander de services ou de prestations par l’intermédiaire de ce site d’essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées.",
   backToProject: "Retourner aux projets",
   backToProjectsLink: "https://alpha.service.canada.ca/fr/projects",
+
+  //Screen reader link text
+  newWindow: ", ce lien va ouvrir dans une nouvelle fenêtre.",
 };
