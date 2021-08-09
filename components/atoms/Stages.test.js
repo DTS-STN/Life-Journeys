@@ -5,6 +5,8 @@ import Stages from "./Stages";
 
 expect.extend(toHaveNoViolations);
 
+const subtitle = "this is an H4 section Title";
+const selectTitle = "This is the H4 select title";
 const selectPlaceholder = "-select one-";
 const labelText = "This is the label";
 
@@ -33,8 +35,10 @@ describe("Stages", () => {
       render(
         <Stages
           journeys={journey}
-          labelText={labelText}
-          selectPlaceholder={selectPlaceholder}
+          stagesSubtitle={subtitle}
+          stagesSelectTitle={selectTitle}
+          stagesSelectLabel={labelText}
+          stagesSelectPlaceholder={selectPlaceholder}
         />
       );
     });
@@ -45,8 +49,10 @@ describe("Stages", () => {
     const { container } = render(
       <Stages
         journeys={journey}
-        labelText={labelText}
-        selectPlaceholder={selectPlaceholder}
+        stagesSubtitle={subtitle}
+        stagesSelectTitle={selectTitle}
+        stagesSelectLabel={labelText}
+        stagesSelectPlaceholder={selectPlaceholder}
       />
     );
     const results = await axe(container);
