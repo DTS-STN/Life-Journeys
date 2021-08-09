@@ -71,6 +71,7 @@ export default function Stages(props) {
           className="w-auto mb-2 px-2 h-8 rounded border bg-white border-gray-400 mt-2 overflow-ellipsis xxs:max-w-full focus:shadow-blue focus:border-custom-blue-focus focus-visible:outline-none"
           id="stage"
           onChange={onChangeHandler}
+          defaultValue={props.defaultValue}
         >
           <option key="0" value={0} defaultValue disabled>
             {props.stagesSelectPlaceholder}
@@ -147,4 +148,8 @@ Stages.propTypes = {
    * select label
    */
   stagesSelectPlaceholder: PropTypes.string.isRequired,
+  /**
+   * default value for select element
+   */
+  defaultValue: PropTypes.string,
 };

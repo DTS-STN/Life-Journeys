@@ -114,7 +114,9 @@ export default {
   // Having a baby
   topRequested:
     "Ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
-  topRequestedLabel: "Afficher les principales demandes pour :",
+  topRequestedLabel: "Afficher le contenu pour :",
+  findGuidance:
+    "Trouvez des conseils et des outils pour vous aider à prendre les bonnes décisions pour vous tout au long de ce parcours.",
 
   //Table
 
@@ -194,8 +196,11 @@ export default {
   // Stages
   stagesTitle:
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
-  stagesDescr:
+  stagesDescr: [
     "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
+    "To help parents discover what they don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
+    "In this tool, you will find information about the common steps and service providers at each stage in your journey.",
+  ],
   stagesSubtitle: "FRENCH Journey Stages",
   stagesSelectTitle: "FRENCH Select a stage to learn more about the key stages",
   stagesSelectLabel: "Étape du parcours : ",

@@ -31,13 +31,8 @@ export default function lifejourney({ journeysData }) {
         bannerText={t.havingAChildBannerText}
         locale={language}
       >
-        {/*  id="wb-cont"  the id should go in the H1 adding it here for now because Kris is updating the header */}
-
-        <section
-          id="wb-cont"
-          id="pageMainTitle"
-          className="layout-container mb-2 mt-4"
-        >
+        <section className="layout-container mb-2 mt-4">
+          <p className="mx-3 pt-2 pb-6">{t.findGuidance}</p>
           <Select
             options={language === "en" ? optionsEN : optionsFR}
             onChange={onChangeFunc}
@@ -112,6 +107,7 @@ export default function lifejourney({ journeysData }) {
                 stagesSelectTitle={t.stagesSelectTitle}
                 stagesSelectLabel={t.stagesSelectLabel}
                 stagesSelectPlaceholder={t.stagesSelectPlaceholder}
+                defaultValue="0"
               />
             </div>
           </div>
@@ -124,26 +120,33 @@ export default function lifejourney({ journeysData }) {
                 {t.getConnected}
               </h3>
               <p className="text-base">{t.getConnectedDescription}</p>
-
-              <ResourceLink
-                text={t.moreInfoPrenatalClasses}
-                isProvincialLink={false}
-                id="prenatalClasses"
-                srOnly={t.newWindow}
-              />
-              <ResourceLink
-                text={t.moreInfoParentingNetworks}
-                isProvincialLink={false}
-                id="parentingNetworks"
-                srOnly={t.newWindow}
-                language={language}
-              />
-              <ResourceLink
-                region={region.current}
-                isProvincialLink={true}
-                srOnly={t.newWindow}
-                language={language}
-              ></ResourceLink>
+              <ul>
+                <li>
+                  <ResourceLink
+                    text={t.moreInfoPrenatalClasses}
+                    isProvincialLink={false}
+                    id="prenatalClasses"
+                    srOnly={t.newWindow}
+                  />
+                </li>
+                <li>
+                  <ResourceLink
+                    text={t.moreInfoParentingNetworks}
+                    isProvincialLink={false}
+                    id="parentingNetworks"
+                    srOnly={t.newWindow}
+                    language={language}
+                  />
+                </li>
+                <li>
+                  <ResourceLink
+                    region={region.current}
+                    isProvincialLink={true}
+                    srOnly={t.newWindow}
+                    language={language}
+                  ></ResourceLink>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
