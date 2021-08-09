@@ -15,8 +15,8 @@ describe("ResourceLink tests", () => {
       render(
         <ResourceLink
           region={region}
-          language={language}
           isProvincialLink={true}
+          language={language}
         />
       );
     });
@@ -25,7 +25,13 @@ describe("ResourceLink tests", () => {
 
   it("renders ResourceLink as a google search query link", () => {
     const primary = act(() => {
-      render(<ResourceLink text={text} isProvincialLink={false} />);
+      render(
+        <ResourceLink
+          text={text}
+          isProvincialLink={false}
+          language={language}
+        />
+      );
     });
     expect(primary).toBeTruthy();
   });
@@ -34,8 +40,8 @@ describe("ResourceLink tests", () => {
     const { container } = render(
       <ResourceLink
         region={region}
-        language={language}
         isProvincialLink={true}
+        language={language}
       />
     );
     const results = await axe(container);

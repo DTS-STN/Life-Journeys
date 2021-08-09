@@ -185,8 +185,7 @@ export default {
 
   //Connect to local resources
   getConnected: "Connect to local resources ",
-  getConnectedDescription:
-    "We often lean on those closest to us for advice. Find and build your support close to where you live.",
+  getConnectedDescription: "Find guidance and support close to where you live.",
 
   //Report a problem
   reportAProblemTitle: "Report a problem or mistake on this page",
@@ -228,4 +227,7 @@ export default {
     "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
   backToProject: "Back to projects",
   backToProjectsLink: "https://alpha.service.canada.ca/projects",
+
+  //Screen reader link text
+  newWindow: ", this link will open in a new window.",
 };
