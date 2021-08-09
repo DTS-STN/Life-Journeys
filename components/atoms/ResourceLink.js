@@ -49,7 +49,11 @@ export default function ResourceLink(props) {
           <span className="sr-only">{props.srOnly}</span>
         </a>
         <span className="pl-1">
-          <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
+          <FontAwesomeIcon
+            icon={faExternalLinkAlt}
+            alt="External Link"
+            size="sm"
+          />
         </span>
       </div>
     </div>
