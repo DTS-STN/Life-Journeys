@@ -123,16 +123,20 @@ export default function lifejourney({ journeysData }) {
                 text={t.moreInfoPrenatalClasses}
                 isProvincialLink={false}
                 id="prenatalClasses"
+                srOnly={t.newWindow}
               />
               <ResourceLink
                 text={t.moreInfoParentingNetworks}
                 isProvincialLink={false}
                 id="parentingNetworks"
+                srOnly={t.newWindow}
+                language={language}
               />
               <ResourceLink
-                language={language}
                 region={region.current}
                 isProvincialLink={true}
+                srOnly={t.newWindow}
+                language={language}
               ></ResourceLink>
             </div>
           </div>
