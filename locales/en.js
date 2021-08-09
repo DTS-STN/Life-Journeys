@@ -138,12 +138,13 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
       ariaLabel:
-        "Learn how to apply for maternity and parental leave on the service canada website. This link will open the Service Canada website in a new window",
+        "Learn how to apply for maternity and parental leave on the service Canada website. This link will open the Service Canada website in a new window.",
     },
     {
       text: "Apply now",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
-      ariaLabel: "",
+      ariaLabel:
+        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
     },
   ],
 
@@ -154,7 +155,7 @@ export default {
       text: "Apply now",
       url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
       ariaLabel:
-        "Learn how to apply for parental leave on the Québec Parental Insurance Plan website. This link will open the Québec Parental Insurance Plan website in a new window",
+        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
     },
   ],
 
@@ -165,7 +166,7 @@ export default {
       text: "Find benefits",
       url: "https://benefitsfinder.services.gc.ca/hm",
       ariaLabel:
-        "Search for benefits on the Service canada website. This link will open the Service Canada website in a new window",
+        "Search for benefits on the Service Canada website. This link will open the Service Canada website in a new window.",
     },
   ],
 
@@ -176,7 +177,7 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
       ariaLabel:
-        "Go to the mental and physical health resource on the public health agency of canada website. This link will open the Public Health Agency of Canada’s website in a new window",
+        "Go to the mental and physical health resource on the Public Health Agency of Canada’s website. This link will open the Public Health Agency of Canada’s website in a new window.",
     },
   ],
 
@@ -187,7 +188,7 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
       ariaLabel:
-        "Go to the resource on newborn care on the health canada website. This link will open Health Canada’s website in a new window",
+        "Go to the resource on newborn care on the health Canada website. This link will open Health Canada’s website in a new window.",
     },
   ],
 
