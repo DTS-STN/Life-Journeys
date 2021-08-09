@@ -31,11 +31,13 @@ export default function lifejourney({ journeysData }) {
         bannerText={t.havingAChildBannerText}
         locale={language}
       >
-        <section id="pageMainTitle" className="layout-container mb-2 mt-4">
-          <div className="mx-3 my-4">
-            <p id="wb-cont">{t.topRequested}</p>
-          </div>
+        {/*  id="wb-cont"  the id should go in the H1 adding it here for now because Kris is updating the header */}
 
+        <section
+          id="wb-cont"
+          id="pageMainTitle"
+          className="layout-container mb-2 mt-4"
+        >
           <Select
             options={language === "en" ? optionsEN : optionsFR}
             onChange={onChangeFunc}
@@ -43,6 +45,10 @@ export default function lifejourney({ journeysData }) {
             defaultValue="CAN"
             label={t.topRequestedLabel}
           />
+
+          <div className="mx-3 my-4">
+            <h3>{t.topRequested}</h3>
+          </div>
 
           {/* Top cards */}
           <div className="container flex flex-row flex-wrap xl:w-10/12 xxl:w-full justify-evenly mt-4">
