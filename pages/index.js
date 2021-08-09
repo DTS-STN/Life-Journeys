@@ -90,15 +90,22 @@ export default function lifejourney({ journeysData }) {
 
           <div className="container flex flex-row w-full bg-gray-light-200 xxs:flex-col align-items-center mt-4">
             <div className="p-2 w-full">
-              <h2 className="text-h3-tall w-full">{t.stagesTitle}</h2>
-              <p>{t.stagesDescr}</p>
+              <h3 className="text-h3-tall w-full">{t.stagesTitle}</h3>
+
+              {t.stagesDescr.map((descr, idx) => (
+                <p className="mt-6 text-base" key={idx}>
+                  {descr}
+                </p>
+              ))}
             </div>
 
-            <div className="mt-4 w-full">
+            <div className="p-2 w-full">
               <Stages
                 journeys={journeysData}
-                selectPlaceholder={t.stagesSelect}
-                labelText={t.stagesLabel}
+                stagesSubtitle={t.stagesSubtitle}
+                stagesSelectTitle={t.stagesSelectTitle}
+                stagesSelectLabel={t.stagesSelectLabel}
+                stagesSelectPlaceholder={t.stagesSelectPlaceholder}
               />
             </div>
           </div>

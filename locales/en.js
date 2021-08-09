@@ -179,9 +179,15 @@ export default {
 
   // Stages
   stagesTitle: "Discover the stages of the new child life journey",
-  stagesDescr: "Learn more about the key tasks during each stage in journey.",
-  stagesLabel: "Journey stage",
-  stagesSelect: "-Select-",
+  stagesDescr: [
+    "Many future parents learn about having a child through their family and friends network. But what if your journey is different from theirs?",
+    "To help parents discover what they don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
+    "In this tool, you will find information about the common steps and service providers at each stage in your journey.",
+  ],
+  stagesSubtitle: "Journey Stages",
+  stagesSelectTitle: "Select a stage to learn more about the key stages",
+  stagesSelectLabel: "Journey stage:",
+  stagesSelectPlaceholder: "-Select-",
 
   //Connect to local resources
   getConnected: "Connect to local resources ",

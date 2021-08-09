@@ -185,8 +185,10 @@ export default {
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
   stagesDescr:
     "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
-  stagesLabel: "Étape du parcours",
-  stagesSelect: "-Sélectionner-",
+  stagesSubtitle: "FRENCH Journey Stages",
+  stagesSelectTitle: "FRENCH Select a stage to learn more about the key stages",
+  stagesSelectLabel: "Étape du parcours : ",
+  stagesSelectPlaceholder: "-Sélectionner-",
 
   //Connect to local resources
   getConnected: "Connectez-vous aux ressources locales",
