@@ -99,7 +99,7 @@ export default function lifejourney({ journeysData }) {
               ))}
             </div>
 
-            <div className="mt-4 w-full">
+            <div className="p-2 w-full">
               <Stages
                 journeys={journeysData}
                 stagesSubtitle={t.stagesSubtitle}
