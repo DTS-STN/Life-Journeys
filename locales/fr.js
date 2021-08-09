@@ -196,13 +196,14 @@ export default {
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
   stagesDescr:
     "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
-  stagesLabel: "Étape du parcours",
-  stagesSelect: "-Sélectionner-",
+  stagesSubtitle: "FRENCH Journey Stages",
+  stagesSelectTitle: "FRENCH Select a stage to learn more about the key stages",
+  stagesSelectLabel: "Étape du parcours : ",
+  stagesSelectPlaceholder: "-Sélectionner-",
 
   //Connect to local resources
   getConnected: "Connectez-vous aux ressources locales",
-  getConnectedDescription:
-    "Nous nous appuyons souvent sur les personnes les plus proches de nous pour obtenir des conseils. Trouvez et construisez votre réseau de soutien près de chez vous.",
+  getConnectedDescription: "Trouvez des conseils et l’appui près de chez vous.",
 
   //Report a problem
   reportAProblemTitle: "Signaler un problème ou une erreur sur cette page",
@@ -246,4 +247,7 @@ export default {
     "Vous ne pouvez pas demander de services ou de prestations par l’intermédiaire de ce site d’essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées.",
   backToProject: "Retourner aux projets",
   backToProjectsLink: "https://alpha.service.canada.ca/fr/projects",
+
+  //Screen reader link text
+  newWindow: ", ce lien va ouvrir dans une nouvelle fenêtre.",
 };

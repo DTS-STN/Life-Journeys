@@ -1,17 +1,7 @@
 export default [
   {
     value: "CAN",
-    sites: [
-      {
-        label: "Je veux en savoir plus sur la santé des nouveau-nés",
-        link: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
-      },
-      {
-        label:
-          "Je veux m'informer sur les prestations de maternité et parentales de l'assurance-emploi",
-        link: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
-      },
-    ],
+    sites: [],
   },
   {
     value: "AB",
