@@ -120,33 +120,28 @@ export default function lifejourney({ journeysData }) {
                 {t.getConnected}
               </h3>
               <p className="text-base">{t.getConnectedDescription}</p>
-              <ul>
-                <li>
-                  <ResourceLink
-                    text={t.moreInfoPrenatalClasses}
-                    isProvincialLink={false}
-                    id="prenatalClasses"
-                    srOnly={t.newWindow}
-                  />
-                </li>
-                <li>
-                  <ResourceLink
-                    text={t.moreInfoParentingNetworks}
-                    isProvincialLink={false}
-                    id="parentingNetworks"
-                    srOnly={t.newWindow}
-                    language={language}
-                  />
-                </li>
-                <li>
-                  <ResourceLink
-                    region={region.current}
-                    isProvincialLink={true}
-                    srOnly={t.newWindow}
-                    language={language}
-                  ></ResourceLink>
-                </li>
-              </ul>
+
+              <ResourceLink
+                text={t.moreInfoPrenatalClasses}
+                isProvincialLink={false}
+                id="prenatalClasses"
+                srOnly={t.newWindow}
+              />
+
+              <ResourceLink
+                text={t.moreInfoParentingNetworks}
+                isProvincialLink={false}
+                id="parentingNetworks"
+                srOnly={t.newWindow}
+                language={language}
+              />
+
+              <ResourceLink
+                region={region.current}
+                isProvincialLink={true}
+                srOnly={t.newWindow}
+                language={language}
+              ></ResourceLink>
             </div>
           </div>
         </section>
