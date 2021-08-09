@@ -2,7 +2,6 @@ import { render, act } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import { axe, toHaveNoViolations } from "jest-axe";
 import ResourceLink from "./ResourceLink";
-import { LanguageContext } from "../../context/languageProvider";
 
 expect.extend(toHaveNoViolations);
 
@@ -11,14 +10,14 @@ const region = "ON";
 const text = "Find hot singles in my area";
 
 describe("ResourceLink tests", () => {
-  const contextValue = { items: { language: "en" } };
-
   it("renders ResourceLink as a list of provincial links", () => {
     const primary = act(() => {
       render(
-        <LanguageContext.Provider value={contextValue}>
-          <ResourceLink region={region} isProvincialLink={true} />
-        </LanguageContext.Provider>
+        <ResourceLink
+          region={region}
+          isProvincialLink={true}
+          language={language}
+        />
       );
     });
     expect(primary).toBeTruthy();
@@ -27,9 +26,11 @@ describe("ResourceLink tests", () => {
   it("renders ResourceLink as a google search query link", () => {
     const primary = act(() => {
       render(
-        <LanguageContext.Provider value={contextValue}>
-          <ResourceLink text={text} isProvincialLink={false} />
-        </LanguageContext.Provider>
+        <ResourceLink
+          text={text}
+          isProvincialLink={false}
+          language={language}
+        />
       );
     });
     expect(primary).toBeTruthy();
@@ -37,9 +38,11 @@ describe("ResourceLink tests", () => {
 
   it("has no a11y violations", async () => {
     const { container } = render(
-      <LanguageContext.Provider value={contextValue}>
-        <ResourceLink region={region} isProvincialLink={true} />
-      </LanguageContext.Provider>
+      <ResourceLink
+        region={region}
+        isProvincialLink={true}
+        language={language}
+      />
     );
     const results = await axe(container);
 

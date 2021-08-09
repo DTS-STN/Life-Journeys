@@ -3,21 +3,13 @@ import sitesEN from "../../pages/api/provincialSitesEN";
 import sitesFR from "../../pages/api/provincialSitesFR";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { useContext } from "react";
-import { LanguageContext } from "../../context/languageProvider";
-import en from "../../locales/en";
-import fr from "../../locales/fr";
 
 /**
  *  This component creates a link to a provincial website based on the user's region OR a google search query with the provided text
  */
 
 export default function ResourceLink(props) {
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
-  const t = language === "en" ? en : fr;
-
-  const links = language === "en" ? sitesEN : sitesFR;
+  const links = props.language === "en" ? sitesEN : sitesFR;
   const filteredLinks = links.find((link) => link.value === props.region);
   const googleSearch = "https://google.ca/search?q="
     .concat(props.text)
@@ -35,7 +27,7 @@ export default function ResourceLink(props) {
             rel="noopener noreferrer"
           >
             {label}
-            <span className="sr-only">{t.newWindow}</span>
+            <span className="sr-only">{props.srOnly}</span>
           </a>
           <span className="pl-1">
             <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
@@ -54,7 +46,7 @@ export default function ResourceLink(props) {
           href={googleSearch}
         >
           {props.text}
-          <span className="sr-only">{t.newWindow}</span>
+          <span className="sr-only">{props.srOnly}</span>
         </a>
         <span className="pl-1">
           <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
@@ -71,6 +63,10 @@ ResourceLink.defaultProps = {
 };
 
 ResourceLink.propTypes = {
+  /**
+   * The language of the page to show, required for provincial link
+   */
+  language: PropTypes.string,
   /**
    * Identify which region user is in to determine which page to show, required for provincial link
    */
@@ -91,4 +87,8 @@ ResourceLink.propTypes = {
    * CSS overrides for the element
    */
   className: PropTypes.string,
+  /**
+   * Screen Reader Text
+   */
+  srOnly: PropTypes.string,
 };
