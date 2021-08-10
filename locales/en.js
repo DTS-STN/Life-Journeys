@@ -115,7 +115,11 @@ export default {
   // Having a baby
   topRequested:
     "Resources to help you make the right decisions along this journey ",
-  topRequestedLabel: "Showing top requests for:",
+  topRequestedLabel: "Showing content for:",
+  findGuidance:
+    "Find guidance and support to help you make the right decision for you along this journey.",
+  selectLocation:
+    "Select your location for site content relevant to your region.",
 
   //Table
 
