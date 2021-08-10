@@ -2,6 +2,11 @@ image:
   repository: mtscontainers.azurecr.io/lifejourneys
   tag: "{{ requiredEnv "DOCKER_TAG" }}" 
   pullPolicy: Always
+{{ if (eq .Environment.Name "prototype")}}  
+replicaCount: 4
+{{ else }}
+replicaCount: 1
+{{ end}}
 
 extraEnv:
   - name: NOTIFY_BASE_API_URL
@@ -18,8 +23,11 @@ extraEnv:
 ingress:
       enabled: true
       hosts:
-      {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") (eq .Environment.Name "prototype")}}
+      {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
           - lifejourneys.{{ requiredEnv "BASE_DOMAIN" }}
+      {{ else if (eq .Environment.Name "prototype")}}
+          - pv-lj.alpha.service.canada.ca
+          - pv-lj.prototype-admin.dts-stn.com
       {{ else }}
           - lifejourneys-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
           - lifejourneys.{{ requiredEnv "BASE_DOMAIN_DEV" }}
