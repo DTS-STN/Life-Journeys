@@ -16,6 +16,7 @@ environments:
     sprint:
     prod-blue:
     prod-green: 
+    prototype:
 
 releases:
 # lifejourneys

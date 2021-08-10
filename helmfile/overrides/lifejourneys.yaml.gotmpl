@@ -18,8 +18,7 @@ extraEnv:
 ingress:
       enabled: true
       hosts:
-      {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
-          - lifejourneys.{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN" }}
+      {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") (eq .Environment.Name "prototype")}}
           - lifejourneys.{{ requiredEnv "BASE_DOMAIN" }}
       {{ else }}
           - lifejourneys-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
