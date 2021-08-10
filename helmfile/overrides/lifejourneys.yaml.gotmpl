@@ -1,5 +1,9 @@
 image:
+{{ if (eq .Environment.Name "prototype")}}  
+  repository: esdcdpsbdmk8sprototypeacr.azurecr.io/pv-lj
+{{ else }}
   repository: mtscontainers.azurecr.io/lifejourneys
+{{ end }}
   tag: "{{ requiredEnv "DOCKER_TAG" }}" 
   pullPolicy: Always
 {{ if (eq .Environment.Name "prototype")}}  
