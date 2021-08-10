@@ -31,20 +31,18 @@ export default function lifejourney({ journeysData }) {
         bannerText={t.havingAChildBannerText}
         locale={language}
       >
-        {/*  id="wb-cont"  the id should go in the H1 adding it here for now because Kris is updating the header */}
-
-        <section
-          id="wb-cont"
-          id="pageMainTitle"
-          className="layout-container mb-2 mt-4"
-        >
-          <Select
-            options={language === "en" ? optionsEN : optionsFR}
-            onChange={onChangeFunc}
-            name="provinceSelector"
-            defaultValue="CAN"
-            label={t.topRequestedLabel}
-          />
+        <section className="layout-container mb-2 mt-4">
+          <p className="mx-3 pt-2 pb-8">{t.findGuidance}</p>
+          <h2 className="mx-3 mb-2">{t.selectLocation}</h2>
+          <div className="pb-8">
+            <Select
+              options={language === "en" ? optionsEN : optionsFR}
+              onChange={onChangeFunc}
+              name="provinceSelector"
+              defaultValue="CAN"
+              label={t.topRequestedLabel}
+            />
+          </div>
 
           <div className="mx-3 my-4">
             <h3>{t.topRequested}</h3>
@@ -112,6 +110,7 @@ export default function lifejourney({ journeysData }) {
                 stagesSelectTitle={t.stagesSelectTitle}
                 stagesSelectLabel={t.stagesSelectLabel}
                 stagesSelectPlaceholder={t.stagesSelectPlaceholder}
+                defaultValue="0"
               />
             </div>
           </div>
@@ -131,6 +130,7 @@ export default function lifejourney({ journeysData }) {
                 id="prenatalClasses"
                 srOnly={t.newWindow}
               />
+
               <ResourceLink
                 text={t.moreInfoParentingNetworks}
                 isProvincialLink={false}
@@ -138,6 +138,7 @@ export default function lifejourney({ journeysData }) {
                 srOnly={t.newWindow}
                 language={language}
               />
+
               <ResourceLink
                 region={region.current}
                 isProvincialLink={true}
