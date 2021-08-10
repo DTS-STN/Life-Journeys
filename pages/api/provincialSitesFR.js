@@ -7,16 +7,17 @@ export default [
     value: "AB",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé (anglais seulement)",
         link: "https://www.alberta.ca/register-birth.aspx",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.alberta.ca/child-care.aspx",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+        link: "https://www.alberta.ca/order-birth-certificate.aspx",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.alberta.ca/order-birth-certificate.aspx",
+        label: "Me renseigner sur les garderies (anglais seulement)",
+        link: "https://www.alberta.ca/child-care.aspx",
       },
     ],
   },
@@ -24,16 +25,17 @@ export default [
     value: "BC",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé (anglais seulement)",
         link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-registration",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+        link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-certificates",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-certificates",
+        label: "Me renseigner sur les garderies (anglais seulement)",
+        link: "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children",
       },
     ],
   },
@@ -41,16 +43,17 @@ export default [
     value: "MB",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
-        link: "https://vitalstats.gov.mb.ca/birth_registration.fr.html",
+        label: "Déclarer la naissance de mon bébé (anglais seulement)",
+        link: "https://vitalstats.gov.mb.ca/birth_registration.html",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.gov.mb.ca/fs/childcare/index.fr.html",
-      },
-      {
-        label: "Je veux demander un certificat de naissance",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
         link: "https://vitalstats.gov.mb.ca/certificates.fr.html",
+      },
+      {
+        label: "Me renseigner sur les garderies",
+        link: "https://www.gov.mb.ca/fs/childcare/index.fr.html",
       },
     ],
   },
@@ -58,16 +61,17 @@ export default [
     value: "NB",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://www2.gnb.ca/content/gnb/fr/services/services_renderer.201426.Enregistrement_de_naissance.html",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www2.gnb.ca/content/gnb/fr/services/services_renderer.2736.Services_de_garderie_%C3%A9ducatifs.html",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www2.snb.ca/content/snb/fr/services/services_renderer.17477.Certificat_de_naissance.html",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www2.snb.ca/content/snb/fr/services/services_renderer.17477.Certificat_de_naissance.html",
+        label: "Me renseigner sur les garderies",
+        link: "https://www2.gnb.ca/content/gnb/fr/services/services_renderer.2736.Services_de_garderie_%C3%A9ducatifs.html",
       },
     ],
   },
@@ -75,16 +79,17 @@ export default [
     value: "NL",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://www.gov.nl.ca/dgsnl/birth/bundled/index-fr/",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.childcare.gov.nl.ca/",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www.gov.nl.ca/dgsnl/birth/birth-certificate/index-fr/",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.gov.nl.ca/dgsnl/birth/birth-certificate/index-fr/",
+        label: "Me renseigner sur les garderies (anglais seulement)",
+        link: "https://www.childcare.gov.nl.ca/",
       },
     ],
   },
@@ -92,16 +97,17 @@ export default [
     value: "NT",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://www.hss.gov.nt.ca/fr/services/enregistrement-des-naissances",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.gov.nt.ca/covid-19/fr/services/%C3%A9ducation-et-garde-d%E2%80%99enfants/information-sur-la-garde-denfants",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www.hss.gov.nt.ca/fr/services/demander-un-certificat-de-naissance",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.hss.gov.nt.ca/fr/services/demander-un-certificat-de-naissance",
+        label: "Me renseigner sur les garderies",
+        link: "https://www.gov.nt.ca/covid-19/fr/services/%C3%A9ducation-et-garde-d%E2%80%99enfants/information-sur-la-garde-denfants",
       },
     ],
   },
@@ -109,16 +115,17 @@ export default [
     value: "NS",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://beta.novascotia.ca/fr/enregistrement-dune-naissance",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.ednet.ns.ca/earlyyears/families/findchildcare.shtml",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://beta.novascotia.ca/fr/demande-de-certificat-de-naissance",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://beta.novascotia.ca/fr/demande-de-certificat-de-naissance",
+        label: "Me renseigner sur les garderies (anglais seulement)",
+        link: "https://www.ednet.ns.ca/earlyyears/families/findchildcare.shtml",
       },
     ],
   },
@@ -126,16 +133,17 @@ export default [
     value: "NU",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance/#",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.gov.nu.ca/fr/education/information/education-de-la-petite-enfance",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance",
+        label: "Me renseigner sur les garderies",
+        link: "https://www.gov.nu.ca/fr/education/information/education-de-la-petite-enfance",
       },
     ],
   },
@@ -143,16 +151,17 @@ export default [
     value: "ON",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://www.ontario.ca/fr/page/enregistrer-une-naissance-nouveau-ne",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "http://www.edu.gov.on.ca/gardedenfants/professionals.html",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www.ontario.ca/fr/page/obtenir-ou-remplacer-un-certificat-de-naissance-de-lontario",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.ontario.ca/fr/page/obtenir-ou-remplacer-un-certificat-de-naissance-de-lontario",
+        label: "Me renseigner sur les garderies",
+        link: "http://www.edu.gov.on.ca/gardedenfants/professionals.html",
       },
     ],
   },
@@ -160,16 +169,17 @@ export default [
     value: "PE",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé (anglais seulement)",
         link: "https://www.princeedwardisland.ca/fr/information/justice-and-public-safety/registering-birth",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.princeedwardisland.ca/fr/sujet/soins-pour-enfants",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+        link: "https://www.princeedwardisland.ca/fr/service/apply-birth-certificate",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.princeedwardisland.ca/fr/service/apply-birth-certificate",
+        label: "Me renseigner sur les garderies",
+        link: "https://www.princeedwardisland.ca/fr/sujet/soins-pour-enfants",
       },
     ],
   },
@@ -177,20 +187,20 @@ export default [
     value: "QC",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://services.etatcivil.gouv.qc.ca/DeclarationNaissanceEnLigne/Default.aspx",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.mfa.gouv.qc.ca/fr/services-de-garde/Pages/index.aspx",
-      },
-      {
-        label: "Je veux demander un certificat de naissance",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
         link: "https://services.etatcivil.gouv.qc.ca/declic2/index.aspx",
       },
       {
-        label:
-          "Je veux m'informer sur le Régime québécois d'assurance parentale",
+        label: "Me renseigner sur les garderies",
+        link: "https://www.mfa.gouv.qc.ca/fr/services-de-garde/Pages/index.aspx",
+      },
+      {
+        label: "Me renseigner sur le Régime québécois d’assurance parentale",
         link: "https://www.rqap.gouv.qc.ca/fr",
       },
     ],
@@ -199,16 +209,17 @@ export default [
     value: "SK",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé (anglais seulement)",
         link: "https://www.ehealthsask.ca/residents/births/Pages/Registering-a-Birth.aspx",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://www.saskatchewan.ca/bonjour/education-learning-and-child-care/child-care-in-saskatchewan",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://www.ehealthsask.ca/residents/births/Pages/Order-a-Birth-Certificate.aspx (anglais seulement)",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://www.ehealthsask.ca/residents/births/Pages/Order-a-Birth-Certificate.aspx",
+        label: "Me renseigner sur les garderies",
+        link: "https://www.saskatchewan.ca/bonjour/education-learning-and-child-care/child-care-in-saskatchewan",
       },
     ],
   },
@@ -216,16 +227,17 @@ export default [
     value: "YT",
     sites: [
       {
-        label: "Je veux déclarer la naissance de mon bébé",
+        label: "Déclarer la naissance de mon bébé",
         link: "https://yukon.ca/fr/naissances-mariages-et-deces/naissances/enregistrer-la-naissance-dun-enfant",
       },
       {
-        label: "Je veux me renseigner sur les garderies",
-        link: "https://yukon.ca/fr/learn-about-universal-child-care-program",
+        label:
+          "Présenter une demande pour le certificat de naissance pour mon bébé",
+        link: "https://yukon.ca/fr/naissances-mariages-et-deces/naissances/demander-le-premier-certificat-de-naissance-de-votre-enfant",
       },
       {
-        label: "Je veux demander un certificat de naissance",
-        link: "https://yukon.ca/fr/naissances-mariages-et-deces/naissances/demander-le-premier-certificat-de-naissance-de-votre-enfant",
+        label: "Me renseigner sur les garderies",
+        link: "https://yukon.ca/fr/learn-about-universal-child-care-program",
       },
     ],
   },
