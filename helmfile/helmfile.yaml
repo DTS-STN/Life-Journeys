@@ -1,7 +1,7 @@
-repositories:
-    # helm-git powered repository: You can treat any Git repository as a charts repository
-    - name: lifejourneys
-      url: git+https://{{ requiredEnv "GITHUB_USER" }}:{{ requiredEnv "GITHUB_TOKEN" }}@github.com/DTS-STN/Life-Journeys@helm/charts?ref=main
+# repositories:
+#     # helm-git powered repository: You can treat any Git repository as a charts repository
+#     - name: lifejourneys
+#       url: git+https://{{ requiredEnv "GITHUB_USER" }}:{{ requiredEnv "GITHUB_TOKEN" }}@github.com/DTS-STN/Life-Journeys@helm/charts?ref=main
    
 environments:
     benrd: 
