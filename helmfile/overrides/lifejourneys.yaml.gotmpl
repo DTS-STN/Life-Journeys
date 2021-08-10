@@ -24,13 +24,13 @@ ingress:
       enabled: true
       hosts:
       {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
-          - lifejourneys.{{ requiredEnv "BASE_DOMAIN" }}
+          - pv-lj.{{ requiredEnv "BASE_DOMAIN" }}
       {{ else if (eq .Environment.Name "prototype")}}
           - pv-lj.alpha.service.canada.ca
           - pv-lj.prototype-admin.dts-stn.com
       {{ else }}
-          - lifejourneys-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
-          - lifejourneys.{{ requiredEnv "BASE_DOMAIN_DEV" }}
+          - pv-lj-{{ .Environment.Name }}.{{ requiredEnv "BASE_DOMAIN_DEV" }}
+          - pv-lj.{{ requiredEnv "BASE_DOMAIN_DEV" }}
       {{ end }} 
       annotations: {}
       # kubernetes.io/ingress.class: traefik
