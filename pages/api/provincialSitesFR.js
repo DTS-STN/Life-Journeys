@@ -12,8 +12,8 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
-        link: "https://www.alberta.ca/order-birth-certificate.aspx (anglais seulement)",
+          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+        link: "https://www.alberta.ca/order-birth-certificate.aspx",
       },
       {
         label: "Me renseigner sur les garderies (anglais seulement)",
