@@ -1,5 +1,5 @@
 image:
-  repository: mtscontainers.azurecr.io/lifejourneys
+  repository: "{{ requiredEnv "ACR_DOMAIN" }}/{{ requiredEnv "PROJECT" }}"
   tag: "{{ requiredEnv "DOCKER_TAG" }}" 
   pullPolicy: Always
 {{ if (eq .Environment.Name "prototype")}}  
