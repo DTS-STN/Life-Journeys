@@ -1,9 +1,5 @@
 image:
-{{ if (eq .Environment.Name "prototype")}}  
-  repository: esdcdpsbdmk8sprototypeacr.azurecr.io/pv-lj
-{{ else }}
-  repository: mtscontainers.azurecr.io/lifejourneys
-{{ end }}
+  repository: "{{ requiredEnv "ACR_DOMAIN" }}/{{ requiredEnv "PROJECT" }}"
   tag: "{{ requiredEnv "DOCKER_TAG" }}" 
   pullPolicy: Always
 {{ if (eq .Environment.Name "prototype")}}  
