@@ -24,6 +24,8 @@ export default function lifejourney({ journeysData }) {
     forceUpdate();
   }
 
+  console.log("select for region = ", region.current);
+
   return (
     <>
       <Layout
@@ -107,7 +109,6 @@ export default function lifejourney({ journeysData }) {
                 stagesSelectTitle={t.stagesSelectTitle}
                 stagesSelectLabel={t.stagesSelectLabel}
                 stagesSelectPlaceholder={t.stagesSelectPlaceholder}
-                defaultValue="0"
               />
             </div>
           </div>

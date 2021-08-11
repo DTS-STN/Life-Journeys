@@ -17,15 +17,13 @@ export default function Stages(props) {
   //
   // updates the accordions content with the selection
   function onChangeHandler(option) {
-    selected.current = option.currentTarget.value;
+    selected.current = option;
 
-    if (option.currentTarget.value == 0) {
+    if (option === 0) {
       setShowData(undefined);
     } else {
       props.journeys.map((journey) =>
-        journey.titleId === option.currentTarget.value
-          ? setShowData(journey.subJourney)
-          : null
+        journey.titleId === option ? setShowData(journey.subJourney) : null
       );
     }
   }
@@ -33,11 +31,11 @@ export default function Stages(props) {
   //
   // updates the language of the accordions when switching languages
   useEffect(() => {
-    if (selected.current !== null) {
+    if (selected.current !== 0) {
       props.journeys.map((journey) =>
         journey.titleId === selected.current
           ? setShowData(journey.subJourney)
-          : null
+          : setShowData(undefined)
       );
     }
   }, [props.journeys]);
@@ -70,7 +68,7 @@ export default function Stages(props) {
         <select
           className="w-auto mb-2 px-2 h-8 rounded border bg-white border-gray-400 mt-2 overflow-ellipsis xxs:max-w-full focus:shadow-blue focus:border-custom-blue-focus focus-visible:outline-none"
           id="stage"
-          onChange={onChangeHandler}
+          onChange={(e) => onChangeHandler(e.currentTarget.value)}
           defaultValue={props.defaultValue}
         >
           <option key="0" value={0} defaultValue disabled>
