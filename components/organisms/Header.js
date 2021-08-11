@@ -23,31 +23,13 @@ export function Header({ breadcrumbItems, locale }) {
   const router = useRouter();
 
   useEffect(() => {
-    //
-    // a11y complained about this, so commented out for now.
-    //
-
-    //   if (typeof window !== "undefined") {
-    //     const lang = window.localStorage.getItem("lang");
-
-    console.log("values before -----");
-    console.log("current language", language);
-    console.log("current locale", locale);
-    console.log("current router", router.locale);
-    console.log("values after -----");
-
     // if router language is different this will sync both
     if (router.locale === "en" || router.locale === "fr") {
       if (router.locale !== language) {
         changeLanguage(router.locale);
       }
     }
-
-    if (language !== router.locale) {
-      router.replace(router.asPath, router.asPath, { locale: language });
-    }
-    //   }
-  }, [language]);
+  }, [locale]);
 
   return (
     <>
@@ -90,7 +72,11 @@ export function Header({ breadcrumbItems, locale }) {
             </a>
 
             {/* Language selector for small screens */}
-            <Link key={language} href={router.asPath} locale={language}>
+            <Link
+              key={language}
+              href={router.asPath}
+              locale={language === "en" ? "fr" : "en"}
+            >
               <a
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
@@ -106,7 +92,7 @@ export function Header({ breadcrumbItems, locale }) {
             <Link
               key={language}
               href={router.asPath}
-              locale={language}
+              locale={language === "en" ? "fr" : "en"}
               //onClick={() => setLanguage(language)}
             >
               <a

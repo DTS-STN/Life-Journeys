@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { useEffect, useRef, useContext, useReducer } from "react";
+import { useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
