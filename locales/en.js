@@ -118,6 +118,8 @@ export default {
   topRequestedLabel: "Showing content for:",
   findGuidance:
     "Find guidance and support to help you make the right decision for you along this journey.",
+  selectLocation:
+    "Select your location for site content relevant to your region.",
 
   //Table
 

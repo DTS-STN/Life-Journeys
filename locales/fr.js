@@ -117,6 +117,8 @@ export default {
   topRequestedLabel: "Afficher le contenu pour :",
   findGuidance:
     "Trouvez des conseils et des outils pour vous aider à prendre les bonnes décisions pour vous tout au long de ce parcours.",
+  selectLocation:
+    "Sélectionnez votre lieu de résidence pour obtenir les ressources qui s’appliquent à votre région.",
 
   //Table
 
