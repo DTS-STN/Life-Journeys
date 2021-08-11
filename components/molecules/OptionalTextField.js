@@ -47,7 +47,7 @@ export function OptionalTextField(props) {
             onChange={
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
-            aria-describedby={props.describedby}
+            describedby={props.describedby}
           />
         ) : (
           <TextField
@@ -61,7 +61,7 @@ export function OptionalTextField(props) {
             onChange={
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
-            aria-describedby={props.describedby}
+            describedby={props.describedby}
           />
         )
       ) : undefined}
