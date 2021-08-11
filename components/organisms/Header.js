@@ -29,11 +29,15 @@ export function Header({ breadcrumbItems, locale }) {
         changeLanguage(router.locale);
       }
     }
-  }, [locale]);
+  }, [router.locale]);
 
   return (
     <>
-      <nav className="skip-main">
+      <nav
+        role="navigation"
+        aria-label={t.skipToMainContent}
+        className="skip-main"
+      >
         <a
           id="skipToMainContent"
           className="bg-custom-blue-dark text-white py-1 px-2 focus:outline-black-solid hover:bg-gray-dark"
