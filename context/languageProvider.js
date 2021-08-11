@@ -7,7 +7,10 @@ const LanguageProvider = ({ children }) => {
 
   const changeLanguage = () => {
     setLanguage(language === "en" ? "fr" : "en");
-    window.localStorage.setItem("lang", language === "en" ? "fr" : "en");
+    //
+    // a11y complained about this, so commented out for now.
+    // window.localStorage.setItem("lang", language === "en" ? "fr" : "en");
+    //
   };
 
   const contextValue = {
