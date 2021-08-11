@@ -62,7 +62,7 @@ export default function Stages(props) {
         <h4>{props.stagesSelectTitle}</h4>
 
         <label
-          className="text-custom-blue-reportButton text-base pr-4"
+          className="text-custom-blue-reportButton font-body text-base pr-4"
           htmlFor="stage"
         >
           {props.stagesSelectLabel}
