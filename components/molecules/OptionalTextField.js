@@ -47,7 +47,7 @@ export function OptionalTextField(props) {
             onChange={
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
-            disclaimer={props.disclaimer}
+            aria-describedby={props.describedby}
           />
         ) : (
           <TextField
@@ -61,6 +61,7 @@ export function OptionalTextField(props) {
             onChange={
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
+            aria-describedby={props.describedby}
           />
         )
       ) : undefined}
@@ -172,8 +173,9 @@ OptionalTextField.propTypes = {
    * whether or not to spellcheck for the multi text field
    */
   spellCheck: PropTypes.bool,
+
   /**
-   * Disclaimer text to go above the text field
+   * aria-describedby label id
    */
-  disclaimer: PropTypes.string,
+  describedby: PropTypes.string,
 };

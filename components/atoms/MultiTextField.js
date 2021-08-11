@@ -1,9 +1,17 @@
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
 /**
  * multi line text field
  */
 export function MultiTextField(props) {
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+
   return (
     <div className="block leading-tight mb-10px">
       <label
@@ -14,7 +22,12 @@ export function MultiTextField(props) {
       >
         {props.label}
       </label>
-      <p className="pb-4 pt-2 text-xs sm:text-sm">{props.disclaimer}</p>
+      <p
+        id={props.describedby}
+        className="text-xs lg:text-sm mb-5 leading-30px"
+      >
+        {t.reportAProblemNoPersonalInfo}
+      </p>
       <textarea
         className="text-input font-body w-full min-h-40px rounded shadow-sm text-form-input-gray border border-form-input-border-gray py-6px px-12px"
         id={props.id}
@@ -25,6 +38,7 @@ export function MultiTextField(props) {
         rows={props.rows}
         spellCheck={props.spellCheck}
         wrap={props.wrap}
+        aria-describedby={props.describedby}
       >
         {props.value}
       </textarea>
@@ -92,7 +106,7 @@ MultiTextField.propTypes = {
    */
   onChange: PropTypes.func,
   /**
-   * Disclaimer text to go above the text field
+   * aria-describedby label id
    */
-  disclaimer: PropTypes.string,
+  describedby: PropTypes.string,
 };

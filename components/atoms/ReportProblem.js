@@ -106,7 +106,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="incorrectInformation"
               />
               <OptionalTextField
                 checkBoxId="unclearInformationCheckBox"
@@ -120,7 +120,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="unclearInformation"
               />
               <OptionalTextField
                 checkBoxId="infoNotFoundCheckBox"
@@ -134,7 +134,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="infoNotFound"
               />
               <OptionalTextField
                 checkBoxId="adaptiveTechnologyCheckBox"
@@ -150,7 +150,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="adaptiveTechnology"
               />
               <OptionalTextField
                 checkBoxId="privacyIssuesCheckBox"
@@ -164,7 +164,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="privacyIssues"
               />
               <OptionalTextField
                 checkBoxId="noWhereElseToGoCheckBox"
@@ -178,7 +178,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="noWhereElseToGo"
               />
               <OptionalTextField
                 checkBoxId="otherCheckBox"
@@ -192,7 +192,7 @@ export default function ReportProblem() {
                 textLabelBold={true}
                 wrap="hard"
                 maxLength={750}
-                disclaimer={t.reportAProblemNoPersonalInfo}
+                describedby="other"
               />
             </fieldset>
             <ActionButton

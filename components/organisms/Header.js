@@ -13,7 +13,6 @@ import fr from "../../locales/fr";
 export function Header({ breadcrumbItems }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
-
   const setLanguage = (language) => {
     changeLanguage(language);
   };
@@ -23,26 +22,26 @@ export function Header({ breadcrumbItems }) {
 
   const router = useRouter();
 
-  useEffect(() => {
-    //
-    // a11y complained about this, so commented out for now.
-    //
+  // useEffect(() => {
+  //   //
+  //   // a11y complained about this, so commented out for now.
+  //   //
 
-    //   if (typeof window !== "undefined") {
-    //     const lang = window.localStorage.getItem("lang");
+  //   //   if (typeof window !== "undefined") {
+  //   //     const lang = window.localStorage.getItem("lang");
 
-    //     // if cookie language is different this will sync both
-    //     if (lang === "en" || lang === "fr") {
-    //       if (lang !== language) {
-    //         changeLanguage(lang);
-    //       }
-    //     }
+  //   //     // if cookie language is different this will sync both
+  //   //     if (lang === "en" || lang === "fr") {
+  //   //       if (lang !== language) {
+  //   //         changeLanguage(lang);
+  //   //       }
+  //   //     }
 
-    if (language) {
-      router.replace(router.asPath, router.asPath, { locale: language });
-    }
-    //   }
-  }, [language]);
+  //   if (language) {
+  //     router.replace(router.asPath, router.asPath, { locale: language });
+  //   }
+  //   //   }
+  // }, [language]);
 
   return (
     <>
