@@ -30,22 +30,6 @@ export default function Card(props) {
         <p className="px-2 pb-4 text-sm" style={{ minHeight: 50 + "px" }}>
           {props.service}
         </p>
-
-        {/* <ul className="flex items-center justify-right pb-4"> 
-          {props.links.map((d, idx) => (
-            <li key={idx} className="w-auto text-blue-800 text-sm px-4">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline"
-                aria-label={d.ariaLabel}
-                href={d.url}
-              >
-                {d.text}
-              </a>
-            </li>
-          ))}
-        </ul> */}
       </a>
     </div>
   );
