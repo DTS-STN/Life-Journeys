@@ -30,15 +30,22 @@ export function Header({ breadcrumbItems, locale }) {
     //   if (typeof window !== "undefined") {
     //     const lang = window.localStorage.getItem("lang");
 
+    console.log("values before -----");
+    console.log("current language", language);
+    console.log("current locale", locale);
+    console.log("current router", router.locale);
+    console.log("values after -----");
+
     // if router language is different this will sync both
     if (router.locale === "en" || router.locale === "fr") {
       if (router.locale !== language) {
         changeLanguage(router.locale);
       }
     }
-    // if (language !== router.locale) {
-    //   router.replace(router.asPath, router.asPath, { locale: language });
-    // }
+
+    if (language !== router.locale) {
+      router.replace(router.asPath, router.asPath, { locale: language });
+    }
     //   }
   }, [language]);
 

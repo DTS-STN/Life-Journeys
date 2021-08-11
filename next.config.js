@@ -20,7 +20,7 @@ module.exports = {
     NEXT_CONTENT_API: contentURL,
   },
   i18n: {
-    locales: ["fr", "en"],
+    locales: ["en", "fr"],
     defaultLocale: "en",
   },
   //
