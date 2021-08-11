@@ -41,11 +41,11 @@ export default function Stages(props) {
   }, [props.journeys]);
 
   return (
-    <div className="w-full flex flex-col mb-4 sm:flex-wrap sm:flex-row justify-left">
+    <div className="w-full flex flex-col mt-6 mb-4 sm:flex-wrap sm:flex-row justify-left">
       <div>
         <h4>{props.stagesSubtitle}</h4>
 
-        <ul className="text-xs mt-2 mb-6">
+        <ul className="text-base mt-2 mb-6">
           {props.journeys.map((journey, idx) => (
             <li key={idx} className="py-2 pl-2 ">
               <span>
@@ -61,7 +61,10 @@ export default function Stages(props) {
 
         <h4>{props.stagesSelectTitle}</h4>
 
-        <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
+        <label
+          className="text-custom-blue-reportButton text-base pr-4"
+          htmlFor="stage"
+        >
           {props.stagesSelectLabel}
         </label>
 

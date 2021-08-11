@@ -23,11 +23,14 @@ export default function Card(props) {
           />
         </div>
 
-        <h4 className="text-h3-tall pt-2 pl-2" style={{ height: 80 + "px" }}>
+        <h4
+          className="text-h3-tall pt-2 pl-2"
+          style={{ "min-height": 80 + "px" }}
+        >
           {props.title}
         </h4>
 
-        <p className="px-2 pb-4 text-sm" style={{ height: 50 + "px" }}>
+        <p className="px-2 pb-4 text-sm" style={{ "min-height": 50 + "px" }}>
           {props.service}
         </p>
 
