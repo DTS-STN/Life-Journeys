@@ -34,12 +34,12 @@ export function Accordion2(props) {
           </div>
 
           <div className="ml-7 pt-3 text-custom-blue-reportButton">
-            <h3
+            <h5
               id={props.id}
               className={`ml-1 text-h6 (${props.titleClass}) ? ${props.titleClass} : ''`}
             >
               {props.title}
-            </h3>
+            </h5>
           </div>
         </summary>
         <div className="ml-8 mt-2">{props.children}</div>

@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { useEffect, useRef, useContext, useReducer } from "react";
+import { useRef, useContext, useReducer } from "react";
 import { LanguageContext } from "../context/languageProvider";
 import Select from "../components/atoms/Select";
 import Card from "../components/atoms/Card";
@@ -29,10 +29,10 @@ export default function lifejourney({ journeysData }) {
       <Layout
         title={t.havingABabyTitle}
         bannerText={t.havingAChildBannerText}
-        locale={language}
+        currentLocale={language}
       >
         <section className="layout-container mb-2 mt-4">
-          <p className="mx-3 pt-2 pb-8">{t.findGuidance}</p>
+          <p className="text-base mx-3 pt-2 pb-8">{t.findGuidance}</p>
           <h2 className="mx-3 mb-2">{t.selectLocation}</h2>
           <div className="pb-8">
             <Select
@@ -157,6 +157,8 @@ export default function lifejourney({ journeysData }) {
 
 export async function getStaticProps({ locale }) {
   //
+  console.log("current index locale = ", locale);
+
   const { localData } = getLocalJourneys(locale);
   const errorCode = false;
 

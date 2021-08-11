@@ -17,15 +17,13 @@ export default function Stages(props) {
   //
   // updates the accordions content with the selection
   function onChangeHandler(option) {
-    selected.current = option.currentTarget.value;
+    selected.current = option;
 
-    if (option.currentTarget.value == 0) {
+    if (option === 0) {
       setShowData(undefined);
     } else {
       props.journeys.map((journey) =>
-        journey.titleId === option.currentTarget.value
-          ? setShowData(journey.subJourney)
-          : null
+        journey.titleId === option ? setShowData(journey.subJourney) : null
       );
     }
   }
@@ -33,21 +31,21 @@ export default function Stages(props) {
   //
   // updates the language of the accordions when switching languages
   useEffect(() => {
-    if (selected.current !== null) {
+    if (selected.current !== 0) {
       props.journeys.map((journey) =>
         journey.titleId === selected.current
           ? setShowData(journey.subJourney)
-          : null
+          : setShowData(undefined)
       );
     }
   }, [props.journeys]);
 
   return (
-    <div className="w-full flex flex-col mb-4 sm:flex-wrap sm:flex-row justify-left">
+    <div className="w-full flex flex-col mt-6 mb-4 sm:flex-wrap sm:flex-row justify-left">
       <div>
         <h4>{props.stagesSubtitle}</h4>
 
-        <ul className="text-xs mt-2 mb-6">
+        <ul className="text-base mt-2 mb-6">
           {props.journeys.map((journey, idx) => (
             <li key={idx} className="py-2 pl-2 ">
               <span>
@@ -63,14 +61,17 @@ export default function Stages(props) {
 
         <h4>{props.stagesSelectTitle}</h4>
 
-        <label className="text-custom-blue-reportButton pr-4" htmlFor="stage">
+        <label
+          className="text-custom-blue-reportButton font-body text-base pr-4"
+          htmlFor="stage"
+        >
           {props.stagesSelectLabel}
         </label>
 
         <select
           className="w-auto mb-2 px-2 h-8 rounded border bg-white border-gray-400 mt-2 overflow-ellipsis xxs:max-w-full focus:shadow-blue focus:border-custom-blue-focus focus-visible:outline-none"
           id="stage"
-          onChange={onChangeHandler}
+          onChange={(e) => onChangeHandler(e.currentTarget.value)}
           defaultValue={props.defaultValue}
         >
           <option key="0" value={0} defaultValue disabled>

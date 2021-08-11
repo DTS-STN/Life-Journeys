@@ -1,9 +1,17 @@
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/languageProvider";
+import en from "../../locales/en";
+import fr from "../../locales/fr";
 
 /**
  * text field component
  */
 export function TextField(props) {
+  const { items } = useContext(LanguageContext);
+  const language = items.language;
+  const t = language === "en" ? en : fr;
+
   const ifControlledProps = !props.uncontrolled
     ? {
         value: props.value,
@@ -19,8 +27,15 @@ export function TextField(props) {
       >
         {props.label}
       </label>
+      <p
+        id={props.describedby}
+        className="text-xs lg:text-sm mb-5 leading-30px"
+      >
+        {t.reportAProblemNoPersonalInfo}
+      </p>
       <input
         className="text-input font-body w-full min-h-40px rounded shadow-sm text-form-input-gray border border-form-input-border-gray py-6px px-12px"
+        aria-describedby={props.describedby}
         id={props.id}
         name={props.name}
         placeholder={props.placeholder}
@@ -76,4 +91,8 @@ TextField.propTypes = {
    * boolean flag to specify that this input should be uncontrolled by react
    */
   uncontrolled: PropTypes.bool,
+  /**
+   * aria-describedby label id
+   */
+  describedby: PropTypes.string,
 };

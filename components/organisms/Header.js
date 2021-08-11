@@ -10,10 +10,9 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header({ breadcrumbItems }) {
+export function Header({ breadcrumbItems, locale }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
-
   const setLanguage = (language) => {
     changeLanguage(language);
   };
@@ -24,25 +23,21 @@ export function Header({ breadcrumbItems }) {
   const router = useRouter();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const lang = window.localStorage.getItem("lang");
-
-      // if cookie language is different this will sync both
-      if (lang === "en" || lang === "fr") {
-        if (lang !== language) {
-          changeLanguage(lang);
-        }
-      }
-
-      if (lang) {
-        router.replace(router.asPath, router.asPath, { locale: lang });
+    // if router language is different this will sync both
+    if (router.locale === "en" || router.locale === "fr") {
+      if (router.locale !== language) {
+        changeLanguage(router.locale);
       }
     }
-  }, [language]);
+  }, [router.locale]);
 
   return (
     <>
-      <nav className="skip-main">
+      <nav
+        role="navigation"
+        aria-label={t.skipToMainContent}
+        className="skip-main"
+      >
         <a
           id="skipToMainContent"
           className="bg-custom-blue-dark text-white py-1 px-2 focus:outline-black-solid hover:bg-gray-dark"
@@ -81,7 +76,11 @@ export function Header({ breadcrumbItems }) {
             </a>
 
             {/* Language selector for small screens */}
-            <Link key={language} href={router.asPath} locale={language}>
+            <Link
+              key={language}
+              href={router.asPath}
+              locale={language === "en" ? "fr" : "en"}
+            >
               <a
                 className="visible lg:invisible ml-6 sm:ml-16 underline font-body font-bold text-canada-footer-font lg:text-sm text-base hover:text-canada-footer-hover-font-blue"
                 onClick={() => setLanguage(language)}
@@ -97,7 +96,7 @@ export function Header({ breadcrumbItems }) {
             <Link
               key={language}
               href={router.asPath}
-              locale={language}
+              locale={language === "en" ? "fr" : "en"}
               //onClick={() => setLanguage(language)}
             >
               <a
@@ -133,6 +132,10 @@ Header.propTypes = {
 
   //Child Banner Text
   bannerText: propTypes.string,
+  /**
+   * current locale in the address
+   */
+  locale: propTypes.string,
   /**
    * Array of Items for the breadcrumb
    */
