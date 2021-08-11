@@ -10,7 +10,7 @@ import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export function Header({ breadcrumbItems }) {
+export function Header({ breadcrumbItems, locale }) {
   const { items } = useContext(LanguageContext);
   const changeLanguage = items.changeLanguage;
   const setLanguage = (language) => {
@@ -22,26 +22,29 @@ export function Header({ breadcrumbItems }) {
 
   const router = useRouter();
 
-  // useEffect(() => {
-  //   //
-  //   // a11y complained about this, so commented out for now.
-  //   //
+  useEffect(() => {
+    //
+    // a11y complained about this, so commented out for now.
+    //
 
-  //   //   if (typeof window !== "undefined") {
-  //   //     const lang = window.localStorage.getItem("lang");
+    //   if (typeof window !== "undefined") {
+    //     const lang = window.localStorage.getItem("lang");
 
-  //   //     // if cookie language is different this will sync both
-  //   //     if (lang === "en" || lang === "fr") {
-  //   //       if (lang !== language) {
-  //   //         changeLanguage(lang);
-  //   //       }
-  //   //     }
+    // if router language is different this will sync both
+    if (router.locale === "en" || router.locale === "fr") {
+      if (router.locale !== language) {
+        changeLanguage(router.locale);
+      }
+    }
+    console.log("current language", language);
+    console.log("current locale", locale);
+    console.log("current router", router.locale);
 
-  //   if (language) {
-  //     router.replace(router.asPath, router.asPath, { locale: language });
-  //   }
-  //   //   }
-  // }, [language]);
+    // if (language !== router.locale) {
+    //   router.replace(router.asPath, router.asPath, { locale: language });
+    // }
+    //   }
+  }, [language]);
 
   return (
     <>
@@ -136,6 +139,10 @@ Header.propTypes = {
 
   //Child Banner Text
   bannerText: propTypes.string,
+  /**
+   * current locale in the address
+   */
+  locale: propTypes.string,
   /**
    * Array of Items for the breadcrumb
    */

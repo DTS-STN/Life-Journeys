@@ -29,7 +29,7 @@ export default function lifejourney({ journeysData }) {
       <Layout
         title={t.havingABabyTitle}
         bannerText={t.havingAChildBannerText}
-        locale={language}
+        currentLocale={language}
       >
         <section className="layout-container mb-2 mt-4">
           <p className="text-base mx-3 pt-2 pb-8">{t.findGuidance}</p>
@@ -156,6 +156,8 @@ export default function lifejourney({ journeysData }) {
 
 export async function getStaticProps({ locale }) {
   //
+  console.log("current index locale = ", locale);
+
   const { localData } = getLocalJourneys(locale);
   const errorCode = false;
 
