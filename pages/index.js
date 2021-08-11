@@ -34,17 +34,14 @@ export default function lifejourney({ journeysData }) {
         locale={language}
       >
         <section className="layout-container mb-2 mt-4">
-          <p className="mx-3 pt-2 pb-8">{t.findGuidance}</p>
-          <h2 className="mx-3 mb-2">{t.selectLocation}</h2>
-          <div className="pb-8">
-            <Select
-              options={language === "en" ? optionsEN : optionsFR}
-              onChange={onChangeFunc}
-              name="provinceSelector"
-              defaultValue="CAN"
-              label={t.topRequestedLabel}
-            />
-          </div>
+          <p className="text-base mx-3 pt-2 pb-6">{t.findGuidance}</p>
+          <Select
+            options={language === "en" ? optionsEN : optionsFR}
+            onChange={onChangeFunc}
+            name="provinceSelector"
+            defaultValue="CAN"
+            label={t.topRequestedLabel}
+          />
 
           <div className="mx-3 my-4">
             <h3>{t.topRequested}</h3>
