@@ -24,8 +24,6 @@ export default function lifejourney({ journeysData }) {
     forceUpdate();
   }
 
-  console.log("select for region = ", region.current);
-
   return (
     <>
       <Layout

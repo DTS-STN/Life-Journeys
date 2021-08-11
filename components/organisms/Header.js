@@ -23,24 +23,26 @@ export function Header({ breadcrumbItems }) {
 
   const router = useRouter();
 
-  // a11y complained about this, so commented out for now.
-  //
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     const lang = window.localStorage.getItem("lang");
+  useEffect(() => {
+    //
+    // a11y complained about this, so commented out for now.
+    //
 
-  //     // if cookie language is different this will sync both
-  //     if (lang === "en" || lang === "fr") {
-  //       if (lang !== language) {
-  //         changeLanguage(lang);
-  //       }
-  //     }
+    //   if (typeof window !== "undefined") {
+    //     const lang = window.localStorage.getItem("lang");
 
-  //     if (lang) {
-  //       router.replace(router.asPath, router.asPath, { locale: lang });
-  //     }
-  //   }
-  // }, [language]);
+    //     // if cookie language is different this will sync both
+    //     if (lang === "en" || lang === "fr") {
+    //       if (lang !== language) {
+    //         changeLanguage(lang);
+    //       }
+    //     }
+
+    if (language) {
+      router.replace(router.asPath, router.asPath, { locale: language });
+    }
+    //   }
+  }, [language]);
 
   return (
     <>
