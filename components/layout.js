@@ -11,6 +11,7 @@ export default function Layout({
   children,
   title,
   bannerText,
+  currentLocale,
   breadcrumbItems,
 }) {
   return (
@@ -18,7 +19,7 @@ export default function Layout({
       <Meta title={title} />
 
       <div className="overflow-x-hidden">
-        <Header breadcrumbItems={breadcrumbItems} />
+        <Header breadcrumbItems={breadcrumbItems} locale={currentLocale} />
 
         <main>
           {/* Display a banner when requested */}
@@ -37,7 +38,7 @@ Layout.propTypes = {
   title: propTypes.string,
 
   // Current Language
-  locale: propTypes.string.isRequired,
+  currentLocale: propTypes.string.isRequired,
 
   // Banner Text, for sub pages that requires a banner, this variable is required
   bannerTitle: propTypes.string,
