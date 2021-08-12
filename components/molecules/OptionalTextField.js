@@ -48,6 +48,7 @@ export function OptionalTextField(props) {
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
             describedby={props.describedby}
+            reportAProblemNoPersonalInfo={props.reportAProblemNoPersonalInfo}
           />
         ) : (
           <TextField
@@ -62,6 +63,7 @@ export function OptionalTextField(props) {
               props.onTextFieldChange ? props.onTextFieldChange : () => {}
             }
             describedby={props.describedby}
+            reportAProblemNoPersonalInfo={props.reportAProblemNoPersonalInfo}
           />
         )
       ) : undefined}
@@ -178,4 +180,9 @@ OptionalTextField.propTypes = {
    * aria-describedby label id
    */
   describedby: PropTypes.string,
+
+  /**
+   *
+   */
+  reportAProblemNoPersonalInfo: PropTypes.string,
 };
