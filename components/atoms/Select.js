@@ -6,10 +6,10 @@ export default function Select(props) {
       {props.label}
       <select
         defaultValue={props.defaultValue}
-        /** w-auto h-8 rounded border bg-white border-custom-blue-reportButtonActive mt-2 overflow-ellipsis xxs:max-w-full */
         className="text-black ml-2 px-2 focus:shadow-blue shadow-inner h-8 rounded border bg-white border-gray-400 mt-2 overflow-ellipsis focus:border-custom-blue-focus focus-visible:outline-none w-auto"
         name={props.name}
         onChange={(e) => props.onChange(e.currentTarget.value)}
+        autoComplete="off"
       >
         {props.options.map(({ value, label }) => (
           <option key={value} value={value}>
