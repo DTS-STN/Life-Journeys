@@ -107,6 +107,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="incorrectInformation"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="unclearInformationCheckBox"
@@ -121,6 +122,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="unclearInformation"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="infoNotFoundCheckBox"
@@ -135,6 +137,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="infoNotFound"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="adaptiveTechnologyCheckBox"
@@ -151,6 +154,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="adaptiveTechnology"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="privacyIssuesCheckBox"
@@ -165,6 +169,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="privacyIssues"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="noWhereElseToGoCheckBox"
@@ -179,6 +184,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="noWhereElseToGo"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
               <OptionalTextField
                 checkBoxId="otherCheckBox"
@@ -193,6 +199,7 @@ export default function ReportProblem() {
                 wrap="hard"
                 maxLength={750}
                 describedby="other"
+                reportAProblemNoPersonalInfo={t.reportAProblemNoPersonalInfo}
               />
             </fieldset>
             <ActionButton

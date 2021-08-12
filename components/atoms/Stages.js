@@ -73,6 +73,7 @@ export default function Stages(props) {
           id="stage"
           onChange={(e) => onChangeHandler(e.currentTarget.value)}
           defaultValue={props.defaultValue}
+          autoComplete="off"
         >
           <option key="0" value={0} defaultValue disabled>
             {props.stagesSelectPlaceholder}
