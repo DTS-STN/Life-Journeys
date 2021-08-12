@@ -24,7 +24,7 @@ export default function ResourceLink(props) {
             className="underline w-full text-sm sm:text-h6 font-display"
             id={link}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer external"
           >
             {label}
             <span className="sr-only">{props.srOnly}</span>
@@ -42,7 +42,7 @@ export default function ResourceLink(props) {
           className="underline w-full text-sm sm:text-h6 font-display"
           id={props.id}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer external"
           href={googleSearch}
         >
           {props.text}

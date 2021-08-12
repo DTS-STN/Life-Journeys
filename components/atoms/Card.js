@@ -9,7 +9,7 @@ export default function Card(props) {
     <div className="text-black text-left card rounded-tl-md rounded-b-md border my-6 mx-4">
       <a
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer external"
         aria-label={props.links[0].ariaLabel}
         href={props.links[0].url}
       >
