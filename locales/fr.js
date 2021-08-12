@@ -118,7 +118,7 @@ export default {
   findGuidance:
     "Trouvez des conseils et des outils pour vous aider à prendre les bonnes décisions pour vous tout au long de ce parcours.",
   selectLocation:
-    "Sélectionnez votre lieu de résidence pour obtenir les ressources qui s’appliquent à votre région.",
+    "Sélectionnez votre lieu de résidence pour obtenir les ressources qui s’appliquent à votre région",
 
   //Table
 
@@ -204,7 +204,7 @@ export default {
     "Notre outil vous permettra de naviguer à travers les différentes étapes, d’obtenir des informations sur chacune d’entre elles et de connaître qui peut vous fournir des services.",
   ],
   stagesSubtitle: "Étapes du parcours",
-  stagesSelectTitle: "Choisissiez une étape pour apprenez plus sur les tâches.",
+  stagesSelectTitle: "Choisissiez une étape pour apprenez plus sur les tâches",
   stagesSelectLabel: "Étape du parcours : ",
   stagesSelectPlaceholder: "-Sélectionner-",
 
