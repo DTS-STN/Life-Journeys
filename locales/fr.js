@@ -113,7 +113,7 @@ export default {
 
   // Having a baby
   topRequested:
-    "Ressources pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
+    "Ressources pour vous aider à prendre les bonnes décisions tout au long ce parcours.",
   topRequestedLabel: "Afficher le contenu pour :",
   findGuidance:
     "Trouvez des conseils et des outils pour vous aider à prendre les bonnes décisions pour vous tout au long de ce parcours.",
@@ -136,13 +136,13 @@ export default {
 
   //Cards
   card1Title: "Congé parental",
-  card1Service: "De : Assurance-emploi",
+  card1Service: "de : Assurance-emploi",
   card1Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/services/prestations/ae/assurance-emploi-maternite-parentales.html",
       ariaLabel:
-        "apprenez comment présenter une demande de congé de maternité et de congé parental sur le site web de service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
+        "Apprenez comment présenter une demande de congé de maternité et de congé parental sur le site web de service canada. Ce lien va ouvrir le site Web de Service Canada dans une nouvelle fenêtre.",
     },
     {
       text: "Présenter une demande",
@@ -151,47 +151,47 @@ export default {
     },
   ],
 
-  card1QuebecTitle: "L'assurance parentale",
-  card1QuebecService: "De : Régime québécois d'assurance parentale",
+  card1QuebecTitle: "Congé parentale",
+  card1QuebecService: "de : Régime québécois d'assurance parentale",
   card1QuebecLinks: [
     {
       text: "Présenter une demande",
       url: "https://www.rqap.gouv.qc.ca/fr/services-en-ligne/faire-ma-demande-de-prestations",
       ariaLabel:
-        "apprenez comment présenter une demande de congé parental sur le site web de l'assurance parentale. Ce lein va ouvrir le site Web de l'assurance parentale dans un nouvel fenêtre",
+        "Apprenez comment présenter une demande de congé de maternité et de congé parental sur le site web de service canada. Ce lien va ouvrir le site Web de Service Canada dans une nouvelle fenêtre.",
     },
   ],
 
   card2Title: "Chercheur de prestations",
-  card2Service: "De : Service Canada",
+  card2Service: "de : Service Canada",
   card2Links: [
     {
       text: "Trouver des prestations",
       url: "https://benefitsfinder.services.gc.ca/hm?GoCTemplateCulture=fr-CA&cl=true",
       ariaLabel:
-        "Cherchez les prestations sur le site web de Service canada. Ce lein va ouvrir le site Web de Service Canada dans un nouvel fenêtre",
+        "Cherchez les prestations sur le site web de Service canada. Ce lien va ouvrir le site Web de Service Canada dans une nouvelle fenêtre.",
     },
   ],
 
   card3Title: "Ressources en santé mentale et physique",
-  card3Service: "De : Agence de la santé publique du Canada",
+  card3Service: "de : Agence de la santé publique du Canada",
   card3Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-publique/services/soins-meres-nouveau-ne-lignes-directrices-nationales.html",
       ariaLabel:
-        "Consultez la ressource sur la santé mentale et physique sur le site de l'agence de santé publique du Canada. Ce lein va ouvrir le site Web de l’Agence de la santé publique du Canada dans un nouvel fenêtre.",
+        "Consultez la ressource sur la santé mentale et physique sur le site de l'agence de santé publique du Canada. Ce lien va ouvrir le site Web de l’Agence de la santé publique du Canada dans une nouvelle fenêtre.",
     },
   ],
 
   card4Title: "Ressources en matière de soins aux nouveau-nés",
-  card4Service: "De : Santé Canada",
+  card4Service: "de : Santé Canada",
   card4Links: [
     {
       text: "En savoir plus",
       url: "https://www.canada.ca/fr/sante-canada/services/soins-nourrissons.html",
       ariaLabel:
-        "Consultez la ressource sur les soins aux nouveau-nés sur le site Web de Santé Canada. Ce lein va ouvrir le site Web de Santé Canada dans un nouvel fenêtre",
+        "Consultez la ressource sur les soins aux nouveau-nés sur le site Web de Santé Canada. Ce lien va ouvrir le site Web de Santé Canada dans une nouvelle fenêtre.",
     },
   ],
 
@@ -199,12 +199,12 @@ export default {
   stagesTitle:
     "Découvrez les étapes du parcours de vie de l’arrivée d’un enfant",
   stagesDescr: [
-    "Apprenez-en plus sur les tâches importantes à accomplir à chaque étape du parcours.",
-    "To help parents discover what they don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
-    "In this tool, you will find information about the common steps and service providers at each stage in your journey.",
+    "De nombreux futurs parents apprennent ce qu’implique avoir un enfant grâce à leur réseau familial et à leurs amis. Mais qu’en est-il si votre parcours est différent du leur?",
+    "Pour aider les parents à découvrir ce qu’ils ne savent pas, nous avons cartographié tous les différents événements qui pourraient se produire au cours du parcours. Nous en avons fait un outil que vous pouvez explorer.",
+    "Notre outil vous permettra de naviguer à travers les différentes étapes, d’obtenir des informations sur chacune d’entre elles et de connaître qui peut vous fournir des services.",
   ],
-  stagesSubtitle: "FRENCH Journey Stages",
-  stagesSelectTitle: "FRENCH Select a stage to learn more about the key stages",
+  stagesSubtitle: "Étapes du parcours",
+  stagesSelectTitle: "Choisissiez une étape pour apprenez plus sur les tâches.",
   stagesSelectLabel: "Étape du parcours : ",
   stagesSelectPlaceholder: "-Sélectionner-",
 
