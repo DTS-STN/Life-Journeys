@@ -69,7 +69,7 @@ export function Header({ breadcrumbItems, locale }) {
                 }
                 alt={
                   language === "en"
-                    ? "Symbol of the Government of Canada"
+                    ? "Government of Canada"
                     : "Gouvernement du Canada"
                 }
               />
