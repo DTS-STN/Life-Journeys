@@ -229,7 +229,7 @@ export default {
   reportAProblemProvideMoreDetails: "Provide more details (optional)",
   reportAProblemNoReply: "You will not receive a reply. ",
   reportAProblemEnquiries: "For enquiries, please contact ",
-  reportAProblemConfidential: "Your feedback will be condifential",
+  reportAProblemConfidential: "Your feedback will be confidential",
   reportAProblemNoPersonalInfo:
     "Do not include any personal, medical, or financial details, such as your name, social insurance number (SIN), home or business address, phone number or any case or file numbers.",
   reportAProblemThankYouForYourHelp: "Thank you for your help!",
