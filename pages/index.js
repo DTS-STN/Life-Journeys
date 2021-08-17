@@ -12,6 +12,10 @@ import optionsEN from "./api/optionsEN";
 import optionsFR from "./api/optionsFR";
 import ResourceLink from "../components/atoms/ResourceLink";
 
+//
+// journeysData is preloaded based on the current locale before the page loads
+//
+
 export default function lifejourney({ journeysData }) {
   const { items } = useContext(LanguageContext);
   const language = items.language;
@@ -157,15 +161,12 @@ export default function lifejourney({ journeysData }) {
 
 export async function getStaticProps({ locale }) {
   //
-  console.log("current index locale = ", locale);
-
-  const { localData } = getLocalJourneys(locale);
-  const errorCode = false;
+  console.log("Index, current locale = ", locale);
 
   return {
     props: {
-      journeysData: localData,
-      errorCode,
+      journeysData: getLocalJourneys(locale),
+      errorCode: false,
       locale,
     },
   };

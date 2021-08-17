@@ -41,5 +41,5 @@ export function getLocalJourneys(language) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const localData = JSON.parse(fileContents).Journeys;
 
-  return { localData };
+  return localData;
 }

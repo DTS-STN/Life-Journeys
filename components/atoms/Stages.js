@@ -15,10 +15,9 @@ export default function Stages(props) {
   const selected = useRef(null);
 
   //
-  // updates the accordions content with the selection
+  // updates the accordions content with the user selection
   function onChangeHandler(option) {
     selected.current = option;
-
     if (option === 0) {
       setShowData(undefined);
     } else {
@@ -29,13 +28,13 @@ export default function Stages(props) {
   }
 
   //
-  // updates the language of the accordions when switching languages
+  // updates the content of the accordions when switching languages
   useEffect(() => {
     if (selected.current !== 0) {
       props.journeys.map((journey) =>
         journey.titleId === selected.current
           ? setShowData(journey.subJourney)
-          : setShowData(undefined)
+          : false
       );
     }
   }, [props.journeys]);
