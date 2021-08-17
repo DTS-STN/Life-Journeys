@@ -102,10 +102,8 @@ export default function Stages(props) {
                 {subJourney.content.map(({ title, list }, idx) => (
                   <div key={idx}>
                     {title !== "hidden" ? (
-                      // <strong>
                       <h6 className="text-base font-semibold -mx-4">{title}</h6>
                     ) : (
-                      // </strong>
                       ""
                     )}
                     <ul
