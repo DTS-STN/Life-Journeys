@@ -2,15 +2,11 @@ import Details from "./Details";
 import { ActionButton } from "./ActionButton";
 import { OptionalTextField } from "../molecules/OptionalTextField";
 import { useState } from "react";
-import { useContext } from "react";
-import { LanguageContext } from "../../context/languageProvider";
 import en from "../../locales/en";
 import fr from "../../locales/fr";
 
-export default function ReportProblem() {
+export default function ReportProblem({ language }) {
   const [submitted, setSubmitted] = useState(false);
-  const { items } = useContext(LanguageContext);
-  const language = items.language;
   const t = language === "en" ? en : fr;
 
   let onSubmitHandler = (e) => {

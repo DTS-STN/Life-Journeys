@@ -18,7 +18,7 @@ export function PageDetails() {
   return (
     <>
       <div className="layout-container my-3">
-        <ReportProblem />
+        <ReportProblem language={language} />
       </div>
 
       <div className="layout-container">
