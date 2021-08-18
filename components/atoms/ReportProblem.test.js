@@ -22,7 +22,7 @@ describe("Report a problem tests", () => {
   it("displays a thank you message after submit button is pressed", () => {
     const { container } = render(
       <LanguageContext.Provider value={contextValue}>
-        <ReportProblem {...ReportProblem.args} />
+        <ReportProblem language="en" {...ReportProblem.args} />
       </LanguageContext.Provider>
     );
     const submitButton = container.querySelector("button");
@@ -32,7 +32,7 @@ describe("Report a problem tests", () => {
   it("has no a11y violations for form", async () => {
     const { container } = render(
       <LanguageContext.Provider value={contextValue}>
-        <ReportProblem {...ReportProblem.args} />
+        <ReportProblem language="en" {...ReportProblem.args} />
       </LanguageContext.Provider>
     );
     const results = await axe(container);
@@ -41,7 +41,7 @@ describe("Report a problem tests", () => {
   it("has no a11y violations for thank you message", async () => {
     const { container } = render(
       <LanguageContext.Provider value={contextValue}>
-        <ReportProblem {...ReportProblem.args} />
+        <ReportProblem language="en" {...ReportProblem.args} />
       </LanguageContext.Provider>
     );
     const submitButton = container.querySelector("button");
