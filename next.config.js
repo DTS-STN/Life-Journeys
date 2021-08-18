@@ -24,10 +24,4 @@ module.exports = {
     defaultLocale: "en",
     localDetection: false,
   },
-  //
-  //
-  // very often when working with CSS, Next-VScode hangs hopefully this will solve the issue
-  future: {
-    webpack5: true,
-  },
 };
