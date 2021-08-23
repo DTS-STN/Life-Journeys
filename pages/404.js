@@ -3,12 +3,12 @@ import Link from "next/link";
 import ReportProblem from "../components/atoms/ReportProblem";
 import { ActionButton } from "../components/atoms/ActionButton";
 
-export default function error500() {
+export default function error404() {
   return (
     <>
       <div className="min-h-screen relative">
         <Head>
-          <title>500 — Having a Child</title>
+          <title>404 — Having a Child</title>
         </Head>
         <section className="layout-container pb-44">
           <img
@@ -20,20 +20,21 @@ export default function error500() {
             <div>
               <div className="relative h-auto xl:w-96 xxl:w-400px lg:w-72 xl:h-400px lg:h-500px mb-8 lg:mb-0">
                 <h1 className="font-bold font-display mb-4">
-                  The web site has reported an error. Please try again later.
+                  We couldn't find that page
                 </h1>
-                <p className="font-bold font-body mb-8">Error 500</p>
+                <p className="font-bold font-body mb-8">Error 404</p>
                 <p className="font-body text-sm mb-4 leading-30px">
-                  It may be due to server trouble or an incorrect or expired
-                  URL. If the problem persists, report the problem.
+                  We're sorry you ended up here. Sometimes a page gets moved or
+                  deleted, but hopefully we can help you find what you're
+                  looking for.
                 </p>
                 <div className="flex">
                   <span className="error404-link" />
                   <p className="font-body text-sm leading-30px">
-                    Return to the &nbsp;
+                    {"Return to the "}
                     <Link href="/">
                       <a className="underline hover:text-canada-footer-hover-font-blue text-canada-footer-font">
-                        Life Journeys page
+                        Having a Child page
                       </a>
                     </Link>
                   </p>
@@ -41,7 +42,6 @@ export default function error500() {
               </div>
               <ReportProblem language={"en"} />
             </div>
-
             <div className="flex items-center justify-center circle-background my-8 lg:mt-0">
               <img
                 className="w-68px xl:w-24"
@@ -49,28 +49,28 @@ export default function error500() {
                 alt="Cracked lightbulb"
               />
             </div>
-
             <div>
               <div
                 className="relative h-auto xl:w-96 xxl:w-400px lg:w-72 xl:h-400px lg:h-500px mb-8 lg:mb-0"
                 lang="fr"
               >
                 <h1 className="font-bold font-display mb-4">
-                  Le site Web a signalé une erreur. Veuiller réessayer plus
-                  tard.
+                  Nous ne trouvons pas cette page
                 </h1>
-                <p className="font-bold font-body mb-8">Erreur 500</p>
+                <p className="font-bold font-body mb-8">Erreur 404</p>
                 <p className="font-body text-sm mb-4 leading-30px">
-                  Cela peut être dû à un problème de serveur ou à une URL
-                  incorrecte ou expirée. Si le problème persiste, signalez-le.
+                  Nous sommes désolés que vous ayez abouti ici. Il arrive
+                  parfois qu'une page ait été déplacée ou supprimée.
+                  Heureusement, nous pouvons vous aider à trouver ce que vous
+                  cherchez.
                 </p>
                 <div className="flex">
                   <span className="error404-link" />
                   <p className="font-body text-sm leading-30px">
-                    Retournez à la &nbsp;
+                    {"Retour à la "}
                     <Link href="/fr">
                       <a className="underline hover:text-canada-footer-hover-font-blue text-canada-footer-font">
-                        page d'accueil des parcours de vie
+                        page "Avoir un enfant"
                       </a>
                     </Link>
                   </p>
@@ -80,7 +80,6 @@ export default function error500() {
             </div>
           </div>
         </section>
-
         <footer className="h-100px w-screen bg-footer-background-color absolute bottom-0">
           <div className="layout-container flex justify-between lg:flex-row-reverse pt-4 lg:pt-0 lg:mt-8">
             <ActionButton
