@@ -10,7 +10,7 @@
             {
               "title": "Étapes communes :",
               "list": [
-                "Recherche pour avoir un enfant",
+                "Recherche à propos d’avoir un enfant",
                 "Décider d’amorcer la conception",
                 "Essayer de concevoir naturellement",
                 "Recherche d’options de fertilité",
@@ -55,7 +55,7 @@
                 "Avocat",
                 "Sites Internet consacrés à l’adoption",
                 "Commission de l’immigration et du statut de réfugié",
-                "Aide à l’enfance/Services sociaux",
+                "Aide à l’enfance / services sociaux",
                 "Travailleur social",
                 "Professionnel de la santé mentale",
                 "Administrateurs des forces de l’ordre"
@@ -83,7 +83,7 @@
               "list": [
                 "Fournisseurs de soins de santé",
                 "Médecin de famille",
-                "Professionnel de l’accouchement",
+                "Professionnel de la naissance",
                 "Professionnel de la santé mentale",
                 "Clinique de fertilité",
                 "Laboratoire d’analyse médicale",
@@ -105,7 +105,7 @@
               "title": "Étapes communes :",
               "list": [
                 "Gérer la santé et bien-être maternel et fœtal",
-                "Consulter un professionnel de l’accouchement",
+                "Consulter un professionnel de la naissance",
                 "Analyse médicale spécialisée",
                 "Traitements spécialisés pour grossesses à haut risque"
               ]
@@ -115,7 +115,7 @@
               "list": [
                 "Professionnels de la santé",
                 "Médecin de famille",
-                "Professionnel de l’accouchement",
+                "Professionnel de la naissance",
                 "Nutritionniste",
                 "Professionnel de la santé et du bien-être",
                 "Professionnel de la santé mentale",
@@ -123,7 +123,7 @@
                 "Examens à la maison",
                 "Studios de mise en forme",
                 "Cours prénataux",
-                "Hôpital/Clinique",
+                "Hôpital / clinique",
                 "Médecins spécialistes",
                 "Spécialistes de la médecine fœtale"
               ]
@@ -146,8 +146,8 @@
               "list": [
                 "Fournisseurs de soin de santé",
                 "Médecin de famille",
-                "Professional de l’accouchement",
-                "Hôpital/Clinique/Centre des naissances",
+                "Professionnel de la naissance",
+                "Hôpital / clinique / centre des naissances",
                 "Spécialistes de la médecine fœtale",
                 "Médecins spécialistes"
               ]
@@ -175,7 +175,7 @@
                 "Travailleur social",
                 "Conseiller des parents biologiques",
                 "Gouvernement provincial",
-                "Aide à l’enfance/Soins sociaux",
+                "Aide à l’enfance / services sociaux",
                 "Service Canada",
                 "Immigration, Réfugiés et Citoyenneté Canada"
               ]
@@ -200,7 +200,7 @@
               "list": [
                 "Employeur",
                 "Avocat",
-                "Organismes de bienfaisance/Organismes à but non lucratif",
+                "Organismes de bienfaisance / organismes à but non lucratif",
                 "Institution financière",
                 "Service Canada",
                 "Assureur",
@@ -209,15 +209,11 @@
                 "Détaillants",
                 "Fournisseurs de soins",
                 "Coach du sommeil",
-                "Spécialiste de l’adoption*",
-                "Aide à l’enfance/Services sociaux*",
-                "Travailleur social*",
-                "Juge de paix*"
+                "Spécialiste de l’adoption (propres au parcours de l’adoption)",
+                "Aide à l’enfance/Services sociaux (propres au parcours de l’adoption)",
+                "Travailleur social (propres au parcours de l’adoption)",
+                "Juge de paix (propres au parcours de l’adoption)"
               ]
-            },
-            {
-              "title": "hidden",
-              "list": ["* Propres au parcours de l’adoption"]
             }
           ]
         },
@@ -262,14 +258,14 @@
               "list": [
                 "Fournisseurs de soins de santé",
                 "Médecin de famille",
-                "Professionnel de l’accouchement",
+                "Professionnel de la naissance",
                 "Professionnels de la santé et du bien-être",
                 "Laboratoire d’analyse médicale",
                 "Médecins spécialistes",
                 "Médecins chargés des grossesses à haut risque",
-                "Généticien/généticienne",
+                "Généticien",
                 "Groupes de soutien",
-                "Hôpital/Clinique"
+                "Hôpital / clinique"
               ]
             }
           ]
@@ -289,15 +285,15 @@
                 "Arrivée au lieu de naissance",
                 "Surveillance et travail précoce",
                 "Complications lors du travail",
-                "Travail et accouchement actifs"
+                "Travail actif et accouchement"
               ]
             },
             {
               "title": "Fournisseurs de services communs :",
               "list": [
                 "Professionnels de la santé",
-                "Hôpital/Clinique/Centre des naissances",
-                "Professionnels de l’accouchement",
+                "Hôpital / clinique / centre des naissances",
+                "Professionnels de la naissance",
                 "Médecins chargés des grossesses à haut risque",
                 "Spécialistes de la médecine fœtale"
               ]
@@ -311,7 +307,7 @@
               "title": "Étapes communes :",
               "list": [
                 "Lien affectif et soins postnataux",
-                "Arrivée de l’enfant adopté et période de probation*",
+                "Arrivée de l’enfant adopté et période de probation (propre au parcours de l’adoption)",
                 "Complications relatives à la santé de l’enfant"
               ]
             },
@@ -321,19 +317,12 @@
                 "Professionnels de la santé",
                 "Médecins spécialistes",
                 "Médecin de famille",
-                "Professionnel de l’accouchement",
-                "Hôpital/Clinique/Centre des naissances**",
-                "Travailleur social*",
-                "Spécialiste de l’adoption*",
-                "Immigration, Réfugiés et Citoyenneté Canada*",
+                "Professionnel de la naissance",
+                "Hôpital/Clinique/Centre des naissances (propre à la naissance)",
+                "Travailleur social (propre au parcours de l’adoption)",
+                "Spécialiste de l’adoption (propre au parcours de l’adoption)",
+                "Immigration, Réfugiés et Citoyenneté Canada (propre au parcours de l’adoption)",
                 "Unité de soins intensifs pour nouveau-nés"
-              ]
-            },
-            {
-              "title": "hidden",
-              "list": [
-                "* Propre au parcours de l’adoption",
-                "** Propre à la naissance"
               ]
             }
           ]
@@ -348,7 +337,7 @@
             {
               "title": "Fournisseurs de services communs :",
               "list": [
-                "Hôpital/Clinique/Centre des naissances",
+                "Hôpital / clinique / centre des naissances",
                 "Gouvernement provincial"
               ]
             }
@@ -362,7 +351,7 @@
               "list": [
                 "Accouchement d'un mort-né",
                 "Décès d’un nourrisson",
-                "Décès d’un parent au moment de l’accouchement"
+                "Décès d’un parent au moment de la naissance"
               ]
             },
             {
@@ -379,12 +368,12 @@
               "list": [
                 "Professionnels de la santé",
                 "Médecin de famille",
-                "Professionnel de l’accouchement",
-                "Hôpital/Clinique/Centre des naissances",
+                "Professionnel de la naissance",
+                "Hôpital / clinique / centre des naissances",
                 "Professionnel de la santé mentale",
                 "Groupes de soutien",
-                "Organismes de bienfaisance/Organismes à but non lucratif",
-                "Généticien/généticienne",
+                "Organismes de bienfaisance / organismes à but non lucratif",
+                "Généticien",
                 "Spécialistes de la médecine fœtale",
                 "Médecins spécialistes",
                 "Analyse médicale",
@@ -414,7 +403,7 @@
                 "Immunisations",
                 "Célébration",
                 "Soutien aux parents et consultation",
-                "Finaliser l’adoption légale*"
+                "Finaliser l’adoption légale (propre au parcours de l’adoption)"
               ]
             },
             {
@@ -422,7 +411,7 @@
               "list": [
                 "Professionnels de la santé",
                 "Groupes de soutien",
-                "Coach de sommeil",
+                "Coach du sommeil",
                 "Appli de suivi du développement",
                 "Médecin de famille",
                 "Cours de loisir",
@@ -431,15 +420,11 @@
                 "Consultante en lactation",
                 "Pédiatre",
                 "Professionnels de la santé mentale",
-                "Travailleur social*",
-                "Gouvernement provincial*",
-                "Spécialiste de l’adoption*",
-                "Avocat*"
+                "Travailleur social (propre au parcours de l’adoption)",
+                "Gouvernement provincial (propre au parcours de l’adoption)",
+                "Spécialiste de l’adoption (propre au parcours de l’adoption)",
+                "Avocat (propre au parcours de l’adoption)"
               ]
-            },
-            {
-              "title": "hidden",
-              "list": ["* Propre au parcours de l’adoption"]
             }
           ]
         },
@@ -509,7 +494,7 @@
                 "Professionnel de la naissance",
                 "Service Canada",
                 "Laboratoire d’analyse médicale",
-                "Organismes de bienfaisance/Organismes à but non lucratif",
+                "Organismes de bienfaisance / organismes à but non lucratif",
                 "Détaillants"
               ]
             }
@@ -529,13 +514,13 @@
               "list": [
                 "Accouchement d'un mort-né",
                 "Décès d’un nourrisson",
-                "Décès d’un parent au moment de l’accouchement"
+                "Décès d’un parent au moment de la naissance"
               ]
             },
             {
               "title": "Étapes communes :",
               "list": [
-                "Analyse et rapports médicaux suivant l’accouchement du mort-né",
+                "Analyse et rapports médicaux suivant la naissance du mort-né",
                 "Procéder aux arrangements de fin de vie",
                 "Soutien en matière de santé mentale et émotionnelle",
                 "Garder leur mémoire vivante"
@@ -549,11 +534,11 @@
                 "Professionnel de la naissance",
                 "Travailleur social",
                 "Professionnels de la santé et du bien-être",
-                "Hôpital/Clinique/Centre des naissances",
+                "Hôpital / clinique / centre des naissances",
                 "Professionnel de la santé mentale",
-                "Organismes de bienfaisance/Organismes à but non lucratif",
+                "Organismes de bienfaisance / organismes à but non lucratif",
                 "Spécialistes de la médecine fœtale",
-                "Généticien/Généticienne",
+                "Généticien",
                 "Médecins spécialistes",
                 "Analyse médicale",
                 "Médecins chargés des grossesses à haut risque"
