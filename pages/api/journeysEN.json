@@ -209,15 +209,11 @@
                 "Retailers",
                 "Care providers",
                 "Sleeping coach",
-                "Adoption practitioner*",
-                "Children’s Aid/Social services*",
-                "Social worker*",
-                "Justice of the Peace*"
+                "Adoption practitioner (Specific to the adoption path)",
+                "Children’s Aid/Social services (Specific to the adoption path)",
+                "Social worker (Specific to the adoption path)",
+                "Justice of the Peace (Specific to the adoption path)"
               ]
-            },
-            {
-              "title": "hidden",
-              "list": ["* Specific to the adoption path"]
             }
           ]
         },
@@ -311,7 +307,7 @@
               "title": "Common steps:",
               "list": [
                 "Post-birth bonding and care",
-                "Arrival of adopted child and probation period*",
+                "Arrival of adopted child and probation period (Specific to the adoption path)",
                 "Complications with the child’s health"
               ]
             },
@@ -322,18 +318,11 @@
                 "Specialist doctors",
                 "Family doctor",
                 "Birthing professional",
-                "Hospital/clinic/birthing centre**",
-                "Social worker*",
-                "Adoption practitioner*",
-                "Immigration, Refugees, and Citizenship Canada*",
+                "Hospital/clinic/birthing centre (Specific to giving birth)",
+                "Social worker (Specific to the adoption path)",
+                "Adoption practitioner (Specific to the adoption path)",
+                "Immigration, Refugees, and Citizenship Canada (Specific to the adoption path)",
                 "Newborn intensive care unit"
-              ]
-            },
-            {
-              "title": "hidden",
-              "list": [
-                " * Specific to the adoption path",
-                "** Specific to giving birth"
               ]
             }
           ]
@@ -348,7 +337,7 @@
             {
               "title": "Common service providers:",
               "list": [
-                "Hospital/clinic/birthing Centre",
+                "Hospital/clinic/birthing centre",
                 "Provincial government"
               ]
             }
@@ -410,7 +399,7 @@
                 "Immunizations",
                 "Celebration",
                 "Parental support and counselling",
-                "Finalizing legal adoption*"
+                "Finalizing legal adoption (Specific to the adoption path)"
               ]
             },
             {
@@ -427,15 +416,11 @@
                 "Lactation consultant",
                 "Pediatrician",
                 "Mental health practitioners",
-                "Social worker*",
-                "Provincial government*",
-                "Adoption practitioner*",
-                "Lawyer*"
+                "Social worker (Specific to the adoption path)",
+                "Provincial government (Specific to the adoption path)",
+                "Adoption practitioner (Specific to the adoption path)",
+                "Lawyer (Specific to the adoption path)"
               ]
-            },
-            {
-              "title": "hidden",
-              "list": ["* Specific to the adoption path"]
             }
           ]
         },

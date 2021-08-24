@@ -12,7 +12,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+          "Présenter une demande de certificat de naissance pour mon enfant (anglais seulement)",
         link: "https://www.alberta.ca/order-birth-certificate.aspx",
       },
       {
@@ -30,7 +30,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+          "Présenter une demande de certificat de naissance pour mon enfant (anglais seulement)",
         link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-certificates",
       },
       {
@@ -48,7 +48,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://vitalstats.gov.mb.ca/certificates.fr.html",
       },
       {
@@ -66,7 +66,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www2.snb.ca/content/snb/fr/services/services_renderer.17477.Certificat_de_naissance.html",
       },
       {
@@ -84,7 +84,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www.gov.nl.ca/dgsnl/birth/birth-certificate/index-fr/",
       },
       {
@@ -102,7 +102,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www.hss.gov.nt.ca/fr/services/demander-un-certificat-de-naissance",
       },
       {
@@ -120,7 +120,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://beta.novascotia.ca/fr/demande-de-certificat-de-naissance",
       },
       {
@@ -138,7 +138,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www.gov.nu.ca/fr/health/information/certificat-de-naissance",
       },
       {
@@ -156,7 +156,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www.ontario.ca/fr/page/obtenir-ou-remplacer-un-certificat-de-naissance-de-lontario",
       },
       {
@@ -174,7 +174,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé (anglais seulement)",
+          "Présenter une demande de certificat de naissance pour mon enfant (anglais seulement)",
         link: "https://www.princeedwardisland.ca/fr/service/apply-birth-certificate",
       },
       {
@@ -192,7 +192,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://services.etatcivil.gouv.qc.ca/declic2/index.aspx",
       },
       {
@@ -214,7 +214,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://www.ehealthsask.ca/residents/births/Pages/Order-a-Birth-Certificate.aspx (anglais seulement)",
       },
       {
@@ -232,7 +232,7 @@ export default [
       },
       {
         label:
-          "Présenter une demande pour le certificat de naissance pour mon bébé",
+          "Présenter une demande de certificat de naissance pour mon enfant",
         link: "https://yukon.ca/fr/naissances-mariages-et-deces/naissances/demander-le-premier-certificat-de-naissance-de-votre-enfant",
       },
       {

@@ -11,7 +11,7 @@ export default [
         link: "https://www.alberta.ca/register-birth.aspx",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.alberta.ca/order-birth-certificate.aspx",
       },
       {
@@ -28,7 +28,7 @@ export default [
         link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-registration",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www2.gov.bc.ca/gov/content/life-events/birth-adoption/births/birth-certificates",
       },
       {
@@ -45,7 +45,7 @@ export default [
         link: "https://vitalstats.gov.mb.ca/birth_registration.html",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://vitalstats.gov.mb.ca/certificates.html",
       },
       {
@@ -62,7 +62,7 @@ export default [
         link: "https://www2.gnb.ca/content/gnb/en/services/services_renderer.201426.Birth_Registration.html",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www2.gnb.ca/content/gnb/en/services/services_renderer.17477.Birth_Certificate.html",
       },
       {
@@ -79,7 +79,7 @@ export default [
         link: "https://www.gov.nl.ca/dgsnl/birth/bundled/",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.gov.nl.ca/dgsnl/birth/birth-certificate/",
       },
       {
@@ -96,7 +96,7 @@ export default [
         link: "https://www.hss.gov.nt.ca/en/services/register-birth",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.hss.gov.nt.ca/en/services/order-birth-certificate",
       },
       {
@@ -113,7 +113,7 @@ export default [
         link: "https://beta.novascotia.ca/register-birth",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://beta.novascotia.ca/apply-birth-certificate",
       },
       {
@@ -130,7 +130,7 @@ export default [
         link: "https://www.gov.nu.ca/health/information/birth-certificate/#",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.gov.nu.ca/health/information/birth-certificate",
       },
       {
@@ -147,7 +147,7 @@ export default [
         link: "https://www.ontario.ca/page/register-birth-new-baby",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.ontario.ca/page/get-or-replace-ontario-birth-certificate",
       },
       {
@@ -164,7 +164,7 @@ export default [
         link: "https://www.princeedwardisland.ca/en/information/justice-and-public-safety/registering-birth",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.princeedwardisland.ca/en/service/apply-birth-certificate",
       },
       {
@@ -181,7 +181,7 @@ export default [
         link: "https://services.etatcivil.gouv.qc.ca/DeclarationNaissanceEnLigne/Default.aspx?lang=en",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://services.etatcivil.gouv.qc.ca/DEClic2/index.aspx?lang=en",
       },
       {
@@ -189,7 +189,7 @@ export default [
         link: "https://www.mfa.gouv.qc.ca/en/services-de-garde/Pages/index.aspx",
       },
       {
-        label: "Find out about the Québec Parental Insurance Plan",
+        label: "Find out about the Quebec Parental Insurance Plan",
         link: "https://www.rqap.gouv.qc.ca/en",
       },
     ],
@@ -202,7 +202,7 @@ export default [
         link: "https://www.ehealthsask.ca/residents/births/Pages/Registering-a-Birth.aspx",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://www.ehealthsask.ca/residents/births/Pages/Order-a-Birth-Certificate.aspx",
       },
       {
@@ -219,7 +219,7 @@ export default [
         link: "https://yukon.ca/en/births-marriages-and-deaths/births/register-birth-your-child",
       },
       {
-        label: "Apply for a birth certificate",
+        label: "Apply for my child’s birth certificate",
         link: "https://yukon.ca/en/births-marriages-and-deaths/births/apply-your-childs-first-birth-certificate",
       },
       {

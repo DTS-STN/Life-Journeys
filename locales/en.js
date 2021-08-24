@@ -1,15 +1,11 @@
 export default {
-  //site titles
-  homeSiteTitle: "Life Journeys",
-  havingABabyTitle: "Having a Child",
+  //
+  // Header
+  //
 
   // Nav
   skipToMainContent: "Skip to main content",
   aboutGovernment: "Skip to 'About government'",
-
-  //
-  // Header
-  //
 
   // Government of Canada symbols
   goc: "Government of Canada",
@@ -87,54 +83,37 @@ export default {
   topOfPage: "Top of Page",
 
   //footer logo alt text
-
   footerCanadaCaAltText: "Symbol of the Government of Canada",
 
-  //Banner text
+  //
+  //
+  //  Page Content
+  //
+  //
 
+  //site titles
+  homeSiteTitle: "Life Journeys",
+  havingABabyTitle: "Having a Child",
+
+  //Banner text
   havingAChildBannerText: "Having a child",
 
-  // Find more information about
-  findInformationAbout: "Find information about",
-
-  //More Info Links
-
-  moreInfoParentingNetworks: "Find parenting networks in my area",
-  moreInfoPrenatalClasses: "Find prenatal classes in my area",
-  moreInfoProvincialSite: "Take me to my provincial site",
-  moreInfoCanadaSite: "Take me to Canada.ca",
-
-  //resource cards
-  gettingready: "Getting Ready",
-
   //breadcrumb
-
   home: "Life Journeys",
   "having-a-baby": "Having a Child",
 
   // Having a baby
-  topRequested:
-    "Resources to help you make the right decisions along this journey ",
-  topRequestedLabel: "Showing content for:",
   findGuidance:
     "Find guidance and support to help you make the right decision for you along this journey.",
   selectLocation:
-    "Select your location for site content relevant to your region",
+    "Select your location for site resources relevant to your region",
+  topRequestedLabel: "Show resources for:",
+  topRequested:
+    "Featured resources to help you make the right decisions along this journey",
 
-  //Table
-
-  header1: "Thingy",
-  header2: "Stuff to help?",
-  row1text: "Assess your current health",
-  row1subtext: "See your doctor ASAP to make sure pregnancy is right for you",
-  row1link: "Personal health checklist",
-  row2text: "Natural birth stuff",
-  row2subtext: "Figure out conceiving naturally",
-  row2link: "Great checklist",
-  row3text: "Fertility treatments",
-  row3subtext: "What you need to know",
-
+  //
   //Cards
+  //
   card1Title: "Maternity and Parental leave",
   card1Service: "From: Employment Insurance",
   card1Links: [
@@ -142,13 +121,7 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental.html",
       ariaLabel:
-        "Learn how to apply for maternity and parental leave on the service Canada website. This link will open the Service Canada website in a new window.",
-    },
-    {
-      text: "Apply now",
-      url: "https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/apply.html",
-      ariaLabel:
-        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
+        "Learn how to apply for maternity and parental leave from Employment Insurance. This link will open in a new window or tab.",
     },
   ],
 
@@ -159,7 +132,7 @@ export default {
       text: "Apply now",
       url: "https://www.rqap.gouv.qc.ca/en/online-services/applying-for-benefits",
       ariaLabel:
-        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window.",
+        "Learn how to apply for parental leave on the Quebec Parental Insurance Plan website. This link will open in a new window or tab.",
     },
   ],
 
@@ -170,7 +143,7 @@ export default {
       text: "Find benefits",
       url: "https://benefitsfinder.services.gc.ca/hm",
       ariaLabel:
-        "Search for benefits on the Service Canada website. This link will open the Service Canada website in a new window.",
+        "Search for benefits using the Service Canada benefit finder. This link will open in a new window or tab.",
     },
   ],
 
@@ -181,7 +154,7 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/public-health/services/maternity-newborn-care-guidelines.html",
       ariaLabel:
-        "Go to the mental and physical health resource on the Public Health Agency of Canada’s website. This link will open the Public Health Agency of Canada’s website in a new window.",
+        "Go to the mental and physical health resource from the Public Health Agency of Canada. This link will open in a new window or tab.",
     },
   ],
 
@@ -192,19 +165,21 @@ export default {
       text: "More info",
       url: "https://www.canada.ca/en/health-canada/services/infant-care.html",
       ariaLabel:
-        "Go to the resource on newborn care on the health Canada website. This link will open Health Canada’s website in a new window.",
+        "Go to the resource on newborn care from Health Canada. This link will open in a new window or tab.",
     },
   ],
 
+  //
   // Stages
+  //
   stagesTitle: "Discover the stages of the new child life journey",
   stagesDescr: [
     "Many future parents learn about having a child through their family and friends network. But what if your journey is different from theirs?",
-    "To help parents discover what they don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
+    "To help you discover what you don’t know, we mapped all the different things that could happen during the journey and made it into a tool that you can explore.",
     "In this tool, you will find information about the common steps and service providers at each stage in your journey.",
   ],
   stagesSubtitle: "Journey Stages",
-  stagesSelectTitle: "Select a stage to learn more about the key stages",
+  stagesSelectTitle: "Select a stage to learn more about it",
   stagesSelectLabel: "Journey stage:",
   stagesSelectPlaceholder: "-Select-",
 
@@ -212,7 +187,32 @@ export default {
   getConnected: "Connect to local resources ",
   getConnectedDescription: "Find guidance and support close to where you live.",
 
+  //More Info Links
+
+  moreInfoParentingNetworks: "Find parenting networks in my area",
+  moreInfoPrenatalClasses: "Find prenatal classes in my area",
+  moreInfoProvincialSite: "Take me to my provincial site",
+  moreInfoCanadaSite: "Take me to Canada.ca",
+
+  //Landing Page Title Section
+  landingPageTitle: "Get Information About a Life Journey",
+  landingPageContent:
+    "The Life Journey Information Service helps make your journey through life easier by showing you the step-by-step process of a life event in your journey and show you the support that might be available to help you.",
+  landingPageSubtitle: "Select a journey to get started",
+
+  //Phase Banner
+  Alpha: "Test site",
+  testSiteText:
+    "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
+  backToProject: "Back to projects",
+  backToProjectsLink: "https://alpha.service.canada.ca/projects",
+
+  //Screen reader link text
+  newWindow: ", this link will open in a new window.",
+
+  //
   //Report a problem
+  //
   reportAProblemTitle: "Report a problem or mistake on this page",
   reportAProblemButtonString: "Report a problem on this page",
   reportAProblemCheckAllThatApply: "Please select all that apply:",
@@ -240,19 +240,22 @@ export default {
     "https://www.canada.ca/en/transparency/privacy.html",
   reportAProblemSubmit: "Submit",
 
-  //Landing Page Title Section
-  landingPageTitle: "Get Information About a Life Journey",
-  landingPageContent:
-    "The Life Journey Information Service helps make your journey through life easier by showing you the step-by-step process of a life event in your journey and show you the support that might be available to help you.",
-  landingPageSubtitle: "Select a journey to get started",
+  //Table
 
-  //Phase Banner
-  Alpha: "Test site",
-  testSiteText:
-    "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
-  backToProject: "Back to projects",
-  backToProjectsLink: "https://alpha.service.canada.ca/projects",
+  header1: "Thingy",
+  header2: "Stuff to help?",
+  row1text: "Assess your current health",
+  row1subtext: "See your doctor ASAP to make sure pregnancy is right for you",
+  row1link: "Personal health checklist",
+  row2text: "Natural birth stuff",
+  row2subtext: "Figure out conceiving naturally",
+  row2link: "Great checklist",
+  row3text: "Fertility treatments",
+  row3subtext: "What you need to know",
 
-  //Screen reader link text
-  newWindow: ", this link will open in a new window.",
+  //resource cards
+  gettingready: "Getting Ready",
+
+  // Find more information about
+  findInformationAbout: "Find information about",
 };
