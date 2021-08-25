@@ -19,42 +19,50 @@ export default function ResourceLink(props) {
     <div className="sm:block flex flex-wrap">
       {filteredLinks.sites.map(({ label, link }) => (
         <div key={link} className={props.className}>
-          <a
-            href={link}
-            className="underline w-full text-sm sm:text-h6 font-display"
-            id={link}
-            target="_blank"
-            rel="noopener noreferrer external"
-          >
-            {label}
-            <span className="sr-only">{props.srOnly}</span>
-          </a>
-          <span className="pl-1">
-            <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-          </span>
+          <ul className="list-disc ml-4">
+            <li key={link}>
+              <a
+                href={link}
+                className="underline w-full text-sm sm:text-h6 font-display"
+                id={link}
+                target="_blank"
+                rel="noopener noreferrer external"
+              >
+                {label}
+                <span className="sr-only">{props.srOnly}</span>
+              </a>
+              <span className="pl-1">
+                <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
+              </span>
+            </li>
+          </ul>
         </div>
       ))}
     </div>
   ) : (
     <div className="flex flex-wrap">
       <div className={props.className}>
-        <a
-          className="underline w-full text-sm sm:text-h6 font-display"
-          id={props.id}
-          target="_blank"
-          rel="noopener noreferrer external"
-          href={googleSearch}
-        >
-          {props.text}
-          <span className="sr-only">{props.srOnly}</span>
-        </a>
-        <span className="pl-1">
-          <FontAwesomeIcon
-            icon={faExternalLinkAlt}
-            alt="External Link"
-            size="sm"
-          />
-        </span>
+        <ul className="list-disc ml-4">
+          <li key={googleSearch}>
+            <a
+              className="underline w-full text-sm sm:text-h6 font-display"
+              id={props.id}
+              target="_blank"
+              rel="noopener noreferrer external"
+              href={googleSearch}
+            >
+              {props.text}
+              <span className="sr-only">{props.srOnly}</span>
+            </a>
+            <span className="pl-1">
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                alt="External Link"
+                size="sm"
+              />
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );
