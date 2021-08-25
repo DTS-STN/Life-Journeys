@@ -104,9 +104,9 @@ export default {
 
   // Having a baby
   findGuidance:
-    "Trouvez des conseils et des outils pour vous aider à prendre les bonnes décisions pour vous tout au long de ce parcours.",
+    "Trouvez des conseils et du soutien pour vous aider à prendre les bonnes décisions tout au long de ce parcours.",
   selectLocation:
-    "Sélectionnez votre lieu de résidence pour connaître les ressources dans votre région.",
+    "Sélectionnez votre lieu de résidence pour connaître les ressources dans votre région",
   topRequestedLabel: "Afficher les ressources pour :",
   topRequested:
     "Ressources en vedette pour vous aider à prendre les bonnes décisions tout au long de ce parcours",
