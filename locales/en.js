@@ -206,6 +206,18 @@ export default {
     "You cannot apply for services or benefits through this test site. Parts of this site may not work and will change.",
   backToProject: "Back to projects",
   backToProjectsLink: "https://alpha.service.canada.ca/projects",
+  close: "Close",
+  thankYouFeedback: "Thank you for your feedback!",
+  feedbackRequired: "Feedback - This field is required",
+  sorryFeedback:
+    "Sorry, we're unable to receive your message right now. If the problem persists, please contact",
+  giveFeedback: "Give feedback to help improve this website",
+  improveService: "Help us improve this service",
+  confidential: "Your feedback is confidential and anonymous.",
+  doBetter: "How can we do better?",
+  doNotInclude:
+    "Do not include any personal, medical or financial details, such as your name, social insurance number (SIN), home or business address, phone number or any case or file numbers.",
+  maximum2000: "Maximum of 2000 characters",
 
   //Screen reader link text
   newWindow: ", this link will open in a new window.",
