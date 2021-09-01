@@ -55,7 +55,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
 
     if (valid) {
       //Submit data to the api
-      const response = await fetch("/api/feedback", {
+      const response = await fetch(process.env.NEXT_PUBLIC_FEEDBACK_API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -80,11 +80,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
     <>
       <div className="bg-circle-color">
         <div className="block lg:flex py-4 layout-container">
-          <div
-            className={`flex justify-between lg:block lg:w-max ${
-              feedbackActive ? "mt-2" : ""
-            }`}
-          >
+          <div className={`flex justify-between lg:block lg:w-max`}>
             <span
               className="font-body text-xs text-white border block w-max px-4 py-1 my-auto leading-6"
               role="alert"
@@ -96,7 +92,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                 id="back-projects"
                 dataCy="back-projects"
                 dataTestId="back-projects"
-                custom="font-body w-max text-xs mt-0 lg:mt-4 underline text-white block w-32 outline-none focus:outline-white-solid"
+                custom="font-body w-max text-xs mt-0 pl-0 underline text-white block w-32 outline-none focus:outline-white-solid"
                 text={t.backToProject}
                 href={t.backToProjectsLink}
               />
@@ -147,7 +143,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                       className="underline outline-none focus:outline-white-solid"
                     >
                       {" "}
-                      experience@service.gc.ca
+                      experience@servicecanada.gc.ca
                     </a>
                   ) : (
                     " "
@@ -212,16 +208,16 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   </a>
                   .
                 </li>
-                <li className="text-xs lg:text-sm font-body mb-4">
+                <li className="text-xs lg:text-sm font-body mb-4 flex">
                   <strong>{t.confidential}</strong>
-                  <ActionButton
-                    id="link-privacyPage"
-                    dataCy="link-privacyPage"
-                    dataTestId="link-privacyPage"
+                  <a
                     href={t.privacyLink}
-                    text={t.reportAProblemPrivacyStatement}
-                    custom="text-xs lg:text-sm underline ml-2 outline-none focus:outline-white-solid"
-                  />
+                    className={
+                      "text-xs lg:text-sm underline outline-none focus:outline-white-solid px-3"
+                    }
+                  >
+                    {t.reportAProblemPrivacyStatement}
+                  </a>
                 </li>
               </ul>
               <form
@@ -257,7 +253,8 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                 />
                 <ActionButton
                   id="feedback-submit"
-                  custom="outline-none focus:outline-black-solid rounded block w-full lg:w-auto lg:px-12 text-xs lg:text-sm py-2 mt-2 font-bold text-custom-blue-projects-link bg-details-button-gray hover:bg-gray-300"
+                  custom="outline-none focus:outline-black-solid rounded bg-white text-custom-blue-blue border border-custom-blue-blue active:bg-gray-400 hover:bg-gray-200"
+                  //secondary={true}
                   type="submit"
                   dataCy="feedback-submit"
                   dataTestId="feedback-submit"

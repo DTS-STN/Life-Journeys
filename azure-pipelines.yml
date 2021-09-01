@@ -28,7 +28,7 @@ stages:
         repository: $(imageRepository)
         command: 'build'
         Dockerfile: './Dockerfile'
-        arguments: '--pull --build-arg TC_BUILD=$(ADO_BUILD) --build-arg BUILD_DATE=$(BUILD_DATE) --build-arg CONTENT_API=$(CONTENT_API)'
+        arguments: '--pull --build-arg TC_BUILD=$(ADO_BUILD) --build-arg BUILD_DATE=$(BUILD_DATE) --build-arg CONTENT_API=$(CONTENT_API) --build-arg NEXT_PUBLIC_FEEDBACK_API=$(NEXT_PUBLIC_FEEDBACK_API)'
         tags: |
           $(tag)
     - task: Docker@2
@@ -41,7 +41,7 @@ stages:
 
 - stage: Deploy
   displayName: Deploy Container to App Service
-  jobs:  
+  jobs:
   - job: Deploy
     displayName: Deploy Container
     pool:
@@ -58,4 +58,4 @@ stages:
         azureSubscription: $(DECD_DEV_SUBSCRIPTION)
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name lifejourneys-as-CanadaEast --resource-group $(RESOURCE_GROUP)'        
+        inlineScript: 'az webapp config container set --docker-custom-image-name $(ACR_DOMAIN)/$(imageRepository):$(tag) --docker-registry-server-url $(ACR_DOMAIN) --name lifejourneys-as-CanadaEast --resource-group $(RESOURCE_GROUP)'
