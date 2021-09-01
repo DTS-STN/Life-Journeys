@@ -208,7 +208,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   </a>
                   .
                 </li>
-                <li className="text-xs lg:text-sm font-body mb-4 flex">
+                <li className="text-xs lg:text-sm font-body mb-4">
                   <strong>{t.confidential}</strong>
                   <a
                     href={t.privacyLink}
