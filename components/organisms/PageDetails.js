@@ -17,9 +17,12 @@ export function PageDetails() {
 
   return (
     <>
-      <div className="layout-container my-3">
-        <ReportProblem language={language} />
-      </div>
+      {/**
+         temporarily removing this piece while usability testing is happening for the Feeedback component
+         */}
+      {/*<div className="layout-container my-3">*/}
+      {/*  <ReportProblem language={language} />*/}
+      {/*</div>*/}
 
       <div className="layout-container">
         <DateModified text={t.dateModified} />
