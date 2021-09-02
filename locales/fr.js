@@ -208,6 +208,18 @@ export default {
     "Vous ne pouvez pas demander de services ou de prestations par l’intermédiaire de ce site d’essai. Certaines parties du site pourraient ne pas fonctionner et seront modifiées.",
   backToProject: "Retourner aux projets",
   backToProjectsLink: "https://alpha.service.canada.ca/fr/projects",
+  close: "Fermer",
+  thankYouFeedback: "Merci de vos commentaires!",
+  feedbackRequired: "Ce champ est obligatoire",
+  sorryFeedback:
+    "Désolé, nous ne sommes pas en mesure de recevoir votre message pour le moment. Si le problème persiste, veuillez communiquer avec",
+  giveFeedback: "Donnez vos commentaires pour aider à améliorer ce service",
+  improveService: "Aidez-nous à améliorer ce service",
+  confidential: "Vos commentaires sont confidentiels et anonymes.",
+  doBetter: "Comment pouvons-nous faire mieux?",
+  doNotInclude:
+    "Ne pas inclure de renseignements personnels, médicaux ou financiers, comme par exemple, un numéro d’assurance sociale (NAS), une adresse de domicile ou de lieu de travail, un numéro de téléphone ou numéro de dossier.",
+  maximum2000: "Maximum de 2000 caractères",
 
   //Screen reader link text
   newWindow: ", ce lien va ouvrir dans une nouvelle fenêtre.",

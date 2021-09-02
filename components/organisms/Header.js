@@ -49,11 +49,7 @@ export function Header({ breadcrumbItems, locale }) {
       </nav>
 
       <header>
-        <PhaseBanner
-          phase={t.Alpha}
-          link={t.backToProjectsLink}
-          linkText={t.backToProject}
-        >
+        <PhaseBanner phase={t.Alpha} feedbackActive={true} locale={locale}>
           {t.testSiteText}
         </PhaseBanner>
 
