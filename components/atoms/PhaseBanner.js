@@ -54,13 +54,20 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
     const valid = error === undefined;
 
     if (valid) {
+      const data = {
+        project: "Having a Child - Avoir un enfant",
+        pageUrl: window.location.href,
+        ...formData,
+      };
       //Submit data to the api
       const response = await fetch(process.env.NEXT_PUBLIC_FEEDBACK_API, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(data),
+      }).catch((e) => {
+        console.error(e);
       });
 
       // if the response is good, show thank you message
