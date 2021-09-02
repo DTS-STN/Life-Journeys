@@ -112,10 +112,10 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
               {children}
             </p>
             {feedbackActive ? (
-              <button
+              <ActionButton
                 id="feedbackButton"
                 onClick={() => setShowFeedback(!showFeedback)}
-                className="group outline-none focus:outline-white-solid bg-circle-color font-body text-xs lg:text-sm text-white flex text-left lg:ml-4 my-2 lg:my-0"
+                custom="group outline-none focus:outline-white-solid bg-circle-color font-body text-xs lg:text-sm text-white flex text-left lg:ml-4 my-2 lg:my-0"
                 data-testid="feedbackButton"
               >
                 <span
@@ -130,7 +130,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                 <strong className="mt-2 lg:mt-0 ml-2 group-hover:underline">
                   {t.giveFeedback}
                 </strong>
-              </button>
+              </ActionButton>
             ) : (
               ""
             )}
@@ -157,10 +157,10 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   )}
                   .
                 </span>
-                <button
+                <ActionButton
                   id="feedbackClose"
                   onClick={() => setShowFeedback(!showFeedback)}
-                  className="font-body text-white flex mt-2.5 lg:mt-0 outline-none focus:outline-white-solid"
+                  custom="font-body text-white flex mt-2.5 lg:mt-0 outline-none focus:outline-white-solid"
                   data-testid="closeButton"
                 >
                   <span
@@ -169,10 +169,10 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   >
                     &times;
                   </span>
-                  <span className="text-xs leading-4 lg:text-sm underline ml-1 lg:ml-2 lg:leading-10">
+                  <span className="text-xs leading-4 lg:text-sm ml-1 lg:ml-2 lg:leading-10">
                     {t.close}
                   </span>
-                </button>
+                </ActionButton>
               </div>
             ) : (
               ""
@@ -186,10 +186,10 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                 <h2 className="text-h4 lg:text-h3 lg:text-sm font-display mt-2 mb-4 w-48 sm:w-auto">
                   {t.improveService}
                 </h2>
-                <button
+                <ActionButton
                   id="feedbackClose"
                   onClick={() => setShowFeedback(!showFeedback)}
-                  className="font-body text-white flex mt-2.5 lg:mt-0 outline-none focus:outline-white-solid"
+                  custom="font-body text-white flex mt-2.5 lg:mt-0 outline-none focus:outline-white-solid"
                   data-testid="closeButton"
                 >
                   <span
@@ -198,17 +198,17 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   >
                     &times;
                   </span>
-                  <span className="text-xs leading-4 lg:text-sm underline ml-2 lg:leading-10">
+                  <span className="text-xs leading-4 lg:text-sm ml-2 lg:leading-10">
                     {t.close}
                   </span>
-                </button>
+                </ActionButton>
               </div>
               <ul className="list-outside list-disc px-6 py-2">
                 <li className="text-xs lg:text-sm font-body mb-4">
                   <strong>{t.reportAProblemNoReply}</strong>{" "}
                   {t.reportAProblemEnquiries}{" "}
                   <a
-                    className="underline text-xs lg:text-sm font-body outline-none focus:outline-white-solid"
+                    className="underline text-xs lg:text-sm font-body outline-none focus:ring focus:ring-white"
                     href="mailto:experience@servicecanada.gc.ca"
                   >
                     experience@servicecanada.gc.ca
@@ -216,11 +216,11 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   .
                 </li>
                 <li className="text-xs lg:text-sm font-body mb-4">
-                  <strong>{t.confidential}</strong>
+                  <strong>{t.confidential}</strong>{" "}
                   <a
                     href={t.privacyLink}
                     className={
-                      "text-xs lg:text-sm underline outline-none focus:outline-white-solid px-3"
+                      "text-xs lg:text-sm underline outline-none focus:ring focus:ring-white"
                     }
                   >
                     {t.reportAProblemPrivacyStatement}
@@ -254,7 +254,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
                   maxLength="2000"
                   rows="5"
                   className={
-                    "text-input font-body w-full min-h-40px shadow-sm text-form-input-gray border-2 py-6px px-12px rounded"
+                    "text-input font-body w-full min-h-40px shadow-sm text-form-input-gray border-2 py-6px px-12px rounded text-black"
                   }
                   onChange={(e) => setFeedback(e.currentTarget.value)}
                 />
