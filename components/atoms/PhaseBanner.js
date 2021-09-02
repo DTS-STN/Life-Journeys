@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { ActionButton } from "./ActionButton";
 import { useState } from "react";
@@ -15,7 +15,7 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
   const [submitted, setSubmitted] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const t = locale === "en" ? en : fr;
-  const [response, setResponse] = useState(t.thankYouFeedback);
+  const [response, setResponse] = useState("");
 
   // Joi form validation schema.
   const formSchema = Joi.object({
@@ -72,9 +72,9 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
 
       // if the response is good, show thank you message
       if (response.status === 201 || response.status === 200) {
-        await setResponse(t.thankYouFeedback);
+        await setResponse("ok");
       } else {
-        await setResponse(t.sorryFeedback);
+        await setResponse("error");
       }
 
       setSubmitted(true);
@@ -142,25 +142,22 @@ export const PhaseBanner = ({ phase, children, feedbackActive, locale }) => {
           <div role="status">
             {submitted ? (
               <div className="layout-container text-white flex justify-between">
-                <span className="text-xs lg:text-sm font-body mt-2 mb-4">
-                  {response}
-                  {response === t.sorryFeedback ? (
+                <span className="text-xs lg:text-sm font-body my-4">
+                  {response === "ok" ? t.thankYouFeedback : ""}
+                  {response === "error" ? t.sorryFeedback + " " : ""}
+                  {response === "error" ? (
                     <a
-                      href={`mailto:${process.env.NEXT_PUBLIC_NOTIFY_REPORT_A_PROBLEM_EMAIL}`}
-                      className="underline outline-none focus:outline-white-solid"
+                      href={`mailto:experience@servicecanada.gc.ca`}
+                      className="underline outline-none focus:ring focus:ring-white"
                     >
-                      {" "}
                       experience@servicecanada.gc.ca
                     </a>
-                  ) : (
-                    " "
-                  )}
-                  .
+                  ) : undefined}
                 </span>
                 <ActionButton
                   id="feedbackClose"
                   onClick={() => setShowFeedback(!showFeedback)}
-                  custom="font-body text-white flex mt-2.5 lg:mt-0 outline-none focus:outline-white-solid"
+                  custom="font-body text-white flex lg:mt-0 outline-none focus:outline-white-solid"
                   data-testid="closeButton"
                 >
                   <span
