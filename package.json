@@ -28,7 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@tailwindcss/typography": "^0.4.1",
-    "autoprefixer": "^10.3.0",
+    "autoprefixer": "^10.4.2",
     "fetch-mock": "^9.11.0",
     "font-awesome": "^4.7.0",
     "joi": "^17.4.2",
