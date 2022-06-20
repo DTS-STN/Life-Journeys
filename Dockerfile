@@ -1,4 +1,4 @@
-FROM node:current-alpine AS base
+FROM node:17.8-alpine3.15 AS base
 ENV NODE_ENV=production
 WORKDIR /base
 COPY package*.json ./
@@ -20,7 +20,7 @@ WORKDIR /build
 COPY --from=base /base ./
 RUN npm run build
 
-FROM node:current-alpine AS production
+FROM node:17.8-alpine3.15 AS production
 ENV NODE_ENV=production
 ENV REPORT_A_PROBLEM_ENABLED=true
 ENV NOTIFY_BASE_API_URL=https://api.notification.canada.ca
