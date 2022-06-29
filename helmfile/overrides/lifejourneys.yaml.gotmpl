@@ -22,6 +22,9 @@ extraEnv:
   {{/* WE ARE ALSO SENDING IN NEXT_CONTENT_API, NEXT_BUILD_ID AND NEXT_BUILD_DATE AS ARGUMENTS IN TC  */}}
 ingress:
       enabled: true
+      {{ if (eq .Environment.Name "prototype")}}
+      ingressClassName: nginx
+      {{ end }}
       hosts:
       {{- if or (eq .Environment.Name "prod-blue") (eq .Environment.Name "prod-green") }}
           - {{ requiredEnv "PROJECT" }}.{{ requiredEnv "BASE_DOMAIN" }}
