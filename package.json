@@ -32,7 +32,7 @@
     "fetch-mock": "^9.11.0",
     "font-awesome": "^4.7.0",
     "joi": "^17.4.2",
-    "next": "^12.1.0",
+    "next": "^12.1.6",
     "node-mocks-http": "^1.10.1",
     "postcss": "^8.3.5",
     "prettier": "^2.5.1",
