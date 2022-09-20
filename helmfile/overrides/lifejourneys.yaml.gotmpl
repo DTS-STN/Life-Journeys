@@ -34,7 +34,7 @@ ingress:
     tls:
       - hosts:
           - {{ requiredEnv "PROJECT" }}.{{ requiredEnv "BASE_DOMAIN" }}
-        secretName: ingress-tls-datapat-{{ .Environment.Name }}
+        secretName: ingress-tls-lifejourneys-{{ .Environment.Name }}
     hosts:
     - host: {{ requiredEnv "PROJECT" }}.{{ requiredEnv "BASE_DOMAIN" }}
       paths:
