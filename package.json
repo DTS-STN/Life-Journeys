@@ -27,23 +27,21 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.3.0",
+    "@tailwindcss/typography": "^0.5.7",
     "fetch-mock": "^9.11.0",
     "font-awesome": "^4.7.0",
     "joi": "^17.4.2",
-    "next": "^12.1.0",
+    "next": "^12.3.1",
     "node-mocks-http": "^1.10.1",
-    "postcss": "^8.3.5",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "snyk": "^1.668.0",
-    "tailwindcss": "^2.2.19"
+    "snyk": "^1.668.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
+    "autoprefixer": "^10.4.11",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "cypress": "^6.8.0",
@@ -51,7 +49,9 @@
     "husky": "^4.3.4",
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
-    "lint-staged": "^10.5.4"
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,json,md}": [

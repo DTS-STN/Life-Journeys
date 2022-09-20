@@ -1,23 +1,18 @@
 module.exports = {
-  purge: {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
-    ],
-    options: {
-      safelist: [
-        "border-custom-blue-experiment-blue",
-        "border-gray-experiment",
-        "bg-custom-blue-experiment-blue",
-        "bg-gray-experiment",
-        "opacity-40",
-        "opacity-60",
-        "opacity-80",
-        "opacity-100",
-      ],
-    },
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  safelist: [
+    "border-custom-blue-experiment-blue",
+    "border-gray-experiment",
+    "bg-custom-blue-experiment-blue",
+    "bg-gray-experiment",
+    "opacity-40",
+    "opacity-60",
+    "opacity-80",
+    "opacity-100",
+  ],
   theme: {
     boxShadow: {
       blue: "0 1px 3px 0 #66AFE9",
