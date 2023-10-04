@@ -31,7 +31,7 @@
     "fetch-mock": "^9.11.0",
     "font-awesome": "^4.7.0",
     "joi": "^17.4.2",
-    "next": "^12.3.1",
+    "next": "^13.5.4",
     "node-fetch": "^2.6.7",
     "node-mocks-http": "^1.10.1",
     "prettier": "^2.5.1",
